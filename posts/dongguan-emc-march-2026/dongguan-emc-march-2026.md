@@ -34,6 +34,8 @@ The compute module auto-detects whatever is connected, loads the calibration fil
 
 ![Everything packed into a Peli case for the flight to Dongguan](assets/photo_5_2026-04-14_14-19-10.jpg)
 
+Travelling with professional electronics across borders comes with its own paperwork. I'll cover the Peli case setup and the ATA Carnet process in a separate post.
+
 ## The Test Setup
 
 The lab was **NTC — Nore Detection Technology Co., Ltd** in Dongguan. We tested against three regulatory frameworks: **CE** (Europe), **FCC** (USA), and **CCC** (China). The full test sequence ran over four days:
