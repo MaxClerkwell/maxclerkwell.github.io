@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Travelling to China with a Peli Case Full of Electronics"
-date: 2026-04-07
+date: 2026-04-09
 tags: [china, travel, hardware, EMC, logistics]
 description: "A practical guide for engineers taking commercial electronics to China for testing — ATA Carnet, Peli cases, Frankfurt T2, Guangzhou customs, and everything the internet doesn't tell you."
 permalink: /posts/ata-carnet-china-travel/
