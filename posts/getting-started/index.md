@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting Started: From Tape-Out to JavaScript"
-date: 2026-04-14
+date: 2025-08-14
 tags: [meta, engineering, intro]
 description: "Why I'm writing here, what to expect, and why the full vertical stack is worth covering in one place."
 permalink: /posts/getting-started/
@@ -34,9 +34,9 @@ The tagline — *From tape-out to JavaScript* — is meant to be taken literally
 ## How to follow along
 
 - **Blog** (you're here): canonical, weekly
-- **Discord**: the community layer — join the Full Stack Engineering server
-- **YouTube**: longform videos derived from blog posts
-- **X / Twitter**: threads, quick takes
+- [**Discord**](https://discord.gg/2BXuUY6hrX): the community layer — join the Full Stack Engineering server
+- [**YouTube**](https://youtube.com/@MaxClerkwell): longform videos derived from blog posts
+- [**X / Twitter**](https://x.com/maxclerkwell): threads, quick takes
 
 Links to everything are on the [home page](/).
 
