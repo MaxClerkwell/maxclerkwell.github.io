@@ -9,7 +9,7 @@ permalink: /posts/ata-carnet-china-travel/
 
 When I went to Dongguan for [EMC testing in March](/posts/dongguan-emc-march-2026/), I brought a Peli case full of custom electronics as checked luggage. This post is the logistics companion to that trip — everything I learned about ATA Carnets, airport customs, and travelling with hardware that looks suspicious to anyone who doesn't build it.
 
-![Peli case at the airport, ready for check-in](assets/peli-airport.jpg)
+![Peli case packed: foam cut to fit, modules secured, cables coiled alongside](assets/photo_1_2026-04-14_16-02-16.jpg)
 
 ## Why Not Just Ship It?
 
@@ -30,6 +30,8 @@ Go to the Zollamt in person. They check everything on the list against what you'
 ## Packing
 
 I used a Peli case with foam cut to fit. The system was packed snugly enough that nothing moved during the flight. I used two TSA-compliant locks.
+
+![TSA-compliant lock — one of two on the case. One didn't make it back.](assets/photo_2_2026-04-14_16-02-16.jpg)
 
 One of them didn't survive the journey. On arrival in Frankfurt I found one lock broken — the TSA key had clearly been used at some point. The second lock was fine. If you're packing anything sensitive, assume the case will be opened in transit and pack accordingly. Nothing was missing or damaged inside.
 
