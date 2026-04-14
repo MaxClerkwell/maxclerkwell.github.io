@@ -11,7 +11,7 @@ In March I flew to Dongguan, China for four days of EMC testing. It was the last
 
 It passed. But the story is more interesting than that.
 
-![NTC test lab, Dongguan](assets/ntc-lab.jpg)
+![Stopover in Shenzhen — the trip begins](assets/photo_1_2026-04-14_14-19-10.jpg)
 
 ## The Project
 
@@ -32,7 +32,7 @@ In the drawer we have further modules in various stages of readiness: vibration,
 
 The compute module auto-detects whatever is connected, loads the calibration files, and exposes the data via REST, WebSocket, and MQTT. On the Ersa machine PC, an Electron frontend consumes those APIs to display profile predictions and process quality indices — CPK and several others.
 
-![Compute module and sensor chain](assets/compute-module.jpg)
+![Everything packed into a Peli case for the flight to Dongguan](assets/photo_5_2026-04-14_14-19-10.jpg)
 
 ## The Test Setup
 
@@ -52,6 +52,8 @@ We were not going in blind. We had done preliminary testing in Germany, and we h
 
 Everything came back green.
 
+![Full test bench at NTC — compute module, sensor nodes, M12 PoE cables, ThinkPad for monitoring](assets/photo_7_2026-04-14_14-19-10.jpg)
+
 ## The One Finding
 
 During the test we noticed that the M12 connectors on the downstream devices did not have adequate coupling to their aluminium housings. The anodized surface was acting as an insulator between the connector shell and the enclosure — not ideal when you are trying to maintain a continuous shielded path.
@@ -59,6 +61,8 @@ During the test we noticed that the M12 connectors on the downstream devices did
 The fix is straightforward: **serrated lock washers** (Fächerscheiben) under the M12 connector nut. The teeth cut through the anodizing and create a reliable metal-to-metal bond. We did not need to retest, but this goes into the production build as a specification change.
 
 It is exactly the kind of thing you catch when you are in a proper chamber with someone experienced watching the traces.
+
+![Setup in progress — the NTC technician preparing the conducted immunity test](assets/photo_2_2026-04-14_14-19-10.jpg)
 
 ## The Lab, and Jees
 
@@ -68,7 +72,8 @@ What surprised me most was the scale of the facility. NTC had far more test cham
 
 I will be back.
 
-![Inside one of the anechoic chambers at NTC](assets/chamber.jpg)
+![Inside the anechoic chamber — radiated emissions test in progress](assets/photo_4_2026-04-14_14-19-10.jpg)
+![Top-down view of the test arrangement](assets/photo_3_2026-04-14_14-19-10.jpg)
 
 ## Beyond the Lab
 
