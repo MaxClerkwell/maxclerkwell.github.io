@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- dark background with rounded corners -->
+  <rect width="32" height="32" rx="7" fill="#080b18"/>
+  <!-- Bochum-blue ring -->
+  <circle cx="16" cy="16" r="13" fill="none" stroke="#005ba1" stroke-width="1.5"/>
+  <!-- Phi glyph -->
+  <text x="16" y="22.5"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="19"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#1a9fff">Φ</text>
+</svg>
