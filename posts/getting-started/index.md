@@ -27,7 +27,7 @@ Three pillars, based on where I actually spend my time:
 
 ## The handle
 
-The username `MaxClerkwell` comes from a character in *The Man Who Was Thursday* by G.K. Chesterton — a novel about anarchists, detectives, and the chaos of trying to understand a world that keeps revealing new layers. Seemed appropriate.
+The username `MaxClerkwell` is a wordplay on **James Clerk Maxwell** — the Scottish physicist who unified electricity, magnetism, and light into a single theory. Rearrange the syllables slightly and you get MaxClerkwell. Seemed appropriate for someone who spends their days connecting layers of the stack that aren't supposed to know about each other.
 
 The tagline — *From tape-out to JavaScript* — is meant to be taken literally. I've worked at every layer: silicon characterization, bare-metal firmware, ASIC test systems, embedded Linux, monitoring daemons, REST APIs, frontend dashboards. The interesting problems usually live at the boundaries between layers.
 
