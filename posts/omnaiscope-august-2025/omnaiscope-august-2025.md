@@ -56,7 +56,7 @@ The system has been used for real diagnostic measurements, stored in a CEPH clus
 
 ## The Paper
 
-The full context — the automotive diagnostic landscape, the federated architecture, the data flow from scope to AI service to technician UI — is written up in the **autowerkstatt4null overview paper**. It is available on [GitHub](https://github.com/nabla-B/paper_aw4null-overview) and [ResearchGate](https://www.researchgate.net/profile/Stephan-Boekelmann), and nowhere else. No journal paywall, no publisher fee.
+The full context — the automotive diagnostic landscape, the federated architecture, the data flow from scope to AI service to technician UI — is written up in the **autowerkstatt4null overview paper**. It is available on [GitHub](https://github.com/nabla-B/paper_aw4null-overview) and [ResearchGate](https://www.researchgate.net/publication/394930242_autowerkstatt4null_An_Off-Board-Diagnostics_Ecosystem_for_Car-Workshops), and nowhere else. No journal paywall, no publisher fee.
 
 ![Data-server architecture: oscilloscope → local server → REST/WebSocket → analysis services](assets/architecture.png)
 
