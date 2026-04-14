@@ -1,1 +1,157 @@
-<h1>Hi!</h1>
+---
+layout: default
+title: Blog
+---
+
+<!-- ── Hero ─────────────────────────────────────────────── -->
+<section class="hero">
+  <img src="{{ '/slides/Avatar.jpg' | relative_url }}"
+       alt="Stephan Bökelmann"
+       class="hero-avatar">
+  <div class="hero-text">
+    <h1>Stephan <span>Bökelmann</span></h1>
+    <p class="hero-tagline">From tape-out to JavaScript.</p>
+    <div class="hero-pills">
+      <span class="pill">Engineer</span>
+      <span class="pill">Physicist</span>
+      <span class="pill">Consultant</span>
+      <span class="pill">emBO++ Organizer</span>
+      <span class="pill">THGA Bochum</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Linktree ──────────────────────────────────────────── -->
+<section class="linktree">
+  <p class="section-label">Find me on</p>
+  <div class="linktree-grid">
+
+    <!-- ── Confirmed handles ── -->
+    <a href="https://github.com/maxclerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i>
+      <span class="lc-name">GitHub</span>
+      <span class="lc-handle">@maxclerkwell</span>
+    </a>
+
+    <a href="https://x.com/maxclerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-x-twitter"></i>
+      <span class="lc-name">X / Twitter</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://linkedin.com/in/accelerator-stephan"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin"></i>
+      <span class="lc-name">LinkedIn</span>
+      <span class="lc-handle">accelerator-stephan</span>
+    </a>
+
+    <a href="https://www.researchgate.net/profile/Stephan-Boekelmann"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-flask-vial"></i>
+      <span class="lc-name">ResearchGate</span>
+      <span class="lc-handle">Stephan-Boekelmann</span>
+    </a>
+
+    <!-- ── Placeholder handles (accounts not yet created) ── -->
+    <a href="https://youtube.com/@MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-youtube"></i>
+      <span class="lc-name">YouTube</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://instagram.com/MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i>
+      <span class="lc-name">Instagram</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://tiktok.com/@MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-tiktok"></i>
+      <span class="lc-name">TikTok</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://facebook.com/MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook"></i>
+      <span class="lc-name">Facebook</span>
+      <span class="lc-handle">MaxClerkwell</span>
+    </a>
+
+    <a href="https://space.bilibili.com/MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-bilibili"></i>
+      <span class="lc-name">BiliBili</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://www.douyin.com/user/MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-tiktok"></i>
+      <span class="lc-name">Douyin</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://www.xiaohongshu.com/user/profile/MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-seedling"></i>
+      <span class="lc-name">Xiaohongshu</span>
+      <span class="lc-handle">@MaxClerkwell</span>
+    </a>
+
+    <a href="https://discord.gg/MaxClerkwell"
+       class="link-card" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-discord"></i>
+      <span class="lc-name">Discord</span>
+      <span class="lc-handle">Full Stack Engineering</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── Divider ───────────────────────────────────────────── -->
+<div class="divider"><hr></div>
+
+<!-- ── Blog posts ───────────────────────────────────────── -->
+<section class="blog-section">
+  <p class="section-label">Latest Posts</p>
+  <div class="post-list">
+    {% assign blog_posts = site.pages
+        | where_exp: "item", "item.url contains '/posts/'"
+        | where_exp: "item", "item.date"
+        | sort: "date" | reverse %}
+
+    {% for post in blog_posts %}
+    <div class="post-card">
+      <a href="{{ post.url | relative_url }}">
+        <h3>{{ post.title }}</h3>
+        <div class="post-meta">
+          <span class="date">
+            <i class="far fa-calendar-alt"></i>
+            {{ post.date | date: "%B %-d, %Y" }}
+          </span>
+          {% for tag in post.tags %}
+            <span class="post-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% if post.description %}
+        <p class="post-excerpt">{{ post.description }}</p>
+        {% elsif post.excerpt %}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+        {% endif %}
+      </a>
+    </div>
+    {% endfor %}
+
+    {% if blog_posts.size == 0 %}
+    <p class="no-posts">The first post is being written. Check back soon.</p>
+    {% endif %}
+
+  </div>
+</section>

@@ -1,0 +1,28 @@
+title: "Stephan Bökelmann"
+tagline: "From tape-out to JavaScript."
+email: "stephan@boekelmann.net"
+url: "https://maxclerkwell.github.io"
+baseurl: ""
+description: >-
+  Engineer, physicist, consultant. Covering the full vertical stack of engineering —
+  from silicon-level measurement systems and embedded development to monitoring
+  infrastructure, university teaching, and application-layer software.
+author: "Stephan Bökelmann"
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .claude/
+  - "*.sh"

@@ -1,0 +1,3 @@
+[submodule "social_media_strategy"]
+	path = social_media_strategy
+	url = git@github.com:nabla-B/social_media_strategy.git
