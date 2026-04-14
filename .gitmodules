@@ -1,3 +1,6 @@
 [submodule "social_media_strategy"]
 	path = social_media_strategy
 	url = git@github.com:nabla-B/social_media_strategy.git
+[submodule "personal_programming_notes"]
+	path = personal_programming_notes
+	url = git@github.com:MaxClerkwell/personal_programming_notes.git
