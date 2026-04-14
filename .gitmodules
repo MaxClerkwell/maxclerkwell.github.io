@@ -4,3 +4,6 @@
 [submodule "personal_programming_notes"]
 	path = personal_programming_notes
 	url = git@github.com:MaxClerkwell/personal_programming_notes.git
+[submodule "posts/omnaiscope-august-2025/paper_aw4null-overview"]
+	path = posts/omnaiscope-august-2025/paper_aw4null-overview
+	url = https://github.com/nabla-B/paper_aw4null-overview
