@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: about
 title: About
 permalink: /about/
 ---
-
-<div class="about-content">
 
 # About Stephan Bökelmann
 
@@ -20,7 +18,7 @@ He is a scientific staff member at **THGA Bochum** (Technische Hochschule Georg 
 
 ## Community
 
-**emBO++** — Stephan is the principal organizer of the International Technical Symposium for Embedded Systems Development, held annually in Bochum. The conference brings together engineers from across Europe for deep-technical talks on modern C++ patterns for embedded and real-time systems. Notable past presentations include sessions at Shenzhen (2025) and a KiCon keynote filmed in Bochum (2025).
+**emBO++** — Stephan is the principal organizer of the International Technical Symposium for Embedded Systems Development, held annually in Bochum. The conference brings together engineers from across Europe for deep-technical talks on modern C++ patterns for embedded and real-time systems.
 
 **Bochum AI-Gruppe** — he co-leads this practitioner group together with Odin Holmes, running meetups and workshops at the intersection of machine learning, measurement systems, and industry applications.
 
@@ -43,8 +41,6 @@ He is also a member of the **examination board of the Chamber of Commerce** for 
 
 This blog is the canonical home for longform writing. One post per week — covering **monitoring systems in production**, **university lecture material** from THGA Bochum, and **firsthand visits to electronics companies** and fabs around the world.
 
-*"No comparable creator occupies this position. The closest analogues each cover a slice of the stack but none span the full range, combine it with an academic context, or build toward a podcast/Discord community layer."*
-
 ## Contact
 
 <div class="about-contact">
@@ -63,6 +59,4 @@ This blog is the canonical home for longform writing. One post per week — cove
   <a href="https://www.researchgate.net/profile/Stephan-Boekelmann" target="_blank" rel="noopener noreferrer">
     <i class="fas fa-flask-vial"></i> ResearchGate profile
   </a>
-</div>
-
 </div>
