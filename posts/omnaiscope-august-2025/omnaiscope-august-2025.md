@@ -20,6 +20,8 @@ The current prototype is built around an **RP2040** microcontroller. The specs a
 - **BNC** on one end, **USB-C** on the other
 - No buttons, no screen, no moving parts
 
+![PCB, BNC connector, and housing — the three components before assembly](assets/photo_2026-04-14_16-25-24.jpg)
+
 That's it. From the outside it looks like a chunky BNC barrel adapter. The simplicity is intentional: the electronics in a car workshop get dropped, kicked, and splashed. Everything that can break has been moved either into firmware or into the server software on the connected computer.
 
 All PCB designs were done in **KiCad**. That workflow held up well throughout the project.
