@@ -1,54 +1,54 @@
 ---
 layout: post
-title: "Dual Uplink für 15 Leute: Starlink, Heimdall und Linux Policy Routing"
+title: "Dual Uplink for 15 People: Starlink, Heimdall, and Linux Routing"
 date: 2026-02-27
-tags: [networking, Linux, Starlink, load-balancing, infrastructure, Debian, sysadmin]
-description: "Unser Büronetz war zu langsam für 15 Mitarbeiter. Philipp und ich haben im Februar einen zweiten Uplink über Starlink ergänzt — mit automatischem Failover über Linux-Routing und einem Python-Dashboard, das die Auslastung beider Leitungen anzeigt."
+tags: [networking, Linux, Starlink, failover, infrastructure, Debian, sysadmin]
+description: "Our office network was struggling under 15 people. Philipp and I added a second uplink via Starlink in February — with automatic failover through Linux routing and a small Python dashboard to monitor both links."
 permalink: /posts/dual-uplink-feb-2026/
 ---
 
-Irgendwann reicht eine Internetleitung nicht mehr. Bei uns war der Punkt erreicht, als 15 Leute gleichzeitig im Büro arbeiteten und die Verbindung spürbar träge wurde — Video-Calls, Git-Pushes, Remote-Zugriffe, alles auf einer Leitung. [Philipp](https://x.com/philippthecron) und ich haben das im Februar angegangen.
+At some point, one internet connection isn't enough. We hit that point when 15 people were working in the office simultaneously and the line was noticeably sluggish — video calls, git pushes, remote access, all sharing a single uplink. [Philipp](https://x.com/philippthecron) and I tackled it in February.
 
-Philipp ist unser Serveradministrator — noch im Bachelor-Studium, aber in dem was er tut bereits auf einem Level, das viele Berufsadmins weit hinter sich lässt. Wir haben gemeinsam schon Mesh-Backhauls aufgebaut, VPNs, Intranets, einen Kubernetes-Cluster, Ceph-Storage, Keycloak für alle unsere betriebsinternen Services — und noch deutlich mehr. Wenn bei uns irgendwo ein Dienst läuft, hat Philipp ihn mit aufgebaut oder kennt jeden Winkel davon. Das Netzwerk-Update im Februar war ein weiteres Kapitel in einer langen Liste.
+Philipp is our server administrator — still working on his bachelor's degree, but already operating at a level that leaves many professional admins behind. Together we've set up mesh backhauls, VPNs, intranets, a Kubernetes cluster, Ceph storage, Keycloak for all our internal services — and quite a bit more. If a service runs in our office, Philipp either built it or knows every corner of it. The network upgrade in February was one more chapter in a long list.
 
-## Die Ausgangslage
+## The Starting Point
 
-Unser bestehendes Netz war klassisch aufgebaut: ein Uplink, dahinter Backbone-Switches, alles läuft drüber. Funktioniert — bis es nicht mehr funktioniert. Entweder weil die Bandbreite ausgeht oder weil der Provider mal einen schlechten Tag hat. Beides hatten wir.
+Our existing network was a standard setup: one uplink, backbone switches behind it, everything running over that single path. It works — until it doesn't. Either because bandwidth runs out, or because the provider has a bad day. We'd had both.
 
-Die Lösung war naheliegend: einen zweiten Uplink ergänzen. Als zweite Leitung haben wir uns für **Starlink** entschieden — schnell zu installieren, keine Abhängigkeit vom gleichen Provider wie die Festleitung, und für unsere Situation geografisch gut geeignet.
+The fix was obvious: add a second uplink. We went with **Starlink** — quick to install, independent of our DSL provider, and well-suited to our location.
 
-Das eigentliche Ziel war Ausfallsicherheit: Wenn eine Leitung wegbricht, soll der Betrieb weitergehen — ohne dass jemand eingreifen muss.
+The actual goal was resilience: if one link goes down, the office keeps running without anyone having to intervene.
 
 ## Heimdall
 
-Zwischen den Uplinks und den bestehenden Backbone-Switches haben wir einen neuen kleinen Schrank eingebaut. Darin: ein Debian Rack-PC, Hostname **AI-heimdall**.
+Between the two uplinks and the existing backbone switches we added a small new rack. Inside: a Debian rack PC, hostname **AI-heimdall**.
 
-Der Name ist kein Zufall. Odin Holmes — mit dem ich seit Jahren zusammenarbeite und der zu unserem engsten Kreis gehört — hat dafür gesorgt, dass bei uns nordische Namen Tradition haben. Die erste Library, die Odin und ich gemeinsam geschrieben haben, hieß **Kvasir**. Seitdem kleben an manchen unserer Projekte und Maschinen Namen aus der nordischen Mythologie. Heimdall — der Wächter der Götter, der alle neun Welten im Blick behält und jeden Eindringling bemerkt — war für den Eingang ins Firmennetz zu naheliegend, um ihn zu ignorieren.
+The name is not accidental. [Odin Holmes](https://x.com/odinthenerd) — a close collaborator I've worked with for years — established the tradition of giving some of our projects and machines names from Norse mythology. The first library Odin and I wrote together was called **Kvasir**. The habit stuck. Heimdall — the watchman of the gods, who observes all nine worlds and misses nothing — was too fitting for the gateway into our network to pass up.
 
-![Der Aufbau-Arbeitsplatz im Keller — AI-heimdall im Mini-Rack rechts, Terminal-Output auf dem Monitor](assets/PXL_20260306_175202894.jpg)
+![Setup workspace in the basement — AI-heimdall in the mini-rack on the right, terminal output on the monitor](assets/PXL_20260306_175202894.jpg)
 
-Auf AI-heimdall laufen die zwei Uplinks als separate Interfaces rein: `eno1` für den DSL-Anschluss (statische IP ins Modem), `eno2` für Starlink per DHCP. Das interne Netz hängt an `eno4` mit dem `10.42.0.0/16`-Adressraum Richtung Backbone-Switches.
+AI-heimdall has the two uplinks coming in as separate interfaces: `eno1` for DSL (static IP into the modem), `eno2` for Starlink via DHCP. The internal network runs on `eno4` with the `10.42.0.0/16` address space towards the backbone switches.
 
-Die Routing-Konfiguration nutzt zwei Default-Routen in der Linux-Haupttabelle, unterschieden durch ihre Metrik: DSL läuft mit niedrigerer Metrik und wird bevorzugt, Starlink steht mit Metrik 1003 als zweite Route daneben. Solange DSL erreichbar ist, geht der gesamte Traffic darüber. Fällt der DSL-Gateway weg, übernimmt Starlink automatisch — kein manuelles Eingreifen, kein sichtbarer Ausfall für die Nutzer.
+The routing configuration uses two default routes in the Linux main routing table, differentiated by metric: DSL runs with a lower metric and is preferred, Starlink sits alongside it with metric 1003. As long as the DSL gateway is reachable, all traffic goes that way. If DSL drops, Starlink takes over automatically — no manual intervention, no visible outage for anyone in the office.
 
-Für die Zukunft sind in `/etc/iproute2/rt_tables` bereits zwei benannte Tabellen angelegt — `starlink` (200) und `dsl` (201) — als Vorbereitung für echtes Policy Routing, das Verbindungen gezielt über einen bestimmten Uplink leitet. Aktuell ist das Failover-Modell aber genau das, was wir brauchen.
+For the future, two named tables are already registered in `/etc/iproute2/rt_tables` — `starlink` (200) and `dsl` (201) — as preparation for proper policy routing that directs individual connections over a specific uplink. For now, the failover model is exactly what we need.
 
-![`ip a` auf AI-heimdall — eno1 (DSL), eno2 (Starlink) und eno4 (internes Netz) alle aktiv](assets/PXL_20260306_205143846.jpg)
+![`ip a` on AI-heimdall — eno1 (DSL), eno2 (Starlink), and eno4 (internal network) all active](assets/PXL_20260306_205143846.jpg)
 
-## Das Dashboard
+## The Dashboard
 
-Um zu sehen, was gerade über welche Leitung läuft, habe ich ein kleines Python-Dashboard gebaut. Es liest die Schnittstellenstatistiken beider Uplinks aus und zeigt Durchsatz und Auslastung in Echtzeit an — einfach genug, um es auf einem Bildschirm im Büro laufen zu lassen.
+To see what is actually going over which link at any given moment, I wrote a small Python dashboard. It reads the interface statistics for both uplinks and displays throughput and utilisation in real time — simple enough to leave running on a screen in the office.
 
 <script src="https://gist.github.com/MaxClerkwell/35f9ad0d34b726bd5a6e113f113d00b0.js"></script>
 
-Das war auch der praktische Test dafür, dass beide Leitungen tatsächlich genutzt werden: Im Dashboard sieht man, wenn alles über einen Uplink läuft — und man erkennt sofort, wenn etwas nicht stimmt.
+It also served as a practical sanity check: the dashboard makes it immediately obvious if everything is routing over one link when it shouldn't be, or if something is wrong.
 
-## Was es gebracht hat
+## What It Changed
 
-Die Engpässe sind weg — und wenn der DSL-Anschluss mal kurz zickt, merkt es im Büro niemand. Das ist der eigentliche Gewinn: nicht mehr Bandbreite auf dem Papier, sondern Zuverlässigkeit im Alltag.
+The bottlenecks are gone — and when the DSL line has a hiccup, nobody in the office notices. That's the real gain: not more bandwidth on paper, but reliability in practice.
 
-Die eigentliche Arbeit war die saubere Integration auf AI-heimdall: zwei Interfaces, korrekte Metrik-Konfiguration, sicherstellen dass die DHCP-Lease von Starlink keine Default-Route in die main-Tabelle schreibt, die DSL verdrängt. Philipp hat den Starlink-Teil aufgebaut, die physische Installation übernommen und kennt jeden Winkel des restlichen Netzes, auf das AI-heimdall jetzt aufbaut; die Routing-Konfiguration war mein Part.
+The actual work was the clean integration on AI-heimdall: two interfaces, correct metric configuration, making sure the Starlink DHCP lease doesn't write a default route into the main table that displaces DSL. Philipp handled the Starlink installation and the physical setup, and knows every layer of the existing network that AI-heimdall now sits in front of; the routing configuration was my part.
 
 ---
 
-*Wer ähnliches aufbaut: Zwei Default-Routen mit unterschiedlicher Metrik in `/etc/network/interfaces` reichen für sauberes Failover. Wer echtes per-Host-Load-Balancing will, braucht zusätzlich `ip rule`-Einträge auf benannte Routing-Tabellen — das ist der nächste Schritt, den wir mit den bereits angelegten Tabellen `starlink` und `dsl` noch angehen werden.*
+*If you're building something similar: two default routes with different metrics in `/etc/network/interfaces` is enough for clean failover. Per-host load balancing requires additional `ip rule` entries pointing to named routing tables — that's the next step we'll take with the `starlink` and `dsl` tables already in place.*
