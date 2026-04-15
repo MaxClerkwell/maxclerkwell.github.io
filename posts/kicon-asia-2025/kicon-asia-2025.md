@@ -55,7 +55,7 @@ The conference swag included a koala plush with a KiCad × Huaqiu branding item.
 
 ## Shenzhen
 
-I've been to China before — [Dongguan in March for EMC testing](/posts/dongguan-emc-march-2026/) — so the logistics were familiar. Shenzhen is different from Dongguan in character: more polished, more international, the skyline is genuinely impressive at night.
+It wouldn't be my last time in China — a few months later I was back in [Dongguan for EMC testing](/posts/dongguan-emc-march-2026/). Shenzhen stands on its own regardless: more polished than its neighbour city, more international, the skyline is genuinely impressive at night.
 
 ![Shenzhen night skyline — the twin towers near the venue](assets/photo_3_2026-04-15_13-23-08.jpg)
 
