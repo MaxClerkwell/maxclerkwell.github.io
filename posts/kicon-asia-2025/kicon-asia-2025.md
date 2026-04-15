@@ -49,9 +49,11 @@ KiCon Asia was genuinely different from European conferences — denser, more co
 
 ![Another speaker presenting on the LLM ecosystem — the scale of the screens was something](assets/photo_2_2026-04-15_13-23-32.jpg)
 
-The conference swag included a koala plush with a KiCad × Huaqiu branding item. These things are more useful as icebreakers than anything else, but I brought it back anyway.
+The koala came home with me — not as swag, but as a prize. **Peter Dalmaris** gave a talk titled *"One Tool, One Journey"*, arguing that KiCad should accompany an engineer across their entire career and proposing a "Learner Mode" to ease the entry for beginners. I asked a question that apparently landed well enough to win the raffle prize at the end: an unbranded koala plush sitting on a KiCad × Huaqiu conference folder.
 
-![KiCad × Huaqiu koala — the official conference mascot](assets/photo_4_2026-04-15_13-23-32.jpg)
+Peter is the author of [**KiCad Like a Pro**](https://www.amazon.com/KiCad-Like-Pro-Peter-Dalmaris/dp/1907920749) (Elektor, multiple editions including a KiCad 9 update), which is the go-to book for anyone wanting a structured path through KiCad beyond the official documentation. He has also written *Raspberry Pi: Full Stack*, *Node-RED and Raspberry Pi Pico W*, and *Maker Education Revolution* — all published through Elektor. If you are learning KiCad seriously, the book is worth having on your desk.
+
+![The prize koala, sitting on the KiCad × Huaqiu conference folder](assets/photo_4_2026-04-15_13-23-32.jpg)
 
 ## Shenzhen
 
