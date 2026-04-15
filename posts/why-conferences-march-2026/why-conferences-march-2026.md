@@ -24,7 +24,7 @@ Over the past ten years, roughly:
 **As attendee or speaker:**
 - Meeting C++ — 2015, the beginning
 - code:dive, Wrocław — many years in a row
-- FOSDEM — regularly for eight years
+- FOSDEM, Brussels — regularly for eight years
 - KiCon US, Chicago 2019 — organised by [Chris Gammel](https://contextualelectronics.com)
 - ISO C++ Committee Meeting, Kona 2019
 - ISO C++ Committee Meeting, Prague 2020
@@ -47,9 +47,17 @@ That is a lot of rooms. A lot of evenings. A lot of hallways.
 
 Three moments from the past decade stand out when I try to articulate what conferences are actually for.
 
-**Kona, 2019.** I was at the ISO C++ Committee meeting — not as a voting member (I don't hold a DIN seat), but as an active participant in discussions. One evening I found myself at dinner with **Bjarne Stroustrup** and **Herb Sutter**. The conversation was not what I expected. It was direct, curious, practical. The kind of exchange that only happens when everyone at the table has decided to take the time seriously.
+**Kona, 2019.** I was at the ISO C++ Committee meeting — not as a voting member (I don't hold a DIN seat, so I could participate actively in discussions but not vote), but as a working participant. The Pacific coast outside the venue looked like this every morning:
 
-**Wrocław, code:dive.** [Shawn Parent](https://twitter.com/shawnpresent) and [Bartosz Milewski](https://twitter.com/BartoszMilewski) ended up in a whiskey bar with Odin, Tabea, and me until well past any sensible hour. The conversation went everywhere — category theory, compiler internals, what it means to write software that is honest about what it does. I've learned more in evenings like that than in entire conference days.
+![Early morning on the Kona waterfront — ISO C++ Committee meeting, February 2019](assets/20190218_071328.jpg)
+
+One evening I found myself at dinner with **Bjarne Stroustrup** and **Herb Sutter**. The conversation was direct, curious, practical. The kind of exchange that only happens when everyone at the table has decided to take the time seriously.
+
+![With Bjarne Stroustrup — Kona, 2019](assets/stephan_und_bjarne.png)
+
+**Wrocław, code:dive.** [Shawn Parent](https://twitter.com/shawnpresent) and [Bartosz Milewski](https://twitter.com/BartoszMilewski) ended up with Odin, Tabea, and me in a bar until well past any sensible hour. The conversation went everywhere — category theory, compiler internals, what it means to write software that is honest about what it does. I've learned more in evenings like that than in entire conference days.
+
+![Bar social at code:dive, Wrocław — the evenings are the real conference](assets/20190202_220352.jpg)
 
 **Silicon Valley.** Tabea and I were at an NVIDIA C++ meetup when **Barbara Gellar** and **Ansel Sermersheim** — authors of the [CopperSpice](https://www.copperspice.com) GUI framework — walked up and asked if we were the people who organised emBO++. That conversation turned into an invitation to stay at their home for four days. We spent those days talking about C++, software design, and what it means to build tools that last. We're still in regular contact today.
 
@@ -59,11 +67,35 @@ None of these moments were scheduled. None of them appear on any programme. They
 
 The arc of emBO++ is the clearest illustration I have of how this compounds over time.
 
-The first edition, 2015: four people in a room. The second: speakers from Russia to San Francisco, 40 attendees. It felt unreasonably large at the time. By 2020 we had 250 people in Bochum — the last edition before COVID.
+The first edition, 2015: four people in a room. The second: speakers from Russia to San Francisco, 40 attendees. It felt unreasonably large at the time. By 2020 we had **250 people in Bochum** — the last edition before COVID.
+
+![emBO++ 2023 — the conference back at full pace after the pandemic years](assets/IMG_20230324_092047.jpg)
 
 Going online during the pandemic worked, technically. But something was missing. The talks were fine. The questions-and-answers were fine. What you cannot replicate over video is the moment after the talk ends, when someone turns to the person next to them and says *"did you notice that detail he mentioned in passing?"* — and that becomes a two-hour conversation over dinner.
 
-Conferences have not fully recovered since COVID. That's the honest picture. Attendance is lower than it was. The habit broke. This bothers me most when I think about students and people early in their careers — the ones who would benefit most from being in a room where the level is higher than anything they've encountered before, and who are most likely to talk to the speaker afterwards rather than assuming they shouldn't.
+![emBO++ 2025 — conferences have not fully recovered to pre-COVID numbers yet](assets/PXL_20250306_155554013.MP.jpg)
+
+Conferences have not fully recovered since COVID. That's the honest picture. Attendance is lower than it was. The habit broke. This bothers me most when I think about students and people early in their careers — the ones who would benefit most from being in a room where the level is higher than anything they've encountered before.
+
+![emBO++ 2026 — still running, still worth it](assets/PXL_20260320_082116266.MP.jpg)
+
+## The Broader World
+
+Conferences are not only about software. Some of the most formative meetings I've attended were **PANDA and GSI collaboration meetings** at [GSI Helmholtzzentrum für Schwerionenforschung](https://www.gsi.de) in Darmstadt — particle physics, large-scale detector hardware, international teams building instruments that take decades to complete.
+
+![GSI/FAIR campus in Darmstadt — PANDA collaboration meeting](assets/IMG_20220601_131444.jpg)
+
+![Inside a PANDA collaboration session — "a glimpse at the many experimental groups"](assets/PXL_20240411_144041411.MP.jpg)
+
+The dynamics are different from a software conference, but the core is the same: the real work happens in the corridors, at the dinner table, in the conversations that drift far from the official agenda.
+
+At **KiCon Europe 2024** in Bochum, the same pattern held. 150 people, two days, the Rotunde. Lukas Hartmann's talk on open hardware CPU modules set off conversations that continued well past the venue closing.
+
+![KiCon Europe 2024, Rotunde Bochum — Lukas Hartmann on open hardware](assets/PXL_20240919_072728340.MP.jpg)
+
+Open Skunkforce also runs smaller, focused events throughout the year — user groups, workshops, single-topic evenings — where the same principles apply at a smaller scale.
+
+![A smaller OSF evening event — focused format, green lighting, engaged audience](assets/PXL_20231103_182701752.MP.jpg)
 
 ## What a Good Conference Actually Is
 
@@ -71,11 +103,13 @@ Here is what we have learned from organising events for a decade:
 
 **Talks set the agenda. Conversations are the output.** A good talk gives the audience something to argue about. The argument happens in the hallway, at dinner, at the bar. If people leave immediately after the last session, the conference has half-succeeded.
 
-**The pre-event evening is not optional.** Every conference we run includes a social the evening before the programme starts. People arrive, meet each other without the structure of sessions, and come to day one already knowing who they want to talk to. This changes the dynamics of the entire event.
+**The pre-event evening is not optional.** Every conference we run includes a social the evening before the programme starts. People arrive, meet each other without the structure of sessions, and come to day one already knowing who they want to talk to.
+
+![emBO++ social evening — the conversations here continue all the way through the programme](assets/IMG_20220531_220208.jpg)
 
 **Dinner outside the venue belongs in the programme.** Not a sponsored cocktail reception in the conference hall. A table at a restaurant, with speakers and attendees mixed. The conversations that happen there are the ones people mention years later.
 
-**100–200 people is the sweet spot.** Large enough for real diversity — different industries, different backgrounds, different levels of experience. Small enough that you can find the people you want to talk to, and that the speakers are genuinely accessible. Beyond 300, a conference starts to become a trade fair. Below 50, it becomes a workshop. Both are valid formats, but they're different things.
+**100–200 people is the sweet spot.** Large enough for real diversity — different industries, backgrounds, experience levels. Small enough that you can find the people you want to talk to, and that the speakers are genuinely accessible. Beyond 300, a conference starts to become a trade fair.
 
 **Staying in the hotel room after the conference is the biggest mistake you can make.** I have made it. Everyone has made it. It is always a mistake.
 
