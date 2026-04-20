@@ -35,7 +35,7 @@ The printing press didn't kill scribes to enrich publishers. It made knowledge a
 
 We are at the beginning of the greatest liberation in human history. And most people are still arguing about whether to allow it.
 
-A few things we hold to be true — and say out loud:
+A few things we hold to be true — and stand behind:
 
 - **Most operators think they are watching their processes. They are watching indicators. Indicators are not data.**
 - **Everyone is racing to add AI to their factory. Nobody asks where the data comes from. You cannot solve in the abstract domain if your transform is broken.**
