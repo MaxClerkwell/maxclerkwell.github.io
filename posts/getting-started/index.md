@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started: From Tape-Out to JavaScript"
+title: "Getting Started: From Tape-Out to TypeScript"
 date: 2025-08-14
 tags: [meta, engineering, intro]
 description: "Why I'm writing here, what to expect, and why the full vertical stack is worth covering in one place."
@@ -29,7 +29,7 @@ Three pillars, based on where I actually spend my time:
 
 The username `MaxClerkwell` is a wordplay on **James Clerk Maxwell** — the Scottish physicist who unified electricity, magnetism, and light into a single theory. Rearrange the syllables slightly and you get MaxClerkwell. Seemed appropriate for someone who spends their days connecting layers of the stack that aren't supposed to know about each other.
 
-The tagline — *From tape-out to JavaScript* — is meant to be taken literally. I've worked at every layer: silicon characterization, bare-metal firmware, ASIC test systems, embedded Linux, monitoring daemons, REST APIs, frontend dashboards. The interesting problems usually live at the boundaries between layers.
+The tagline — *From tape-out to TypeScript* — is meant to be taken literally. I've worked at every layer: silicon characterization, bare-metal firmware, ASIC test systems, embedded Linux, monitoring daemons, REST APIs, frontend dashboards. The interesting problems usually live at the boundaries between layers.
 
 ## How to follow along
 
