@@ -119,3 +119,13 @@ We estimate wrong every time. We estimate less wrong than we used to.
 The skAInet-PowerSense is still in service across DB Netz switching stations. It monitors power supply quality in infrastructure that moves millions of people every day, without anyone on the platform knowing it exists.
 
 That is what good monitoring looks like.
+
+---
+
+## There Is More
+
+This post barely scratches the surface. What I have not covered: inter-channel crosstalk and how we characterized and compensated it, PoE shutdowns caused by drawing too little current (yes, that is a real problem — the standard assumes you need power, not that you are carefully conserving it), the sensitivity of every measurement to the exact relative positioning of conductors and PCB, and the full calibration workflow that ties all of it together into a number you can trust.
+
+Every one of those deserves its own post. Maybe one day.
+
+If any of this is relevant to something you are building — or if you just want to go deep on non-contact sensing, EMC in rail environments, or PoE power budgeting — come find me on [Discord](https://discord.gg/2BXuUY6hrX). I enjoy talking about this stuff more than I probably should.
