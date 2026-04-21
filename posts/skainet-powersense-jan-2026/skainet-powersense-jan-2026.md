@@ -9,7 +9,7 @@ permalink: /posts/skainet-powersense-jan-2026/
 
 January 2016. A call came in through a mutual contact — [Steffen Scholle](https://eximentor.de/en/home/), at the time an Ex-inspector at DEKRA and today a respected Ex-consultant — connecting us with DB Netz AG. They had a problem: they needed a smarter way to monitor the power supply of their railway switching systems. Three-phase, 16A lines, 1.5mm² cross-section. And they needed it non-intrusively, clip-on, retrofit. No rewiring. No outages. No excuses.
 
-The project already existed internally in various forms. But January 2016 was the moment it became real. A customer with a real problem, a real network, and real consequences if the measurements were wrong.
+All the pieces already existed internally — E-field sensing, Hall probes, PoE prototypes — and the moment we heard the requirement, we knew exactly what to assemble. January 2016 was the moment it became real. A customer with a real problem, a real network, and real consequences if the measurements were wrong.
 
 Ten years later, that call is still one of the most consequential things that ever happened to this company.
 
