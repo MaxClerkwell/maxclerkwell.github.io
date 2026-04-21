@@ -7,7 +7,7 @@ description: "January 2016, the DB Netz AG called. Ten years later, the skAInet-
 permalink: /posts/skainet-powersense-jan-2026/
 ---
 
-January 2016. A call came in through a mutual contact — [Steffen Scholle](https://eximentor.de/en/home/), at the time an Ex-protection consultant — connecting us with DB Netz AG. They had a problem: they needed a smarter way to monitor the power supply of their railway switching systems. Three-phase, 16A lines, 1.5mm² cross-section. And they needed it non-intrusively, clip-on, retrofit. No rewiring. No outages. No excuses.
+January 2016. A call came in through a mutual contact — [Steffen Scholle](https://eximentor.de/en/home/), at the time an Ex-inspector at DEKRA and today a respected Ex-consultant — connecting us with DB Netz AG. They had a problem: they needed a smarter way to monitor the power supply of their railway switching systems. Three-phase, 16A lines, 1.5mm² cross-section. And they needed it non-intrusively, clip-on, retrofit. No rewiring. No outages. No excuses.
 
 The project already existed internally in various forms. But January 2016 was the moment it became real. A customer with a real problem, a real network, and real consequences if the measurements were wrong.
 
