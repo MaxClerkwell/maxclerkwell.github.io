@@ -144,11 +144,4 @@ Our real secret superpower is not the hardware. It is that we take these relatio
 
 If any of this is relevant to something you are building — or if you just want to go deep on non-contact sensing, EMC in rail environments, or PoE power budgeting — come find me on Discord. I enjoy talking about this stuff more than I probably should.
 
-<a href="https://discord.gg/2BXuUY6hrX" class="link-card-discord" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-discord"></i>
-  <div class="discord-text">
-    <span class="discord-name">Discord — Full Stack Engineering</span>
-    <span class="discord-note">Direct access to me and my colleagues. Webinars, live Q&amp;A, and community discussions for engineers across the full stack.</span>
-    <span class="discord-join">Join the server →</span>
-  </div>
-</a>
+<div><a href="https://discord.gg/2BXuUY6hrX" class="link-card-discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i><div class="discord-text"><span class="discord-name">Discord — Full Stack Engineering</span><span class="discord-note">Direct access to me and my colleagues. Webinars, live Q&amp;A, and community discussions for engineers across the full stack.</span><span class="discord-join">Join the server →</span></div></a></div>
