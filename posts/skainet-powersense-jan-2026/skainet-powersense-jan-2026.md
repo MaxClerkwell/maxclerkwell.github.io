@@ -128,6 +128,20 @@ This post barely scratches the surface. What I have not covered: inter-channel c
 
 Every one of those deserves its own post. Maybe one day.
 
+---
+
+## The People Behind the People
+
+None of this would have been possible without the continuous support of people who believed in the work before it was finished.
+
+Lukas Jakubczyk and Prof. Gereon Kortenbruck at the PROLAB — Laboratory for Product and Production at THGA Bochum — were there throughout. Prof. Benjamin Menküc, co-founder of Auto-Intern and by this point already a professor for EMC and medical engineering at FH Dortmund, kept advising from the sidelines even after stepping back from day-to-day operations. And Dr. Florian Feldbauer of the EP1 chair at the Faculty of Physics, Ruhr-Universität Bochum, provided the kind of rigorous physics perspective that keeps engineers honest.
+
+We are genuinely grateful to have RUB, THGA, and FH Dortmund as partners — reliable, deeply professional, and always willing to push back when we need it.
+
+Our real secret superpower is not the hardware. It is that we take these relationships seriously and keep the conversation going. Regularly, honestly, and without agenda. That is rarer than it sounds.
+
+---
+
 If any of this is relevant to something you are building — or if you just want to go deep on non-contact sensing, EMC in rail environments, or PoE power budgeting — come find me on Discord. I enjoy talking about this stuff more than I probably should.
 
 <a href="https://discord.gg/2BXuUY6hrX" class="link-card-discord" target="_blank" rel="noopener noreferrer">
