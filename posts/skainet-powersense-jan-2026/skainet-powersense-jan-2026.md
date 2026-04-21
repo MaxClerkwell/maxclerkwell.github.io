@@ -48,7 +48,7 @@ So how do you measure voltage when you have three phase conductors inside an IT 
 
 The short answer: you don't measure voltage directly. You measure the time-varying electric field each conductor produces, capture its influence on an antenna, and reconstruct the voltage waveform from there.
 
-We had built E-field sensing circuits before — that prior work saved us. Our approach: three pairs of flat patch antennas, one pair per phase, placed on the top and bottom surfaces of a thick PCB. The board's normal vector aligned radially to the conductors. Through the 2mm PCB thickness, the electric field decreases with distance (approximately 1/r³), so the two antenna surfaces see slightly different field strengths.
+We had built E-field sensing circuits before — that prior work saved us. Our approach: three pairs of flat patch antennas, one pair per phase, placed on the top and bottom surfaces of a thick PCB. The board's normal vector aligned radially to the conductors. Through the 2mm PCB thickness, the electric field decreases with distance as 1/r (long straight conductor approximation), so the two antenna surfaces see slightly different field strengths — and the differential between them scales as 1/r².
 
 That differential — tiny, noisy, deeply buried in interference — is what we amplified with a carefully tuned op-amp circuit and fed into an ADC. Get the gain and filtering right, and you see clean 50Hz sinusoidal waveforms from three conductors that you have never electrically touched.
 
