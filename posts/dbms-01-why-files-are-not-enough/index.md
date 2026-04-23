@@ -51,4 +51,4 @@ Transactions, normalization, indexing, query planning — all of that comes late
 
 Once you've felt that, rather than been told it, everything else builds on solid ground.
 
-The repository is open: [github.com/MaxClerkwell/DBMS_01](https://github.com/MaxClerkwell/DBMS_01). If you want to work through it yourself, fork it and use your own copy — don't clone mine and clutter it up with your sensor files.
+The repository is open: [github.com/MaxClerkwell/DBMS_01](https://github.com/MaxClerkwell/DBMS_01). If you want to work through it yourself, fork it and work in your own copy — that's the intended workflow. If that concept is new to you, start with the first exercise from my Introduction to Programming course ([PP1](https://github.com/MaxClerkwell/PP1)), which walks through exactly that.
