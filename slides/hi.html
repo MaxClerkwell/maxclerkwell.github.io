@@ -1,0 +1,85 @@
+<section>
+  <div class="hi-flex">
+    <img src="./slides/Avatar.jpg" alt="Avatar" class="avatar-img" />
+    <div class="hi-content">
+      <div class="greeting-container">
+        <h2 id="greeting">Hi! I am Stephan</h2>
+      </div>
+      <ul>
+        <li>engineer</li>
+        <li>physicist</li>
+        <li>consultant</li>
+      </ul>
+    </div>
+  </div>
+  <style>
+    .hi-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .avatar-img {
+      width: 330px; /* 50% größer als 220px */
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .hi-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .greeting-container {
+      height: 120px; /* Doppelte Größe */
+      display: flex;
+      align-items: center;
+      overflow: hidden; /* Langer Text wird abgeschnitten */
+    }
+    #greeting {
+      transition: opacity 0.5s ease;
+      font-family: 'Times New Roman', serif;
+    }
+    @media (max-width: 700px) {
+      .hi-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      .avatar-img {
+        width: 75vw;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        margin-bottom: 1rem;
+      }
+      .hi-content {
+        align-items: center;
+      }
+      .greeting-container {
+        text-align: center;
+      }
+      ul {
+        text-align: center;
+        list-style-position: inside;
+      }
+    }
+  </style>
+</section>
+<section>
+  <h3>Occupations</h3>
+  <ul>
+    <li>Engineer</li>
+    <li>Researcher</li>
+    <li>Speaker</li>
+  </ul>
+</section>
+      <section>
+        <h3>Recent Presentations</h3>
+        <ul>
+          <li>2025/Nov - Shenzhen - KiCon</li>
+          <li>2025/Sept - Bochum - KiCon</li>
+          <li><a href="https://youtu.be/dNBwY7L6niI?si=jz7gpGv28xGCtShe">2025/Sept - Bochum - KiCon Video</a></li>
+          <li>2025/Apr - Bochum - PDSC3k</li>
+          <li>2025/Mar - Bochum - emBO++</li>
+        </ul>
+      </section>

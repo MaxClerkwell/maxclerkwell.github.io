@@ -7,3 +7,6 @@
 [submodule "posts/omnaiscope-august-2025/paper_aw4null-overview"]
 	path = posts/omnaiscope-august-2025/paper_aw4null-overview
 	url = https://github.com/nabla-B/paper_aw4null-overview
+[submodule "datenbanken_01"]
+	path = datenbanken_01
+	url = git@github.com:MaxClerkwell/datenbanken_01.git
