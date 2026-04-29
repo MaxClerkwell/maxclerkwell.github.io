@@ -35,7 +35,7 @@ The Enclosureless approach takes three or more PCBs and turns them into a sealed
 - **Intermediate frame PCB** (11.2): a frame-shaped board with a rectangular cutout in the centre. It sits between the bottom and top boards and defines the height of the internal cavity. Want a taller cavity? Use two frames. Want to scale the volume? Add more frames or change their thickness.
 - **Top PCB** (11.3): the board that carries the actual electronics — the sensor chip, the microcontroller, the connector.
 
-The three layers are stacked and joined by a **continuous peripheral solder joint** — a umlaufende Lötzinn-Bahn running around the entire perimeter of each interface. This joint is what makes the stack a housing: it seals the internal cavity against moisture and dust, and because it is a closed metallic loop, it also provides **electromagnetic shielding** — effectively a Faraday cage integrated into the manufacturing process at no additional cost.
+The three layers are stacked and joined by a **continuous peripheral solder joint** — a continuous tin-solder trace running around the entire perimeter of each interface. This joint is what makes the stack a housing: it seals the internal cavity against moisture and dust, and because it is a closed metallic loop, it also provides **electromagnetic shielding** — effectively a Faraday cage integrated into the manufacturing process at no additional cost.
 
 ![Enclosureless Cases components and assembled unit — bottom board, frame spacer, cover board, and the finished sensor](assets/photo_enclosureless_temphumid.jpg)
 
@@ -69,19 +69,19 @@ The perimeter solder joint runs completely around the inside edge of each frame,
 
 ## The Utility Model
 
-The German Gebrauchsmuster DE202020106111U1 was filed on 26 October 2020 and registered on 5 November 2020. It covers the core concept: a housing device formed exclusively from at least three PCB elements, sealed by a continuous irreversible connection — specifically a solder joint — running around the full perimeter of each interface.
+The German utility model DE202020106111U1 was filed on 26 October 2020 and registered on 5 November 2020. It covers the core concept: a housing device formed exclusively from at least three PCB elements, sealed by a continuous irreversible connection — specifically a solder joint — running around the full perimeter of each interface.
 
 **Gebrauchsmusterschrift DE202020106111U1:**
 
 <iframe src="assets/DE202020106111U1.pdf" width="100%" height="800px" style="border:1px solid #ccc; border-radius:4px;"></iframe>
 
-The Gebrauchsmuster is still active. We are happy to license it commercially — if you want to use Enclosureless Cases in a product, get in touch and we will work something out. **Non-commercial use is free.** Build it, teach with it, experiment with it, publish about it. If you want the data — Gerber files, board layouts — we will send them to you. We have not gone the full OSHW route, but we do not keep the files locked away either.
+The utility model is still active. We are happy to license it commercially — if you want to use Enclosureless Cases in a product, get in touch and we will work something out. **Non-commercial use is free.** Build it, teach with it, experiment with it, publish about it. If you want the data — Gerber files, board layouts — we will send them to you. We have not gone the full OSHW route, but we do not keep the files locked away either.
 
 ## The Cost Argument
 
 The total cost of an Enclosureless device is essentially the cost of the PCBs from your manufacturer. There is no enclosure line item. No tooling. No secondary assembly. The scaling behaviour is also different from conventional housing: because the housing and the electronics are ordered from the same supplier in the same process, the cost per unit at small volumes is much closer to the cost at large volumes than with traditional enclosures, where tooling amortisation dominates the early pricing.
 
-At the application level — a Kühlfahrzeug with fifty compartments, or a control cabinet with dozens of measurement points — the difference between a five-euro and a twelve-euro enclosure per node adds up to something worth engineering around.
+At the application level — a refrigerated vehicle with fifty compartments, or a control cabinet with dozens of measurement points — the difference between a five-euro and a twelve-euro enclosure per node adds up to something worth engineering around.
 
 ## If You Want to Build One
 
@@ -93,7 +93,7 @@ The concept is simple enough to implement without our involvement. You need:
 
 The frame PCB is the key element: it defines the cavity volume and carries no active components. Its sole structural function is to space the top and bottom boards and provide the two connecting solder surfaces. It can be designed in any KiCad-compatible workflow as a simple rectangular cutout with a perimeter pad.
 
-If you want the reference design files rather than starting from scratch, reach out. The geometry is documented in the Gebrauchsmuster figures and in our internal datasheets, but the actual production files are the faster starting point.
+If you want the reference design files rather than starting from scratch, reach out. The geometry is documented in the utility model figures and in our internal datasheets, but the actual production files are the faster starting point.
 
 ---
 
