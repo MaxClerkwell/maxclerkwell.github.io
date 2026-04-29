@@ -1,0 +1,71 @@
+@startuml STM32F7 USB-ADC Multiplexer Board
+
+!theme plain
+skinparam componentStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam ArrowColor #333333
+skinparam ArrowFontSize 10
+
+skinparam component {
+    BackgroundColor #F0F4F8
+    BorderColor     #4A6FA5
+    FontColor       #1A1A2E
+}
+
+skinparam package {
+    FontStyle bold
+    FontSize  11
+}
+
+left to right direction
+
+' ── Power Supply ────────────────────────────────────────────
+package "Power Supply" #FFF8E1 {
+    component "USB 5V\n(from connector)" as V5   #FFE0B2
+    component "3V3 LDO\n3.3 V digital"   as V33  #F0F4F8
+    component "1V7 LDO\n1.7 V — VDDA"   as V17  #F0F4F8
+    V5  --> V33 : step-down
+    V5  --> V17 : step-down
+}
+
+' ── USB Interface ────────────────────────────────────────────
+package "USB Interface" #E3F2FD {
+    component "USB-C\nConnector"                  as USBC    #F0F4F8
+    component "EMC Filter\nCM choke + ESD clamp"  as USBFILT #F0F4F8
+    USBC --> USBFILT : D+/D−
+}
+
+' ── Analog Frontend (×10) ────────────────────────────────────
+package "Analog Frontend  ×10 identical channel instances" #F3E5F5 {
+    component "EMC Filter\n(per channel)"   as CHFILT #F0F4F8
+    component "Low-Pass\nFilter"            as LPF    #F0F4F8
+    component "Diff-to-Single\nConverter"   as D2S    #F0F4F8
+    CHFILT --> LPF
+    LPF    --> D2S
+}
+
+' ── Analog Switching ─────────────────────────────────────────
+package "Analog Switching" #E8F5E9 {
+    component "I2C Analog\nMux — 10:1" as MUX #F0F4F8
+}
+
+' ── Microcontroller ──────────────────────────────────────────
+package "Microcontroller" #E8F5E9 {
+    component "STM32F7\n────────────\nUSB FS / HS\nI2C Master\nADC 12-bit\n────────────\nVDD  : 3V3\nVDDA : 1V7" as MCU #DCEDC8
+}
+
+' ── Signal connections ───────────────────────────────────────
+USBFILT --> MCU  : USB D+/D−
+D2S     --> MUX  : analog signal (×10)
+MUX     --> MCU  : ADC_IN
+MCU     --> MUX  : I2C — channel select
+
+' ── Power connections (dashed) ───────────────────────────────
+V33 .[#FFA000].> MCU     : 3V3
+V17 .[#FFA000].> MCU     : 1V7 (VDDA)
+V33 .[#FFA000].> MUX     : 3V3
+V33 .[#FFA000].> USBFILT : 3V3
+
+@enduml
