@@ -5,6 +5,7 @@ date: 2026-05-04
 tags: [cellular-automata, wolfram, entropy, philosophy, complexity, conway]
 description: "A colleague called it 'useless math but super fun.' I objected. Conway's Game of Life connects self-replicating machines, Wolfram's computational irreducibility, and the unsettling possibility that entropy is not just disorder — it is the universe refusing to be calculated."
 permalink: /posts/game-of-life-may-2026/
+math: true
 ---
 
 A friend sent me a link to a simulation running in a browser tab: [oimo.io/works/life](https://oimo.io/works/life/). She had heard of it — two colleagues from the physics department had mentioned it. One of them called it "useless math but super fun."
