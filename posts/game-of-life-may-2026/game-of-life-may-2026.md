@@ -9,11 +9,7 @@ permalink: /posts/game-of-life-may-2026/
 
 A friend sent me a link to a simulation running in a browser tab: [oimo.io/works/life](https://oimo.io/works/life/). She had heard of it — two colleagues from the physics department had mentioned it. One of them called it "useless math but super fun."
 
-I objected.
-
-![Telegram conversation: "it is one of the most significant discoveries in science."](assets/chat.png)
-
-It is the complete opposite of useless math. It is one of the most significant discoveries in science.
+I objected. It is the complete opposite of useless math. It is one of the most significant discoveries in science.
 
 That conviction is what this post is about.
 
