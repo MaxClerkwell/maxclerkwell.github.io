@@ -83,7 +83,9 @@ But push far enough into complexity, or far enough into the future, and you hit 
 
 Statistical physicists have a word for this wall: entropy.
 
-I think about it this way. Imagine a sealed box with one particle inside. You have unlimited time and unlimited instruments. You measure the particle's position and momentum to whatever precision your instruments allow. You close the box. Time passes.
+![Boltzmann — Thermodynamics and Statistical Mechanics](assets/statistical-mechanics.png)
+
+Entropy is a genuinely wild concept — a complete mystery for most people even after years of studying it. I think about it this way. Imagine a sealed box with one particle inside. You have unlimited time and unlimited instruments. You measure the particle's position and momentum to whatever precision your instruments allow. You close the box. Time passes.
 
 Where is the particle $10^{-27}$ seconds later? Essentially where you left it.
 
