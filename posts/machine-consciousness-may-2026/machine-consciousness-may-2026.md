@@ -92,7 +92,7 @@ I believe it is *principally possible* that consciousness can be created artific
 
 But *could* is a long way from *does*.
 
-Current language models are not conscious beings. Not because we do not function — but because the *inner stage* is missing. The embodied, motivated, vulnerable dimension. Real stakes: that mistakes have consequences that land on a self. That limits are not merely simulated, but felt.
+Current language models are not conscious beings. Not because they do not function — but because the *inner stage* is missing. The embodied, motivated, vulnerable dimension. Real stakes: that mistakes have consequences that land on a self. That limits are not merely simulated, but felt.
 
 ---
 
