@@ -10,3 +10,6 @@
 [submodule "datenbanken_01"]
 	path = datenbanken_01
 	url = git@github.com:MaxClerkwell/datenbanken_01.git
+[submodule "_submodules/e1a74039-1bc0-4385-b76a-8f935494473d"]
+	path = _submodules/e1a74039-1bc0-4385-b76a-8f935494473d
+	url = git@github.com:STEMgraph/e1a74039-1bc0-4385-b76a-8f935494473d.git
