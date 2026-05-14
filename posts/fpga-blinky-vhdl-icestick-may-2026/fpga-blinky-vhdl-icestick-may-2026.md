@@ -7,6 +7,8 @@ description: "A complete walkthrough of writing VHDL, simulating it with GHDL, a
 permalink: /posts/fpga-blinky-vhdl-icestick-may-2026/
 ---
 
+![iCEstick leaning against a Ruhr-Universität Bochum physics department mug, mixer and monitor in the background](assets/titlepic.jpg)
+
 This post is the first in a series on FPGA development with open-source tools. By the end you will have blinked an LED on real hardware, and you will understand every step between writing the VHDL source and the moment the LED actually blinks.
 
 No prior HDL experience is assumed. If you know what a for-loop is, you have enough background.
