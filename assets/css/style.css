@@ -778,3 +778,64 @@ details.sidebar-widget[open] > .sidebar-widget-title::after {
   text-decoration: none;
 }
 .archive-post-list a:hover { color: var(--blue-bright); }
+
+/* ── Home layout: post list + sidebar ────────────────────── */
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.home-layout .blog-section {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 860px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 3rem;
+  }
+  .home-layout .sidebar { position: static; }
+}
+
+/* ── Sidebar mini-about ───────────────────────────────────── */
+.sidebar-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+}
+
+.sidebar-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--blue-bochum);
+}
+
+.sidebar-about p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sidebar-about-link {
+  font-size: 0.8rem;
+  color: var(--blue-bright);
+}
+
+/* ── Active tag pill ──────────────────────────────────────── */
+.tag-pill-active {
+  border-color: var(--blue-bright);
+  color: var(--blue-bright);
+  background: var(--bg-3);
+}

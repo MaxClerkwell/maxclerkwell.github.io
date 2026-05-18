@@ -1,0 +1,110 @@
+<aside class="sidebar">
+
+  <!-- ── Mini About ─────────────────────────────────────── -->
+  <details class="sidebar-widget" open>
+    <summary class="sidebar-widget-title">
+      <i class="fas fa-user"></i> About
+    </summary>
+    <div class="sidebar-widget-body sidebar-about">
+      <img src="{{ '/slides/Avatar.jpg' | relative_url }}"
+           alt="Stephan Bökelmann"
+           class="sidebar-avatar">
+      <p>Engineer, physicist &amp; freelancer. PhD candidate in experimental particle physics at RUB. Writing about DAQ, embedded systems, and manufacturing — at least one post per week.</p>
+      <a href="{{ '/about/' | relative_url }}" class="sidebar-about-link">Full bio →</a>
+    </div>
+  </details>
+
+  <!-- ── Search ─────────────────────────────────────────── -->
+  <details class="sidebar-widget" open>
+    <summary class="sidebar-widget-title">
+      <i class="fas fa-search"></i> Search
+    </summary>
+    <div class="sidebar-widget-body">
+      <input type="text" id="search-input" placeholder="Search posts…" autocomplete="off">
+      <ul id="search-results"></ul>
+    </div>
+  </details>
+
+  <!-- ── Tag Cloud ──────────────────────────────────────── -->
+  <details class="sidebar-widget" open>
+    <summary class="sidebar-widget-title">
+      <i class="fas fa-tags"></i> Tags
+    </summary>
+    <div class="sidebar-widget-body tag-cloud">
+      {% assign all_tags = "" | split: "" %}
+      {% assign posts = site.pages
+          | where_exp: "p", "p.url contains '/posts/'"
+          | where_exp: "p", "p.date" %}
+      {% for post in posts %}
+        {% for tag in post.tags %}
+          {% assign all_tags = all_tags | push: tag %}
+        {% endfor %}
+      {% endfor %}
+      {% assign sorted_tags = all_tags | sort | uniq %}
+      {% for tag in sorted_tags %}
+        {% assign tag_count = all_tags | where_exp: "t", "t == tag" | size %}
+        <a href="#" class="tag-pill" data-tag="{{ tag }}">{{ tag }}<span class="tag-count">{{ tag_count }}</span></a>
+      {% endfor %}
+    </div>
+  </details>
+
+</aside>
+
+<script>
+(function() {
+  var searchIndex = null;
+  var lunrIndex   = null;
+  var input       = document.getElementById('search-input');
+  var results     = document.getElementById('search-results');
+  if (!input) return;
+
+  fetch('/search.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      searchIndex = data;
+      lunrIndex = lunr(function() {
+        this.ref('url');
+        this.field('title', { boost: 10 });
+        this.field('tags',  { boost: 5 });
+        this.field('description', { boost: 3 });
+        this.field('content');
+        data.forEach(function(doc) { this.add(doc); }, this);
+      });
+    });
+
+  input.addEventListener('input', function() {
+    var q = input.value.trim();
+    results.innerHTML = '';
+    if (!q || !lunrIndex) return;
+    var hits = lunrIndex.search(q + '*');
+    if (!hits.length) {
+      results.innerHTML = '<li class="search-no-results">No results.</li>';
+      return;
+    }
+    hits.slice(0, 8).forEach(function(hit) {
+      var doc = searchIndex.find(function(d) { return d.url === hit.ref; });
+      if (!doc) return;
+      var li = document.createElement('li');
+      li.innerHTML = '<a href="' + doc.url + '">' + doc.title + '</a>'
+                   + '<span class="search-date">' + doc.date + '</span>';
+      results.appendChild(li);
+    });
+  });
+
+  // Tag filter
+  document.querySelectorAll('.tag-pill').forEach(function(pill) {
+    pill.addEventListener('click', function(e) {
+      e.preventDefault();
+      var tag = pill.dataset.tag;
+      document.querySelectorAll('.post-card').forEach(function(card) {
+        var tags = card.dataset.tags || '';
+        card.style.display = tags.includes(tag) ? '' : 'none';
+      });
+      document.querySelectorAll('.tag-pill').forEach(function(p) {
+        p.classList.toggle('tag-pill-active', p === pill);
+      });
+    });
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" crossorigin="anonymous"></script>

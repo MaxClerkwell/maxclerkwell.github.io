@@ -129,7 +129,8 @@ title: Blog
 <!-- ── Divider ───────────────────────────────────────────── -->
 <div class="divider"><hr></div>
 
-<!-- ── Blog posts ───────────────────────────────────────── -->
+<!-- ── Blog + Sidebar ───────────────────────────────────── -->
+<div class="home-layout">
 <section class="blog-section">
   <p class="section-label">
     Latest Posts &nbsp;
@@ -146,7 +147,7 @@ title: Blog
         | sort: "date" | reverse %}
 
     {% for post in blog_posts %}
-    <div class="post-card">
+    <div class="post-card" data-tags="{{ post.tags | join: ' ' }}">
       <a href="{{ post.url | relative_url }}">
         <h3>{{ post.title }}</h3>
         <div class="post-meta">
@@ -173,3 +174,6 @@ title: Blog
 
   </div>
 </section>
+
+{% include sidebar-home.html %}
+</div>
