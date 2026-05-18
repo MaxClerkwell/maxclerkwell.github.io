@@ -5,13 +5,39 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  {% assign pages = site.pages | where_exp: "p", "p.sitemap != false" %}
-  {% for page in pages %}
-    {% if page.url and page.url != '' %}
+
+  <!-- Homepage -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Static content pages (about, imprint — not xml/txt/assets) -->
+  {% assign static_pages = site.pages
+      | where_exp: "p", "p.layout == 'default' or p.layout == 'page'"
+      | where_exp: "p", "p.sitemap != false" %}
+  {% for page in static_pages %}
   <url>
     <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
-    {% if page.date %}<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>{% endif %}
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-    {% endif %}
   {% endfor %}
+
+  <!-- Blog posts -->
+  {% assign blog_posts = site.pages
+      | where_exp: "p", "p.url contains '/posts/'"
+      | where_exp: "p", "p.date"
+      | where_exp: "p", "p.sitemap != false"
+      | sort: "date" | reverse %}
+  {% for post in blog_posts %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
+
 </urlset>
