@@ -7,7 +7,21 @@ description: >-
   Engineer, physicist, consultant. Covering the full vertical stack of engineering —
   from silicon-level measurement systems and embedded development to monitoring
   infrastructure, university teaching, and application-layer software.
-author: "Stephan Bökelmann"
+author:
+  name: "Stephan Bökelmann"
+  email: "stephan@boekelmann.net"
+  uri: "https://maxclerkwell.github.io"
+
+lang: en
+
+feed:
+  title: "Stephan Bökelmann — From tape-out to TypeScript"
+  subtitle: >-
+    Engineer, physicist, consultant. Silicon-level measurement systems,
+    embedded development, monitoring infrastructure, and application-layer
+    software.
+  path: feed.xml
+  posts_limit: 20
 
 markdown: kramdown
 highlighter: rouge
