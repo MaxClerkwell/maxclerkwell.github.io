@@ -1,0 +1,20 @@
+---
+layout: none
+permalink: /search.json
+---
+[
+  {% assign posts = site.pages
+      | where_exp: "p", "p.url contains '/posts/'"
+      | where_exp: "p", "p.date"
+      | sort: "date" | reverse %}
+  {% for post in posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | absolute_url | jsonify }},
+    "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+    "tags": {{ post.tags | join: " " | jsonify }},
+    "description": {{ post.description | default: "" | jsonify }},
+    "content": {{ post.content | strip_html | strip_newlines | truncate: 5000 | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

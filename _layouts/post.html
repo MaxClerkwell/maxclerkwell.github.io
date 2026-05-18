@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<div class="post-layout">
+
 <article class="post-content">
 
   <a href="{{ '/' | relative_url }}" class="back-link">
@@ -44,4 +46,10 @@ layout: default
     </script>
   </section>
 
-</article>
+  </article>
+
+  {% include sidebar.html %}
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" crossorigin="anonymous"></script>
