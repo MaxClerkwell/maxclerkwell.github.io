@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "DBMS 01: Why a Filesystem Is Not a Database"
+title: "Zero to One: Why a Filesystem Is Not a Database"
 date: 2026-04-23
-tags: [databases, teaching, THGA, SQL]
+tags: [databases, teaching, THGA, SQL, zero-to-one]
 description: "A practicum that makes the case for relational databases by forcing students to feel the pain of querying flat files first."
 permalink: /posts/dbms-01-why-files-are-not-enough/
 ---

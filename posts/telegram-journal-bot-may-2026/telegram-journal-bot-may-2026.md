@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Building a Personal Journal Bot with Telegram, Gemini, and Docker"
+title: "Zero to One: A Personal Journal Bot with Telegram and Gemini"
 date: 2026-05-03
-tags: [telegram, gemini, docker, journaling, llm, python, latex, obsidian]
+tags: [telegram, gemini, docker, journaling, llm, python, latex, obsidian, zero-to-one]
 description: "I spent a day building a Dockerized Telegram bot that turns voice messages and scattered thoughts into a structured journal, Obsidian topic notes, and a compiled LaTeX memoir — and what I learned about LLM APIs along the way."
 permalink: /posts/telegram-journal-bot-may-2026/
 ---

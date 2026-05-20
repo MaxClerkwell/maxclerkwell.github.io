@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Zero to One with VHDL and a Lattice iCEstick"
+title: "Zero to One: VHDL and a Lattice iCEstick"
 date: 2026-05-14
-tags: [fpga, vhdl, icestick, ice40, hardware, digital-design, ghdl, yosys]
+tags: [fpga, vhdl, icestick, ice40, hardware, digital-design, ghdl, yosys, zero-to-one]
 description: "A complete walkthrough of writing VHDL, simulating it with GHDL, and flashing a blinking LED onto a Lattice iCEstick — from zero assumptions to a physical result."
 permalink: /posts/fpga-blinky-vhdl-icestick-may-2026/
 ---
