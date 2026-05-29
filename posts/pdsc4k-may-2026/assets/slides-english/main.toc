@@ -1,0 +1,6 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Data Acquisition}{4}{0}{1}
+\beamer@sectionintoc {2}{Data Warehousing}{10}{0}{2}
+\beamer@sectionintoc {3}{Data Conditioning}{16}{0}{3}
+\beamer@sectionintoc {4}{Data Distribution}{19}{0}{4}
+\beamer@sectionintoc {5}{The Diagram as a Checklist}{24}{0}{5}
