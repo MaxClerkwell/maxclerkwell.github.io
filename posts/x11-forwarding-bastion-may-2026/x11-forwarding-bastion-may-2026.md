@@ -15,7 +15,7 @@ SSH X11 forwarding solves this. The image renders on the remote machine and the 
 
 My homelab sits behind a router with no public IP. Between it and the outside world is Heimdall — a rented server with a public IP address. Heimdall is a **bastion server**: a hardened, publicly reachable machine whose sole job is to be the single entry point into a private network. Nothing in the homelab is exposed directly; all access goes through Heimdall first.
 
-Heimdall and my home machine Qingdao share a WireGuard VPN, which I set up together with [@phillipthecron](https://x.com/phillipthecron). I will write about that separately at some point. The relevant part here is that Heimdall can reach Qingdao over that tunnel, and nobody else can.
+Heimdall and my home machine Qingdao share a WireGuard VPN, which I set up together with [@philippthecron](https://x.com/philippthecron). I will write about that separately at some point. The relevant part here is that Heimdall can reach Qingdao over that tunnel, and nobody else can.
 
 ## Network Topology
 

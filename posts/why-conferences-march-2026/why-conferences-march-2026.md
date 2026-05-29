@@ -55,7 +55,7 @@ One evening I found myself at dinner with **Bjarne Stroustrup** and **Herb Sutte
 
 ![With Bjarne Stroustrup — Kona, 2019](assets/stephan_und_bjarne.png)
 
-**Wrocław, code:dive.** [Shawn Parent](https://twitter.com/shawnpresent) and [Bartosz Milewski](https://twitter.com/BartoszMilewski) ended up with Odin, Tabea, and me in a bar until well past any sensible hour. The conversation went everywhere — category theory, compiler internals, what it means to write software that is honest about what it does. I've learned more in evenings like that than in entire conference days.
+**Wrocław, code:dive.** [Sean Parent](https://sean-parent.stlab.cc) and [Bartosz Milewski](https://twitter.com/BartoszMilewski) ended up with Odin, Tabea, and me in a bar until well past any sensible hour. The conversation went everywhere — category theory, compiler internals, what it means to write software that is honest about what it does. I've learned more in evenings like that than in entire conference days.
 
 ![Bar social at code:dive, Wrocław — the evenings are the real conference](assets/20190202_220352.jpg)
 
