@@ -26,11 +26,8 @@ layout: null
   {% endfor %}
 
   <!-- Blog posts -->
-  {% assign blog_posts = site.pages
-      | where_exp: "p", "p.url contains '/posts/'"
-      | where_exp: "p", "p.date"
-      | where_exp: "p", "p.sitemap != false"
-      | sort: "date" | reverse %}
+  {% include get-blog-posts.html %}
+  {% assign blog_posts = blog_posts | where_exp: "p", "p.sitemap != false" %}
   {% for post in blog_posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
