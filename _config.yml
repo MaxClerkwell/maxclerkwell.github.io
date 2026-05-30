@@ -40,6 +40,8 @@ exclude:
   - Gemfile.lock
   - vendor/
   - .claude/
+  - AGENTS.md
+  - CLAUDE.md
   - "*.sh"
 
 collections:
