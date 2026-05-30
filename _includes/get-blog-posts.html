@@ -1,0 +1,19 @@
+{% comment %}
+  Unified blog post list (hybrid legacy + new collection model).
+
+  - Legacy posts continue to be discovered from site.pages using the original
+    filter. This guarantees that the 26 existing article .md files under
+    posts/<slug>/ remain at their exact historical filesystem paths forever,
+    so all external direct links (raw GitHub, etc.) to them stay valid.
+  - New posts are authored as documents in the `articles` collection
+    (_articles/<slug>.md) and appear via site.articles.
+
+  This include is the single source of truth. Callers that need additional
+  filtering (sitemap != false, feed limit, etc.) apply it after inclusion.
+{% endcomment %}
+
+{% assign legacy_posts = site.pages
+    | where_exp: "p", "p.url contains '/posts/'"
+    | where_exp: "p", "p.date" %}
+
+{% assign blog_posts = legacy_posts | concat: site.articles | sort: "date" | reverse %}

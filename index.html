@@ -141,10 +141,7 @@ title: Blog
     </a>
   </p>
   <div class="post-list">
-    {% assign blog_posts = site.pages
-        | where_exp: "item", "item.url contains '/posts/'"
-        | where_exp: "item", "item.date"
-        | sort: "date" | reverse %}
+    {% include get-blog-posts.html %}
 
     {% for post in blog_posts %}
     <div class="post-card" data-tags="{{ post.tags | join: ' ' }}">

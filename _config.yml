@@ -41,3 +41,15 @@ exclude:
   - vendor/
   - .claude/
   - "*.sh"
+
+collections:
+  articles:
+    output: true
+    permalink: /posts/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "post"

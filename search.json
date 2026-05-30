@@ -3,10 +3,8 @@ layout: none
 permalink: /search.json
 ---
 [
-  {% assign posts = site.pages
-      | where_exp: "p", "p.url contains '/posts/'"
-      | where_exp: "p", "p.date"
-      | sort: "date" | reverse %}
+  {% include get-blog-posts.html %}
+  {% assign posts = blog_posts %}
   {% for post in posts %}
   {
     "title": {{ post.title | jsonify }},

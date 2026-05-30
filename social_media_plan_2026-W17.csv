@@ -1,0 +1,200 @@
+date,channel,format,topic,source_post,draft
+2026-04-20,X / Twitter,thread (7 tweets),Manifesto launch — indicators are not data,ai-gruppe-manifesto,"Tweet 1: Everyone racing to add AI to their factory floor. Nobody asks where the data comes from. 🧵
+
+Tweet 2: Most operators think they're watching their process. They're not. They're watching indicators. Indicators are not data.
+
+Tweet 3: Data pulled from a PLC through a protocol never designed for scale — that's a bottleneck dressed as instrumentation. SAP forms filled by hand — that's a human acting as a transducer. Neither is a real transform.
+
+Tweet 4: The physicist doesn't solve problems in the noisy physical domain. They transform the problem first — into an abstract space where solutions are tractable. That's the Laplace transform. It's also exactly what a monitoring system does.
+
+Tweet 5: Sensor → timestamped data stream → anomaly detection → actuation. You can't skip step one and call the rest AI. You cannot solve in the abstract if your transform is broken.
+
+Tweet 6: We've been building that transform layer for twelve years. Nuclear cooling circuits, rail switching, semiconductor fabs. The gap was never in robotics or LLMs. It was always in the instrument itself.
+
+Tweet 7: The full manifesto is live — on why monitoring is the foundation of the automation wave, and why that wave is the most human project we know: [link]"
+2026-04-20,LinkedIn,long-form post (600–900 words),Why monitoring is the bottleneck nobody in industrial AI talks about,ai-gruppe-manifesto,"Why monitoring is the bottleneck nobody in industrial AI talks about
+
+Every conversation about AI in manufacturing starts in the wrong place.
+
+Companies want predictive maintenance. Anomaly detection. Autonomous process control. All reasonable goals. The first question they ask is: which model should we use?
+
+Wrong question.
+
+The right question is: do you actually have data? Not indicators. Not KPIs aggregated at 15-minute intervals. Not a dashboard that refreshes when someone clicks. Data — continuous, timestamped, calibrated, stored with enough resolution that a model can reason about it.
+
+Most manufacturers don't. They have a PLC talking to a SCADA system through a protocol that was designed before the internet existed. An operator noting readings on a clipboard. A sensor that fires an alarm when a threshold is crossed but records nothing in between.
+
+There is a concept from mathematics I use every day outside of mathematics: the Laplace transform. When a differential equation is unsolvable in its original domain, you transform the problem into an abstract space where it becomes tractable — solve it there, then transform back. A monitoring system does exactly this. Physical world → sensor → time series → model → actuation. The sensor is the transform.
+
+But if the transform is lossy — if data is batched, dropped, manually entered, or simply not collected — nothing downstream can compensate. You cannot solve in the abstract if your transform is broken.
+
+This is not a metaphor for us. At Auto-Intern, we've been building the transform layer for twelve years, in industries where unmonitored processes quickly become very expensive. What we've learned: the gap is almost never in the AI. It's almost always in the instrument.
+
+We published our full position on this today. Link in the first comment.
+
+If you're planning an AI project for your production environment and you haven't answered the data question first, you're building on air. Happy to talk through what that foundation actually looks like."
+2026-04-21,Discord,discussion prompt + opening example,Community seed — monitoring failure stories,ai-gruppe-manifesto,"The manifesto is live: [link]
+
+One line from it that I keep returning to: 'Critical infrastructure that isn't monitored isn't critical — it's just unexamined risk.'
+
+Question for the room: where have you seen a monitoring gap turn into something expensive — in time, money, or credibility? Factory, server room, home network, research lab — anything goes.
+
+I'll start: we had a customer running a cooling circuit on a production line. No continuous temperature logging — just a high-temp alarm that cut the line. The alarm fired. They assumed sensor glitch, reset it, kept running. Three hours later the line was down for two days. The data that would have shown the gradual drift upward over six hours simply didn't exist.
+
+Your turn."
+2026-04-21,Instagram,quote card (static image),Visual pull quote from the manifesto,ai-gruppe-manifesto,"Card text: ""Critical infrastructure that isn't monitored isn't critical — it's just unexamined risk.""
+
+Caption: The manifesto is live. Link in bio. — Auto-Intern Gruppe"
+2026-04-22,X / Twitter,single tweet + rack photo,Dual uplink setup reveal with photo,dual-uplink-feb-2026,"15 people, one office, two uplinks.
+
+We put a Debian box between Starlink and DSL, set two default routes by metric, and let Linux handle the failover automatically. When DSL hiccups, nobody in the office notices. No commercial appliance. No configuration wizard. Just iproute2.
+
+We called it AI-heimdall. [photo]
+
+Full config and writeup: [link]"
+2026-04-22,LinkedIn,technical post (400–600 words),Dual uplink implementation details,dual-uplink-feb-2026,"In February, Philipp Lehmann and I added a second internet uplink to the office.
+
+The problem: 15 people, one DSL line, too many simultaneous video calls. The fix: add Starlink as a secondary path and let the routing layer decide which one to use.
+
+Here's how we did it without buying anything expensive:
+
+A Debian rack PC (hostname: AI-heimdall, named after the Norse watchman who sees all nine worlds — a naming tradition started by Odin Holmes) sits between the two uplinks and the internal network. Three interfaces: eno1 for DSL (static IP into the modem), eno2 for Starlink (DHCP), eno4 for the internal network at 10.42.0.0/16.
+
+Two default routes in the main routing table, differentiated by metric. DSL at metric 1001, Starlink at metric 1003. Linux prefers the lower metric. When DSL drops its gateway, that route disappears from the table and traffic flows over Starlink automatically — no manual intervention, no script, no outage visible to anyone in the office.
+
+We also pre-registered two named tables (starlink and dsl) in /etc/iproute2/rt_tables for future policy routing, so we can eventually pin specific traffic — VPN, video calls — to a specific uplink regardless of which is preferred. That's the next step.
+
+A small Python dashboard reads interface stats for both uplinks and displays real-time throughput on a screen in the office. It's also the sanity check: immediately obvious if everything is routing over one link when it shouldn't be.
+
+The actual engineering was in the details: making sure the Starlink DHCP lease doesn't write a competing default route into the main table and displace DSL. Philipp handled the physical installation and integration with the existing backbone; I handled the routing config.
+
+The result: the bottlenecks are gone. More importantly, when DSL has a bad day, nobody in the office notices.
+
+Full writeup with config details and photos: [link]"
+2026-04-22,YouTube,community post / teaser,Solicit input for upcoming manifesto video,ai-gruppe-manifesto,"The manifesto is live on the blog.
+
+It's the clearest statement of what we're building and why — why monitoring infrastructure matters more than the models sitting on top of it, and what it means to say the transform is broken.
+
+A video version is coming. I want to go deep on the parts that land in text but need a diagram to really click.
+
+What would you want me to spend most time on?
+
+→ The Laplace transform analogy and what it actually means for data pipelines
+→ The installed base argument — why retrofit beats greenfield
+→ How a monitoring system works end to end: sensor to actuation
+→ The philosophical case for automation as liberation
+
+Comment below. Link in description."
+2026-04-23,TikTok,talking-head video (45–90 s),Everyone adds AI — nobody checks the data pipeline,ai-gruppe-manifesto,"[0:00–0:03] Direct to camera: 'Everyone is adding AI to their factory. Almost nobody asks where the data comes from.'
+
+[0:04–0:18] 'A model is only as good as its input. If your data is batched, delayed, or entered by hand — it doesn't matter how sophisticated the model is. Most industrial data pipelines are exactly that: a PLC talking to software through a protocol that predates the internet, or an operator with a clipboard.'
+
+[0:19–0:38] 'Think of it like a transform. You can't solve a differential equation in the noisy physical domain — you move it to an abstract space first. That's the Laplace transform. That's also what a sensor does. That's what a monitoring system does. It's the step that makes computation possible.'
+
+[0:39–0:52] 'The race to add AI to manufacturing is real. The missing step is the instrument. We've been building that layer for twelve years. Link in bio if you want to go deep.'"
+2026-04-23,Instagram,carousel (6 slides),The transform analogy explained visually,ai-gruppe-manifesto,"Slide 1 (cover): ""The step nobody talks about in industrial AI""
+
+Slide 2: ""The physical world is noisy. A vibrating machine, a temperature curve, a pressure spike — these don't arrive clean or structured.""
+
+Slide 3: ""The Laplace transform: when a problem is unsolvable in its original domain, move it into an abstract space. Solve there. Transform back.""
+
+Slide 4: ""A monitoring system does exactly this. Sensor → timestamped stream → anomaly detection → actuation. That's the full chain.""
+
+Slide 5: ""If the sensor is lossy, batched, or missing — nothing downstream fixes it. You cannot solve in the abstract if your transform is broken.""
+
+Slide 6 (CTA): ""We've been building this layer for 12 years. The manifesto is live — link in bio."""
+2026-04-23,Douyin,talking-head video (30–60 s),Adapted TikTok for Chinese platform,ai-gruppe-manifesto,"Same structure as TikTok draft — requires Chinese subtitles and adapted caption. Core hook: '所有人都在工厂里部署AI，但没有人问数据从哪里来。' (Everyone deploys AI in factories, but nobody asks where the data comes from.) Coordinate with bilingual colleague for caption adaptation."
+2026-04-24,X / Twitter,thread (7 tweets),Ten years of conferences — what they're actually for,why-conferences-march-2026,"Tweet 1: I went to my first real conference in 2015. I came back a different engineer. Here's what ten years of attending and organising actually taught me. 🧵
+
+Tweet 2: The main thing conferences give you isn't knowledge. It's the questions you didn't know you needed to ask. You cannot Google your unknown unknowns. A talk puts an idea in front of you. A hallway conversation tells you what that idea means in your situation.
+
+Tweet 3: The hallway track is the real conference. The dinner after the last session is where the collaborations start. Three projects I'm still running today trace back to a table at a restaurant after a conference day.
+
+Tweet 4: At Kona 2019 — ISO C++ Committee meeting — I ended up at dinner with Bjarne Stroustrup and Herb Sutter. The conversation was direct, curious, practical. That kind of exchange only happens when people decide to take the time seriously.
+
+Tweet 5: At code:dive in Wrocław, Shawn Parent and Bartosz Milewski ended up at a bar with Odin, Tabea, and me until well past any sensible hour. Category theory, compiler internals, what it means to write software that's honest. I've learned more in evenings like that than in entire conference days.
+
+Tweet 6: We've been organising emBO++ in Bochum since 2015. Also OpenTapeout, PDSC, KiCon Germany — four editions each. Every one of them started as: 'there should be a space for this conversation.'
+
+Tweet 7: If your company is debating whether to send engineers to conferences: send them. The ROI is real but it runs on a delay — it shows up 18 months later in a project nobody predicted. Full post: [link]"
+2026-04-24,LinkedIn,list post,5 things you only learn at conferences,why-conferences-march-2026,"Five things you only learn at technical conferences — not from documentation
+
+1. What everyone is actually using vs. what they're publicly recommending
+Documentation describes the intended path. Conference hallways describe what actually ships to production. These are often very different.
+
+2. How to calibrate your own skill level
+Sitting in a room full of people who've been thinking about your problem longer than you have is uncomfortable and necessary. It's the fastest way to find the ceiling of your current mental model.
+
+3. The names behind the work
+Open source is written by people with opinions, constraints, and reasons for their decisions. Meeting them makes the documentation make sense in ways it otherwise doesn't.
+
+4. What the next problem is
+The papers describing today's solutions were presented three years ago. Conferences are where you hear about problems that don't have solutions yet — the ones that will define the field in three years.
+
+5. Who to call when you're stuck
+A network of people you've had real conversations with is worth more than a list of connections. Conferences build the former.
+
+We've been organising emBO++ in Bochum for eleven years. The best reason to keep running it is still the conversations nobody planned for.
+
+Full post with ten years of examples: [link]"
+2026-04-24,BiliBili,article / video post,Dual uplink for Chinese engineering audience,dual-uplink-feb-2026,"Article title: 双上行链路：15人办公室的网络冗余方案 (Dual Uplink: A Network Redundancy Solution for a 15-Person Office)
+
+English draft for translation: We replaced single-point internet failure in our office by adding Starlink alongside our existing DSL line, with a Debian routing box in between. Two default routes, differentiated by metric, handle automatic failover without any scripts or commercial appliances. This post covers the Linux routing configuration, the Python monitoring dashboard, and the lessons learned from running this setup for two months.
+
+[Note: translate to Mandarin before posting; include rack photos which perform well on BiliBili hardware/networking content]"
+2026-04-25,TikTok,talking-head video (45–60 s),Sensor vs. monitoring system — the distinction,ai-gruppe-manifesto,"[0:00–0:03] 'What's the difference between a sensor and a monitoring system?'
+
+[0:04–0:22] 'A sensor measures. A monitoring system records, timestamps, calibrates, strips noise, adds context, and delivers something that a model can actually act on. Most factories have sensors. Very few have monitoring systems. The gap is what makes AI in industry so much harder than AI in software.'
+
+[0:23–0:44] 'A raw signal without a time series database, without cleaning, without context — it's not usable. The physicist doesn't just measure. They record, annotate, calibrate, and structure. A monitoring system is the automated physicist.'
+
+[0:45–0:57] 'Yesterday's video explained why this step exists. Today's explains what it actually is. Link in bio for the full piece.'"
+2026-04-25,Instagram,stories (3 frames),Behind-the-scenes of the Heimdall rack setup,dual-uplink-feb-2026,"Frame 1: Rack photo. Caption: 'This is AI-heimdall. Our office gateway box. Named after the Norse watchman who sees all nine worlds — a naming tradition started by @odinthenerd.'
+
+Frame 2: Terminal showing ip a output. Caption: 'eno1 = DSL. eno2 = Starlink. eno4 = internal network (10.42.0.0/16). Two uplinks, one Debian box, automatic failover via routing metrics.'
+
+Frame 3: Python dashboard on screen. Caption: 'Real-time throughput on both links. 15 people, no visible outages since February. Setup post linked in bio.'"
+2026-04-25,Facebook,shared blog post with intro,Manifesto share for broader audience,ai-gruppe-manifesto,"We published a manifesto this week: 'If We Can Measure It, You Can Improve It.'
+
+It's about why monitoring systems — not robots, not language models — are the actual missing step in the automation wave. And about why automation, done right, is one of the most human projects there is.
+
+Three lines that sum it up:
+— 'Machines should do everything that machines can do, so that humans are free to do everything that only humans can do.'
+— 'Critical infrastructure that isn't monitored isn't critical — it's just unexamined risk.'
+— 'You cannot solve in the abstract domain if your transform is broken.'
+
+Full piece at the link."
+2026-04-26,Xiaohongshu,knowledge post (text + diagram image),Industrial AI's missing step — monitoring,ai-gruppe-manifesto,"Title: 工业AI的缺失环节：监控系统 (The Missing Step in Industrial AI: Monitoring Systems)
+
+Post structure (translate to Mandarin before publishing):
+Point 1 — Everyone is adding AI to manufacturing. The first question should be: where does the data come from?
+Point 2 — A sensor measures. A monitoring system records, timestamps, calibrates, and structures. They are not the same.
+Point 3 — The Laplace transform analogy: you must move the problem from the physical domain to the abstract domain cleanly before solving it. If the transform is lossy, nothing downstream helps.
+Point 4 — Most industrial data pipelines are broken at this step. PLC protocols built before the internet, manual clipboard entry, threshold alarms that record nothing between events.
+Point 5 — Retrofitting existing machines (not greenfield) is where most of the real work is. The world runs on installed base.
+
+[Include a simple diagram: physical signal → sensor → time series → model → actuation]"
+2026-04-26,ResearchGate,project update / academic note,Position paper framing for academic audience,ai-gruppe-manifesto,"Auto-Intern Gruppe has published a position paper on the role of monitoring infrastructure in industrial automation and AI deployment: 'If We Can Measure It, You Can Improve It.'
+
+The central argument draws on signal processing principles — specifically domain transformation (analogous to the Laplace transform) — to frame the data pipeline not as auxiliary infrastructure but as the primary epistemological step in any industrial intelligence system.
+
+Key claims relevant to the IIoT and industrial ML literature:
+— Aggregated KPI data is not equivalent to continuous sensor data for anomaly detection or predictive modelling
+— The retrofit problem (instrumenting existing installed base) is methodologically distinct from greenfield deployment and represents the dominant real-world context
+— Proximity between sensing and processing is a physical constraint, not an architectural preference: bandwidth, accuracy, and latency all degrade with distance
+
+Active deployment contexts: large manufacturing, critical infrastructure, defence. Happy to connect with researchers working on time-series data pipelines, industrial anomaly detection, or edge computing architectures.
+
+Full text: [link]"
+2026-04-26,Discord,weekly wrap + forward hook,End-of-week recap and next-week tease,all,"Week recap:
+
+What went live:
+→ Manifesto — 'If We Can Measure It, You Can Improve It': [link]
+→ Dual uplink writeup (AI-heimdall, Starlink, Linux routing): [link]
+→ Conferences post — ten years of emBO++, KiCon, code:dive, and what I actually learned: [link]
+
+If you followed any of the threads this week on X or LinkedIn, the full versions of all three are on the blog.
+
+Coming next week: [teaser — fill in once known]
+
+Question to carry into Monday: what's a process in your world — professional or personal — that you're running blind? No measurement, no data, just intuition and experience. What would change if you could instrument it? Drop it below."

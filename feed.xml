@@ -18,11 +18,8 @@ permalink: /feed.xml
   </author>
   <generator uri="https://jekyllrb.com/">Jekyll</generator>
 
-  {% assign feed_posts = site.pages
-      | where_exp: "item", "item.url contains '/posts/'"
-      | where_exp: "item", "item.date"
-      | sort: "date" | reverse
-      | limit: site.feed.posts_limit | default: 20 %}
+  {% include get-blog-posts.html %}
+  {% assign feed_posts = blog_posts | limit: site.feed.posts_limit | default: 20 %}
 
   {% for post in feed_posts %}
   <entry>
