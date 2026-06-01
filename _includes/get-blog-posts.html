@@ -17,5 +17,6 @@
     | where_exp: "p", "p.date" %}
 
 {% assign legacy_sorted   = legacy_posts    | sort: "date" | reverse %}
-{% assign articles_sorted = site.articles   | sort: "date" | reverse %}
+{% assign articles_filtered = site.articles | where_exp: "a", "a.date <= site.time" %}
+{% assign articles_sorted   = articles_filtered | sort: "date" | reverse %}
 {% assign blog_posts      = articles_sorted | concat: legacy_sorted %}
