@@ -19,9 +19,16 @@
     <div class="sidebar-widget-body tag-cloud">
       {% include get-blog-posts.html %}
       {% assign posts = blog_posts %}
-      {% assign all_tags = posts | map: 'tags' | join: ',' | split: ',' | sort | uniq %}
-      {% for tag in sorted_tags %}
-        {% assign tag_count = all_tags | where_exp: "t", "t == tag" | size %}
+      {% assign all_tags = "" | split: "" %}
+      {% for post in posts %}
+        {% if post.tags %}
+          {% assign all_tags = all_tags | concat: post.tags %}
+        {% endif %}
+      {% endfor %}
+      {% assign all_tags_sorted = all_tags | sort %}
+      {% assign all_tags = all_tags_sorted | uniq %}
+      {% for tag in all_tags %}
+        {% assign tag_count = all_tags_sorted | where_exp: "t", "t == tag" | size %}
         <a href="{{ '/' | relative_url }}#tag-{{ tag | slugify }}"
            class="tag-pill"
            data-tag="{{ tag }}">{{ tag }}<span class="tag-count">{{ tag_count }}</span></a>
