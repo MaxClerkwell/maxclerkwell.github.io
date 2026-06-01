@@ -18,14 +18,8 @@
     </summary>
     <div class="sidebar-widget-body tag-cloud">
       {% include get-blog-posts.html %}
-      {% assign all_tags = "" | split: "" %}
       {% assign posts = blog_posts %}
-      {% for post in posts %}
-        {% for tag in post.tags %}
-          {% assign all_tags = all_tags | push: tag %}
-        {% endfor %}
-      {% endfor %}
-      {% assign sorted_tags = all_tags | sort | uniq %}
+      {% assign all_tags = posts | map: 'tags' | join: ',' | split: ',' | sort | uniq %}
       {% for tag in sorted_tags %}
         {% assign tag_count = all_tags | where_exp: "t", "t == tag" | size %}
         <a href="{{ '/' | relative_url }}#tag-{{ tag | slugify }}"
