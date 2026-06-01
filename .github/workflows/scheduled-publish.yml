@@ -3,6 +3,7 @@ name: Scheduled publish
 on:
   schedule:
     - cron: '0 4 * * *'  # 06:00 CEST (UTC+2)
+  workflow_dispatch:
 
 jobs:
   trigger-deploy:
