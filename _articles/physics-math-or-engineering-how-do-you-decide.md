@@ -1,6 +1,6 @@
 ---
 title: "Physics, Math, or Engineering? How do you decide"
-date: 2026-06-02
+date: 2026-06-01
 tags: [physics, mathematics, engineering, career, education, personal]
 description: "A personal reflection on the real differences between physics, mathematics, and engineering, and how to choose between them when you are standing at the beginning of your studies."
 ---
