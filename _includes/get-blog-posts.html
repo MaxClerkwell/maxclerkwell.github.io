@@ -16,4 +16,6 @@
     | where_exp: "p", "p.url contains '/posts/'"
     | where_exp: "p", "p.date" %}
 
-{% assign blog_posts = legacy_posts | concat: site.articles | sort: "date" | reverse %}
+{% assign legacy_sorted   = legacy_posts    | sort: "date" | reverse %}
+{% assign articles_sorted = site.articles   | sort: "date" | reverse %}
+{% assign blog_posts      = articles_sorted | concat: legacy_sorted %}
