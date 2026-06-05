@@ -3,7 +3,9 @@ layout: post
 title: "Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores"
 date: 2026-01-15
 tags: [auto-intern, hardware, monitoring, rail, PoE, engineering]
-description: "January 2016, the DB Netz AG called. Ten years later, the skAInet-PowerSense is still one of the most technically demanding projects we have ever shipped — and the one that shaped how we build everything since."
+description: "How we built a non-contact PoE power monitor for DB Netz railway switching stations — ten years of E-field sensing, embedded ferrite cores, EMC certification, and the hardware lessons that shaped everything since."
+image: assets/photo_1_2026-04-21_12-42-49.jpg
+keywords: "non-contact voltage measurement, PoE sensor, railway monitoring, EMC certification, E-field sensing, skAInet, DB Netz, PowerSense, industrial IoT"
 permalink: /posts/skainet-powersense-jan-2026/
 ---
 
@@ -40,7 +42,7 @@ The first three were hard. The fourth was the one that kept us up at night.
 
 ![Two bare PCBs: the sensor antenna board (top) and the PoE main board with RJ45 connector (bottom) — before any housing existed](assets/photo_4_2026-04-21_12-42-49.jpg)
 
-## The Problem of Voltage Without Contact
+## How to Measure Voltage Without Touching the Conductor
 
 Here is something most engineers don't think about carefully enough: **voltage is always a potential difference between two points.** There is no such thing as an absolute voltage. You measure it between two references.
 
@@ -60,7 +62,7 @@ The current measurements, by comparison, were trivial. Hall sensors, standard te
 
 ---
 
-## The Housing Problem
+## Why Putting the PCB in a Housing Broke Everything
 
 On the bare PCB, everything worked. Beautiful signals, clean data, happy engineers.
 
@@ -94,7 +96,7 @@ We finished. It took longer than we planned. It always does.
 
 ---
 
-## What This Project Taught Us
+## Ten Years of Hardware Lessons: What skAInet-PowerSense Taught Us
 
 Looking back now, a decade later, the skAInet-PowerSense was not just a product. It was an education.
 

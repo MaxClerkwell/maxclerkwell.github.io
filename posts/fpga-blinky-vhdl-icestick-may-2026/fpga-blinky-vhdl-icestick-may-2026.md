@@ -4,6 +4,8 @@ title: "Zero to One: VHDL and a Lattice iCEstick"
 date: 2026-05-14
 tags: [fpga, vhdl, icestick, ice40, hardware, digital-design, ghdl, yosys, zero-to-one]
 description: "A complete walkthrough of writing VHDL, simulating it with GHDL, and flashing a blinking LED onto a Lattice iCEstick — from zero assumptions to a physical result."
+image: assets/titlepic.jpg
+keywords: "VHDL tutorial, FPGA blinky, Lattice iCEstick, iCE40, GHDL simulation, Yosys synthesis, open source FPGA toolchain, digital logic design"
 permalink: /posts/fpga-blinky-vhdl-icestick-may-2026/
 ---
 
@@ -15,7 +17,7 @@ No prior HDL experience is assumed. If you know what a for-loop is, you have eno
 
 ---
 
-## What is an FPGA, and why does it matter?
+## What Is an FPGA and Why Does It Matter?
 
 A microcontroller runs a program. An FPGA does something fundamentally different: you describe a circuit, and the chip reconfigures its internal wiring to *become* that circuit.
 
@@ -271,7 +273,7 @@ LED D1, blinking at exactly 1 Hz, powered by 24 flip-flops and a handful of LUTs
 
 ---
 
-## What just happened
+## What Just Happened: From VHDL to Physical LED
 
 The LED is blinking because you described a circuit and the FPGA became that circuit.
 

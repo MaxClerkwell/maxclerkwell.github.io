@@ -3,13 +3,15 @@ layout: post
 title: "Ten Years of Conferences: What They're Actually For"
 date: 2026-03-15
 tags: [conferences, community, emBO++, Open-Skunkforce, OSF, cpp, KiCad, reflection]
-description: "I've spent ten years attending and organising technical conferences. Here's what I've actually learned — about unknown unknowns, the hallway track, and why the dinner after the talks is the real event."
+description: "Ten years of attending and organising technical conferences — what they're actually for, why the hallway track beats the programme, and how emBO++ grew from four people to 250. Lessons from Meeting C++, KiCon, GSI, and ISO C++."
+image: assets/stephan_und_bjarne.png
+keywords: "technical conferences, emBO++, Open Skunkforce, KiCon, Meeting C++, conference organisation, developer community, embedded C++"
 permalink: /posts/why-conferences-march-2026/
 ---
 
 In 2015 I went to my first real conference. I came back a different engineer. That sounds dramatic, but it's accurate, and it took me a while to understand why. This post is an attempt to write that down — both for myself, after ten years, and for the companies, universities, and open-source projects that keep asking us at [Open Skunkforce e.V.](https://skunkforce.org) how we think about this.
 
-## Meeting C++, 2015
+## How Meeting C++ 2015 Changed How I Think About Engineering
 
 I went to **Meeting C++ 2015** with my colleague [Odin Holmes](https://x.com/odinthenerd). At that point I thought I was a reasonably competent programmer. I was wrong — not in the way that's demoralising, but in the way that only becomes visible when you're suddenly in a room full of people who have been thinking deeply about problems you haven't encountered yet.
 
@@ -43,7 +45,7 @@ Over the past ten years, roughly:
 
 That is a lot of rooms. A lot of evenings. A lot of hallways.
 
-## The Moments That Stay
+## Three Conference Moments That Changed Something
 
 Three moments from the past decade stand out when I try to articulate what conferences are actually for.
 
@@ -79,7 +81,7 @@ Conferences have not fully recovered since COVID. That's the honest picture. Att
 
 ![emBO++ 2026 — still running, still worth it](assets/PXL_20260320_082116266.MP.jpg)
 
-## The Broader World
+## Beyond Software: PANDA, GSI, and KiCon
 
 Conferences are not only about software. Some of the most formative meetings I've attended were **PANDA and GSI collaboration meetings** at [GSI Helmholtzzentrum für Schwerionenforschung](https://www.gsi.de) in Darmstadt — particle physics, large-scale detector hardware, international teams building instruments that take decades to complete.
 
@@ -97,7 +99,7 @@ Open Skunkforce also runs smaller, focused events throughout the year — user g
 
 ![A smaller OSF evening event — focused format, green lighting, engaged audience](assets/PXL_20231103_182701752.MP.jpg)
 
-## What a Good Conference Actually Is
+## What Makes a Technical Conference Worth Attending
 
 Here is what we have learned from organising events for a decade:
 
@@ -113,7 +115,7 @@ Here is what we have learned from organising events for a decade:
 
 **Staying in the hotel room after the conference is the biggest mistake you can make.** I have made it. Everyone has made it. It is always a mistake.
 
-## What We Offer
+## Conference Organisation by Open Skunkforce e.V.
 
 [Open Skunkforce e.V.](https://skunkforce.org) organises technical conferences in and around Bochum. We handle everything:
 

@@ -3,7 +3,9 @@ layout: post
 title: "EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber"
 date: 2026-04-01
 tags: [hardware, EMC, China, monitoring, PoE, project]
-description: "After 2.5 years of development, our reflow oven monitoring system passed CE, FCC, and CCC certification at NTC in Dongguan — and I learned more in four days than in any lab back home."
+description: "CE, FCC, and CCC certification in Dongguan — four days at NTC test lab with a PoE-based reflow oven monitoring system after 2.5 years of development. What we tested, what we found, and what the anodized housing almost cost us."
+image: assets/photo_7_2026-04-14_14-19-10.jpg
+keywords: "EMC testing, CE certification, FCC certification, CCC certification, Dongguan, NTC lab, PoE monitoring, reflow oven, M12 connector, skainet"
 permalink: /posts/dongguan-emc-march-2026/
 ---
 
@@ -13,13 +15,13 @@ It passed. But the story is more interesting than that.
 
 ![Stopover in Shenzhen — the trip begins](assets/photo_1_2026-04-14_14-19-10.jpg)
 
-## The Project
+## The Project: Reflow Oven Monitoring for Kurtz Ersa
 
 The system was commissioned by **GlobalPoint GmbH**, now part of **Kurtz Ersa GmbH & Co. KG**, one of the leading manufacturers of reflow soldering equipment. The brief: build a monitoring system that attaches to Ersa's reflow ovens and gives operators real-time insight into what is actually happening inside the machine — not what the oven *thinks* is happening, but what the physics says.
 
 The development was handled by [**skainet.io**](https://skainet.io), the engineering office of Auto-Intern GmbH. I served as system architect. [**Odin Holmes**](https://x.com/odinthenerd) owned firmware and PCB layout, and [**Tabea Bökelmann**](https://x.com/tabeatheunicorn) designed and built the frontend. Two and a half years. A lot of iteration.
 
-## What the System Does
+## System Architecture: PoE, Linux, and 36-Point Temperature Measurement
 
 The core of the system is a central compute module — a compact Linux box with a quad-core processor and more RAM than you would expect for its size. It has two separate Ethernet interfaces: one dedicated WAN uplink, and one connected to an integrated switch chip that exposes seven downstream ports, all of them Power over Ethernet.
 
@@ -36,7 +38,7 @@ The compute module auto-detects whatever is connected, loads the calibration fil
 
 Travelling with professional electronics across borders comes with its own paperwork. I covered the Peli case setup and the ATA Carnet process in a [separate post](/posts/ata-carnet-china-travel/).
 
-## The Test Setup
+## EMC Test Setup: CE, FCC, and CCC at NTC Dongguan
 
 The lab was **NTC — Nore Detection Technology Co., Ltd** in Dongguan. We tested against three regulatory frameworks: **CE** (Europe), **FCC** (USA), and **CCC** (China). The full test sequence ran over four days:
 
@@ -56,7 +58,7 @@ Everything came back green.
 
 ![Full test bench at NTC — compute module, sensor nodes, M12 PoE cables, ThinkPad for monitoring](assets/photo_7_2026-04-14_14-19-10.jpg)
 
-## The One Finding
+## The One Finding: Anodized Housing and M12 Connector Grounding
 
 During the test we noticed that the M12 connectors on the downstream devices did not have adequate coupling to their aluminium housings. The anodized surface was acting as an insulator between the connector shell and the enclosure — not ideal when you are trying to maintain a continuous shielded path.
 

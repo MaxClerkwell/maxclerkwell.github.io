@@ -3,7 +3,8 @@ layout: post
 title: "The Recursion Problem in Relational Algebra"
 date: 2026-04-24
 tags: [databases, teaching, THGA, relational-algebra]
-description: "Relational algebra is clean, powerful, and deliberately limited. Here is where that limit bites you."
+description: "Relational algebra cannot express recursive queries — here is why transitive closure is outside the algebra's scope, and what SQL's WITH RECURSIVE actually means."
+keywords: "relational algebra, recursion, transitive closure, WITH RECURSIVE, CTE, SQL theory, org chart query, graph database"
 permalink: /posts/relational-algebra-recursion-problem/
 math: true
 ---
@@ -22,7 +23,7 @@ $$\sigma_{\text{manager\_id} = 42}(\text{Employee})$$
 
 Done. One selection operation, one pass over the data.
 
-## Where It Breaks Down
+## Where Relational Algebra Breaks Down: Recursive Queries
 
 Now consider a different question: *Find all employees who report to manager 42, directly or indirectly — the entire subtree of the org chart.*
 
@@ -41,7 +42,7 @@ But how many levels deep is the hierarchy? You don't know. And if you did, the q
 
 This is not a gap that got overlooked. Relational algebra was designed around closed-form expressions precisely because that constraint is what makes them analyzable and optimizable. Recursion requires a fixed point — "keep going until the result stops changing" — and that is fundamentally outside the algebra's scope.
 
-## The Standard Answer: A Necessary Compromise
+## SQL WITH RECURSIVE: A Necessary Compromise Beyond Relational Algebra
 
 SQL introduced `WITH RECURSIVE` (common table expressions, CTE) specifically to fill this gap. It works. For org charts, bill-of-materials trees, network routing tables, and any other recursive structure, it is the right tool.
 

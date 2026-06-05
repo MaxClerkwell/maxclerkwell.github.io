@@ -4,6 +4,7 @@ title: "Are Machines Conscious? A Snapshot"
 date: 2026-05-05
 tags: [consciousness, AI, philosophy, cognition, mind]
 description: "What does consciousness mean — and where on that spectrum do beetles, dogs, humans, and language models sit? No final answers, but an honest attempt to think the question through."
+keywords: "machine consciousness, AI sentience, hard problem of consciousness, are LLMs conscious, philosophy of mind, cognitive science, language models"
 permalink: /posts/machine-consciousness-may-2026/
 math: true
 ---
@@ -70,7 +71,7 @@ This has consequences: if consciousness has to be trained, if it develops across
 
 ---
 
-## The Hard Problem and the Inner Stage
+## The Hard Problem of Consciousness
 
 Here I encounter a limit I want to name honestly.
 
@@ -84,7 +85,7 @@ Giulio Tononi's Integrated Information Theory (IIT) attempts to make consciousne
 
 ---
 
-## Principally Possible, But Not Yet
+## Could Machines Ever Be Conscious?
 
 Here is my own position, as clearly as I can state it:
 

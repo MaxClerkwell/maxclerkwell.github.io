@@ -4,6 +4,7 @@ title: "Viewing Plots from My Homelab Over SSH X11 Forwarding"
 date: 2026-05-13
 tags: [linux, ssh, x11, networking, homelab, bastion, wireguard]
 description: "How to forward X11 through a bastion server to display images and plots from a home machine on a university workstation, without copying files."
+keywords: "X11 forwarding SSH, bastion server X11, SSH jump host display, homelab remote plotting, WireGuard SSH X11, Linux remote GUI"
 permalink: /posts/x11-forwarding-bastion-may-2026/
 ---
 
@@ -121,7 +122,7 @@ feh plot.jpg        # lightweight viewer
 
 No file transfer. The image renders on Qingdao, the window appears on pc54.
 
-## How Well Does It Actually Work
+## How Well Does X11 Forwarding Over SSH Actually Perform?
 
 For static images — plots, diagrams, anything that just needs to be displayed — the latency is irrelevant. The window opens, you look at it, you close it. Two SSH hops add no meaningful delay to that.
 
@@ -135,6 +136,6 @@ SSH has two modes for X11 forwarding. `ForwardX11 yes` (or `-X`) applies securit
 
 `ForwardX11Trusted yes` did not work reliably in my setup. `ForwardX11 yes` did. The more cautious default turned out to also be the one that works.
 
-## Why Bother
+## Why Use X11 Forwarding Instead of Copying Files?
 
 Most of my work on Qingdao stays in the terminal. But every now and then a matplotlib figure or a C++ rendering comes out and I want to glance at it without breaking stride. This setup costs nothing to run, requires no extra ports or services, and is already there once SSH is configured. For the occasional Vivado session it has also saved me from needing a second license. Not a tool I reach for every day — but exactly right for what it does.

@@ -3,7 +3,9 @@ layout: post
 title: "OmnAIScope: A USB Oscilloscope for Automotive Diagnostics"
 date: 2025-08-28
 tags: [hardware, automotive, oscilloscope, RP2040, KiCad, aw4null, open-access]
-description: "How a small aluminium cylinder with a BNC and a USB-C port is changing how independent car workshops do electrical diagnostics — and why the synchronisation trick in firmware is the interesting part."
+description: "OmnAIScope is an open-access USB oscilloscope for automotive diagnostics, built on RP2040 with multi-channel USB synchronisation — no hardware trigger needed. How it works, the server architecture, and where to get it."
+image: assets/early_prototype.jpg
+keywords: "USB oscilloscope, automotive diagnostics, RP2040, OmnAIScope, multi-channel synchronisation, KiCad, open hardware, car workshop diagnostics"
 permalink: /posts/omnaiscope-august-2025/
 ---
 
@@ -11,7 +13,7 @@ The **OmnAIScope** is a single-channel USB oscilloscope designed for automotive 
 
 ![Four OmnAIScope prototypes — BNC input on top, USB-C on the bottom](assets/early_prototype.jpg)
 
-## The Hardware
+## OmnAIScope Hardware: RP2040, BNC, and Waterproof Aluminium Housing
 
 The current prototype is built around an **RP2040** microcontroller. The specs are deliberately modest:
 
@@ -26,7 +28,11 @@ That's it. From the outside it looks like a chunky BNC barrel adapter. The simpl
 
 All PCB designs were done in **KiCad**. That workflow held up well throughout the project.
 
-The scope has no revision designation yet — this is still beta hardware. It is, however, already available: [order it directly from Auto-Intern](https://www.auto-intern.de/shop/diagnose-komplettsysteme/281/omnaiscope-tragbares-usb-oszilloskop-fuer-praezise-messungen-beta-version?c=114).
+The scope has no revision designation yet — this is still beta hardware. It is, however, already available: [order it directly from Auto-Intern](https://www.auto-intern.de/shop/diagnose-komplettsysteme/281/omnaiscope-tragbares-usb-oszilloskop-fuer-praezise-messungen-beta-version?c=114) or [on Amazon](https://www.amazon.de/-/en/OmnAIScope-AUTO-INTERN-Resolution-Scriptbar/dp/B0DY1FJDPC/).
+
+![OmnAIScope USB oscilloscope with BNC probe cable — red anodised aluminium housing](assets/omnaiscope-retail.jpg)
+
+![OmnAIScope complete kit — scope, BNC adapter, USB cable, probe, and accessories in carry case](assets/omnaiscope-kit.jpg)
 
 ## Multi-Channel Synchronisation Without a Hardware Trigger
 
@@ -38,7 +44,7 @@ The result: **arbitrary numbers of scopes synchronised to ±half a USB frame** �
 
 There is a small latency between measurement and display while the server assembles and aligns the packets, but it remains imperceptible in normal use.
 
-## The Server Layer
+## Server Architecture: REST and WebSocket API for Waveform Data
 
 Each OmnAIScope connects via USB to a host machine running a local server process. That server:
 
@@ -54,7 +60,7 @@ This means the frontend — or any other application — doesn't speak directly 
 
 The system has been used for real diagnostic measurements, stored in a CEPH cluster operated jointly with THGA Bochum. Signals captured so far include compression cycles, fuel pre-feed pump waveforms, and common-rail pressure signals. The data has been used to evaluate various classification and analysis approaches. That analysis is out of scope for this post — the point here is that the hardware and server layer work, and the data is useful.
 
-## The Paper
+## Open-Access Research Paper: autowerkstatt4null
 
 The full context — the automotive diagnostic landscape, the federated architecture, the data flow from scope to AI service to technician UI — is written up in the **autowerkstatt4null overview paper**. It is available on [GitHub](https://github.com/nabla-B/paper_aw4null-overview) and [ResearchGate](https://www.researchgate.net/publication/394930242_autowerkstatt4null_An_Off-Board-Diagnostics_Ecosystem_for_Car-Workshops), and nowhere else. No journal paywall, no publisher fee.
 
@@ -74,4 +80,4 @@ I'm also watching [**@jlcjak**](https://x.com/jlcjak) on X closely — he's work
 
 ---
 
-*OmnAIScope beta is available at [auto-intern.de](https://www.auto-intern.de/shop/diagnose-komplettsysteme/281/omnaiscope-tragbares-usb-oszilloskop-fuer-praezise-messungen-beta-version?c=114). The paper is at [github.com/nabla-B/paper_aw4null-overview](https://github.com/nabla-B/paper_aw4null-overview).*
+*OmnAIScope is available at [auto-intern.de](https://www.auto-intern.de/shop/diagnose-komplettsysteme/281/omnaiscope-tragbares-usb-oszilloskop-fuer-praezise-messungen-beta-version?c=114) and on [Amazon](https://www.amazon.de/-/en/OmnAIScope-AUTO-INTERN-Resolution-Scriptbar/dp/B0DY1FJDPC/). The paper is at [github.com/nabla-B/paper_aw4null-overview](https://github.com/nabla-B/paper_aw4null-overview).*

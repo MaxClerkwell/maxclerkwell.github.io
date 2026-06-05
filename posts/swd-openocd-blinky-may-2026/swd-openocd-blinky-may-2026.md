@@ -4,6 +4,8 @@ title: "Zero to One: Fun with SWD"
 date: 2026-05-20
 tags: [embedded, stm32, openocd, swd, hardware, beginners, zero-to-one]
 description: "You do not need to write a single line of C to talk to a microcontroller. With OpenOCD and a telnet connection you can toggle GPIO pins directly from your terminal — and that is exactly how we build a blinky on an STM32F303K8 Nucleo-32."
+image: assets/screenshot.png
+keywords: "SWD OpenOCD tutorial, STM32 blinky, Serial Wire Debug, GPIO toggle telnet, STM32F303 Nucleo, embedded beginner, OpenOCD TCL"
 permalink: /posts/swd-openocd-blinky-may-2026/
 ---
 
@@ -15,7 +17,7 @@ This post shows how to do exactly that on an [**STM32F303K8 Nucleo-32**](https:/
 
 ---
 
-## What is SWD?
+## What Is SWD? Serial Wire Debug Explained
 
 **Serial Wire Debug** (SWD) is a two-wire protocol — `SWDIO` (data) and `SWDCLK` (clock) — defined by ARM for Cortex-M processors. It gives a debug host on your PC read and write access to the entire address space of the microcontroller: Flash, RAM, and every peripheral register.
 
@@ -246,7 +248,7 @@ LD3 blinks ten times with a 500 ms period. No compiler, no linker, no flashing.
 
 ---
 
-## What just happened?
+## What Just Happened: SWD, Memory Mapping, and GPIO
 
 The CPU was halted with `reset halt`. It executed zero instructions of firmware during the whole demo. Everything we did was OpenOCD writing directly to peripheral registers over SWD. The ST-Link bridge carried the writes from your terminal into the silicon.
 

@@ -3,7 +3,9 @@ layout: post
 title: "KiCon Europe 2024: Bochum Goes International"
 date: 2024-09-20
 tags: [KiCad, conference, Bochum, hardware, open-source, KiCon, Open-Skunkforce]
-description: "After four KiCon Germany editions, we scaled up to KiCon Europe 2024 — 150 people in the Rotunde Bochum, Wayne Stambaugh and Seth Hilbrand flying in for the first time, and a programme that felt genuinely broad."
+description: "KiCon Europe 2024 in Bochum — 150 engineers and designers, KiCad lead developers Wayne Stambaugh and Seth Hilbrand on stage, talks on open hardware, PCB design, and KiCad development. Full recap and YouTube playlist."
+image: assets/PXL_20240919_072728340.MP.jpg
+keywords: "KiCon Europe 2024, KiCad conference, open source hardware, PCB design conference, Open Skunkforce, Bochum"
 permalink: /posts/kicon-europe-2024/
 ---
 
@@ -60,7 +62,7 @@ All talks are recorded and available in the [**KiCon Europe 2024 playlist on You
 - *Clearance and creepage for safety* — Fabien Corona
 - *The KiCon Electronic Badge* — Michael MSvB
 
-## What Struck Me
+## Is KiCon Europe Worth Attending?
 
 The breadth of the crowd was the thing I hadn't fully anticipated. Hobbyists who build one board a year sat next to engineers running production lines. People came from well outside Germany — some from places where there's no local KiCad community at all. The programme reflected that: there was something for someone picking up KiCad for the first time and something for people filing bug reports against the routing engine.
 

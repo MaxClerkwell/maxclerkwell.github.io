@@ -3,7 +3,9 @@ layout: post
 title: "Dual Uplink for 15 People: Starlink, Heimdall, and Linux Routing"
 date: 2026-02-27
 tags: [networking, Linux, Starlink, failover, infrastructure, Debian, sysadmin]
-description: "Our office network was struggling under 15 people. Philipp and I added a second uplink via Starlink in February — with automatic failover through Linux routing and a small Python dashboard to monitor both links."
+description: "How to set up dual uplink failover for an office network using Linux routing, Starlink, and metric-based default routes — with a Python dashboard to monitor both links in real time."
+image: assets/PXL_20260306_175202894.jpg
+keywords: "dual uplink failover, Linux routing, Starlink, metric-based routing, ip route, Debian networking, two ISP failover, office network"
 permalink: /posts/dual-uplink-feb-2026/
 ---
 
@@ -11,7 +13,7 @@ At some point, one internet connection isn't enough. We hit that point when 15 p
 
 Philipp is our server administrator — still working on his bachelor's degree, but already operating at a level that leaves many professional admins behind. Together we've set up mesh backhauls, VPNs, intranets, a Kubernetes cluster, Ceph storage, Keycloak for all our internal services — and quite a bit more. If a service runs in our office, Philipp either built it or knows every corner of it. The network upgrade in February was one more chapter in a long list.
 
-## The Starting Point
+## The Problem: One Uplink for 15 People
 
 Our existing network was a standard setup: one uplink, backbone switches behind it, everything running over that single path. It works — until it doesn't. Either because bandwidth runs out, or because the provider has a bad day. We'd had both.
 
@@ -19,7 +21,7 @@ The fix was obvious: add a second uplink. We went with **Starlink** — quick to
 
 The actual goal was resilience: if one link goes down, the office keeps running without anyone having to intervene.
 
-## Heimdall
+## AI-Heimdall: The Linux Router Between Two Uplinks
 
 Between the two uplinks and the existing backbone switches we added a small new rack. Inside: a Debian rack PC, hostname **AI-heimdall**.
 
@@ -35,7 +37,7 @@ For the future, two named tables are already registered in `/etc/iproute2/rt_tab
 
 ![`ip a` on AI-heimdall — eno1 (DSL), eno2 (Starlink), and eno4 (internal network) all active](assets/PXL_20260306_205143846.jpg)
 
-## The Dashboard
+## Python Dashboard: Monitoring Both Uplinks in Real Time
 
 To see what is actually going over which link at any given moment, I wrote a small Python dashboard. It reads the interface statistics for both uplinks and displays throughput and utilisation in real time — simple enough to leave running on a screen in the office.
 
@@ -43,7 +45,7 @@ To see what is actually going over which link at any given moment, I wrote a sma
 
 It also served as a practical sanity check: the dashboard makes it immediately obvious if everything is routing over one link when it shouldn't be, or if something is wrong.
 
-## What It Changed
+## Results: Invisible Failover in a 15-Person Office
 
 The bottlenecks are gone — and when the DSL line has a hiccup, nobody in the office notices. That's the real gain: not more bandwidth on paper, but reliability in practice.
 
