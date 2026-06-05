@@ -3,7 +3,9 @@ layout: post
 title: "If We Can Measure It, You Can Improve It"
 date: 2026-04-20
 tags: [manifesto, monitoring, automation, auto-intern, philosophy]
-description: "A manifesto on why monitoring systems are the foundation of human liberation — and why we build them."
+description: "Why we build monitoring systems — the case for industrial automation as human liberation, retrofit over greenfield, and why the sensor is the critical missing link between AI and the physical world."
+image: assets/intro-bild.jpg
+keywords: "industrial monitoring, automation, retrofit sensors, PoE sensor, Industry 4.0, predictive maintenance, Auto-Intern, skainet, manufacturing intelligence"
 permalink: /posts/ai-gruppe-manifesto/
 ---
 
@@ -27,7 +29,7 @@ This is why we build what we build.
 
 ---
 
-## The Uncomfortable Truth
+## The Uncomfortable Truth About Automation and Jobs
 
 Most people fear automation because they think in zero-sum terms: machines take jobs, humans starve. This is wrong — historically wrong and philosophically wrong.
 
@@ -58,7 +60,7 @@ We work only on projects that move humanity toward a state where more people can
 
 ---
 
-## The Transform
+## The Laplace Transform as Engineering Philosophy
 
 There is a concept in mathematics that I use every day outside of mathematics: **the Laplace transform**.
 
@@ -84,7 +86,7 @@ You cannot solve problems in the abstract domain if your transform is lossy, del
 
 ---
 
-## The Instrument
+## The Instrument: Why PoE-Native Sensors Change Everything
 
 We believe the sensor must be native to the network.
 
@@ -96,7 +98,7 @@ Where network infrastructure does not reach, we go wireless: WiFi with battery, 
 
 ---
 
-## The Installed Base Is the World
+## Retrofit Over Greenfield: Why the Installed Base Is the World
 
 We focus on retrofit. Not greenfield.
 
