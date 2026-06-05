@@ -3,7 +3,8 @@ layout: post
 title: "PCB Design Starts With a README"
 date: 2025-12-10
 tags: [hardware, PCB, KiCad, PlantUML, block-diagram, workflow, documentation, version-control, LLM]
-description: "Before opening KiCad, before ordering a single component, I create a GitHub repo, write a README, and let an LLM turn it into a block diagram. Here is why that order matters, what the README should contain, and how the whole thing works in practice."
+description: "Before opening KiCad, create a README and let an LLM generate a PlantUML block diagram. Why writing design intent first prevents costly PCB mistakes — with a worked STM32F7 example."
+keywords: "PCB design workflow, PlantUML, block diagram, KiCad, STM32F7, design intent, LLM PCB, version control hardware"
 permalink: /posts/pcb-block-diagrams-december-2025/
 ---
 
@@ -11,7 +12,7 @@ The most expensive mistake you can make in PCB design is building the wrong boar
 
 Both mistakes are preventable with the same tool: a plain text file in a version-controlled repository, written before any schematic work begins.
 
-## The Workflow
+## PCB Design Workflow: README Before Schematic
 
 The process is simple enough to describe in a few steps, but the discipline behind it takes some practice.
 
@@ -33,7 +34,7 @@ This produces an SVG you can embed in the README, open in a browser, or share wi
 
 **Step 6 — Iterate.** The LLM gets it mostly right, but not completely right. That is expected and fine. The `.puml` file is a plain text format — editing it manually is quick, and the structure of PlantUML component diagrams is easy to learn in an afternoon. You can also feed the LLM a corrected version and ask it to extend or refine specific sections. Because the whole conversation context is anchored to a written document, the iterations are precise rather than speculative.
 
-## Why This Order Matters
+## Why Writing a README Before the Schematic Matters
 
 Writing the README first is not about documentation. It is about thinking.
 
@@ -43,7 +44,7 @@ It also creates something tangible to discuss. Before presenting a schematic to 
 
 At [Auto-Intern](https://auto-intern.de) and [Open Skunkforce](https://skunkforce.org), we use this process for every board we build. The block diagram is the entry point. The schematic is what follows after everyone agrees on the entry point.
 
-## What the README Should Contain
+## PCB README Template: Seven Chapters
 
 Seven chapters cover the design intent at the right level of detail for the first-pass diagram:
 
@@ -61,7 +62,7 @@ Seven chapters cover the design intent at the right level of detail for the firs
 
 **7. Open Questions** — a checklist of everything not yet decided. Part selection, firmware protocol, power sequencing, whether an external reference is needed. These become the agenda for the first design review.
 
-## A Worked Example
+## Worked Example: STM32F7 USB-ADC Multiplexer Board
 
 Here is what this looks like for a real board we built: an STM32F7 with a USB-C interface, an I2C-controlled analog multiplexer switching ten ADC channels, with identical differential frontend electronics on each channel, and a power supply generating 3.3 V and 1.7 V from USB 5 V.
 
@@ -79,7 +80,7 @@ This took two LLM iterations to get right. The first pass placed the mux inside 
 
 That is the correct way to think about the LLM's role here: it drafts, you correct. The written document is what makes the correction precise. You are not redescribing the board — you are pointing at a specific node in a diagram whose structure the LLM already understands from your README.
 
-## The PlantUML Source
+## PlantUML Source: How to Write a PCB Block Diagram
 
 The full source file is committed to the repository at `assets/stm32f7-adc-board.puml`. A few things worth noting about the structure:
 
