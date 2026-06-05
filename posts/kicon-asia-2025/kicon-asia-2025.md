@@ -3,7 +3,9 @@ layout: post
 title: "KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen"
 date: 2025-11-15
 tags: [KiCad, wire-bonding, hardware, conference, Shenzhen, particle-physics, KiCon]
-description: "I gave a talk on wire bonding at KiCon Asia 2025 in Shenzhen — two years of bonding CLICpix v3, MuPix8, and MuPix10 with a Delvotec bonder, condensed into 25 minutes."
+description: "Talk at KiCon Asia 2025 in Shenzhen on wire bonding CLICpix and MuPix detector chips — two years of hands-on bonding with a Delvotec, condensed into 25 minutes. Slides and video included."
+image: assets/photo_8_2026-04-15_13-23-32.jpg
+keywords: "wire bonding, KiCon Asia 2025, Shenzhen, CLICpix, MuPix, HV-MAPS, Delvotec, particle physics detector, KiCad conference"
 permalink: /posts/kicon-asia-2025/
 ---
 
@@ -25,7 +27,7 @@ The laptop slide below shows where the talk lived — somewhere between a partic
 
 ![Dell laptop showing wire bonding slides — CLICpix and MuPix microscope images](assets/photo_5_2026-04-15_13-23-32.jpg)
 
-## Slides
+## Wire Bonding Slides: Download PDF
 
 The slides are available openly. You can view them below or [download the PDF directly](assets/slides.pdf).
 
@@ -39,11 +41,11 @@ If you want to see what the actual bonding process looks like — this is a shor
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/l0TbzeoqFSs" title="Wire bonding — CLICpix on PCB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:6px; margin: 1em 0;"></iframe>
 
-I also gave a version of this talk at **KiCon Europe** earlier in the year. The content overlaps, but the European version goes into more depth on some of the failure modes:
+I also gave a version of this talk at [**KiCon Europe 2024**](/posts/kicon-europe-2024/) earlier in the year. The content overlaps, but the European version goes into more depth on some of the failure modes:
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/dNBwY7L6niI" title="Wire bonding — KiCon Europe talk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:6px; margin: 1em 0;"></iframe>
 
-## The Conference
+## What Makes KiCon Asia Different from European Conferences
 
 KiCon Asia was genuinely different from European conferences — denser, more commercially oriented, with a much higher proportion of hardware people who are adjacent to manufacturing at scale. The Huaqiu co-organisation showed in the programme: several talks touched on the bridge between design and production in ways that feel abstract at European events but are immediate here.
 
@@ -55,7 +57,7 @@ Peter is the author of [**KiCad Like a Pro**](https://www.amazon.com/KiCad-Like-
 
 ![The prize koala, sitting on the KiCad × Huaqiu conference folder](assets/photo_4_2026-04-15_13-23-32.jpg)
 
-## Shenzhen
+## Shenzhen: Electronics Manufacturing Capital of the World
 
 It wouldn't be my last time in China — a few months later I was back in [Dongguan for EMC testing](/posts/dongguan-emc-march-2026/). Shenzhen stands on its own regardless: more polished than its neighbour city, more international, the skyline is genuinely impressive at night.
 
