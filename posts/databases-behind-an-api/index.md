@@ -3,13 +3,14 @@ layout: post
 title: "A Database Is Not an API"
 date: 2026-04-24
 tags: [databases, architecture, FastAPI, Keycloak, nerd_force1]
-description: "Why we never expose a database directly — and what we put in front of it instead."
+description: "Why we never expose a database directly — how to layer FastAPI, Keycloak, and PostgreSQL for clean access control, testable endpoints, and a stable client interface."
+keywords: "database API architecture, FastAPI PostgreSQL, Keycloak authentication, database access control, REST API database, nerd_force1"
 permalink: /posts/databases-behind-an-api/
 ---
 
 When we set up databases for clients at [nerd_force1](https://nerd-force1.com), one rule holds without exception: the database is never the outermost layer. This post explains why, and what we put in front of it instead.
 
-## The Temptation of Direct Access
+## Why Exposing a Database Directly Is a Mistake
 
 Every relational database ships with access control. MySQL has users and privileges. PostgreSQL has roles and schemas. You can, technically, hand a client a connection string and call it done.
 
@@ -38,7 +39,7 @@ Database (PostgreSQL / MySQL — never directly reachable from outside)
 
 Keycloak handles authentication and issues tokens. FastAPI validates those tokens, enforces authorization rules, and routes requests to the appropriate query. The database receives only parameterized queries from a trusted service account. No client ever touches a connection string.
 
-## Why This Holds Up
+## Why the API Layer Holds Up Over Time
 
 **The database stays clean.** Schema design, normalization, and indexing are not polluted by access-control workarounds. The data model reflects the domain, not the security requirements.
 
