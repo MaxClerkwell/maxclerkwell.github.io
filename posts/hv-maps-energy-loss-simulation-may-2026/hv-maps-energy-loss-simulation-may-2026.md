@@ -5,6 +5,8 @@ date: 2026-05-18
 tags: [geant4, simulation, particle-physics, hv-maps, silicon-detector, antiproton, hesr, panda, fair, bethe-bloch]
 math: true
 description: "A first-principles walkthrough of using Geant4 to simulate how much energy an antiproton deposits in a thin HV-MAPS silicon sensor — including a hand-worked Bethe-Bloch example, the Landau distribution, and why this matters for detector design before you ever see a beam."
+image: assets/me-being-anti-proton.jpg
+keywords: "Geant4 simulation, HV-MAPS, antiproton energy loss, Bethe-Bloch, Landau distribution, silicon detector, PANDA experiment, FAIR, particle physics simulation"
 permalink: /posts/hv-maps-energy-loss-simulation-may-2026/
 ---
 
@@ -16,7 +18,7 @@ That same commitment to antimatter is also why I spent a recent weekend setting 
 
 ---
 
-## What is HV-MAPS?
+## What Is HV-MAPS? High Voltage Monolithic Active Pixel Sensors
 
 A conventional hybrid pixel detector is two separate chips glued and bump-bonded together: a sensor chip that collects charge, and a readout ASIC that processes it. HV-MAPS — High-Voltage Monolithic Active Pixel Sensor — collapses both into a single piece of standard CMOS silicon. A high reverse bias voltage (typically 60–120 V) is applied to the substrate, depleting a thin layer directly beneath each pixel cell; ionising particles crossing this depletion zone generate electron-hole pairs that are swept to the collection electrode by the built-in electric field. Because everything lives in one die, the material budget is minimal and no bump-bonding is needed — which matters enormously in tracking detectors where every fraction of a radiation length degrades track resolution.
 
@@ -174,7 +176,7 @@ The thickness range reflects real production. HV-MAPS chips come out of the fab 
 
 ---
 
-## Results: the Landau distribution
+## Simulation Results: The Landau Distribution of Energy Deposition
 
 The output is a CSV histogram of energy deposition per event. After running the sweep across the full HESR momentum range and the expected thickness range, I wrote a short Python script to pull the MPV and mean from each histogram and render the results as 3D surface plots — shown in the carousel above.
 
