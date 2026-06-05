@@ -6,7 +6,7 @@ description: "Kant draws a sharp line between acting from your own reason and ac
 keywords: "Kant autonomous will, heteronomous will, individuation, Jung archetypes, categorical imperative, Freud superego, moral philosophy, self-determination"
 ---
 
-A few weeks ago I sat in the waiting area outside a courtroom at the Bochum district court. I was there as a witness. The room was empty. The court had placed reading material on the chairs (phones are more or less prohibited in that part of the building), and one of the items was a copy of Kant's *Groundwork of the Metaphysics of Morals*.
+This morning I sat in the waiting area outside a courtroom at the Bochum district court. I was there as a witness. The room was empty. The court had placed reading material on the chairs (phones are more or less prohibited in that part of the building), and one of the items was a copy of Kant's *Groundwork of the Metaphysics of Morals*.
 
 I had not picked up Kant since highschool. Back then it was homework. Now, sitting alone in that silent corridor, I opened it and felt something I had not expected: the book hit differently. Not because the words had changed. Because I had.
 
@@ -58,7 +58,7 @@ This is not dishonesty; it is care. But it comes with a consequence. If those si
 
 The question is what happens next.
 
-In many people, nothing happens. The law absorbed in childhood becomes the law of adulthood, and it is never examined. The rules instilled by a particular family, church, or culture are simply carried forward as if they were universal truths. This is Kant's heteronomy operating at full scale: acting according to an externally given law, without ever asking where it came from or whether it can be endorsed on its own terms.
+In some people, nothing happens. The law absorbed in childhood becomes the law of adulthood, and it is never examined. The rules instilled by a particular family, church, or culture are simply carried forward as if they were universal truths. This is Kant's heteronomy operating at full scale: acting according to an externally given law, without ever asking where it came from or whether it can be endorsed on its own terms.
 
 The goal, Kant's goal, and I think it is a real goal, is something different. It is to move from that inherited starting point toward something genuinely your own. Not by discarding everything you were given, which would leave you with nothing. But by examining it, questioning it, comparing it with other traditions, testing it against experience, and gradually building an inner standard that you can actually stand behind.
 
@@ -98,17 +98,19 @@ This is why I no longer think it is useful to approach these texts with the ques
 
 I was raised in a strongly Catholic household. For a long time, the framework I inhabited was not one I had examined. It was simply the water I swam in: the calendar of feast days, the moral language, the sense that certain things were simply right or wrong without needing justification.
 
-When I began to examine it, what I found first was the dogma. Things accepted not because they had been thought through, but because they had been handed down. That discovery was genuinely disappointing. Not because the tradition was worthless; it is not. But because so much of what I had taken to be principled turned out to be merely received.
+When I left my family home, I went through a period I can only describe as somewhat wild. Between seventeen and twenty-two I was a bit lost. In that time I ended up in contact with people who had grown up completely differently, without the Catholic framework, without its rituals and its moral language. Some of them were also lost; the framework they had been given had not held either. Others were remarkably stable, grounded in ways I had not expected, arriving at their equilibrium through routes entirely different from mine. Both groups made me reflect on my own belief. The lost ones showed me what it looked like when nothing had been given at all. The stable ones demonstrated that other frameworks worked.
 
-What followed was not rejection but investigation. I read Thomas Aquinas, who tried to build the whole thing on rational foundations. I read Meister Eckhart, who stripped away the institutional layer entirely and went looking for what was mystical at the core. I had real conversations, the kind where you are not performing a position but actually thinking out loud with someone. My friend Makke deserves a mention here. His father was a Benedictine monk until he left the monastery for a woman, and Makke grew up in the particular atmosphere that produces such a person: deeply aware of the tradition, not bound to it in the conventional way. Talking with him over the years has been one of the more useful things I have done for my own thinking.
+I found a woman who had been raised Protestant, and in many conversations with her I could work through the concepts I had absorbed as a child. Seeing the same ideas arrive through a different tradition began to clarify what was particular to the Catholic form and what was pointing at something more general.
+
+Later, at thirty-four, I met a Chinese exchange student. She told me about the Dao and about Falun Dafa. Then she started asking me questions about my own faith, and the questions were good enough that I had to really think. Not to defend myself, but to understand what I actually believed and why. That happened at thirty-four. Not too late. Perhaps exactly right: secure enough in life and in my own footing to evaluate rather than to absorb or reject.
+
+When I began to examine the tradition I had inherited, what I found first was the dogma. Things accepted not because they had been thought through, but because they had been handed down. That discovery was genuinely disappointing. Not because the tradition was worthless; it is not. But because so much of what I had taken to be principled turned out to be merely received.
+
+What followed was investigation. I read Thomas Aquinas, who tried to build the whole thing on rational foundations. I read Meister Eckhart, who stripped away the institutional layer entirely and went looking for what was mystical at the core. I had real conversations, the kind where you are not performing a position but actually thinking out loud with someone. My friend Makke deserves a mention here. His father was a Benedictine monk until he left the monastery for a woman, and Makke grew up in the particular atmosphere that produces such a person: deeply aware of the tradition, not bound to it in the conventional way. Talking with him over the years has been one of the more useful things I have done for my own thinking.
 
 In those conversations the patterns started to become visible. The specific stories mattered less and less. The patterns they pointed to mattered more and more. The idea that suffering can be transformed into something meaningful rather than merely endured. The insistence that love is not a feeling but a practice. The image of a person who walks into death without bitterness. Whether or not these things happened in the way the texts claim, they describe something real about the possible shape of a human life.
 
 That realization was the beginning of something that is still in process.
-
-When I left my family home, I went through a period I can only describe as somewhat wild. I ended up in contact with people who had grown up completely differently, without the Catholic framework, without its rituals and its moral language. Those encounters were clarifying in a way I had not expected. Confrontations with people who had arrived at their own values through entirely different routes showed me something I had missed: behind the dogma and the ritual there were actual ideas. Real philosophical positions on what it means to live well.
-
-I had absorbed them through osmosis as a child, in the form of stories and practices, but I had never had to understand them from first principles. That is genuinely hard to do later in life. To think carefully about an idea, you need to have it completely present in your mind. Only then do the connections start to appear, the contradictions become visible, the cross-references between traditions become legible. Someone who absorbed a framework as a child has all of that structure already in place. Someone who tries to reconstruct it from scratch as an adult has to build the whole architecture before they can start examining it.
 
 ---
 
