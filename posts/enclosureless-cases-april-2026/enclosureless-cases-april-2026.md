@@ -3,7 +3,9 @@ layout: post
 title: "Enclosureless Cases: When the PCB Is the Enclosure"
 date: 2026-04-29
 tags: [hardware, PCB, PCBA, enclosure, gebrauchsmuster, sensor, 1-wire, BME, open-hardware, manufacturing]
-description: "Five years ago we filed a utility model for an idea that sounds almost too obvious in hindsight: what if the PCB itself were the enclosure? Here is how Enclosureless Cases works, why we built it, and how you can use it."
+description: "Enclosureless Cases: a patented approach to PCB housing where three stacked PCBs form a sealed, EMC-shielded enclosure using a perimeter solder joint — no injection moulding, no tooling, no separate supply chain."
+image: assets/photo_enclosureless_temphumid.jpg
+keywords: "PCB enclosure, Enclosureless Cases, PCB housing, FR4 enclosure, sensor housing, perimeter solder joint, Faraday cage PCB, 1-Wire sensor, utility model DE202020106111U1"
 permalink: /posts/enclosureless-cases-april-2026/
 ---
 
@@ -11,7 +13,7 @@ Five years ago [Odin Holmes](https://x.com/odinthenerd) and I filed a utility mo
 
 We call it **Enclosureless Cases**.
 
-## The Problem
+## The Problem with Conventional Sensor Enclosures
 
 Sensors are cheap. A BME280 humidity and temperature chip costs well under a euro. A simple microcontroller to go with it costs similarly little. You can put together a capable sensing node for five or six euros in components.
 
@@ -23,7 +25,7 @@ We ran into this problem with a 1-Wire temperature and humidity sensor — a dev
 
 The question we asked was: what if we just did not have a separate enclosure at all?
 
-## The Idea
+## The Idea: Three PCBs as a Sealed Housing
 
 A printed circuit board already has a rigid, flat body made of FR4. It has copper layers. It has a well-defined planar geometry. And crucially: PCB manufacturing has become extraordinarily cheap and accessible over the past two decades.
 
@@ -39,7 +41,7 @@ The three layers are stacked and joined by a **continuous peripheral solder join
 
 ![Enclosureless Cases components and assembled unit — bottom board, frame spacer, cover board, and the finished sensor](assets/photo_enclosureless_temphumid.jpg)
 
-## How It Is Made
+## How Enclosureless Cases Are Manufactured
 
 The solder joint is applied using a standard reflow process. We use a jig — a metal fixture that holds the stack in alignment during soldering. The process is partly manual in our current setup, but it is compatible with standard PCBA lines. The solder paste goes on the connecting surfaces, the boards are stacked, the jig holds them, and the assembly goes through the oven on a conventional temperature profile.
 
@@ -61,13 +63,13 @@ Both are available to order directly from us at 12 euros per unit for the sensor
 
 <iframe src="assets/Zeichnung 1-Wire Temp.pdf" width="100%" height="600px" style="border:1px solid #ccc; border-radius:4px;"></iframe>
 
-## The Geometry
+## Dimensions and Geometry of the Enclosureless PCB Stack
 
 The base footprint in the reference design is 45 × 35 mm. Total height is 18.9 mm including the connector. Mounting holes are positioned for direct rail or panel mounting. The internal cavity scales with the number of intermediate frames — one frame gives you a cavity the height of one PCB thickness, seven frames is about the practical upper limit before the stack starts to exhibit visible warping under the thermal load of soldering.
 
 The perimeter solder joint runs completely around the inside edge of each frame, flush with the board surfaces. In the patent drawings this is labelled 17.1. The Faraday effect of this joint is particularly effective when the boards are in a coplanar congruent arrangement — the two continuous metallic loops form a closed electromagnetic shield around the cavity contents.
 
-## The Utility Model
+## German Utility Model DE202020106111U1
 
 The German utility model DE202020106111U1 was filed on 26 October 2020 and registered on 5 November 2020. It covers the core concept: a housing device formed exclusively from at least three PCB elements, sealed by a continuous irreversible connection — specifically a solder joint — running around the full perimeter of each interface.
 
@@ -77,13 +79,13 @@ The German utility model DE202020106111U1 was filed on 26 October 2020 and regis
 
 The utility model is still active. We are happy to license it commercially — if you want to use Enclosureless Cases in a product, get in touch and we will work something out. **Non-commercial use is free.** Build it, teach with it, experiment with it, publish about it. If you want the data — Gerber files, board layouts — we will send them to you. We have not gone the full OSHW route, but we do not keep the files locked away either.
 
-## The Cost Argument
+## Cost Comparison: Enclosureless vs. Conventional Housing
 
 The total cost of an Enclosureless device is essentially the cost of the PCBs from your manufacturer. There is no enclosure line item. No tooling. No secondary assembly. The scaling behaviour is also different from conventional housing: because the housing and the electronics are ordered from the same supplier in the same process, the cost per unit at small volumes is much closer to the cost at large volumes than with traditional enclosures, where tooling amortisation dominates the early pricing.
 
 At the application level — a refrigerated vehicle with fifty compartments, or a control cabinet with dozens of measurement points — the difference between a five-euro and a twelve-euro enclosure per node adds up to something worth engineering around.
 
-## If You Want to Build One
+## How to Build Your Own Enclosureless Case
 
 The concept is simple enough to implement without our involvement. You need:
 
