@@ -4,6 +4,7 @@ title: "Zero to One: A Personal Journal Bot with Telegram and Gemini"
 date: 2026-05-03
 tags: [telegram, gemini, docker, journaling, llm, python, latex, obsidian, zero-to-one]
 description: "I spent a day building a Dockerized Telegram bot that turns voice messages and scattered thoughts into a structured journal, Obsidian topic notes, and a compiled LaTeX memoir — and what I learned about LLM APIs along the way."
+keywords: "Telegram bot Python, Gemini API, Docker journaling bot, LLM voice memo, Obsidian notes automation, LaTeX memoir, personal journal AI"
 permalink: /posts/telegram-journal-bot-may-2026/
 ---
 
@@ -11,7 +12,7 @@ I have been meaning to journal consistently for years. The friction has never be
 
 So I built a bot that does the structuring for me.
 
-## What it does
+## What the Telegram Journal Bot Does
 
 You send a message to a Telegram bot. The bot asks you one follow-up question. You answer. It might ask another. After two or three exchanges it writes a journal entry, extracts a topic note in Obsidian-compatible markdown, and commits both to a private git repository.
 
@@ -49,7 +50,7 @@ The context rolls up over time:
 
 None of this is visible to you unless you open the files. It just makes the questions better.
 
-## On the Gemini API
+## Lessons from the Gemini API
 
 I had not used the Google Gemini API before this project. A few things I learned:
 
@@ -112,7 +113,7 @@ A few things I did not build today that would make this more complete:
 
 **Multiple users**. The bot is single-user by design — it checks the chat ID against an environment variable and ignores everything else. Making it multi-user would require persistent state per user, which the current in-memory state dict does not support.
 
-## Running it
+## How to Run the Telegram Journal Bot
 
 The repository is at [github.com/MaxClerkwell/telegram_journal_bot](https://github.com/MaxClerkwell/telegram_journal_bot). The README has the full setup walkthrough — BotFather, Google AI Studio API key, deploy keys, the works. The short version:
 

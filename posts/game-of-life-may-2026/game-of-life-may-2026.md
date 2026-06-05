@@ -4,6 +4,7 @@ title: "The Game of Life and the Limits of Prediction"
 date: 2026-05-04
 tags: [cellular-automata, wolfram, entropy, philosophy, complexity, conway]
 description: "A colleague called it 'useless math but super fun.' I objected. Conway's Game of Life connects self-replicating machines, Wolfram's computational irreducibility, and the unsettling possibility that entropy is not just disorder — it is the universe refusing to be calculated."
+keywords: "Conway Game of Life, cellular automata, computational irreducibility, Wolfram, entropy, complexity theory, self-replicating machines"
 permalink: /posts/game-of-life-may-2026/
 math: true
 ---
@@ -16,7 +17,7 @@ That conviction is what this post is about.
 
 ![Conway's Game of Life — structures evolving on a grid](assets/GoL-Opener.png)
 
-## Where It Comes From
+## Where Conway's Game of Life Comes From
 
 In the late 1940s and early 1950s, Stanisław Ulam and John von Neumann were close friends and colleagues at Los Alamos, but they were circling the same idea from different angles. Ulam was studying how crystals grow: the way a regular structure can propagate outward from a seed through local interactions alone. Von Neumann was thinking about something more unsettling: machines that could reproduce themselves. What logic would such a machine need? What is the minimum structure that allows a pattern to copy itself faithfully?
 
@@ -54,7 +55,7 @@ Class 4 is the interesting one. It is where the Game of Life lives. Structures e
 
 This bothered me the first time I really understood it. It still bothers me now.
 
-## Computational Irreducibility
+## Wolfram's Computational Irreducibility and the Limits of Prediction
 
 Wolfram explored what this means in his 2002 book *A New Kind of Science*, and one concept from that work has genuinely never left me.
 
@@ -100,7 +101,7 @@ What I find striking is the shape of this argument. Entropy is usually taught as
 
 **Maybe entropy is the signature of irreducibility.** Not just a measure of disorder, but a measure of how far ahead the universe refuses to be calculated.
 
-## The Edge of Chaos
+## The Edge of Chaos: Between Order and Entropy
 
 I do not know whether I would prefer to live in a universe that is, at bottom, a rule table — a matrix of zeros and ones ticking forward under four constraints that nobody chose.
 
