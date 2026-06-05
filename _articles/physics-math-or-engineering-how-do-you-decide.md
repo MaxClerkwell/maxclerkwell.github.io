@@ -2,7 +2,8 @@
 title: "Physics, Math, or Engineering? How do you decide"
 date: 2026-06-01
 tags: [physics, mathematics, engineering, career, education, personal]
-description: "A personal reflection on the real differences between physics, mathematics, and engineering, and how to choose between them when you are standing at the beginning of your studies."
+description: "What is the real difference between physics, mathematics, and engineering — and how do you choose the right degree? A personal account from someone who studied all three."
+keywords: "difference between physics and engineering degree, should I study physics or engineering, physics mathematics engineering career, which degree to choose STEM"
 ---
 
 When I was a child, I spent a lot of time in industrial halls and at trade fairs instead of sitting in classrooms. My father studied electrical engineering first and then mechanical engineering. He worked on differential dosing scales early in his career and later moved to Degussa, where he designed complete process engineering plants. By his forties he was responsible for planning and realizing large industrial facilities, both in Germany and in China.
@@ -11,9 +12,13 @@ One of the things that always impressed me was that he started building plants i
 
 He took me to my first major trade show when I was six years old. I think it was the "K" in Düsseldorf. He asked some of his colleagues to take me around and explain the machines to me. From that day on I often went to work with him, sometimes even skipping school. I was completely fascinated by how machines could perform tasks that were too heavy, too hot, or too dangerous for any human, and do them with astonishing speed and precision. That early exposure shaped something deep in me. I did not just want to understand machines. I wanted to be part of the world that builds them.
 
+## How I Ended Up Studying Three Different Fields
+
 So when the time came to choose a subject, mechanical engineering felt like the obvious and only reasonable choice. After I graduated as a state-certified engineer, I began to feel that my real strengths might actually lie in electrical engineering. While I was studying for my bachelor's degree in electrical engineering, a friend passed me a job opportunity at Puls Plasma Technik in Dortmund. That job brought me into contact with high-voltage and pulsed-power equipment used at places like CERN, GSI, COSY, and DESY. Standing in front of those systems, I suddenly understood that I did not just want to build machines anymore. I wanted to understand the fundamental physics that made such extreme machines possible in the first place. That was the moment particle physics became unavoidable for me.
 
 Over the years, a simple model formed in my mind that helps me explain to myself and to others how physics, mathematics, and engineering actually relate to each other. I like to tell it with a picture.
+
+## Physics, Mathematics, and Engineering: A Model That Finally Made Sense
 
 Imagine a large boulder lying in front of a mountain. Three people are asked to move it to the other side. In technology we usually solve problems like this by doing something that reminds me of the Laplace transform. We take a difficult, messy real-world problem and project it into a cleaner, more abstract space where it becomes easier to handle. We solve it there, and then we bring the solution back into reality.
 
@@ -25,11 +30,15 @@ After the mathematician has done their work, you usually end up with design guid
 
 All three roles are necessary, and they are genuinely different.
 
+## Which Field Suits You? The Honest Differences
+
 If you are the kind of person who feels deep satisfaction when you manage to prove that something must be true in every possible case, and you enjoy spending long hours working with almost nothing but paper, ink, and precise language, then mathematics is probably the right field for you. You need patience and a love for rigor.
 
 If you enjoy the struggle of taking something messy and real, measuring it carefully, finding patterns, and then expressing those patterns in mathematical form, physics will probably feel exciting to you. You get to live between the real world and the mathematical world.
 
 If you enjoy mathematics and physics but become happiest when you can actually build something that works, when you like working with constraints, when you enjoy the creative act of finding practical solutions that are good enough even if they are not perfect on paper, then engineering is likely where you belong.
+
+## Why Switching Degrees Is Not a Failure
 
 One thing that often confuses students is that the first years of study in these fields look quite similar. Most engineering programs start with mechanics, basic electronics, and mathematics. Most physics programs start with mechanics, electromagnetism, optics, and thermodynamics. Mathematics begins with analysis and linear algebra. Because of this overlap, many people feel uncertain or even guilty when they switch directions after one or two years. I think that feeling is usually unnecessary. Switching can simply mean that you are getting to know yourself better. You can only guess what a field will actually feel like from the outside. If you discover after some time that you are on the wrong train, getting off at the next station is not a failure. It is information.
 
