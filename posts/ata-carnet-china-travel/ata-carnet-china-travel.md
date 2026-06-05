@@ -3,7 +3,9 @@ layout: post
 title: "Travelling to China with a Peli Case Full of Electronics"
 date: 2026-04-09
 tags: [china, travel, hardware, EMC, logistics]
-description: "A practical guide for engineers taking commercial electronics to China for testing — ATA Carnet, Peli cases, Frankfurt T2, Guangzhou customs, and everything the internet doesn't tell you."
+description: "Practical guide for engineers flying to China with professional electronics — ATA Carnet process, Frankfurt customs, Guangzhou departure, apps to install, and a full pre-trip checklist."
+image: assets/photo_1_2026-04-14_16-02-16.jpg
+keywords: "ATA Carnet, China travel electronics, Frankfurt customs export, Guangzhou airport customs, Peli case travel, Holafly eSIM, WeChat China, EMC testing China logistics"
 permalink: /posts/ata-carnet-china-travel/
 ---
 
@@ -11,11 +13,11 @@ When I went to Dongguan for [EMC testing in March](/posts/dongguan-emc-march-202
 
 ![Peli case packed: foam cut to fit, modules secured, cables coiled alongside](assets/photo_1_2026-04-14_16-02-16.jpg)
 
-## Why Not Just Ship It?
+## Why Not Ship Electronics to China Instead?
 
 Shipping electronics to China for testing and back is a customs nightmare. Import duties, VAT, potential seizure, weeks of waiting. The cleaner solution for temporary export of commercial goods is an **ATA Carnet** — essentially a passport for your equipment. You declare that you are taking specific items out of your home country, into a foreign country, and bringing them back. No duties, no VAT, as long as everything returns.
 
-## Preparing the ATA Carnet
+## How to Get an ATA Carnet in Germany (IHK Process)
 
 In Germany, ATA Carnets are issued by the **IHK** (Chamber of Commerce). My assistant Vanessa handled most of the paperwork, which I would strongly recommend if you have the option — the form requires a complete list of every item you're carrying, including descriptions, values, and serial numbers.
 
@@ -43,11 +45,11 @@ The process at check-in is slightly unusual. You check in at the desk to get you
 
 At the customs office, an officer goes through the entire list with you, item by item. Everything comes out of the case. Everything gets counted. Then it goes back in, gets stamped, and you carry the case to the bag drop that the officer directs you to. **Budget 60 minutes for this process** on your first time, possibly more. My assistant Vanessa's preparation made it significantly faster — the serial numbers meant I never had to explain what anything was, just confirm it matched the list.
 
-## Arrival in China
+## Chinese Customs on Arrival: What to Expect
 
 At the Chinese customs on arrival, the process mirrors the German departure. Find a customs officer immediately — don't walk through the green channel. Show the ATA Carnet, let them inspect, they take one of the pages, sign the document, and you're done. It takes longer than in Germany. If someone is waiting for you, warn them in advance.
 
-## Apps to Install Before You Leave
+## Essential Apps for Engineers Travelling to China
 
 Install these before departure, not on arrival:
 
