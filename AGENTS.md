@@ -64,6 +64,10 @@ The unified discovery logic lives in `_includes/get-blog-posts.html` (legacy `si
 
 The hybrid approach (legacy pages + new `articles` collection) was chosen so that the 26 existing article Markdown files could remain at their historical paths forever while still giving future content a clean, idiomatic Jekyll structure.
 
+## Writing style
+
+- **No em-dashes.** Do not use the em-dash character (—) anywhere in articles, commit messages, or documentation. Replace with a comma, semicolon, colon, or a period depending on the grammatical context.
+
 ## Deployment
 
 Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds with `actions/jekyll-build-pages` and deploys to GitHub Pages. There is no staging environment.
