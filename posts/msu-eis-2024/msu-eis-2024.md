@@ -3,7 +3,9 @@ layout: post
 title: "Biofilms in Rivers: EIS at the Clark Fork"
 date: 2025-11-28
 tags: [EIS, MSU, Montana, biofilm, sensor, water-quality, skAInet, hardware, field-deployment]
-description: "From a governor's reception in Kalispell to a datalogger in the Clark Fork River — how a chance introduction led to a year of collaborative instrument development with Montana State University."
+description: "How a governor's reception in Montana led to a year of instrument development with Montana State University — building a portable EIS datalogger for biofilm detection and deploying it in the Clark Fork River."
+image: assets/PXL_20240904_160651813.jpg
+keywords: "electrochemical impedance spectroscopy, EIS, biofilm detection, Clark Fork River, Montana State University, water quality monitoring, field datalogger, skAInet"
 permalink: /posts/msu-eis-2024/
 ---
 
@@ -11,7 +13,7 @@ In the summer of 2023, Tabea, Odin Holmes, and I were in Montana for a series of
 
 Those conversations pointed us toward **Montana State University in Bozeman**, and through MSU to **Prof. Stephan Warnat** — an electrical engineer from Schleswig-Holstein who had ended up teaching in Montana, which is not the most obvious career trajectory for someone from the German-Danish borderland. We visited his lab that summer.
 
-## Electrochemical Impedance Spectroscopy
+## What Is Electrochemical Impedance Spectroscopy (EIS)?
 
 Warnat's work centres on **microfabricated electrochemical sensors** — small chips with precisely patterned electrode arrays that can detect what is growing on their surface. The target: **biofilms**. Specifically, the kind produced by bacteria like *E. coli*, which form dense extracellular matrices that coat surfaces in contact with water. Standard approaches to monitoring these require lab analysis. Warnat's approach was to push the detection into the field, directly into the water.
 
@@ -19,7 +21,7 @@ The method is **Electrochemical Impedance Spectroscopy (EIS)**: apply a small al
 
 Warnat walked us through the setup: the ASIC-driven measurement boards, the electrode chips, the cell culture work used to grow controlled biofilm samples for calibration. It was the kind of lab visit where you come in thinking you will stay an hour and leave three hours later.
 
-## Building the Datalogger
+## Building a Portable EIS Datalogger for River Deployment
 
 The problem with taking EIS into the field is that the instrument that does it in a lab — an impedance analyser — is bulky, mains-powered, and expensive. For continuous monitoring of a river site, you need something that runs on a battery or solar panel, survives temperature swings and humidity, logs reliably over weeks without intervention, and costs less than a car.
 
@@ -69,7 +71,7 @@ The final step was commissioning the software in the hut itself. The space was n
 
 The system ran. The first dataset came in clean.
 
-## What the Data Showed
+## Field Results: What the Clark Fork EIS Data Showed
 
 The dataset collected at the Clark Fork made an impression on the funding agencies reviewing the project. The combination of a working outdoor instrument, real river data, and a clear correlation between the EIS signal and known conditions at the site was enough to secure the next phase of the project.
 
