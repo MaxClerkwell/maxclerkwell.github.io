@@ -1,8 +1,8 @@
 ---
-title: "Physics Doesn't Explain Anything — And That's the Point"
+title: "Physics Doesn't Explain Anything. And That's the Point."
 date: 2026-06-04
 tags: [physics, philosophy, education, wolfram, heisenberg, engineering]
-description: "My high school teacher told me physics explains the world. Years later I think that's completely wrong — and understanding why changes everything about how you approach the subject."
+description: "My high school teacher told me physics explains the world. Years later I think that's completely wrong, and understanding why changes everything about how you approach the subject."
 ---
 
 When I was in school, my physics teacher told me that physics *explains* the world.
@@ -143,7 +143,7 @@ A physicist learns how to observe, how to measure, how to identify the relevant 
 
 I am not saying one is better than the other. I am saying they are complementary in a way that the education system does not always make clear, and the combination is remarkable. If you can afford the time, pursue both. If you are early in your trajectory and can only pick one to start, physics first will give you a foundation that engineering can build on. The converse is harder.
 
-The universe is not going to hand us a complete theory of everything on a silver platter. But it will, under the right kind of patient, honest, quantitative attention, keep showing us how it behaves. Understanding that this is the real goal, description and not explanation, tools and not truth, is the thing my high school teacher forgot to tell me. If you are standing at the beginning of your education and trying to decide which door to walk through first, I wrote a longer piece on exactly that question: [Physics, Math, or Engineering — How Do You Decide?](/posts/physics-math-or-engineering-how-do-you-decide/)
+The universe is not going to hand us a complete theory of everything on a silver platter. But it will, under the right kind of patient, honest, quantitative attention, keep showing us how it behaves. Understanding that this is the real goal, description and not explanation, tools and not truth, is the thing my high school teacher forgot to tell me. If you are standing at the beginning of your education and trying to decide which door to walk through first, I wrote a longer piece on exactly that question: [Physics, Math, or Engineering: How Do You Decide?](/posts/physics-math-or-engineering-how-do-you-decide/)
 
 I hope it is less of a surprise to you.
 
