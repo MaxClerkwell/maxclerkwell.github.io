@@ -15,6 +15,10 @@ Mögliche Inhalte:
 
 Das lässt sich gut mit den Tipler/Demtröder-Aufgaben verbinden: Aufgaben, die mathematische Methoden erfordern, als Einstieg nutzen.
 
+Der bereits publizierte Artikel zu Physik/Mathematik/Engineering stellt das Verhältnis der drei Felder mit dem Bild des Felsblocks dar: der Physiker übersetzt Realität in Gleichungen, der Mathematiker löst sie, der Ingenieur baut daraus etwas Greifbares. Mathematische Methoden sind das Bindeglied im mittleren Schritt:
+
+[Physics, Math, or Engineering? How do you decide](/posts/physics-math-or-engineering-how-do-you-decide/)
+
 ## Connections
 
 - [[d7486286-d3da-4fbf-a05e-16359dd8c4d4]] — Tipler/Demtröder Aufgaben als konkretes Anwendungsfeld
