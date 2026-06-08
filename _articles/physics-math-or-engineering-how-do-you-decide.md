@@ -4,7 +4,10 @@ date: 2026-06-01
 tags: [physics, mathematics, engineering, career, education, personal]
 description: "What is the real difference between physics, mathematics, and engineering — and how do you choose the right degree? A personal account from someone who studied all three."
 keywords: "difference between physics and engineering degree, should I study physics or engineering, physics mathematics engineering career, which degree to choose STEM"
+image: /assets/posts/physics-math-engineering/titlepic.png
 ---
+
+![Three figures around a boulder in the mountains: a physicist with equations, a mathematician at a chalkboard, an engineer with blueprints. Caption: Different minds. One mission.](/assets/posts/physics-math-engineering/titlepic.png)
 
 When I was a child, I spent a lot of time in industrial halls and at trade fairs instead of sitting in classrooms. My father studied electrical engineering first and then mechanical engineering. He worked on differential dosing scales early in his career and later moved to Degussa, where he designed complete process engineering plants. By his forties he was responsible for planning and realizing large industrial facilities, both in Germany and in China.
 
