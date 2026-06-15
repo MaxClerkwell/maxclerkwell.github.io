@@ -83,7 +83,10 @@ This is why FPGAs appear in domains where timing is everything:
 
 - **High-frequency trading**: decisions made in nanoseconds, not microseconds, can mean the difference between a filled order and a missed one. An FPGA can evaluate market conditions in constant, predictable time.
 - **Particle physics trigger systems**: at facilities like CERN, detectors produce far more data than can be stored or transmitted. FPGAs evaluate trigger conditions in real time and decide within microseconds whether an event is worth recording.
-- **DAQ systems**: data acquisition pipelines that need to handle thousands of parallel analog channels without dropping samples.
+- **DAQ systems**: data acquisition pipelines that need to handle thousands of parallel analog channels without dropping samples. At EP1 at Ruhr-Universität Bochum, Florian Feldbauer, Niels Boelger, and I use Kintex-7 FPGAs to read out HV-MAPS sensors for the PANDA and LHCb experiments. The boards in the photo below are from exactly that setup.
+
+![Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification, used at EP1/RUB for HV-MAPS sensor readout in the PANDA and LHCb experiments](/assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.png)
+
 - **Custom processor development**: when you are designing a new CPU architecture, an FPGA lets you instantiate your design in real silicon-like hardware before committing to a mask. This is how many research processors are prototyped.
 - **Cryptography**: certain algorithms map extremely efficiently onto parallel hardware. An FPGA can execute specific cryptographic functions with far less energy than a general-purpose CPU or even a GPU, because every gate is doing exactly one useful thing.
 
@@ -153,8 +156,6 @@ The **place-and-route** tool (**nextpnr** in the open-source world) takes the ne
 ### Step 5: Post-Implementation Simulation
 
 After place and route, modern toolchains can produce a timing-annotated simulation model. This tells you, to nanosecond precision, how long each signal path actually takes to propagate through the routed design on that specific chip. You can run your testbench again against this model and verify that your circuit still behaves correctly when real propagation delays are taken into account.
-
-The picture at the top of this article shows two Kintex-7 boards probed with an oscilloscope at exactly this stage: the simulation said the signals would look a certain way, and the oscilloscope confirms it on real hardware.
 
 This is also where **hazards** show up: transient glitches caused by signals arriving at a gate at slightly different times. We will come back to hazards in a later article.
 
