@@ -4,10 +4,10 @@ date: 2026-06-15
 tags: [fpga, vhdl, verilog, digital-design, hardware, electronics, yosys, nextpnr, icestick, ice40]
 description: "FPGAs are not microcontrollers with more pins. They are a fundamentally different category of IC, and understanding what lives inside one changes how you think about digital hardware entirely."
 keywords: "FPGA, field programmable gate array, VHDL, Verilog, yosys, nextpnr, iCEstick, routing fabric, bitstream, digital design, LUT, logic synthesis"
-image: /assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.png
+image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png
 ---
 
-![Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification](/assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.png)
+![A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors](/assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png)
 
 If you hang around electronics forums long enough, someone will eventually ask whether they should use a microcontroller or an FPGA for their project. The question itself reveals a misunderstanding. FPGAs do not compete with microcontrollers. They occupy a different region of the design space entirely, and conflating them obscures what makes each tool genuinely useful.
 
