@@ -128,7 +128,9 @@ This describes a circuit that counts clock edges and drives an LED from the top 
 
 Before touching real silicon, you simulate. A testbench is another VHDL (or Verilog) file that instantiates your design and applies input stimuli with specific timings. A simulator runs the testbench and records how signals change over time.
 
-Tools like **GTKWave** visualize those signal traces. You can verify that your counter increments correctly, that your state machine reaches the right states, that your UART transmits the right bytes, all without touching a soldering iron.
+Tools like **GTKWave** visualize those signal traces, or for Xilinx designs Vivado's built-in waveform viewer. You can verify that your counter increments correctly, that your state machine reaches the right states, that your UART transmits the right bytes, all without touching a soldering iron.
+
+![Vivado simulation waveform: signal list on the left, time-domain traces on the right. State machine signals, AXI4 bus signals, and UDP Tx module outputs are visible across a ~40 ns window around 602 µs.](/assets/posts/wtf-are-fpgas-june-2026/vivado-sim.png)
 
 This step is not optional for serious work. Debugging a circuit in hardware, where you only see what probes you physically attached, is much harder than stepping through a simulation.
 
