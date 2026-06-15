@@ -4,7 +4,10 @@ date: 2026-06-15
 tags: [fpga, vhdl, verilog, digital-design, hardware, electronics, yosys, nextpnr, icestick, ice40]
 description: "FPGAs are not microcontrollers with more pins. They are a fundamentally different category of IC, and understanding what lives inside one changes how you think about digital hardware entirely."
 keywords: "FPGA, field programmable gate array, VHDL, Verilog, yosys, nextpnr, iCEstick, routing fabric, bitstream, digital design, LUT, logic synthesis"
+image: /assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.png
 ---
+
+![Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification](/assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.png)
 
 If you hang around electronics forums long enough, someone will eventually ask whether they should use a microcontroller or an FPGA for their project. The question itself reveals a misunderstanding. FPGAs do not compete with microcontrollers. They occupy a different region of the design space entirely, and conflating them obscures what makes each tool genuinely useful.
 
@@ -146,6 +149,8 @@ The **place-and-route** tool (**nextpnr** in the open-source world) takes the ne
 ### Step 5: Post-Implementation Simulation
 
 After place and route, modern toolchains can produce a timing-annotated simulation model. This tells you, to nanosecond precision, how long each signal path actually takes to propagate through the routed design on that specific chip. You can run your testbench again against this model and verify that your circuit still behaves correctly when real propagation delays are taken into account.
+
+The picture at the top of this article shows two Kintex-7 boards probed with an oscilloscope at exactly this stage: the simulation said the signals would look a certain way, and the oscilloscope confirms it on real hardware.
 
 This is also where **hazards** show up: transient glitches caused by signals arriving at a gate at slightly different times. We will come back to hazards in a later article.
 
