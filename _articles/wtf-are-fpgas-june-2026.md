@@ -172,6 +172,8 @@ FPGAs come in a wide range of packages and boards:
 - **Larger development boards** like the Digilent Nexys or Basys series: more I/O, bigger FPGAs, more on-board peripherals (VGA, audio, switches). A step up once you have outgrown the smaller boards.
 - **PCIe boards**: high-bandwidth FPGAs intended for accelerator workloads, plugged directly into a server's PCIe bus. Used in HFT, ML inference, and network offload.
 
+![A Xilinx Kintex-7 evaluation board in PCIe form factor, with two Panda FMC mezzanine cards attached, an SFP cage, SMA connectors, and a small cooling fan over the FPGA package](/assets/posts/wtf-are-fpgas-june-2026/kintex7-pcie.png)
+
 The choice of form factor follows from the application. For learning the toolchain, a USB stick is plenty. For a particle physics trigger system, you want something closer to the PCIe end of the spectrum.
 
 ---
