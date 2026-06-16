@@ -64,6 +64,20 @@ The unified discovery logic lives in `_includes/get-blog-posts.html` (legacy `si
 
 The hybrid approach (legacy pages + new `articles` collection) was chosen so that the 26 existing article Markdown files could remain at their historical paths forever while still giving future content a clean, idiomatic Jekyll structure.
 
+## Article series naming conventions
+
+### Zero-to-One (ZTO) series
+
+All Zero-to-One articles must be named with the prefix `zero-to-one-*`:
+
+```
+_articles/zero-to-one-<topic>-<optional-subtitle>-<month>-<year>.md
+```
+
+Example: `_articles/zero-to-one-python-libraries-environments-june-2026.md`
+
+Never use `<topic>-zero-to-one-*` or any other ordering. The series prefix always comes first.
+
 ## Writing style
 
 - **No em-dashes.** Do not use the em-dash character (—) anywhere in articles, commit messages, or documentation. Replace with a comma, semicolon, colon, or a period depending on the grammatical context.
