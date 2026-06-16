@@ -1,5 +1,5 @@
 ---
-title: "Python Zero to One: Libraries, Environments, and Working Like You Mean It"
+title: "Zero to One: Python Libraries, Environments, and Working Like You Mean It"
 date: 2026-06-16
 tags: [python, uv, virtualenv, stdlib, education, tools]
 description: "You do not have to write everything from scratch. Python has thousands of libraries. But the way you pull them in matters, and most introductions get that part wrong."
