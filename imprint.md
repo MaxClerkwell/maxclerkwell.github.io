@@ -17,11 +17,13 @@ Gebäude B29
 Herner Str. 299  
 DE-44809 Bochum
 
-USt-ID: DE338747475
+USt-ID: DE338747475  
+Registergericht: Amtsgericht Bochum HRB 18817
 
 ## Contact
 
-Email: [stephan@boekelmann.net](mailto:stephan@boekelmann.net)
+Email: [stephan@boekelmann.net](mailto:stephan@boekelmann.net)  
+Tel: +49 234 58 54 58 11
 
 ## Disclaimer
 
