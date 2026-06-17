@@ -11,7 +11,13 @@ Information according to § 5 TMG (Telemediengesetz).
 ## Responsible for this website
 
 Stephan Bökelmann  
-Bochum, Germany
+nabla B Ingenieurbüro und Dienstleistungs-UG  
+(haftungsbeschränkt)  
+Gebäude B29  
+Herner Str. 299  
+DE-44809 Bochum
+
+USt-ID: DE338747475
 
 ## Contact
 
