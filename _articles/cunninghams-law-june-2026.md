@@ -9,6 +9,8 @@ Someone on Quora asked: "Murphy's Law states that the best way to get the right 
 
 The first reply: "This is Cunningham's Law and not Murphy's Law."
 
+![A Quora question asks about "Murphy's Law" and the first answer corrects the premise: it's Cunningham's Law, not Murphy's.](/assets/posts/cunninghams-law-june-2026/cunninghams-law-quora.png)
+
 The correction proves the law. Whoever posted that question, intentionally or not, ran the most elegant demonstration possible.
 
 ---
