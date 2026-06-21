@@ -46,8 +46,6 @@ What it does not do well, at least not initially, is privilege one of these forc
 
 This is an honest picture of the inner life. It is also, eventually, not enough.
 
-This is an honest picture of the inner life. It is also, eventually, not enough.
-
 ---
 
 ## The Emergence of the Individual Voice
