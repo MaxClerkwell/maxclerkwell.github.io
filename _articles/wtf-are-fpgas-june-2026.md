@@ -57,7 +57,7 @@ Here is a simplified mental model. Picture a rectangular grid, thousands of cell
    I/O                            I/O
 ```
 
-Each logic cell connects to the routing fabric through a set of transistors. Every one of those transistors has a corresponding address in a block of SRAM on the chip. When you load a configuration into that SRAM, every bit that reads `1` closes its transistor, connecting that logic cell to that wire in the routing fabric. Every bit that reads `0` leaves the connection open.
+Each logic cell connects to the routing fabric through a set of transistors. Every one of those transistors has a corresponding address the on-chip memory-cells, usually a static random access memory device. When you load a configuration into that SRAM, every bit that reads `1` closes its transistor, connecting that logic cell to that wire in the routing fabric. Every bit that reads `0` leaves the connection open.
 
 ![FPGA architecture diagram showing a grid of orange Logic Blocks connected by a Programmable Interconnect fabric, with blue Input/Output Blocks around the perimeter. Source: Afzal et al., J. Phys.: Conf. Ser. 2786 012004 (2024), doi:10.1088/1742-6596/2786/1/012004](/assets/posts/wtf-are-fpgas-june-2026/fpga-architecture-diagram.png)
 
