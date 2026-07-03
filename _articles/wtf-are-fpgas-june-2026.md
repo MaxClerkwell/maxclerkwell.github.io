@@ -9,6 +9,8 @@ image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png
 
 ![A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors](/assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png)
 
+📺 Companion video: [WTF are FPGAs](https://youtu.be/_3uQRo2pT4A)
+
 If you hang around electronics forums long enough, someone will eventually ask whether they should use a microcontroller or an FPGA for their project. The question itself reveals a misunderstanding. FPGAs do not compete with microcontrollers. They occupy a different region of the design space entirely, and conflating them obscures what makes each tool genuinely useful.
 
 This article is a ground-up introduction to what FPGAs actually are, where they come from, what lives inside them, and what it takes to put one to work.
