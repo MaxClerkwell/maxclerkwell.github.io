@@ -9,7 +9,18 @@ image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png
 
 ![A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors](/assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png)
 
-📺 Companion video: [WTF are FPGAs](https://youtu.be/_3uQRo2pT4A)
+📺 Companion video:
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/IRem743Eb7E"
+  title="WTF are FPGAs"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  style="border-radius:6px; margin: 1em 0;"
+></iframe>
 
 If you hang around electronics forums long enough, someone will eventually ask whether they should use a microcontroller or an FPGA for their project. The question itself reveals a misunderstanding. FPGAs do not compete with microcontrollers. They occupy a different region of the design space entirely, and conflating them obscures what makes each tool genuinely useful.
 
@@ -143,17 +154,17 @@ This step is not optional for serious work. Debugging a circuit in hardware, whe
 
 ### Step 3: Synthesize to a Netlist
 
-Once the simulation looks correct, you run synthesis. The synthesis tool (we use **yosys** for open-source flows, Xilinx's Vivado for Xilinx FPGAs) reads your HDL and produces a **netlist**: a hardware-agnostic description of every gate, flip-flop, and connection in your design.
+Once the simulation looks correct, you run synthesis. The synthesis tool (we use **yosys** for open-source flows, Xilinx's Vivado for Xilinx FPGAs) reads your HDL and produces a **netlist**: a description of every gate, flip-flop, and connection in your design.
 
-The netlist is technology-independent at this stage. It knows about AND gates and registers, not about the specific resources on any particular FPGA.
+For the open-source iCE40 flow, this step does more than people expect: `synth_ice40`, the yosys script for this target, does generic logic synthesis and technology mapping in a single pass. By the time it finishes, every cell in the netlist is already a concrete iCE40 primitive, `SB_LUT4`, a specific `SB_DFF` variant, `SB_CARRY`, not a generic AND gate or an abstract register. The identity of every piece of logic, what it becomes, is decided here.
 
 ### Step 4: Place and Route
 
-Now the hardware specifics enter. Every FPGA has a **chip description file** that maps out exactly which logic cells exist where, how they connect to the routing fabric, and which pins of the package connect to which I/O cells.
+Now the hardware specifics enter, but not the ones you might expect. Every FPGA has a **chip description file** that maps out exactly which logic cells exist where, how they connect to the routing fabric, and which pins of the package connect to which I/O cells.
 
 You also write a **constraint file** that maps the logical I/O ports in your design to physical package pins. This is where you say: "the signal I called `clk` connects to pin 21, which is wired to the 12 MHz oscillator on this board."
 
-The **place-and-route** tool (**nextpnr** in the open-source world) takes the netlist, the chip description, and the constraints, and works out which logic cells to use for each gate in the netlist, and which paths through the routing fabric to use for each signal. For large designs this can take a long time and consume significant memory. The tool is essentially solving a constraint-satisfaction problem over a very large graph.
+The **place-and-route** tool (**nextpnr** in the open-source world) takes the already technology-mapped netlist, the chip description, and the constraints, and decides *where*, not *what*: which physical slot on the grid each already-typed cell goes into, and which paths through the routing fabric each signal takes. It cannot introduce a new primitive type or decide a signal should have been an `SB_CARRY` instead of plain LUT logic; that decision was already made in synthesis. For large designs this can take a long time and consume significant memory. The tool is essentially solving a constraint-satisfaction problem over a very large graph.
 
 ### Step 5: Post-Implementation Simulation
 
