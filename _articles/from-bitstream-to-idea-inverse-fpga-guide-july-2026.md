@@ -29,8 +29,6 @@ Technology-mapped netlist (JSON)
   ^ yosys (synth_ice40)
 Generic netlist (Verilog, written by GHDL)
   ^ ghdl synth (--out=verilog)
-Elaborated design (no netlist yet)
-  ^ ghdl -e (elaborate)
 Analyzed design units in a library
   ^ ghdl -a (analyze)
 VHDL code
@@ -46,7 +44,7 @@ A note on two choices I made deliberately, both worth calling out before we dive
 
 First, GHDL and yosys can talk to each other two ways: the `ghdl-yosys-plugin` hands GHDL's internal representation to yosys in-process, no file ever touches disk between them, or you run `ghdl synth` as its own step and get a real Verilog file that yosys reads with `read_verilog`, same as any other Verilog source. The plugin route is what you would actually use day to day, it is one invocation and one fewer moving part. I am walking through the `ghdl synth` route instead, because it produces an artifact you can open, inspect, and reason about at each stage. Didactically, a file beats an in-process handoff you cannot see.
 
-Second, this whole chain uses VHDL, not Verilog, and that is not a style preference. In safety-critical domains, avionics under DO-254, industrial systems under IEC 61508, automotive under ISO 26262, the certification process cares about exactly the kind of thing VHDL enforces at the language level: strong, static typing that catches a huge class of accidental-width or accidental-sign bugs at analysis time rather than in simulation or, worse, in hardware. Verilog's weaker typing does not disqualify it outright, but it pushes more of that burden onto coding-standard compliance and tooling, which is a harder thing to argue in front of an auditor than "the compiler rejected it." That is also why the strict analyze/elaborate separation in section 6 below is not academic trivia: a design flow with an auditable paper trail per compilation unit is precisely what these certification regimes want to see.
+Second, this whole chain uses VHDL, not Verilog, and that is not a style preference. In safety-critical domains, avionics under DO-254, industrial systems under IEC 61508, automotive under ISO 26262, the certification process cares about exactly the kind of thing VHDL enforces at the language level: strong, static typing that catches a huge class of accidental-width or accidental-sign bugs at analysis time rather than in simulation or, worse, in hardware. Verilog's weaker typing does not disqualify it outright, but it pushes more of that burden onto coding-standard compliance and tooling, which is a harder thing to argue in front of an auditor than "the compiler rejected it." That is also why the strict, incremental analyze step described below is not academic trivia: a design flow with an auditable paper trail per compilation unit is precisely what these certification regimes want to see.
 
 ---
 
@@ -122,9 +120,9 @@ After this point, the set of cell types in the design is frozen. nextpnr cannot 
 
 ## 5. The Generic Netlist: What ghdl synth Actually Produces
 
-This is the step I got wrong the first time I traced through it: I assumed `ghdl -e` (elaborate) was the command that hands GHDL's output to synthesis, the way it hands a runnable simulation to the simulator. It is not. Elaboration is a real, necessary step, but on its own it produces neither a netlist nor a file yosys can read. The command that actually does that is a separate one: `ghdl synth`.
+`ghdl synth --std=08 --out=verilog <unit> -e <top>` takes the already-analyzed design units sitting in the library (see the next section), elaborates them internally, picking the top-level, binding generics, resolving hierarchy, and then walks the fully elaborated design, translating every process and concurrent signal assignment into gates, muxes, and flip-flops, printing the result as a structural Verilog file. That file is a completely ordinary artifact: you can open it, diff it, grep it, hand it to any tool that reads Verilog, not just yosys. `--out=vhdl` produces the equivalent as a VHDL netlist instead, and `--out=dot` produces a Graphviz graph for visualization only, not something synthesizable.
 
-`ghdl synth --std=08 --out=verilog <unit> -e <top>` runs analysis and elaboration internally (assuming the units are already analyzed, see section 6) and then walks the fully elaborated design, translating every process and concurrent signal assignment into gates, muxes, and flip-flops, and prints the result as a structural Verilog file. That file is a completely ordinary artifact: you can open it, diff it, grep it, hand it to any tool that reads Verilog, not just yosys. `--out=vhdl` produces the equivalent as a VHDL netlist instead, and `--out=dot` produces a Graphviz graph for visualization only, not something synthesizable.
+Note that elaboration itself is not a separate, user-facing step in this chain: `ghdl synth` resolves hierarchy and binds generics as an internal part of its own run, on its way to producing the netlist. It is worth knowing that GHDL also exposes `ghdl -e` as a standalone command elsewhere (mainly for producing a runnable simulation executable via `ghdl -r`), but nothing downstream of `-a` in this synthesis path invokes it separately.
 
 This is also where the ghdl-yosys-plugin, mentioned in the note above the chain diagram, does the same underlying work differently: instead of printing a file, the plugin calls the same internal netlisting logic and hands the result to yosys's RTLIL builder directly, in memory, inside a single yosys invocation (`ghdl_synth` in a yosys script). No `.v` file ever exists on disk in that path. Functionally equivalent to what is described here; just no intermediate artifact to inspect.
 
@@ -135,28 +133,13 @@ This is also where the ghdl-yosys-plugin, mentioned in the note above the chain 
 
 ---
 
-## 6. Elaboration: What ghdl -e Actually Produces
+## 6. Analyzed Design Units: What analyze Actually Checks
 
-`ghdl -e` picks a concrete top-level entity, binds any generic values (defaults or overrides via `-g<name>=<value>`), and recursively resolves every component instantiation to a specific entity/architecture pair, unrolling `generate` statements as it goes. What comes out the other side is a fully concrete, fully instantiated design, with hierarchy resolved and every generic bound to a specific value. For simulation, this is the step that matters most: GHDL turns the elaborated design into an actual runnable executable, and `ghdl -r` runs it.
+`ghdl -a` produces, per design unit, an entry in the library's index and an object representation of that unit's internal typed tree. It does two things and exactly two things: type-checking (does this unit's code make sense on its own, given what it declares and what it imports via `use`), and interface recording (what ports, generics, and declarations does this unit expose, so that later steps, like `ghdl synth`, can reference it correctly).
 
-What `ghdl -e` does not do, on its own, is produce a netlist. It resolves *what* the design is, structurally, down to concrete entities and architectures; it does not translate any of that into gates. That translation is `ghdl synth`'s job, described in section 5. In practice `ghdl synth` performs an elaboration internally as part of its own run, so you rarely invoke `ghdl -e` as a separate step before it. The two are conceptually distinct even where the CLI blurs them.
+What it explicitly does not do: resolve hierarchy, know about a top-level, or produce any kind of gate-level structure. A `process` block at this stage is still exactly the VHDL you wrote, not yet touched by anything resembling synthesis. Put in software terms, `ghdl -a` is closer to a compiler than a linker: it turns each source file into an independent, type-checked unit, the VHDL equivalent of an object file, without knowing or caring what the final program looks like. Resolving that final shape, picking a top-level, binding generics, wiring instances together, is `ghdl synth`'s job, one step up in this chain.
 
-Put in software terms, `-a` is closer to a compiler and `-e` is closer to a linker. `ghdl -a` turns each source file into an independent, type-checked unit, the VHDL equivalent of an object file, without knowing or caring what the final program looks like. `ghdl -e` is the step that takes a fixed set of those already-compiled units, resolves references between them, picks one entry point, and produces one concrete, complete artifact. You would not expect a linker to re-parse C source, and you would not expect `ghdl -e` to re-check VHDL syntax; it just wires together what `-a` already validated. Extending the analogy, `ghdl synth` is closer to a code generator that runs after linking, walking the already-resolved program and emitting a different representation of it.
-
-Why split analyze and elaborate at all, rather than doing it in one pass? Because the library that `-a` produces is reusable. If none of the already-analyzed units change, you can swap the top-level entirely, point `-e` at a different testbench architecture, say, and only re-elaborate. You never re-analyze code that has not changed. And if you change one unit, only that unit needs re-analysis; GHDL tracks this through dependency and timestamp information in the library's index file. This is the same reasoning behind incremental compilation in any language with a module system: analyze once, elaborate many times, as long as the pieces did not move.
-
-**Transformer:** `ghdl -e`
-**Input:** analyzed design units from the library, chosen top-level, generic values
-**Output:** elaborated design (resolved hierarchy, bound generics); a runnable simulation executable when used for simulation; consumed internally by `ghdl synth` when used for synthesis
-**Implicit requirement:** every unit the top-level references transitively must already be analyzed and present in the library.
-
----
-
-## 7. Analyzed Design Units: What analyze Actually Checks
-
-`ghdl -a` produces, per design unit, an entry in the library's index and an object representation of that unit's internal typed tree. It does two things and exactly two things: type-checking (does this unit's code make sense on its own, given what it declares and what it imports via `use`), and interface recording (what ports, generics, and declarations does this unit expose, so that later units, or a later elaboration, can reference it correctly).
-
-What it explicitly does not do: resolve hierarchy, know about a top-level, or produce any kind of gate-level structure. A `process` block at this stage is still exactly the VHDL you wrote, not yet touched by anything resembling synthesis.
+The reason analyze exists as its own step rather than being folded into `ghdl synth` is that the library it produces is reusable. If none of the already-analyzed units change, you can point `ghdl synth` at an entirely different top-level and skip re-analysis. And if you change one unit, only that unit needs re-analysis; GHDL tracks this through dependency and timestamp information in the library's index file. This is the same reasoning behind incremental compilation in any language with a module system: analyze once, reuse the library across as many downstream runs as you need, as long as the pieces did not move.
 
 One practical consequence, and this is the kind of thing that only becomes obvious once you try to break it: if you analyze files out of dependency order, a package's body before something that imports it, GHDL rejects the later file with "unit ... not found," because the referenced unit is not in the library index yet. GHDL will not reorder your build for you.
 
@@ -167,7 +150,7 @@ One practical consequence, and this is the kind of thing that only becomes obvio
 
 ---
 
-## 8. VHDL Code: The First Non-Program Step
+## 7. VHDL Code: The First Non-Program Step
 
 Every step above this line is a program with a configuration. This one is not. Going from a block diagram to VHDL is a design act performed by a person, and it is worth pausing on because it is structurally different from everything else in the chain: there is no transformer here, no dataset-plus-config producing another dataset. There is a person translating an idea into a formal language, and that translation is where actual engineering judgment lives.
 
@@ -175,16 +158,16 @@ It also carries an implicit requirement none of the automated steps enforce unti
 
 ---
 
-## 9. The Block Diagram, and the Idea Underneath It
+## 8. The Block Diagram, and the Idea Underneath It
 
 Below VHDL is the block diagram: flip-flops, logic gates, wires, arranged conceptually before a single line of code exists. Like the step above it, this is not automated, and "configuration" here means something different: it means domain knowledge. Understanding what needs a clock edge and what is purely combinational. Understanding metastability well enough to know when a signal is crossing clock domains and needs synchronization. Deciding, before any tool is involved, that a given function actually belongs in hardware at all rather than in software running on a microcontroller sitting next to the FPGA.
 
-This is the actual root of the whole chain. None of the eight transformers above it can correct a bad decision made here. They can only execute, with complete fidelity, whatever was decided at this step.
+This is the actual root of the whole chain. None of the seven transformers above it can correct a bad decision made here. They can only execute, with complete fidelity, whatever was decided at this step.
 
 ---
 
 ## Why Go Backward
 
-Going forward, you start with intent and watch it get realized. Going backward, you start with the physical fact, an LED blinking on a piece of hardware you can hold, and you ask what had to be true one step earlier for that fact to exist. I found that more honest about where the actual decisions get made. Seven of the nine steps in this chain are mechanical: given the same input and configuration, `icepack` or `nextpnr` will always produce the same output. The two steps that are not mechanical, block diagram to VHDL and idea to block diagram, are the only places where the design could have gone differently. Everything downstream of those two steps is just careful, deterministic execution.
+Going forward, you start with intent and watch it get realized. Going backward, you start with the physical fact, an LED blinking on a piece of hardware you can hold, and you ask what had to be true one step earlier for that fact to exist. I found that more honest about where the actual decisions get made. Six of the eight steps in this chain are mechanical: given the same input and configuration, `icepack` or `nextpnr` will always produce the same output. The two steps that are not mechanical, block diagram to VHDL and idea to block diagram, are the only places where the design could have gone differently. Everything downstream of those two steps is just careful, deterministic execution.
 
 If you want to see this chain from the other direction, with actual VHDL, a testbench, and a real LED blinking at the end, that is [Zero to One: VHDL and a Lattice iCEstick](/posts/fpga-blinky-vhdl-icestick-may-2026/). And if you want the architectural picture this post assumes, what a LUT is, why the routing fabric matters, why FPGAs exist at all, that is [WTF are FPGAs](/posts/wtf-are-fpgas-june-2026/).
