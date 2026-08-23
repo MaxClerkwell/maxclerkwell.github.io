@@ -2,7 +2,7 @@
 layout: post
 title: "KiCon Europe 2024: Bochum Goes International"
 date: 2024-09-20
-tags: [KiCad, conference, Bochum, hardware, open-source, KiCon, Open-Skunkforce]
+tags: [pcb, conferences, open-source]
 description: "KiCon Europe 2024 in Bochum — 150 engineers and designers, KiCad lead developers Wayne Stambaugh and Seth Hilbrand on stage, talks on open hardware, PCB design, and KiCad development. Full recap and YouTube playlist."
 image: assets/PXL_20240919_072728340.MP.jpg
 keywords: "KiCon Europe 2024, KiCad conference, open source hardware, PCB design conference, Open Skunkforce, Bochum"

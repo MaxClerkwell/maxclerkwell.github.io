@@ -1,7 +1,7 @@
 ---
 title: "Why Does Copper Conduct? A Tour for Non-Physicists"
 date: 2026-08-21
-tags: [physics, semiconductors, solid-state, education, quantum-mechanics]
+tags: [physics, education]
 description: "Copper conducts, diamond doesn't, yet both are packed with electrons. A walk from single atoms to energy bands that explains why, ending with a back-of-the-envelope number that lands within ten percent of the measured conductivity of copper."
 keywords: "electrical conductivity explained, energy bands, valence band, conduction band, band gap, Fermi level, why do metals conduct, semiconductors for beginners, orbitals to bands"
 image: /assets/posts/orbitals-to-bands-august-2026/fig_band_formation.png

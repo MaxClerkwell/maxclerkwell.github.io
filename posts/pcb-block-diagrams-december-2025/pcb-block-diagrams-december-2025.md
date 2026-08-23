@@ -2,7 +2,7 @@
 layout: post
 title: "PCB Design Starts With a README"
 date: 2025-12-10
-tags: [hardware, PCB, KiCad, PlantUML, block-diagram, workflow, documentation, version-control, LLM]
+tags: [pcb, engineering, ai]
 description: "Before opening KiCad, create a README and let an LLM generate a PlantUML block diagram. Why writing design intent first prevents costly PCB mistakes — with a worked STM32F7 example."
 keywords: "PCB design workflow, PlantUML, block diagram, KiCad, STM32F7, design intent, LLM PCB, version control hardware"
 permalink: /posts/pcb-block-diagrams-december-2025/

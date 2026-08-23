@@ -1,7 +1,7 @@
 ---
 title: "Zero to One: Python Libraries, Environments, and Working Like You Mean It"
 date: 2026-06-16
-tags: [python, uv, virtualenv, stdlib, education, tools]
+tags: [python, education, zero-to-one]
 description: "You do not have to write everything from scratch. Python has thousands of libraries. But the way you pull them in matters, and most introductions get that part wrong."
 keywords: "python virtual environment, uv python, pyproject.toml, requirements.txt, python repl, standard library, pip alternatives, python beginners"
 draft: true

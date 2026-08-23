@@ -1,7 +1,7 @@
 ---
 title: "Digital Communication: Getting a Thought Out of One Head and Into Another"
 date: 2026-08-21
-tags: [communication, electronics, embedded, signal-integrity, information-theory, education]
+tags: [electronics, embedded, information-theory, education]
 description: "Communication has one job: move the internal state of one system into another. This is a walk from a thought in your head to a wave on a wire, through the four sides of a message, a water canal, a push-pull driver, Shannon's channel, and the eye diagram that measures it all."
 keywords: "digital communication explained, serialization, Shannon channel model, Schulz von Thun four sides, bus protocol, signal integrity, crosstalk, eye diagram, BCD code, communication theory"
 math: true

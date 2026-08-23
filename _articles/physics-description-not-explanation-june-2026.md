@@ -1,7 +1,7 @@
 ---
 title: "Physics Doesn't Explain Anything. And That's the Point."
 date: 2026-06-04
-tags: [physics, philosophy, education, wolfram, heisenberg, engineering]
+tags: [physics, philosophy, education]
 description: "My high school teacher told me physics explains the world. Years later I think that's completely wrong, and understanding why changes everything about how you approach the subject."
 ---
 

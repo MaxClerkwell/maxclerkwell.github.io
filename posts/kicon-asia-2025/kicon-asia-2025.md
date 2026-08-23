@@ -2,7 +2,7 @@
 layout: post
 title: "KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen"
 date: 2025-11-15
-tags: [KiCad, wire-bonding, hardware, conference, Shenzhen, particle-physics, KiCon]
+tags: [pcb, conferences, physics]
 description: "Talk at KiCon Asia 2025 in Shenzhen on wire bonding CLICpix and MuPix detector chips — two years of hands-on bonding with a Delvotec, condensed into 25 minutes. Slides and video included."
 image: assets/photo_8_2026-04-15_13-23-32.jpg
 keywords: "wire bonding, KiCon Asia 2025, Shenzhen, CLICpix, MuPix, HV-MAPS, Delvotec, particle physics detector, KiCad conference"

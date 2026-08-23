@@ -2,7 +2,7 @@
 layout: post
 title: "PDSC4K 2026: Everything, Everywhere, All at Once"
 date: 2026-05-23
-tags: [data-science, conferences, data-pipelines, pdsc, community, bochum]
+tags: [conferences]
 description: "The Practical Data Science Congress (PDSC4K) in Bochum proved that small, deliberately compact events can deliver more signal than most large conferences — especially when the real topic is the messy reality of getting data from the physical world into models that don't lie to you."
 image: assets/keynote-me-on-stage.jpg
 keywords: "PDSC4K 2026, data science conference Bochum, practical data science, data pipelines, Open Skunkforce, physical world data"

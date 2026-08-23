@@ -1,7 +1,7 @@
 ---
 title: "Autonomous Will, Heteronomous Will, and the Work of Becoming Yourself"
 date: 2026-06-03
-tags: [philosophy, kant, ethics, autonomy, individuation, jung, freud, religion, personal]
+tags: [philosophy, personal]
 description: "Kant draws a sharp line between acting from your own reason and acting from external pressure. But where does your reason actually come from? An exploration of autonomy, heteronomy, archetypes, and the slow work of building a self you can stand behind."
 keywords: "Kant autonomous will, heteronomous will, individuation, Jung archetypes, categorical imperative, Freud superego, moral philosophy, self-determination"
 ---

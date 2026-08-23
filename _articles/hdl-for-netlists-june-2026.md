@@ -1,7 +1,7 @@
 ---
 title: "A Hill I Am Willing to Die On: HDL for PCB Netlists"
 date: 2026-06-08
-tags: [hardware, PCB, HDL, SKiDL, netlist, schematic, EDA, AI, KiCad, version-control]
+tags: [pcb, engineering, ai]
 description: "Schematics are not where PCB design should start. Netlists should be generated from a structured hardware description language, and that changes everything about how AI fits into the picture."
 keywords: "PCB design, HDL, netlist, SKiDL, Hdl21, JITX, schematic, KiCad, AI EDA, hardware description language"
 image: /assets/posts/hdl-for-netlists/titlepic.png

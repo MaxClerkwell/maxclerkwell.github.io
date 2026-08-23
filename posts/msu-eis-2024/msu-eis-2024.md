@@ -2,7 +2,7 @@
 layout: post
 title: "Biofilms in Rivers: EIS at the Clark Fork"
 date: 2025-11-28
-tags: [EIS, MSU, Montana, biofilm, sensor, water-quality, skAInet, hardware, field-deployment]
+tags: [electronics, monitoring]
 description: "How a governor's reception in Montana led to a year of instrument development with Montana State University — building a portable EIS datalogger for biofilm detection and deploying it in the Clark Fork River."
 image: assets/PXL_20240904_160651813.jpg
 keywords: "electrochemical impedance spectroscopy, EIS, biofilm detection, Clark Fork River, Montana State University, water quality monitoring, field datalogger, skAInet"

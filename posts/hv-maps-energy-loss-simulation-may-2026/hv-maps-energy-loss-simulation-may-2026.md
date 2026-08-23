@@ -2,7 +2,7 @@
 layout: post
 title: "Simulating Antiproton Energy Loss in an HV-MAPS Silicon Sensor with Geant4"
 date: 2026-05-18
-tags: [geant4, simulation, particle-physics, hv-maps, silicon-detector, antiproton, hesr, panda, fair, bethe-bloch]
+tags: [physics]
 math: true
 description: "A first-principles walkthrough of using Geant4 to simulate how much energy an antiproton deposits in a thin HV-MAPS silicon sensor — including a hand-worked Bethe-Bloch example, the Landau distribution, and why this matters for detector design before you ever see a beam."
 image: assets/me-being-anti-proton.jpg

@@ -2,7 +2,7 @@
 layout: post
 title: "Ten Years of Conferences: What They're Actually For"
 date: 2026-03-15
-tags: [conferences, community, emBO++, Open-Skunkforce, OSF, cpp, KiCad, reflection]
+tags: [conferences, personal, open-source]
 description: "Ten years of attending and organising technical conferences — what they're actually for, why the hallway track beats the programme, and how emBO++ grew from four people to 250. Lessons from Meeting C++, KiCon, GSI, and ISO C++."
 image: assets/stephan_und_bjarne.png
 keywords: "technical conferences, emBO++, Open Skunkforce, KiCon, Meeting C++, conference organisation, developer community, embedded C++"

@@ -1,7 +1,7 @@
 ---
 title: "What AI Actually Is"
 date: 2026-07-03
-tags: [machine-learning, philosophy, ai, neural-networks, education, language]
+tags: [ai, philosophy, education]
 description: "Running a chat model is not AI. The training process is. Everything else follows from that distinction, including where the human niche survives."
 ---
 

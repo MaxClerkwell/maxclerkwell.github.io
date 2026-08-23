@@ -1,7 +1,7 @@
 ---
 title: "WTF are FPGAs: A Beginner's Overview of Field-Programmable Gate Arrays"
 date: 2026-06-15
-tags: [fpga, vhdl, verilog, digital-design, hardware, electronics, yosys, nextpnr, icestick, ice40]
+tags: [fpga, electronics, education]
 description: "FPGAs are not microcontrollers with more pins. They are a fundamentally different category of IC, and understanding what lives inside one changes how you think about digital hardware entirely."
 keywords: "FPGA, field programmable gate array, VHDL, Verilog, yosys, nextpnr, iCEstick, routing fabric, bitstream, digital design, LUT, logic synthesis"
 image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png

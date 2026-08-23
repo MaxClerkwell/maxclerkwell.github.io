@@ -1,7 +1,7 @@
 ---
 title: "Deploying Hardware Like Software: A Bitstream Pipeline for the Zynq"
 date: 2026-08-23
-tags: [fpga, zynq, linux, u-boot, yosys, nextpnr, open-source, embedded, rest-api, alinx]
+tags: [fpga, embedded, linux, open-source]
 description: "Alinx sent me an AX7020 board. Here is the plan: an open-source path from JTAG bring-up to a REST API that accepts a bitstream and loads it onto the FPGA, no vendor tools in the loop."
 keywords: "Zynq 7020, AX7020, Alinx, U-Boot SPL, JTAG, TFTP, yosys, nextpnr-xilinx, openXC7, FPGA manager, bitstream, REST API, FPGA deployment"
 ---

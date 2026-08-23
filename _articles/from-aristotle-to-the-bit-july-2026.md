@@ -1,7 +1,7 @@
 ---
 title: "From Aristotle to the Bit"
 date: 2026-07-03
-tags: [information-theory, shannon, philosophy, history, education]
+tags: [information-theory, philosophy, history, education]
 description: "The bit did not fall from the sky in 1948. It is the last step in a chain that starts with a Greek philosopher arguing about sea battles and ends with Claude Shannon measuring surprise."
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Zero to One: Fun with SWD"
 date: 2026-05-20
-tags: [embedded, stm32, openocd, swd, hardware, beginners, zero-to-one]
+tags: [embedded, zero-to-one]
 description: "You do not need to write a single line of C to talk to a microcontroller. With OpenOCD and a telnet connection you can toggle GPIO pins directly from your terminal — and that is exactly how we build a blinky on an STM32F303K8 Nucleo-32."
 image: assets/screenshot.png
 keywords: "SWD OpenOCD tutorial, STM32 blinky, Serial Wire Debug, GPIO toggle telnet, STM32F303 Nucleo, embedded beginner, OpenOCD TCL"

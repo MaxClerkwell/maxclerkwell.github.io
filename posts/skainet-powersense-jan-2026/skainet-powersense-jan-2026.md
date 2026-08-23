@@ -2,7 +2,7 @@
 layout: post
 title: "Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores"
 date: 2026-01-15
-tags: [auto-intern, hardware, monitoring, rail, PoE, engineering]
+tags: [electronics, monitoring, engineering]
 description: "How we built a non-contact PoE power monitor for DB Netz railway switching stations — ten years of E-field sensing, embedded ferrite cores, EMC certification, and the hardware lessons that shaped everything since."
 image: assets/photo_1_2026-04-21_12-42-49.jpg
 keywords: "non-contact voltage measurement, PoE sensor, railway monitoring, EMC certification, E-field sensing, skAInet, DB Netz, PowerSense, industrial IoT"

@@ -2,7 +2,7 @@
 layout: post
 title: "Getting Started: From Tape-Out to TypeScript"
 date: 2025-08-14
-tags: [meta, engineering, intro]
+tags: [personal, engineering]
 description: "Stephan Bökelmann writes about monitoring systems, embedded engineering, ASIC development, and university-level programming — from silicon to frontend. First post: what this blog covers and why."
 image: assets/title.jpg
 keywords: "embedded systems blog, hardware engineering, monitoring systems, ASIC development, KiCad, THGA Bochum, full stack engineering, tape-out TypeScript"

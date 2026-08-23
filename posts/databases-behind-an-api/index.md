@@ -2,7 +2,7 @@
 layout: post
 title: "A Database Is Not an API"
 date: 2026-04-24
-tags: [databases, architecture, FastAPI, Keycloak, nerd_force1]
+tags: [databases, engineering, python]
 description: "Why we never expose a database directly — how to layer FastAPI, Keycloak, and PostgreSQL for clean access control, testable endpoints, and a stable client interface."
 keywords: "database API architecture, FastAPI PostgreSQL, Keycloak authentication, database access control, REST API database, nerd_force1"
 permalink: /posts/databases-behind-an-api/

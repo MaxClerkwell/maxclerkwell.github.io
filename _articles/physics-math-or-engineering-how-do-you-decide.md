@@ -1,7 +1,7 @@
 ---
 title: "Physics, Math, or Engineering? How do you decide"
 date: 2026-06-01
-tags: [physics, mathematics, engineering, career, education, personal]
+tags: [physics, engineering, education, personal]
 description: "What is the real difference between physics, mathematics, and engineering — and how do you choose the right degree? A personal account from someone who studied all three."
 keywords: "difference between physics and engineering degree, should I study physics or engineering, physics mathematics engineering career, which degree to choose STEM"
 image: /assets/posts/physics-math-engineering/titlepic.png

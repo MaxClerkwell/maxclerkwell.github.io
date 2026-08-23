@@ -2,7 +2,7 @@
 layout: post
 title: "EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber"
 date: 2026-04-01
-tags: [hardware, EMC, China, monitoring, PoE, project]
+tags: [electronics, monitoring]
 description: "CE, FCC, and CCC certification in Dongguan — four days at NTC test lab with a PoE-based reflow oven monitoring system after 2.5 years of development. What we tested, what we found, and what the anodized housing almost cost us."
 image: assets/photo_7_2026-04-14_14-19-10.jpg
 keywords: "EMC testing, CE certification, FCC certification, CCC certification, Dongguan, NTC lab, PoE monitoring, reflow oven, M12 connector, skainet"

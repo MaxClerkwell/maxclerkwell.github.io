@@ -2,7 +2,7 @@
 layout: post
 title: "OmnAIScope: A USB Oscilloscope for Automotive Diagnostics"
 date: 2025-08-28
-tags: [hardware, automotive, oscilloscope, RP2040, KiCad, aw4null, open-access]
+tags: [pcb, electronics, automotive, open-source]
 description: "OmnAIScope is an open-access USB oscilloscope for automotive diagnostics, built on RP2040 with multi-channel USB synchronisation — no hardware trigger needed. How it works, the server architecture, and where to get it."
 image: assets/early_prototype.jpg
 keywords: "USB oscilloscope, automotive diagnostics, RP2040, OmnAIScope, multi-channel synchronisation, KiCad, open hardware, car workshop diagnostics"

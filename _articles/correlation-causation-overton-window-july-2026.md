@@ -1,7 +1,7 @@
 ---
 title: "Correlation, Causation, and the Overton Window That Only Shrinks"
 date: 2026-07-06
-tags: [philosophy, epistemology, statistics, causality, academia, free-speech, personal]
+tags: [philosophy, personal]
 description: "Everyone knows the first half of the aphorism. The second half is where the actual thinking happens, and I think the reflex to stop at the first half is doing something worse than being lazy."
 keywords: "correlation causation, Judea Pearl, Bradford Hill criteria, Overton window, academic freedom, freudian slip, epistemology"
 ---

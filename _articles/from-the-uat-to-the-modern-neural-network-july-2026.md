@@ -1,7 +1,7 @@
 ---
 title: "From the UAT to the Modern Neural Network"
 date: 2026-07-03
-tags: [information-theory, neural-networks, uat, history, education, machine-learning]
+tags: [ai, information-theory, history, education]
 description: "We have the bit. Now the question is what we can compute with it, and whether a machine can learn to compute things nobody explicitly programmed. The answer runs from Hilbert through Turing to a theorem most engineers have never heard of."
 ---
 

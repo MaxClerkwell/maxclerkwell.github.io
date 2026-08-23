@@ -2,7 +2,7 @@
 layout: post
 title: "Are Machines Conscious? A Snapshot"
 date: 2026-05-05
-tags: [consciousness, AI, philosophy, cognition, mind]
+tags: [ai, philosophy]
 description: "What does consciousness mean — and where on that spectrum do beetles, dogs, humans, and language models sit? No final answers, but an honest attempt to think the question through."
 keywords: "machine consciousness, AI sentience, hard problem of consciousness, are LLMs conscious, philosophy of mind, cognitive science, language models"
 permalink: /posts/machine-consciousness-may-2026/

@@ -1,7 +1,7 @@
 ---
 title: "Dual Uplink, Part Two: From Failover to Load Balancing (and the Two Bugs That Broke It)"
 date: 2026-07-12
-tags: [networking, Linux, Starlink, load-balancing, policy-routing, infrastructure, Debian, sysadmin]
+tags: [networking, linux]
 description: "The follow-up to our dual-uplink failover setup: weighted multipath load balancing, source-based policy routing, pinning a host to one link, and the two persistence bugs that silently killed it on every reboot."
 keywords: "weighted multipath, ECMP Linux, policy routing, ip rule, dual uplink load balancing, Starlink DSL, systemd network-online, sysctl.d, iptables-nft masquerade"
 ---

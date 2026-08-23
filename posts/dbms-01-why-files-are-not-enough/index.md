@@ -2,7 +2,7 @@
 layout: post
 title: "Zero to One: Why a Filesystem Is Not a Database"
 date: 2026-04-23
-tags: [databases, teaching, THGA, SQL, zero-to-one]
+tags: [databases, education]
 description: "Why relational databases exist — a teaching practicum that makes students feel the pain of querying 120 CSV files with shell tools before showing them SQL. Imperative vs. declarative, made concrete."
 keywords: "relational database tutorial, SQL vs filesystem, SQLite teaching, DBMS practicum, why use a database, declarative query language, THGA Bochum"
 permalink: /posts/dbms-01-why-files-are-not-enough/

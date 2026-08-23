@@ -2,7 +2,7 @@
 layout: post
 title: "Enclosureless Cases: When the PCB Is the Enclosure"
 date: 2026-04-29
-tags: [hardware, PCB, PCBA, enclosure, gebrauchsmuster, sensor, 1-wire, BME, open-hardware, manufacturing]
+tags: [pcb, electronics, open-source]
 description: "Enclosureless Cases: a patented approach to PCB housing where three stacked PCBs form a sealed, EMC-shielded enclosure using a perimeter solder joint — no injection moulding, no tooling, no separate supply chain."
 image: assets/photo_enclosureless_temphumid.jpg
 keywords: "PCB enclosure, Enclosureless Cases, PCB housing, FR4 enclosure, sensor housing, perimeter solder joint, Faraday cage PCB, 1-Wire sensor, utility model DE202020106111U1"

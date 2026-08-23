@@ -1,7 +1,7 @@
 ---
 title: "From Bitstream to Idea: An Inverse Guide to FPGAs"
 date: 2026-07-08
-tags: [fpga, ice40, ghdl, yosys, nextpnr, icestick, toolchain, hardware, digital-design]
+tags: [fpga, open-source]
 description: "The ghdl-yosys-nextpnr toolchain for an iCE40, walked backward: starting from a blinking LED and tracing every transformation back to the idea that caused it."
 keywords: "FPGA toolchain, ghdl, yosys, nextpnr, icepack, iceprog, iCE40, iCEstick, netlist, bitstream, place and route, technology mapping"
 ---

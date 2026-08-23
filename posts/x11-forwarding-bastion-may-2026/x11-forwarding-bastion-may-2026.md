@@ -2,7 +2,7 @@
 layout: post
 title: "Viewing Plots from My Homelab Over SSH X11 Forwarding"
 date: 2026-05-13
-tags: [linux, ssh, x11, networking, homelab, bastion, wireguard]
+tags: [linux, networking]
 description: "How to forward X11 through a bastion server to display images and plots from a home machine on a university workstation, without copying files."
 keywords: "X11 forwarding SSH, bastion server X11, SSH jump host display, homelab remote plotting, WireGuard SSH X11, Linux remote GUI"
 permalink: /posts/x11-forwarding-bastion-may-2026/

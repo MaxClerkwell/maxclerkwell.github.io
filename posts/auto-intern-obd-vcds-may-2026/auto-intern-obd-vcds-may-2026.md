@@ -2,7 +2,7 @@
 layout: post
 title: "How Two Teenagers, a Printer Plug, and a Forum Post Built a Company"
 date: 2026-05-06
-tags: [auto-intern, vcds, obd, ross-tech, automotive, origin-story, diagnostics]
+tags: [automotive, personal]
 description: "Auto-Intern GmbH turns 25. This is the story of how it started: two kids in a bedroom, a GTI, an RS-232 adapter, and the accidental invention of a market."
 image: assets/AutoSpion.jpg
 keywords: "Auto-Intern GmbH, VCDS, OBD diagnostics, Ross-Tech, automotive diagnostics, VW Golf GTI, RS-232 OBD adapter, origin story"

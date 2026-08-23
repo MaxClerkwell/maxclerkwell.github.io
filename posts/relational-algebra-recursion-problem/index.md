@@ -2,7 +2,7 @@
 layout: post
 title: "The Recursion Problem in Relational Algebra"
 date: 2026-04-24
-tags: [databases, teaching, THGA, relational-algebra]
+tags: [databases, education]
 description: "Relational algebra cannot express recursive queries — here is why transitive closure is outside the algebra's scope, and what SQL's WITH RECURSIVE actually means."
 keywords: "relational algebra, recursion, transitive closure, WITH RECURSIVE, CTE, SQL theory, org chart query, graph database"
 permalink: /posts/relational-algebra-recursion-problem/

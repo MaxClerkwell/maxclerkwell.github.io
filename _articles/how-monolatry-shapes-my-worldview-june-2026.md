@@ -1,7 +1,7 @@
 ---
 title: "How Monolatry Shapes My Worldview"
 date: 2026-06-21
-tags: [philosophy, religion, theology, jung, history, personal, monotheism, psychology]
+tags: [philosophy, history, personal]
 description: "From polytheism as a map of the inner life, through the slow emergence of the individual voice, to the moment one god is raised above the rest, and what that means for how I actually live."
 keywords: "monolatry, polytheism, monotheism, archetypes, Jung, Julian Jaynes, bicameral mind, Israel etymology, axial age, agape, Christianity, individuation, inner life"
 ---
