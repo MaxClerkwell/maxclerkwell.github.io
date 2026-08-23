@@ -9,13 +9,14 @@
   {% if page.math %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <!-- Font Awesome 6 free — self-hosted -->
   <link rel="stylesheet" href="{{ '/assets/fontawesome/all.min.css' | relative_url }}">
   <!-- Fonts — self-hosted, no Google requests -->
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
   {% seo %}
+  {% include structured-data.html %}
   {% if page.math %}
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"

@@ -3,127 +3,34 @@ layout: default
 title: Blog
 ---
 
-<!-- ── Hero ─────────────────────────────────────────────── -->
-<section class="hero">
-  <img src="{{ '/slides/Avatar.jpg' | relative_url }}"
-       alt="Stephan Bökelmann"
-       class="hero-avatar">
-  <div class="hero-text">
-    <h1>Stephan <span>Bökelmann</span></h1>
-    <p class="hero-tagline">From tape-out to TypeScript.</p>
-    <div class="hero-pills">
-      <span class="pill">Engineer</span>
-      <span class="pill">Physicist</span>
-      <span class="pill">Consultant</span>
-      <span class="pill">emBO++ Organizer</span>
-      <span class="pill">THGA Bochum</span>
+<!-- ── Hero: about | name | discord CTA ─────────────────── -->
+<section class="hero-banner">
+
+  <div class="hero-about">
+    <img src="{{ '/slides/Avatar.jpg' | relative_url }}"
+         alt="Stephan Bökelmann"
+         class="hero-avatar">
+    <div class="hero-about-text">
+      <p>Engineer, physicist &amp; freelancer. PhD candidate in experimental particle physics at RUB. Writing about DAQ, embedded systems, and manufacturing — usually one post per week.</p>
+      <a href="{{ '/about/' | relative_url }}" class="sidebar-about-link">Full bio →</a>
     </div>
   </div>
-</section>
 
-<!-- ── Linktree ──────────────────────────────────────────── -->
-<section class="linktree">
-  <p class="section-label">Find me on</p>
+  <div class="hero-name">
+    <h1>Stephan <span>Bökelmann</span></h1>
+    <p class="hero-aka">aka MaxClerkwell</p>
+    <p class="hero-tagline">From tape-out to TypeScript.</p>
+  </div>
 
-  <!-- Discord — featured, above all others -->
   <a href="https://discord.gg/2BXuUY6hrX"
-     class="link-card-discord" target="_blank" rel="noopener noreferrer">
+     class="hero-discord-btn" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-discord"></i>
-    <div class="discord-text">
-      <span class="discord-name">Discord — Full Stack Engineering</span>
-      <span class="discord-note">Direct access to me and my colleagues. Webinars, live Q&amp;A, and community discussions for engineers across the full stack.</span>
-      <span class="discord-join">Join the server →</span>
-    </div>
+    <span class="hero-discord-text">
+      <span class="discord-name">Join the Discord</span>
+      <span class="discord-note">Full Stack Engineering</span>
+    </span>
   </a>
 
-  <!-- All other platforms -->
-  <div class="linktree-grid">
-
-    <a href="https://github.com/maxclerkwell"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i>
-      <span class="lc-name">GitHub</span>
-      <span class="lc-handle">@maxclerkwell</span>
-    </a>
-
-    <a href="https://x.com/maxclerkwell"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-x-twitter"></i>
-      <span class="lc-name">X / Twitter</span>
-      <span class="lc-handle">@MaxClerkwell</span>
-    </a>
-
-    <a href="https://linkedin.com/in/accelerator-stephan"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-linkedin"></i>
-      <span class="lc-name">LinkedIn</span>
-      <span class="lc-handle">accelerator-stephan</span>
-    </a>
-
-    <a href="https://youtube.com/@maxclerkwell-st7db"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-youtube"></i>
-      <span class="lc-name">YouTube</span>
-      <span class="lc-handle">@MaxClerkwell</span>
-    </a>
-
-    <a href="https://instagram.com/_maxclerkwell"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-instagram"></i>
-      <span class="lc-name">Instagram</span>
-      <span class="lc-handle">@_maxclerkwell</span>
-    </a>
-
-    <a href="https://tiktok.com/@_maxclerkwell"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-tiktok"></i>
-      <span class="lc-name">TikTok</span>
-      <span class="lc-handle">@_maxclerkwell</span>
-    </a>
-
-    <a href="https://buymeacoffee.com/MaxClerkwell"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-coffee"></i>
-      <span class="lc-name">Buy Me a Coffee</span>
-      <span class="lc-handle">MaxClerkwell</span>
-    </a>
-
-    <a href="https://b23.tv/XRF5tln"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-bilibili"></i>
-      <span class="lc-name">BiliBili</span>
-      <span class="lc-handle">@MaxClerkwell</span>
-    </a>
-
-    <a href="https://www.douyin.com/user/MaxClerkwell"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-tiktok"></i>
-      <span class="lc-name">Douyin</span>
-      <span class="lc-handle">@MaxClerkwell</span>
-    </a>
-
-    <a href="https://xhslink.com/m/1yYXP9BiAAo"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-seedling"></i>
-      <span class="lc-name">Xiaohongshu</span>
-      <span class="lc-handle">@_maxclerkwell</span>
-    </a>
-
-    <a href="https://www.researchgate.net/profile/Stephan-Boekelmann"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-flask-vial"></i>
-      <span class="lc-name">ResearchGate</span>
-      <span class="lc-handle">Stephan-Boekelmann</span>
-    </a>
-
-    <a href="https://moodle.thga.de/course/index.php?categoryid=372"
-       class="link-card" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-graduation-cap"></i>
-      <span class="lc-name">THGA Moodle</span>
-      <span class="lc-handle">Courses</span>
-    </a>
-
-  </div>
 </section>
 
 <!-- ── Divider ───────────────────────────────────────────── -->

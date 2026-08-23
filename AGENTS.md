@@ -20,7 +20,7 @@ Jekyll requires Ruby and Bundler. The site uses `github-pages` gem to mirror the
 - `_config.yml` — site-wide settings (title, plugins, excludes, collections, defaults)
 - `_layouts/default.html` — shell with nav and footer; uses Inter + JetBrains Mono from Google Fonts and Font Awesome 6 for icons
 - `_layouts/post.html` — wraps `default.html`, adds back-link and post header
-- `assets/css/style.css` — all styles (single file, no preprocessor)
+- `assets/css/site.css` — all styles (single file, no preprocessor)
 - `index.html` — home page: hero section, linktree grid, and auto-generated post list
 - `posts/<slug>/...` — **legacy** blog posts (26 existing articles). Their `.md` source files and directories must never be moved or renamed (see "Adding a blog post").
 - `_articles/<slug>.md` — **new** blog posts (Jekyll `articles` collection)
