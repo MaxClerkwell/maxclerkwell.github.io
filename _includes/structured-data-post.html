@@ -1,0 +1,48 @@
+{% comment %}
+  Per-post BlogPosting JSON-LD.
+
+  Complements the site-wide @graph in structured-data.html: author, publisher
+  and the website node are referenced by @id instead of being repeated here.
+  All values come from the post front matter (title, date, description,
+  image, tags/keywords); the avatar is used as image fallback.
+{% endcomment %}
+{% assign post_image = page.image | default: '/slides/Avatar.jpg' | absolute_url %}
+{% assign post_desc = page.description | default: page.excerpt | strip_html | normalize_whitespace | strip %}
+{% assign post_modified = page.last_modified_at | default: page.date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": {{ page.url | absolute_url | append: '#article' | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page.url | absolute_url | jsonify }}
+  },
+  "url": {{ page.url | absolute_url | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "description": {{ post_desc | jsonify }},
+  "image": {{ post_image | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ post_modified | date_to_xmlschema | jsonify }},
+  "inLanguage": "{{ site.lang | default: 'en' }}",
+  "isPartOf": { "@id": "https://maxclerkwell.tech/#website" },
+  "author": {
+    "@type": "Person",
+    "@id": "https://maxclerkwell.tech/#person",
+    "name": {{ page.author | default: site.author.name | jsonify }},
+    "url": "https://maxclerkwell.tech/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://maxclerkwell.tech/#publisher",
+    "name": "MaxClerkwell",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://maxclerkwell.tech/slides/Avatar.jpg"
+    }
+  }{% if page.tags and page.tags != empty %},
+  "keywords": {{ page.tags | join: ', ' | jsonify }}{% elsif page.keywords %},
+  "keywords": {{ page.keywords | jsonify }}{% endif %}
+}
+</script>

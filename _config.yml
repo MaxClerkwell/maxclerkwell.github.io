@@ -1,7 +1,7 @@
 title: "Stephan Bökelmann"
 tagline: "From tape-out to TypeScript."
 email: "stephan@boekelmann.net"
-url: "https://maxclerkwell.github.io"
+url: "https://maxclerkwell.tech"
 baseurl: ""
 description: >-
   Engineer, physicist, and lecturer at THGA Bochum. I write about decentralised DAQ,
@@ -9,7 +9,7 @@ description: >-
 author:
   name: "Stephan Bökelmann"
   email: "stephan@boekelmann.net"
-  uri: "https://maxclerkwell.github.io"
+  uri: "https://maxclerkwell.tech"
 
 lang: en
 
