@@ -1,6 +1,7 @@
 ---
 layout: about
-title: About
+title: "About Stephan Bökelmann — Engineer & Physicist"
+description: "Background, projects and contact details of Stephan Bökelmann (MaxClerkwell): embedded systems, FPGA development, DAQ and detector instrumentation."
 permalink: /about/
 ---
 

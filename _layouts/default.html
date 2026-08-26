@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title and page.title != "Blog" %}{{ page.title }} — {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  {%- comment -%}
+    Title and meta description come exclusively from jekyll-seo-tag ({% seo %} below).
+    Do not add manual <title>/<meta name="description"> here — duplicates confuse crawlers.
+  {%- endcomment -%}
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
   {% if page.math %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
@@ -17,6 +19,12 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
   <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
   {% seo %}
+  <!-- rel="me" — identity edges; the back-links on the platforms are set by the profile owner -->
+  <link rel="me" href="https://github.com/maxclerkwell">
+  <link rel="me" href="https://x.com/maxclerkwell">
+  <link rel="me" href="https://linkedin.com/in/accelerator-stephan">
+  <link rel="me" href="https://youtube.com/@maxclerkwell-st7db">
+  <link rel="me" href="https://www.researchgate.net/profile/Stephan-Boekelmann">
   {% include structured-data.html %}
   {% if page.date %}{% include structured-data-post.html %}{% endif %}
   {% if page.math %}
@@ -51,6 +59,8 @@
          {% if page.url == '/' %}class="active"{% endif %}>Blog</a>
       <a href="{{ '/about/' | relative_url }}"
          {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
+      <a href="{{ '/talks/' | relative_url }}"
+         {% if page.url contains 'talks' %}class="active"{% endif %}>Talks</a>
     </div>
   </nav>
 

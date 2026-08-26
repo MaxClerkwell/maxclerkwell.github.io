@@ -1,0 +1,118 @@
+---
+layout: default
+title: "Talks & Conference Videos"
+description: "Recorded conference talks and lectures by Stephan Bökelmann (MaxClerkwell) on embedded systems, FPGA development, wire bonding and data acquisition."
+permalink: /talks/
+---
+
+<div class="post-layout">
+<article class="post-content">
+
+  <h1>Talks &amp; Conference Videos</h1>
+
+  <p class="post-excerpt">
+    Recorded talks and lectures by Stephan Bökelmann (MaxClerkwell) on embedded
+    systems, FPGA development, detector instrumentation and data acquisition.
+    Most recordings live on the organisers' channels; this page collects them in
+    one place.
+  </p>
+
+  <!--
+    ── HOW TO ADD A TALK ────────────────────────────────────────────────────
+    1. Copy one <section class="talk"> block below.
+    2. Replace every YOUTUBE_ID placeholder with the real video id, and fill in
+       name / description / uploadDate / duration / publisher.
+    3. Delete the "placeholder" class and the placeholder notice paragraph.
+    4. Never ship a JSON-LD block that still contains YOUTUBE_ID — remove the
+       whole <script> until the real video URL is known.
+    Roles: author/creator = the Person entity (#person); publisher = the
+    channel/organisation that hosts the recording.
+  -->
+
+  <!-- ═══ PLACEHOLDER 1 — not yet published, no real video URL known ═══ -->
+  <section class="talk placeholder" id="talk-placeholder-1">
+    <h2>Wire Bonding CLICpix and MuPix Detector Chips <em>(placeholder)</em></h2>
+    <p class="post-meta"><span class="post-tag">placeholder</span> Conference talk — recording not linked yet.</p>
+    <p>
+      Two years of hands-on wire bonding of CLICpix and MuPix detector chips on a
+      Delvotec bonder, condensed into one talk. <strong>Placeholder entry:</strong>
+      the video embed and the structured data below are activated once the
+      organiser's recording URL is confirmed.
+    </p>
+    <!-- Embed goes here once the video id is known:
+    <div class="talk-embed">
+      <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Wire Bonding CLICpix and MuPix Detector Chips"
+              width="560" height="315" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+    -->
+  </section>
+
+  <!-- ═══ PLACEHOLDER 2 — not yet published, no real video URL known ═══ -->
+  <section class="talk placeholder" id="talk-placeholder-2">
+    <h2>Deploying Hardware Like Software: A Zynq Bitstream Pipeline <em>(placeholder)</em></h2>
+    <p class="post-meta"><span class="post-tag">placeholder</span> Conference talk — recording not linked yet.</p>
+    <p>
+      An open-source path from JTAG bring-up to a REST API that loads a bitstream
+      onto a Zynq FPGA, without vendor tools in the loop.
+      <strong>Placeholder entry:</strong> see the written version in
+      <a href="/posts/zynq-bitstream-deployment-concept-august-2026/">the Zynq bitstream deployment article</a>
+      until the recording is available.
+    </p>
+  </section>
+
+  <!--
+    ── VideoObject JSON-LD TEMPLATE (one block per video) ───────────────────
+    Shipped with a non-standard script type on purpose: search engines ignore
+    it, so no placeholder video URL ever enters the structured data. To publish
+    a talk, copy this block into the talk's <section>, fill in every field and
+    change the type to "application/ld+json".
+  -->
+  <script type="application/ld+json-template" id="videoobject-template">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "@id": "https://maxclerkwell.tech/talks/#TALK_SLUG-video",
+    "name": "TALK TITLE",
+    "description": "One or two sentences on what the talk covers. Speaker: Stephan Bökelmann (MaxClerkwell).",
+    "thumbnailUrl": [
+      "https://i.ytimg.com/vi/YOUTUBE_ID/maxresdefault.jpg",
+      "https://i.ytimg.com/vi/YOUTUBE_ID/hqdefault.jpg"
+    ],
+    "uploadDate": "YYYY-MM-DD",
+    "duration": "PT25M",
+    "embedUrl": "https://www.youtube.com/embed/YOUTUBE_ID",
+    "contentUrl": "https://www.youtube.com/watch?v=YOUTUBE_ID",
+    "url": "https://maxclerkwell.tech/talks/#TALK_SLUG",
+    "inLanguage": "en",
+    "isBasedOn": "https://www.youtube.com/watch?v=YOUTUBE_ID",
+    "author":  { "@id": "https://maxclerkwell.tech/#person" },
+    "creator": { "@id": "https://maxclerkwell.tech/#person" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE / CHANNEL NAME",
+      "url": "https://example.org/"
+    },
+    "isPartOf": { "@id": "https://maxclerkwell.tech/talks/#list" }
+  }
+  </script>
+
+</article>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://maxclerkwell.tech/talks/#list",
+  "url": "https://maxclerkwell.tech/talks/",
+  "name": "Talks & Conference Videos — Stephan Bökelmann",
+  "description": "Recorded conference talks and lectures by Stephan Bökelmann (MaxClerkwell) on embedded systems, FPGA development, wire bonding and data acquisition.",
+  "inLanguage": "en",
+  "about":     { "@id": "https://maxclerkwell.tech/#person" },
+  "author":    { "@id": "https://maxclerkwell.tech/#person" },
+  "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
+  "isPartOf":  { "@id": "https://maxclerkwell.tech/#website" }
+}
+</script>

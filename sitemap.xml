@@ -16,7 +16,8 @@ layout: null
   <!-- Static content pages (about, imprint) -->
   {% assign static_about   = site.pages | where: "layout", "about" %}
   {% assign static_imprint = site.pages | where: "layout", "imprint" %}
-  {% assign static_pages   = static_about | concat: static_imprint %}
+  {% assign static_talks   = site.pages | where: "permalink", "/talks/" %}
+  {% assign static_pages   = static_about | concat: static_imprint | concat: static_talks %}
   {% for page in static_pages %}
   <url>
     <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>

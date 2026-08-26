@@ -28,6 +28,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 
 - [About / full bio](https://maxclerkwell.tech/about/): background, positions, and a complete list of R&D projects
 - [Blog index](https://maxclerkwell.tech/): all posts, newest first
+- [Talks](https://maxclerkwell.tech/talks/): recorded conference talks and lectures (entries are placeholders until the recordings are linked)
 - [Atom feed](https://maxclerkwell.tech/feed.xml): machine-readable post list
 
 ## All writing
