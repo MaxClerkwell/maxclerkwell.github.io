@@ -7,8 +7,10 @@ layout: null
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <!-- Homepage -->
+  {% assign home_page = site.pages | where: "url", "/" | first %}
   <url>
     <loc>{{ site.url }}/</loc>
+    <lastmod>{{ home_page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,9 +20,11 @@ layout: null
   {% assign static_imprint = site.pages | where: "layout", "imprint" %}
   {% assign static_talks   = site.pages | where: "permalink", "/talks/" %}
   {% assign static_pages   = static_about | concat: static_imprint | concat: static_talks %}
+  {% assign static_pages   = static_pages | where_exp: "p", "p.sitemap != false" %}
   {% for page in static_pages %}
   <url>
     <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
+    <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

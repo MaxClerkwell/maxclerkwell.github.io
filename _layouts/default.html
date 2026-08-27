@@ -8,6 +8,8 @@
     Do not add manual <title>/<meta name="description"> here — duplicates confuse crawlers.
   {%- endcomment -%}
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  {%- comment -%} Single source for robots; jekyll-seo-tag emits no robots meta. {%- endcomment -%}
+  {% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
   {% if page.math %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
   {% endif %}

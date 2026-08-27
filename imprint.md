@@ -2,6 +2,7 @@
 layout: imprint
 title: "Imprint"
 description: "Legal notice under § 5 TMG for maxclerkwell.tech: operator, contact address and responsibility for content — nabla B Ingenieurbüro und Dienstleistungs-UG."
+last_modified_at: 2026-08-27
 permalink: /imprint/
 ---
 
