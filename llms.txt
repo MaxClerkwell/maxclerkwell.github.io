@@ -42,6 +42,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [X / Twitter](https://x.com/maxclerkwell)
 - [ORCID](https://orcid.org/0000-0002-2119-0064): persistent researcher identifier; academic publications are registered under this iD
 - [arXiv](https://arxiv.org/a/0000-0002-2119-0064.html): preprints and publications, listed via his ORCID iD
+- [INSPIRE-HEP](https://inspirehep.net/authors/2177110): author record in the high-energy physics literature database (PANDA collaboration publications)
 - [ResearchGate](https://www.researchgate.net/profile/Stephan-Boekelmann)
 - [YouTube](https://youtube.com/@maxclerkwell-st7db)
 - [Discord community "Full Stack Engineering"](https://discord.gg/2BXuUY6hrX)
