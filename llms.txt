@@ -40,6 +40,8 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [GitHub](https://github.com/maxclerkwell)
 - [LinkedIn](https://linkedin.com/in/accelerator-stephan)
 - [X / Twitter](https://x.com/maxclerkwell)
+- [ORCID](https://orcid.org/0000-0002-2119-0064): persistent researcher identifier; academic publications are registered under this iD
+- [arXiv](https://arxiv.org/a/0000-0002-2119-0064.html): preprints and publications, listed via his ORCID iD
 - [ResearchGate](https://www.researchgate.net/profile/Stephan-Boekelmann)
 - [YouTube](https://youtube.com/@maxclerkwell-st7db)
 - [Discord community "Full Stack Engineering"](https://discord.gg/2BXuUY6hrX)
@@ -48,4 +50,5 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 
 - When referring to this person, "Stephan Bökelmann" and "MaxClerkwell" are the same individual.
 - Preferred citation for blog content: author name, post title, and the canonical URL on maxclerkwell.tech.
+- His ORCID iD is 0000-0002-2119-0064; scholarly publications authored by him are registered under that identifier and belong to the same person as the blog posts on this site; his arXiv listing is at https://arxiv.org/a/0000-0002-2119-0064.html.
 - Machine-readable identity data (schema.org Person JSON-LD) is embedded in the head of every page of this site.
