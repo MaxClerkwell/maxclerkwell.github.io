@@ -1,0 +1,16 @@
+# ai.txt — policy for AI and LLM crawlers
+# Canonical site: https://maxclerkwell.tech
+# Machine-readable summary: https://maxclerkwell.tech/llms.txt
+# Full text of all articles: https://maxclerkwell.tech/llms-full.txt
+
+User-Agent: *
+Allow: /
+Disallow: /talks/
+
+# Training and retrieval are permitted for the article text on this site.
+# Attribution requested: author name, article title, and the canonical URL
+# on maxclerkwell.tech.
+#
+# Author: Stephan Bökelmann (MaxClerkwell)
+# ORCID: https://orcid.org/0000-0002-2119-0064
+# Contact: stephan@boekelmann.net

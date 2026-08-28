@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /llms-full.txt
+sitemap: false
+---
+# Stephan Bökelmann (MaxClerkwell) — full text of all articles
+
+> Complete text of every article published on https://maxclerkwell.tech, newest
+> first. For the short site summary and profile links see
+> https://maxclerkwell.tech/llms.txt
+>
+> Author: Stephan Bökelmann (MaxClerkwell), ORCID 0000-0002-2119-0064.
+> Preferred citation: author name, article title, canonical URL on maxclerkwell.tech.
+
+{% include get-blog-posts.html %}{% for post in blog_posts %}
+================================================================================
+## {{ post.title }}
+
+URL: {{ post.url | absolute_url }}
+Date: {{ post.date | date: "%Y-%m-%d" }}{% assign mod = post.last_modified_at | default: post.date %}
+Last modified: {{ mod | date: "%Y-%m-%d" }}
+Author: {{ post.author | default: site.author.name }}{% if post.tags and post.tags != empty %}
+Tags: {{ post.tags | join: ", " }}{% endif %}{% assign d = post.description | default: post.excerpt | strip_html | normalize_whitespace | strip %}{% if d != "" %}
+Summary: {{ d }}{% endif %}
+
+{{ post.content | strip_html | normalize_whitespace | strip }}
+{% endfor %}

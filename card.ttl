@@ -1,0 +1,63 @@
+---
+layout: null
+permalink: /card.ttl
+sitemap: false
+---
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+
+<https://maxclerkwell.tech/#person>
+    a foaf:Person, schema:Person ;
+    foaf:name "Stephan Bökelmann"@de ;
+    foaf:givenName "Stephan" ;
+    foaf:familyName "Bökelmann" ;
+    foaf:nick "MaxClerkwell" ;
+    rdfs:label "Stephan Bökelmann" ;
+    foaf:title "Engineer, physicist, freelance consultant" ;
+    foaf:based_near "Bochum, Germany" ;
+    foaf:homepage <https://maxclerkwell.tech/> ;
+    foaf:workplaceHomepage <https://www.ruhr-uni-bochum.de/> ;
+    foaf:schoolHomepage <https://www.thga.de/> ;
+    foaf:img <https://maxclerkwell.tech/slides/Avatar.jpg> ;
+    foaf:mbox <mailto:stephan@boekelmann.net> ;
+    foaf:topic_interest
+        "data acquisition"@en,
+        "embedded systems"@en,
+        "FPGA development"@en,
+        "silicon pixel detectors"@en,
+        "experimental hadron physics"@en ;
+    schema:identifier <https://orcid.org/0000-0002-2119-0064> ;
+    owl:sameAs
+        <https://orcid.org/0000-0002-2119-0064>,
+        <https://inspirehep.net/authors/2177110>,
+        <https://arxiv.org/a/0000-0002-2119-0064.html>,
+        <https://www.researchgate.net/profile/Stephan-Boekelmann>,
+        <https://github.com/maxclerkwell>,
+        <https://linkedin.com/in/accelerator-stephan>,
+        <https://x.com/maxclerkwell>,
+        <https://www.youtube.com/@MaxClerkwell>,
+        <https://www.thethingsnetwork.org/u/MaxClerkwell> ;
+    foaf:account
+        <https://github.com/maxclerkwell>,
+        <https://x.com/maxclerkwell>,
+        <https://instagram.com/_maxclerkwell> ;
+    foaf:made <https://maxclerkwell.tech/> ;
+    org:memberOf <https://maxclerkwell.tech/#nablab> .
+
+<https://maxclerkwell.tech/#nablab>
+    a foaf:Organization, schema:Organization ;
+    foaf:name "nabla B" ;
+    rdfs:label "nabla B Ingenieurbüro und Dienstleistungs-UG" ;
+    dct:created "2020" ;
+    foaf:member <https://maxclerkwell.tech/#person> .
+
+<https://maxclerkwell.tech/>
+    a foaf:Document, schema:WebSite ;
+    dct:title "Stephan Bökelmann — MaxClerkwell" ;
+    dct:language "en" ;
+    foaf:maker <https://maxclerkwell.tech/#person> ;
+    foaf:primaryTopic <https://maxclerkwell.tech/#person> .

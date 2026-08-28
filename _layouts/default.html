@@ -21,17 +21,27 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
   <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
   {% seo %}
+  {%- comment -%} Feed autodiscovery — jekyll-seo-tag does not emit this. {%- endcomment -%}
+  {% feed_meta %}
+  <link rel="alternate" type="application/feed+json" title="{{ site.title }} (JSON Feed)" href="{{ '/feed.json' | absolute_url }}">
+  <link rel="alternate" type="text/turtle" title="FOAF profile" href="{{ '/card.ttl' | absolute_url }}">
+  <link rel="search" type="application/opensearchdescription+xml" title="{{ site.title }}" href="{{ '/opensearch.xml' | absolute_url }}">
   <!-- rel="me" — identity edges; the back-links on the platforms are set by the profile owner -->
   <link rel="me" href="https://github.com/maxclerkwell">
   <link rel="me" href="https://x.com/maxclerkwell">
   <link rel="me" href="https://linkedin.com/in/accelerator-stephan">
-  <link rel="me" href="https://youtube.com/@maxclerkwell-st7db">
+  <link rel="me" href="https://www.youtube.com/@MaxClerkwell">
   <link rel="me" href="https://www.researchgate.net/profile/Stephan-Boekelmann">
   <link rel="me" href="https://orcid.org/0000-0002-2119-0064">
   <link rel="me" href="https://arxiv.org/a/0000-0002-2119-0064.html">
   <link rel="me" href="https://inspirehep.net/authors/2177110">
+  <link rel="me" href="https://www.thethingsnetwork.org/u/MaxClerkwell">
+  <link rel="author" href="{{ '/about/' | absolute_url }}">
   {% include structured-data.html %}
   {% if page.date %}{% include structured-data-post.html %}{% endif %}
+  {% if page.date %}{% include structured-data-breadcrumb.html %}{% endif %}
+  {% if page.video and page.video.id %}{% include structured-data-video.html %}{% endif %}
+  {% if page.profile %}{% include structured-data-profile.html %}{% endif %}
   {% if page.math %}
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"

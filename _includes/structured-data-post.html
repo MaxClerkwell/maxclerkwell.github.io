@@ -26,7 +26,11 @@
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ post_modified | date_to_xmlschema | jsonify }},
   "inLanguage": "{{ site.lang | default: 'en' }}",
-  "isPartOf": { "@id": "https://maxclerkwell.tech/#website" },
+  "isPartOf": [
+    { "@id": "https://maxclerkwell.tech/#blog" },
+    { "@id": "https://maxclerkwell.tech/#website" }
+  ],{% if page.video and page.video.id %}
+  "video": { "@id": {{ page.url | absolute_url | append: '#video' | jsonify }} },{% endif %}
   "author": {
     "@type": "Person",
     "@id": "https://maxclerkwell.tech/#person",

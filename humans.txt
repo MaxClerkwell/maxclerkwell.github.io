@@ -1,0 +1,16 @@
+/* TEAM */
+  Author, engineer, physicist: Stephan Bökelmann (MaxClerkwell)
+  Contact: stephan [at] boekelmann.net
+  ORCID: 0000-0002-2119-0064
+  From: Bochum, Germany
+  Site: https://maxclerkwell.tech
+
+/* THANKS */
+  Everyone who reads, corrects and argues with the posts.
+
+/* SITE */
+  Standards: HTML5, CSS3, schema.org JSON-LD, microformats2
+  Components: Jekyll, jekyll-seo-tag, jekyll-feed, lunr.js, KaTeX, giscus
+  Hosting: GitHub Pages
+  Fonts and icons: self-hosted, no third-party requests
+  Software: Vim, KiCad, GHDL, Yosys, and a lot of oscilloscopes

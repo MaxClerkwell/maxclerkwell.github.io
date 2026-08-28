@@ -17,6 +17,27 @@
       },
       "email": "mailto:stephan@boekelmann.net",
       "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer"],
+      "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Engineering consultant, data acquisition and measurement systems",
+          "occupationLocation": { "@type": "City", "name": "Bochum, Germany" },
+          "skills": "embedded firmware, PCB design, FPGA development, DAQ systems, monitoring infrastructure"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Researcher, experimental hadron physics",
+          "occupationLocation": { "@type": "City", "name": "Bochum, Germany" },
+          "skills": "HV-MAPS ASIC characterisation, silicon pixel detectors, Geant4 simulation, wire bonding"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Lecturer in computer engineering",
+          "occupationLocation": { "@type": "City", "name": "Bochum, Germany" },
+          "skills": "programming, object-oriented design, databases, hardware-oriented programming"
+        }
+      ],
       "description": "Engineer, physicist, and freelance consultant based in Bochum, Germany. Works on decentralised data acquisition and observability: embedded firmware, PCB design, FPGA development, measurement and DAQ systems, and monitoring infrastructure. PhD candidate in experimental hadron physics, developing HV-MAPS ASICs for minimum ionizing particle detection for the PANDA experiment at FAIR.",
       "nationality": { "@type": "Country", "name": "Germany" },
       "homeLocation": { "@type": "Place", "name": "Bochum, Germany" },
@@ -99,10 +120,11 @@
         "https://arxiv.org/a/0000-0002-2119-0064.html",
         "https://inspirehep.net/authors/2177110",
         "https://www.researchgate.net/profile/Stephan-Boekelmann",
-        "https://youtube.com/@maxclerkwell-st7db",
+        "https://www.youtube.com/@MaxClerkwell",
         "https://instagram.com/_maxclerkwell",
         "https://tiktok.com/@_maxclerkwell",
         "https://www.douyin.com/user/MaxClerkwell",
+        "https://www.thethingsnetwork.org/u/MaxClerkwell",
         "https://buymeacoffee.com/MaxClerkwell"
       ]
     },
@@ -134,6 +156,17 @@
       ]
     },
     {
+      "@type": "Blog",
+      "@id": "https://maxclerkwell.tech/#blog",
+      "url": "https://maxclerkwell.tech/",
+      "name": "Stephan Bökelmann — From tape-out to TypeScript",
+      "description": "Longform writing on decentralised DAQ and monitoring systems, embedded engineering, FPGA development, particle physics instrumentation, and manufacturing. Usually one post per week.",
+      "inLanguage": "en",
+      "author": { "@id": "https://maxclerkwell.tech/#person" },
+      "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
+      "isPartOf": { "@id": "https://maxclerkwell.tech/#website" }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://maxclerkwell.tech/#website",
       "url": "https://maxclerkwell.tech/",
@@ -141,7 +174,17 @@
       "description": "Longform writing on decentralised DAQ and monitoring systems, embedded engineering, FPGA development, particle physics instrumentation, and manufacturing.",
       "author": { "@id": "https://maxclerkwell.tech/#person" },
       "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "about": { "@id": "https://maxclerkwell.tech/#person" },
+      "mainEntity": { "@id": "https://maxclerkwell.tech/#blog" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://maxclerkwell.tech/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
   ]
 }

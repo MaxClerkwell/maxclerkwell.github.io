@@ -1,0 +1,17 @@
+{% comment %}
+  BreadcrumbList for a single post: Home > Blog > post title.
+  The trailing item deliberately carries no "item" URL — schema.org treats the
+  current page as the implicit last crumb.
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": {{ page.url | absolute_url | append: '#breadcrumb' | jsonify }},
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxclerkwell.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://maxclerkwell.tech/#blog" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }} }
+  ]
+}
+</script>

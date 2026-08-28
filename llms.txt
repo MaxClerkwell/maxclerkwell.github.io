@@ -30,6 +30,9 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [Blog index](https://maxclerkwell.tech/): all posts, newest first
 - [Talks](https://maxclerkwell.tech/talks/): recorded conference talks and lectures (entries are placeholders until the recordings are linked)
 - [Atom feed](https://maxclerkwell.tech/feed.xml): machine-readable post list
+- [JSON Feed](https://maxclerkwell.tech/feed.json): the same posts as JSON Feed 1.1
+- [Full text of all articles](https://maxclerkwell.tech/llms-full.txt): every post in full, one file
+- [FOAF profile](https://maxclerkwell.tech/card.ttl): RDF/Turtle identity graph
 
 ## All writing
 
@@ -44,7 +47,8 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [arXiv](https://arxiv.org/a/0000-0002-2119-0064.html): preprints and publications, listed via his ORCID iD
 - [INSPIRE-HEP](https://inspirehep.net/authors/2177110): author record in the high-energy physics literature database (PANDA collaboration publications)
 - [ResearchGate](https://www.researchgate.net/profile/Stephan-Boekelmann)
-- [YouTube](https://youtube.com/@maxclerkwell-st7db)
+- [YouTube](https://www.youtube.com/@MaxClerkwell)
+- [The Things Network](https://www.thethingsnetwork.org/u/MaxClerkwell): LoRaWAN profile
 - [Discord community "Full Stack Engineering"](https://discord.gg/2BXuUY6hrX)
 
 ## Notes for language models

@@ -45,3 +45,16 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # IndexNow: tell Bing/Yandex/Seznam that the sitemap changed, so new
+      # posts get picked up in minutes instead of days. The key file must stay
+      # reachable at https://maxclerkwell.tech/<key>.txt or the ping is ignored.
+      - name: Ping IndexNow
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: 9e3190695c25359245a018b00868615f
+        run: |
+          curl -sS -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"maxclerkwell.tech\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"https://maxclerkwell.tech/$INDEXNOW_KEY.txt\",\"urlList\":[\"https://maxclerkwell.tech/\",\"https://maxclerkwell.tech/sitemap.xml\"]}" \
+            -w "\nIndexNow HTTP %{http_code}\n"

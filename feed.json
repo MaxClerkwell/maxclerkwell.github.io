@@ -1,0 +1,41 @@
+---
+layout: null
+permalink: /feed.json
+sitemap: false
+---
+{% include get-blog-posts.html %}
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": {{ site.feed.title | default: site.title | jsonify }},
+  "home_page_url": "https://maxclerkwell.tech/",
+  "feed_url": "https://maxclerkwell.tech/feed.json",
+  "description": {{ site.description | strip_newlines | strip | jsonify }},
+  "icon": "https://maxclerkwell.tech/slides/Avatar.jpg",
+  "favicon": "https://maxclerkwell.tech/favicon.svg",
+  "language": "{{ site.lang | default: 'en' }}",
+  "authors": [
+    {
+      "name": {{ site.author.name | jsonify }},
+      "url": "https://maxclerkwell.tech/about/",
+      "avatar": "https://maxclerkwell.tech/slides/Avatar.jpg"
+    }
+  ],
+  "items": [
+    {% assign limit = site.feed.posts_limit | default: 20 %}
+    {% for post in blog_posts limit: limit %}
+    {
+      "id": {{ post.url | absolute_url | jsonify }},
+      "url": {{ post.url | absolute_url | jsonify }},
+      "title": {{ post.title | jsonify }},
+      "summary": {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | strip | jsonify }},
+      "content_html": {{ post.content | strip | jsonify }},
+      "date_published": {{ post.date | date_to_xmlschema | jsonify }},
+      {% assign mod = post.last_modified_at | default: post.date %}
+      "date_modified": {{ mod | date_to_xmlschema | jsonify }},
+      {% if post.image %}"image": {{ post.image | absolute_url | jsonify }},{% endif %}
+      "authors": [ { "name": {{ post.author | default: site.author.name | jsonify }} } ],
+      "tags": {% if post.tags and post.tags != empty %}{{ post.tags | jsonify }}{% else %}[]{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

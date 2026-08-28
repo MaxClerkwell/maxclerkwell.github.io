@@ -1,0 +1,42 @@
+{% comment %}
+  VideoObject JSON-LD for a post that embeds a companion video.
+  Driven entirely by the post front matter:
+
+    video:
+      id: YOUTUBE_ID          # required
+      name: "Video title"     # required
+      description: "…"        # required
+      upload_date: YYYY-MM-DD # required by Google
+      duration: PT12M30S      # optional, ISO 8601
+
+  Emitted only when page.video.id is present, so no placeholder ever ships.
+{% endcomment %}
+{% if page.video and page.video.id %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "@id": {{ page.url | absolute_url | append: '#video' | jsonify }},
+  "name": {{ page.video.name | jsonify }},
+  "description": {{ page.video.description | jsonify }},
+  "thumbnailUrl": [
+    "https://i.ytimg.com/vi/{{ page.video.id }}/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/{{ page.video.id }}/hqdefault.jpg"
+  ],
+  "uploadDate": {{ page.video.upload_date | date_to_xmlschema | jsonify }},
+  {% if page.video.duration %}"duration": {{ page.video.duration | jsonify }},
+  {% endif %}"embedUrl": "https://www.youtube.com/embed/{{ page.video.id }}",
+  "contentUrl": "https://www.youtube.com/watch?v={{ page.video.id }}",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "inLanguage": "{{ site.lang | default: 'en' }}",
+  "author":  { "@id": "https://maxclerkwell.tech/#person" },
+  "creator": { "@id": "https://maxclerkwell.tech/#person" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MaxClerkwell",
+    "url": "https://www.youtube.com/@MaxClerkwell"
+  },
+  "isPartOf": { "@id": {{ page.url | absolute_url | append: '#article' | jsonify }} }
+}
+</script>
+{% endif %}

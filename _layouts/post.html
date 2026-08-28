@@ -3,28 +3,31 @@ layout: default
 ---
 <div class="post-layout">
 
-<article class="post-content">
+<article class="post-content h-entry">
 
   <a href="{{ '/' | relative_url }}" class="back-link">
     <i class="fas fa-arrow-left"></i> Back to Blog
   </a>
 
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
+    <h1 class="p-name">{{ page.title }}</h1>
+    <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
+    <a class="p-author h-card" href="{{ '/about/' | absolute_url }}" hidden>{{ page.author | default: site.author.name }}</a>
     <div class="post-meta">
-      <span class="date">
+      <time class="date dt-published" datetime="{{ page.date | date_to_xmlschema }}">
         <i class="far fa-calendar-alt"></i>
         {{ page.date | date: "%B %-d, %Y" }}
-      </span>
+      </time>{% assign mod = page.last_modified_at | default: page.date %}
+      <data class="dt-updated" value="{{ mod | date_to_xmlschema }}"></data>
       {% if page.tags %}
         {% for tag in page.tags %}
-          <span class="post-tag">{{ tag }}</span>
+          <span class="post-tag p-category">{{ tag }}</span>
         {% endfor %}
       {% endif %}
     </div>
   </header>
 
-  <div class="post-body">
+  <div class="post-body e-content">
     {{ content }}
   </div>
 

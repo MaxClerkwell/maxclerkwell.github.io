@@ -9,7 +9,7 @@
       <a href="https://github.com/maxclerkwell" target="_blank" rel="me noopener noreferrer"><i class="fab fa-github"></i><span>GitHub</span></a>
       <a href="https://x.com/maxclerkwell" target="_blank" rel="me noopener noreferrer"><i class="fab fa-x-twitter"></i><span>X / Twitter</span></a>
       <a href="https://linkedin.com/in/accelerator-stephan" target="_blank" rel="me noopener noreferrer"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
-      <a href="https://youtube.com/@maxclerkwell-st7db" target="_blank" rel="me noopener noreferrer"><i class="fab fa-youtube"></i><span>YouTube</span></a>
+      <a href="https://www.youtube.com/@MaxClerkwell" target="_blank" rel="me noopener noreferrer"><i class="fab fa-youtube"></i><span>YouTube</span></a>
       <a href="https://instagram.com/_maxclerkwell" target="_blank" rel="me noopener noreferrer"><i class="fab fa-instagram"></i><span>Instagram</span></a>
       <a href="https://tiktok.com/@_maxclerkwell" target="_blank" rel="me noopener noreferrer"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
       <a href="https://buymeacoffee.com/MaxClerkwell" target="_blank" rel="me noopener noreferrer"><i class="fas fa-coffee"></i><span>Buy Me a Coffee</span></a>
@@ -20,6 +20,7 @@
       <a href="https://arxiv.org/a/0000-0002-2119-0064.html" target="_blank" rel="me noopener noreferrer"><i class="fas fa-scroll"></i><span>arXiv</span></a>
       <a href="https://inspirehep.net/authors/2177110" target="_blank" rel="me noopener noreferrer"><i class="fas fa-atom"></i><span>INSPIRE-HEP</span></a>
       <a href="https://www.researchgate.net/profile/Stephan-Boekelmann" target="_blank" rel="me noopener noreferrer"><i class="fas fa-flask-vial"></i><span>ResearchGate</span></a>
+      <a href="https://www.thethingsnetwork.org/u/MaxClerkwell" target="_blank" rel="me noopener noreferrer"><i class="fas fa-satellite-dish"></i><span>The Things Network</span></a>
       <a href="https://moodle.thga.de/course/index.php?categoryid=372" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i><span>THGA Moodle</span></a>
     </div>
   </details>
@@ -79,10 +80,15 @@
         this.field('content');
         data.forEach(function(doc) { this.add(doc); }, this);
       });
+      if (input.value.trim()) runQuery(input.value.trim());
     });
 
-  input.addEventListener('input', function() {
-    var q = input.value.trim();
+  var initialQuery = new URLSearchParams(window.location.search).get('q');
+  if (initialQuery) input.value = initialQuery;
+
+  // ?q=… is the entry point declared in opensearch.xml and in the
+  // SearchAction of the site-wide JSON-LD, so it must actually run a search.
+  function runQuery(q) {
     results.innerHTML = '';
     if (!q || !lunrIndex) return;
     var hits = lunrIndex.search(q + '*');
@@ -98,7 +104,9 @@
                    + '<span class="search-date">' + doc.date + '</span>';
       results.appendChild(li);
     });
-  });
+  }
+
+  input.addEventListener('input', function() { runQuery(input.value.trim()); });
 
   // Tag filter
   document.querySelectorAll('.tag-pill').forEach(function(pill) {

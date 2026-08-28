@@ -5,6 +5,20 @@ layout: default
   <img src="{{ '/assets/about/cern-banner.jpg' | relative_url }}"
        alt="Stephan Bökelmann next to a blue LHC dipole magnet at CERN, lettered 'Accelerating Science'">
 </div>
-<div class="about-content">
+<div class="about-content h-card">
+  {%- comment -%}
+    microformats2 h-card. The visible bio carries u-email/u-url classes inline;
+    the machine-only fields below use <data> so nothing is rendered twice.
+  {%- endcomment -%}
+  <data class="p-name" value="Stephan Bökelmann"></data>
+  <data class="p-given-name" value="Stephan"></data>
+  <data class="p-family-name" value="Bökelmann"></data>
+  <data class="p-nickname" value="MaxClerkwell"></data>
+  <data class="p-job-title" value="Engineer, physicist, freelance consultant"></data>
+  <data class="p-org" value="nabla B"></data>
+  <data class="p-locality" value="Bochum"></data>
+  <data class="p-country-name" value="Germany"></data>
+  <data class="u-photo" value="https://maxclerkwell.tech/slides/Avatar.jpg"></data>
+  <data class="u-uid u-url" value="https://maxclerkwell.tech/"></data>
   {{ content }}
 </div>

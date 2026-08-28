@@ -5,6 +5,11 @@ tags: [fpga, electronics, education]
 description: "FPGAs are not microcontrollers with more pins. They are a fundamentally different category of IC, and understanding what lives inside one changes how you think about digital hardware entirely."
 keywords: "FPGA, field programmable gate array, VHDL, Verilog, yosys, nextpnr, iCEstick, routing fabric, bitstream, digital design, LUT, logic synthesis"
 image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png
+video:
+  id: IRem743Eb7E
+  name: "WTF is an FPGA? The most trivial explaination I can give!"
+  description: "A ground-up introduction to what FPGAs are, where they come from, what lives inside them, and how they differ from microcontrollers."
+  upload_date: 2026-07-09
 ---
 
 ![A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors](/assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png)

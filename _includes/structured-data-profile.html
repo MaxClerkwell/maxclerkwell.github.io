@@ -1,0 +1,111 @@
+{% comment %}
+  ProfilePage JSON-LD, emitted only on pages with `profile: true` in the front
+  matter (currently /about/). Declares the page as the canonical description of
+  the Person entity, and adds the event series and courses that person runs or
+  teaches. Everything references the site-wide nodes from structured-data.html
+  by @id instead of repeating them.
+{% endcomment %}
+{% assign profile_modified = page.last_modified_at | default: site.time %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://maxclerkwell.tech/about/#profile",
+      "url": "https://maxclerkwell.tech/about/",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "{{ site.lang | default: 'en' }}",
+      "dateModified": {{ profile_modified | date_to_xmlschema | jsonify }},
+      "mainEntity": { "@id": "https://maxclerkwell.tech/#person" },
+      "about": { "@id": "https://maxclerkwell.tech/#person" },
+      "isPartOf": { "@id": "https://maxclerkwell.tech/#website" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://maxclerkwell.tech/assets/about/cern-banner.jpg",
+        "caption": "Stephan Bökelmann next to an LHC dipole magnet at CERN"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxclerkwell.tech/" },
+          { "@type": "ListItem", "position": 2, "name": "About" }
+        ]
+      }
+    },
+    {
+      "@type": "EventSeries",
+      "@id": "https://maxclerkwell.tech/#embo",
+      "name": "emBO++",
+      "alternateName": "International Technical Symposium for Embedded Systems Development",
+      "description": "Annual international symposium in Bochum on modern C++ patterns for embedded and real-time systems.",
+      "location": { "@type": "Place", "name": "Bochum, Germany" },
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "organizer": { "@id": "https://maxclerkwell.tech/#person" },
+      "url": "https://embo.io/"
+    },
+    {
+      "@type": "EventSeries",
+      "@id": "https://maxclerkwell.tech/#kicon-europe",
+      "name": "KiCon Europe",
+      "description": "European conference for electronics developers working with KiCad, organised by open Skunkforce e.V.",
+      "location": { "@type": "Place", "name": "Bochum, Germany" },
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "organizer": { "@id": "https://maxclerkwell.tech/#person" }
+    },
+    {
+      "@type": "EventSeries",
+      "@id": "https://maxclerkwell.tech/#pdsc",
+      "name": "Practical Data Science Congress",
+      "alternateName": "PDSC Bochum",
+      "description": "Practitioner-focused congress at the intersection of machine learning, measurement systems, and industrial applications.",
+      "location": { "@type": "Place", "name": "Bochum, Germany" },
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "organizer": { "@id": "https://maxclerkwell.tech/#person" }
+    },
+    {
+      "@type": "Course",
+      "@id": "https://maxclerkwell.tech/#course-programming",
+      "name": "Programming and Object-Oriented Design",
+      "description": "Undergraduate course on programming fundamentals and object-oriented software design, taught at THGA Bochum.",
+      "inLanguage": "de",
+      "teaches": "programming, object-oriented design, software architecture",
+      "provider": {
+        "@type": "CollegeOrUniversity",
+        "name": "THGA Bochum (University of Applied Sciences Georg Agricola)",
+        "url": "https://www.thga.de/"
+      },
+      "instructor": { "@id": "https://maxclerkwell.tech/#person" }
+    },
+    {
+      "@type": "Course",
+      "@id": "https://maxclerkwell.tech/#course-databases",
+      "name": "Databases",
+      "description": "Undergraduate course on relational databases, relational algebra and SQL, taught at THGA Bochum.",
+      "inLanguage": "de",
+      "teaches": "relational algebra, SQL, database design, PostgreSQL",
+      "provider": {
+        "@type": "CollegeOrUniversity",
+        "name": "THGA Bochum (University of Applied Sciences Georg Agricola)",
+        "url": "https://www.thga.de/"
+      },
+      "instructor": { "@id": "https://maxclerkwell.tech/#person" }
+    },
+    {
+      "@type": "Course",
+      "@id": "https://maxclerkwell.tech/#course-hardware-programming",
+      "name": "Hardware-Oriented Programming",
+      "description": "Course on hardware-oriented and embedded programming, from microcontroller peripherals to measurement and data acquisition.",
+      "inLanguage": "de",
+      "teaches": "embedded programming, microcontrollers, peripherals, data acquisition",
+      "provider": {
+        "@type": "CollegeOrUniversity",
+        "name": "THGA Bochum (University of Applied Sciences Georg Agricola)",
+        "url": "https://www.thga.de/"
+      },
+      "instructor": { "@id": "https://maxclerkwell.tech/#person" }
+    }
+  ]
+}
+</script>

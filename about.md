@@ -4,6 +4,7 @@ title: "About Stephan Bökelmann — Engineer & Physicist"
 description: "Background, projects and contact details of Stephan Bökelmann (MaxClerkwell): embedded systems, FPGA development, DAQ and detector instrumentation."
 last_modified_at: 2026-08-27
 permalink: /about/
+profile: true
 ---
 
 # About Stephan Bökelmann
@@ -102,22 +103,31 @@ This blog is the canonical home for longform writing, usually one post per week.
 ## Contact
 
 <div class="about-contact">
-  <a href="mailto:stephan@boekelmann.net">
+  <a class="u-email" href="mailto:stephan@boekelmann.net">
     <i class="fas fa-envelope"></i> stephan@boekelmann.net <span style="opacity:0.6;">(freelance &amp; projects)</span>
   </a>
-  <a href="mailto:collaboration@maxclerkwell.tech">
+  <a class="u-email" href="mailto:collaboration@maxclerkwell.tech">
     <i class="fas fa-handshake"></i> collaboration@maxclerkwell.tech <span style="opacity:0.6;">(social media collaborations)</span>
   </a>
-  <a href="https://linkedin.com/in/accelerator-stephan" target="_blank" rel="me noopener noreferrer">
+  <a class="u-url" href="https://linkedin.com/in/accelerator-stephan" target="_blank" rel="me noopener noreferrer">
     <i class="fab fa-linkedin"></i> linkedin.com/in/accelerator-stephan
   </a>
-  <a href="https://x.com/maxclerkwell" target="_blank" rel="me noopener noreferrer">
+  <a class="u-url" href="https://x.com/maxclerkwell" target="_blank" rel="me noopener noreferrer">
     <i class="fab fa-x-twitter"></i> @MaxClerkwell
   </a>
-  <a href="https://github.com/maxclerkwell" target="_blank" rel="me noopener noreferrer">
+  <a class="u-url" href="https://github.com/maxclerkwell" target="_blank" rel="me noopener noreferrer">
     <i class="fab fa-github"></i> github.com/maxclerkwell
   </a>
-  <a href="https://www.researchgate.net/profile/Stephan-Boekelmann" target="_blank" rel="me noopener noreferrer">
+  <a class="u-url" href="https://www.researchgate.net/profile/Stephan-Boekelmann" target="_blank" rel="me noopener noreferrer">
     <i class="fas fa-flask-vial"></i> ResearchGate profile
+  </a>
+  <a class="u-url" href="https://orcid.org/0000-0002-2119-0064" target="_blank" rel="me noopener noreferrer">
+    <i class="fab fa-orcid"></i> ORCID 0000-0002-2119-0064
+  </a>
+  <a class="u-url" href="https://inspirehep.net/authors/2177110" target="_blank" rel="me noopener noreferrer">
+    <i class="fas fa-atom"></i> INSPIRE-HEP author record
+  </a>
+  <a class="u-url" href="https://arxiv.org/a/0000-0002-2119-0064.html" target="_blank" rel="me noopener noreferrer">
+    <i class="fas fa-scroll"></i> arXiv listing
   </a>
 </div>

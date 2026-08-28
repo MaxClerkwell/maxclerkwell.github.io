@@ -4,3 +4,30 @@ Allow: /
 Sitemap: https://maxclerkwell.tech/sitemap.xml
 
 # LLMs: https://maxclerkwell.tech/llms.txt
+# Full text for LLMs: https://maxclerkwell.tech/llms-full.txt
+# AI crawler policy: https://maxclerkwell.tech/ai.txt
+# Humans: https://maxclerkwell.tech/humans.txt
+# Security contact: https://maxclerkwell.tech/.well-known/security.txt
+# FOAF/RDF profile: https://maxclerkwell.tech/card.ttl
+
+# AI and LLM crawlers are welcome; see ai.txt for attribution terms.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
