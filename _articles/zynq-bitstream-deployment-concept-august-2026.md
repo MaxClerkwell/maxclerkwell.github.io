@@ -40,7 +40,7 @@ The Zynq-7000 boot ROM knows four boot sources: JTAG, QSPI flash, NAND, and SD c
 
 The usual path here is the Xilinx FSBL, the First Stage Boot Loader that Vivado generates for you. I am not taking that path. Mainline U-Boot has an SPL mode that replaces the FSBL entirely: a small first stage that initializes the DDR controller, the clocks, and the pin multiplexing, then loads the full U-Boot. The board-specific knowledge, which DDR chips are soldered down and which pins go where, lives in a generated file called `ps7_init_gpl.c` that can be extracted from the vendor's hardware description without ever starting Vivado. Alinx publishes their reference design [on GitHub](https://github.com/alinxalinx/AX7020_2023.1), and the file is sitting inside the XSA archive, which turns out to be a plain zip.
 
-Mainline U-Boot has never heard of the AX7020, so this stage involves teaching it about a board it does not know: adapting a device tree from a close relative like the ZedBoard and feeding the SPL the correct initialization data for this specific board. How that goes in practice, including whatever friction the vendor tutorials do not mention, will be the subject of its own article.
+Mainline U-Boot has never heard of the AX7020, so this stage involves teaching it about a board it does not know: adapting a device tree from a close relative like the ZedBoard and feeding the SPL the correct initialization data for this specific board. How that goes in practice, including whatever friction the vendor tutorials do not mention, is now documented in its own article: [ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable](/posts/alinx-bring-up-jtag-detected-without-power-august-2026/).
 
 Checkpoint for this stage: a U-Boot prompt on the serial console, `bdinfo` reporting 1 GB of DDR, and the QSPI flash answering to `sf probe`. Once that works, U-Boot gets written to the QSPI flash and the JTAG cable goes back in the drawer. Everything after this point happens over the network.
 
@@ -78,7 +78,7 @@ But my interest in this board is not the destination, it is the supply chain. Ev
 
 That is worth something on its own. It is worth more as content, because the failures along the way are precisely the material that vendor documentation cannot provide.
 
-The board is on my desk, the serial adapter is plugged in, and stage 1 is already further along than this article admits. Next post: building mainline U-Boot for a board that mainline has never heard of.
+The board is on my desk, and stage 1 is done: [building mainline U-Boot for a board that mainline has never heard of](/posts/alinx-bring-up-jtag-detected-without-power-august-2026/) documents the whole bring-up, checkpoints and detours included.
 
 ---
 
