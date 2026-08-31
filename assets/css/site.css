@@ -808,41 +808,6 @@ details.sidebar-widget[open] > .sidebar-widget-title::after {
   color: var(--text-dim);
 }
 
-/* ── Archive ──────────────────────────────────────────────── */
-.archive-year { margin-bottom: 0.25rem; }
-.archive-year-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  cursor: pointer;
-  list-style: none;
-  padding: 0.2rem 0;
-}
-.archive-year-label::-webkit-details-marker { display: none; }
-
-.archive-month { margin-left: 0.75rem; }
-.archive-month-label {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  cursor: pointer;
-  list-style: none;
-  padding: 0.15rem 0;
-}
-.archive-month-label::-webkit-details-marker { display: none; }
-
-.archive-post-list {
-  margin: 0.25rem 0 0.25rem 0.75rem;
-  padding: 0;
-  list-style: none;
-}
-.archive-post-list li { padding: 0.15rem 0; }
-.archive-post-list a {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-}
-.archive-post-list a:hover { color: var(--blue-bright); }
-
 /* ── Sidebar social links ─────────────────────────────────── */
 .sidebar-links {
   display: grid;

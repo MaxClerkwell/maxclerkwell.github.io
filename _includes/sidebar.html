@@ -38,45 +38,6 @@
     </div>
   </details>
 
-  <!-- ── Archive ────────────────────────────────────────── -->
-  <details class="sidebar-widget" open>
-    <summary class="sidebar-widget-title">
-      <i class="far fa-calendar-alt"></i> Archive
-    </summary>
-    <div class="sidebar-widget-body">
-      {% assign posts = blog_posts %}
-      {% assign years = posts | map: "date" | map: "year" | uniq %}
-      {% for year in years %}
-        {% assign year_str = year | date: "%Y" %}
-        <details class="archive-year">
-          <summary class="archive-year-label">{{ year_str }}</summary>
-          {% assign months = "" | split: "" %}
-          {% for post in posts %}
-            {% assign post_year = post.date | date: "%Y" %}
-            {% if post_year == year_str %}
-              {% assign month = post.date | date: "%Y-%m" %}
-              {% assign months = months | push: month %}
-            {% endif %}
-          {% endfor %}
-          {% assign months = months | uniq %}
-          {% for month in months %}
-            <details class="archive-month">
-              <summary class="archive-month-label">{{ month | date: "%B" }}</summary>
-              <ul class="archive-post-list">
-                {% for post in posts %}
-                  {% assign post_month = post.date | date: "%Y-%m" %}
-                  {% if post_month == month %}
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </details>
-          {% endfor %}
-        </details>
-      {% endfor %}
-    </div>
-  </details>
-
 </aside>
 
 <script>
