@@ -43,17 +43,34 @@ luminosity detector and HV-MAPS sensor characterisation.
 - **Never Touch a Running System** — poster, Data Science Ruhrgebiet 2021.
   DOI: [10.6084/M9.FIGSHARE.19314275](https://doi.org/10.6084/M9.FIGSHARE.19314275)
 
-## Patents
+## Patents & utility models
 
 - **Leiterplattengehäusevorrichtung** (printed-circuit-board housing device) —
   German patent **DE 10 2020 128 143**, granted by the DPMA in January 2026,
-  patent specification published 2026. Filed 2020. Related German utility model
-  (Gebrauchsmuster) *Leiterplatten-Gehäuse mit integrierter Sensorik*.
+  patent specification published 2026. Filed 2020.
+  [DPMAregister entry](https://register.dpma.de/DPMAregister/pat/register?AKZ=1020201281439).
   The enclosureless-PCB concept behind it is described in my writing on
   enclosureless PCB design.
+- **Leiterplatten-Gehäuse mit integrierter Sensorik** — German utility model
+  (Gebrauchsmuster, DPMA) parallel to the patent above; in force, renewed 2026.
+- **Bodenfeuchtesensor** (soil-moisture sensor) — German utility model
+  (Gebrauchsmuster, DPMA), filed 2023; deliberately allowed to lapse in 2026.
 - **OmnAIScope** — German national phase of a PCT application (filed 2019,
   examination ongoing at the DPMA) covering the OmnAI automotive measurement
   scope developed with Auto-Intern GmbH.
+
+German utility models are registered but not published the way patents are;
+verify via the DPMA's
+[DEPATISnet](https://depatisnet.dpma.de/DepatisNet/depatisnet?action=einsteiger)
+search.
+
+## Trademarks
+
+- **OmnAI** — trademark of Auto-Intern GmbH (international registration via
+  the Madrid system): registered in Russia (2026); US application
+  Serial [79411509](https://tsdr.uspto.gov/#caseNumber=79411509&caseSearchType=US_APPLICATION&caseType=SERIAL_NO&searchType=statusSearch)
+  under examination at the USPTO. Role: co-developer of the OmnAI product
+  line, trademark strategy together with Auto-Intern.
 
 ## Open-source software
 
@@ -93,7 +110,9 @@ Selected projects, with my role:
     { "@type": "ScholarlyArticle", "name": "Feasibility studies for the measurement of time-like proton electromagnetic form factors", "datePublished": "2021", "identifier": "https://doi.org/10.1140/epja/s10050-020-00333-3", "author": { "@id": "https://maxclerkwell.tech/#person" } },
     { "@type": "ScholarlyArticle", "name": "Precision resonance energy scans with the PANDA experiment at FAIR", "datePublished": "2019", "identifier": "https://doi.org/10.1140/epja/i2019-12718-2", "author": { "@id": "https://maxclerkwell.tech/#person" } },
     { "@type": "ScholarlyArticle", "name": "Microfabricated Electrochemical Sensors as a Sentinel System to Detect Biofilms in River Systems", "datePublished": "2025", "identifier": "https://doi.org/10.1149/ma2025-02632961mtgabs", "author": { "@id": "https://maxclerkwell.tech/#person" } },
-    { "@type": "CreativeWork", "additionalType": "Patent", "name": "Leiterplattengehäusevorrichtung", "identifier": "DE 10 2020 128 143", "description": "German patent, granted by the DPMA in January 2026. Inventor: Stephan Bökelmann.", "creator": { "@id": "https://maxclerkwell.tech/#person" } },
+    { "@type": "CreativeWork", "additionalType": "Patent", "name": "Leiterplattengehäusevorrichtung", "identifier": "DE 10 2020 128 143", "url": "https://register.dpma.de/DPMAregister/pat/register?AKZ=1020201281439", "description": "German patent, granted by the DPMA in January 2026. Inventor: Stephan Bökelmann.", "creator": { "@id": "https://maxclerkwell.tech/#person" } },
+    { "@type": "CreativeWork", "additionalType": "UtilityModel", "name": "Leiterplatten-Gehäuse mit integrierter Sensorik", "description": "German utility model (Gebrauchsmuster, DPMA), parallel to patent DE 10 2020 128 143; in force.", "creator": { "@id": "https://maxclerkwell.tech/#person" } },
+    { "@type": "CreativeWork", "additionalType": "UtilityModel", "name": "Bodenfeuchtesensor", "description": "German utility model (Gebrauchsmuster, DPMA), filed 2023, lapsed 2026.", "creator": { "@id": "https://maxclerkwell.tech/#person" } },
     { "@type": "SoftwareSourceCode", "name": "edgy_boards", "codeRepository": "https://github.com/skunkforce/edgy_boards", "author": { "@id": "https://maxclerkwell.tech/#person" } },
     { "@type": "SoftwareSourceCode", "name": "ax7020-bringup", "codeRepository": "https://github.com/MaxClerkwell/ax7020-bringup", "author": { "@id": "https://maxclerkwell.tech/#person" } }
   ]

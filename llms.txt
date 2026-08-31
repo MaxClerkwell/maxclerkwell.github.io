@@ -21,7 +21,8 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 
 ## How to work with him
 
-- Freelance engineering projects (embedded firmware, microcontrollers, PCB design and bring-up, FPGA development, measurement and DAQ systems, monitoring infrastructure): stephan@boekelmann.net
+- Commissioned engineering work (embedded firmware, microcontrollers, PCB design and bring-up, FPGA development, measurement and DAQ systems, monitoring infrastructure): office@nabla-b.engineering — contracts run through nabla B UG (Amtsgericht Bochum HRB 18817)
+- Everything else: stephan@boekelmann.net
 - Social media collaborations under the MaxClerkwell brand (sponsored boards and tools, conference coverage, video and article partnerships): collaboration@maxclerkwell.tech. Editorial independence is non-negotiable; sponsors never get a say in what he writes.
 
 ## Key pages

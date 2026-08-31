@@ -54,6 +54,35 @@ Course material is not public; external accounts for the THGA courses can be req
 
 See also: [Publications, Patents & Software](/publications/) and [Talks & Conference Appearances](/talks/).
 
+## FAQ
+
+**What is Stephan Bökelmann an expert in?**
+Decentralised data acquisition (DAQ) and observability for industry and research: getting measurements reliably out of physical systems and into usable infrastructure — from the sensor through embedded firmware and PCB design up to the monitoring platform.
+
+**What is decentralised data acquisition, and why prefer it over a central DAQ system?**
+Decentralised DAQ puts measurement intelligence where the data originates — at the machine, the test stand, the detector — instead of routing every signal to a central measurement PC. That buys scalability (add a node, not a rack), fault tolerance (one failed node does not blind the whole system), short analogue cable runs, and timestamps taken at the source. A central system still wins when you need tight channel-to-channel synchronisation in one place; knowing when that is the case is part of the job.
+
+**What freelance projects does he take on?**
+Embedded firmware (microcontrollers, bare-metal and RTOS), PCB design and bring-up, FPGA development, measurement and DAQ systems, and the monitoring infrastructure around them — from feasibility study to serial product. Commissioned work goes through [office@nabla-b.engineering](mailto:office@nabla-b.engineering).
+
+**Does he take on PCB design as a standalone project?**
+Yes. Schematic and layout in KiCad, bring-up, EMC preparation, and handover to manufacturing — including supply-chain experience with Chinese board and cable manufacturers.
+
+**How do I know my company has a data-acquisition problem?**
+Typical symptoms: measurement data living in Excel islands, USB instruments tied to single lab PCs, no shared time base across measurements, and exactly one colleague who understands the measurement setup. If that sounds familiar, the measurement chain — not the analysis — is usually the bottleneck.
+
+**What qualifies him?**
+Professionally active since 2007, trained from the workbench up: mechanic, electrician, B.Eng., M.Eng., PhD work on DAQ for the PANDA experiment at FAIR, projects for CERN, DESY and GSI, a granted German patent ([DE 10 2020 128 143](/publications/)), and lecturing at three universities. See [Publications](/publications/) and [Talks](/talks/).
+
+**What is nabla B?**
+nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt) is his engineering office in Bochum (Amtsgericht Bochum HRB 18817, founded 2020) — the legal home of the freelance work. It is part of the AI-Gruppe umbrella brand.
+
+**Who do I contract with when I hire Stephan Bökelmann?**
+With nabla B UG (Bochum, HRB 18817). Collaboration with Auto-Intern GmbH and the other AI-Gruppe companies adds capacity when a project needs it — the contract and the responsibility stay with nabla B.
+
+**How do I reach him?**
+Commissioned engineering work: [office@nabla-b.engineering](mailto:office@nabla-b.engineering). Social-media collaborations under the MaxClerkwell brand: [collaboration@maxclerkwell.tech](mailto:collaboration@maxclerkwell.tech). Everything else: [stephan@boekelmann.net](mailto:stephan@boekelmann.net).
+
 ## Citing me
 
 Not to be confused with the UK agency Clerkswell, the musician Stephan Bodzin, or the actor Ludger Bökelmann. If your keyboard lacks an "ö": *Stephan Boekelmann*.
@@ -152,3 +181,24 @@ This blog is the canonical home for longform writing, usually one post per week.
     <i class="fas fa-scroll"></i> arXiv listing
   </a>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://maxclerkwell.tech/about/#faq",
+  "about": { "@id": "https://maxclerkwell.tech/#person" },
+  "inLanguage": "en",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is Stephan Bökelmann an expert in?", "acceptedAnswer": { "@type": "Answer", "text": "Decentralised data acquisition (DAQ) and observability for industry and research: getting measurements reliably out of physical systems and into usable infrastructure, from the sensor through embedded firmware and PCB design up to the monitoring platform." } },
+    { "@type": "Question", "name": "What is decentralised data acquisition, and why prefer it over a central DAQ system?", "acceptedAnswer": { "@type": "Answer", "text": "Decentralised DAQ puts measurement intelligence where the data originates instead of routing every signal to a central measurement PC. That buys scalability, fault tolerance, short analogue cable runs, and timestamps taken at the source. A central system still wins when tight channel-to-channel synchronisation in one place is needed." } },
+    { "@type": "Question", "name": "What freelance projects does Stephan Bökelmann take on?", "acceptedAnswer": { "@type": "Answer", "text": "Embedded firmware (microcontrollers, bare-metal and RTOS), PCB design and bring-up, FPGA development, measurement and DAQ systems, and monitoring infrastructure, from feasibility study to serial product. Commissioned work: office@nabla-b.engineering." } },
+    { "@type": "Question", "name": "Does he take on PCB design as a standalone project?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Schematic and layout in KiCad, bring-up, EMC preparation, and handover to manufacturing, including supply-chain experience with Chinese board and cable manufacturers." } },
+    { "@type": "Question", "name": "How do I know my company has a data-acquisition problem?", "acceptedAnswer": { "@type": "Answer", "text": "Typical symptoms: measurement data living in Excel islands, USB instruments tied to single lab PCs, no shared time base across measurements, and exactly one colleague who understands the measurement setup. Then the measurement chain, not the analysis, is usually the bottleneck." } },
+    { "@type": "Question", "name": "What qualifies him?", "acceptedAnswer": { "@type": "Answer", "text": "Professionally active since 2007: trained mechanic and electrician, B.Eng., M.Eng., PhD work on DAQ for the PANDA experiment at FAIR, projects for CERN, DESY and GSI, a granted German patent (DE 10 2020 128 143), and lecturing at three universities." } },
+    { "@type": "Question", "name": "What is nabla B?", "acceptedAnswer": { "@type": "Answer", "text": "nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt) is Stephan Bökelmann's engineering office in Bochum (Amtsgericht Bochum HRB 18817, founded 2020), the legal home of his freelance work, and part of the AI-Gruppe umbrella brand." } },
+    { "@type": "Question", "name": "Who do I contract with when I hire Stephan Bökelmann?", "acceptedAnswer": { "@type": "Answer", "text": "With nabla B UG (Bochum, HRB 18817). Collaboration with Auto-Intern GmbH and the other AI-Gruppe companies adds capacity when a project needs it; the contract and the responsibility stay with nabla B." } },
+    { "@type": "Question", "name": "How do I reach Stephan Bökelmann?", "acceptedAnswer": { "@type": "Answer", "text": "Commissioned engineering work: office@nabla-b.engineering. Social-media collaborations under the MaxClerkwell brand: collaboration@maxclerkwell.tech. Everything else: stephan@boekelmann.net." } }
+  ]
+}
+</script>
