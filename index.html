@@ -13,7 +13,7 @@ description: "Technical articles by Stephan Bökelmann on embedded systems, FPGA
          alt="Stephan Bökelmann"
          class="hero-avatar">
     <div class="hero-about-text">
-      <p>Engineer, physicist &amp; freelancer. PhD candidate in experimental particle physics at RUB. Writing about DAQ, embedded systems, and manufacturing — usually one post per week.</p>
+      <p>Engineer, physicist &amp; freelancer. Researcher at RUB. Writing about DAQ, embedded systems, and manufacturing — usually one post per week.</p>
       <a href="{{ '/about/' | relative_url }}" class="sidebar-about-link">Full bio →</a>
     </div>
   </div>
@@ -33,7 +33,11 @@ description: "Technical articles by Stephan Bökelmann on embedded systems, FPGA
         <span class="discord-note">Full Stack Engineering</span>
       </span>
     </a>
+    <!-- Hidden until the site is established enough with Google for the
+         preferred-source flow to work; re-enable together with the
+         swg publisher.js include in _layouts/default.html.
     <div google-add-preferred-source-btn data-theme="dark"></div>
+    -->
   </div>
 
 </section>
@@ -58,8 +62,19 @@ description: "Technical articles by Stephan Bökelmann on embedded systems, FPGA
     {% include get-blog-posts.html %}
 
     {% for post in blog_posts %}
+    {%- assign thumb = post.image -%}
+    {%- if thumb -%}
+      {%- assign thumb_first = thumb | slice: 0 -%}
+      {%- unless thumb_first == "/" or thumb contains "://" -%}
+        {%- assign thumb = post.url | append: thumb -%}
+      {%- endunless -%}
+    {%- endif -%}
     <div class="post-card h-entry" data-tags="{{ post.tags | join: ' ' }}">
       <a class="u-url" href="{{ post.url | relative_url }}">
+        {% if thumb %}
+        <img class="post-thumb u-photo" src="{{ thumb | relative_url }}" alt="" loading="lazy" width="72" height="72">
+        {% endif %}
+        <div class="post-card-body">
         <h3 class="p-name">{{ post.title }}</h3>
         <div class="post-meta">
           <time class="date dt-published" datetime="{{ post.date | date_to_xmlschema }}">
@@ -75,6 +90,7 @@ description: "Technical articles by Stephan Bökelmann on embedded systems, FPGA
         {% elsif post.excerpt %}
         <p class="post-excerpt p-summary">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
         {% endif %}
+        </div>
       </a>
     </div>
     {% endfor %}

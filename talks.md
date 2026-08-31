@@ -15,12 +15,21 @@ Recordings, where they exist, live on the organisers' channels.
 
 ## Conference talks
 
-- **"Poor Man's Introduction to Wire-Bonding"** — [KiCon Asia 2025](https://kicon.kicad.org/asia2025/),
-  Shenzhen, 15 November 2025. Two years of hands-on wire bonding of CLICpix
+- **"Poor Man's Introduction to Wire-Bonding"** — given twice in 2025: at
+  [KiCon Europe 2025](https://kicon.kicad.org/europe2025/), UFO,
+  Ruhr-Universität Bochum, 12 September 2025
+  ([programme entry](https://pretalx.kicad.org/kicon-europe-2025/talk/DKJB9Q/)),
+  and at
+  [KiCon Asia 2025](https://kicon.kicad.org/asia2025/),
+  Shenzhen, 15 November 2025
+  ([programme](https://kicon.kicad.org/asia2025/en/schedule/talks/)). Two years of hands-on wire bonding of CLICpix
   and MuPix detector chips on a Delvotec bonder, in 25 minutes.
-- **"KIMBA und der Bodo mit dem Bagger"** — [PDSC4K, Practical Data Science
-  Congress 4000](https://skunkforce.org/pdsc4k/), ZESS, Ruhr-Universität
-  Bochum, 22 May 2026 (for AI-Gruppe).
+  [Recording on YouTube](https://www.youtube.com/watch?v=dNBwY7L6niI).
+- **"Everything, Everywhere, All at Once"** — keynote at
+  [PDSC4K, Practical Data Science Congress 4000](https://skunkforce.org/pdsc4k/),
+  ZESS, Ruhr-Universität Bochum, 22 May 2026. The four zones of a real data
+  pipeline, from analog front-end to Provider API;
+  [write-up on this blog](/posts/pdsc4k-may-2026/).
 - **"RTCS"** — [emBO++ 2024](https://embo.io/programm-2024/), Bochum,
   March 2024. Plus the conference opening on both days and
   ["Roast for Clarify"](https://www.youtube.com/watch?v=wCL-0NgVf3I)
@@ -79,6 +88,7 @@ public): CM 19/1 (Mar 2019), 19/3 (Nov 2019), 2020-III (online),
       "@type": "Event",
       "@id": "https://maxclerkwell.tech/talks/#kicon-asia-2025",
       "name": "KiCon Asia 2025",
+      "url": "https://kicon.kicad.org/asia2025/en/schedule/talks/",
       "startDate": "2025-11-15",
       "endDate": "2025-11-15",
       "eventStatus": "https://schema.org/EventScheduled",
@@ -86,7 +96,21 @@ public): CM 19/1 (Mar 2019), 19/3 (Nov 2019), 2020-III (online),
       "location": { "@type": "Place", "name": "Atour Hotel Nanshan", "address": { "@type": "PostalAddress", "addressLocality": "Shenzhen", "addressCountry": "CN" } },
       "organizer": { "@type": "Organization", "name": "KiCad", "url": "https://www.kicad.org/" },
       "performer": { "@id": "https://maxclerkwell.tech/#person" },
-      "workPerformed": { "@type": "CreativeWork", "name": "Poor Man's Introduction to Wire-Bonding" }
+      "workPerformed": { "@type": "CreativeWork", "name": "Poor Man's Introduction to Wire-Bonding", "url": "https://www.youtube.com/watch?v=dNBwY7L6niI" }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://maxclerkwell.tech/talks/#kicon-europe-2025",
+      "name": "KiCon Europe 2025",
+      "url": "https://pretalx.kicad.org/kicon-europe-2025/talk/DKJB9Q/",
+      "startDate": "2025-09-10",
+      "endDate": "2025-09-12",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": { "@type": "Place", "name": "UFO, Ruhr-Universität Bochum", "address": { "@type": "PostalAddress", "streetAddress": "Querenburger Höhe 283", "addressLocality": "Bochum", "postalCode": "44801", "addressCountry": "DE" } },
+      "organizer": { "@type": "Organization", "name": "KiCad", "url": "https://www.kicad.org/" },
+      "performer": { "@id": "https://maxclerkwell.tech/#person" },
+      "workPerformed": { "@type": "CreativeWork", "name": "Poor Man's Introduction to Wire-Bonding", "url": "https://www.youtube.com/watch?v=dNBwY7L6niI" }
     },
     {
       "@type": "Event",
@@ -99,7 +123,7 @@ public): CM 19/1 (Mar 2019), 19/3 (Nov 2019), 2020-III (online),
       "location": { "@type": "Place", "name": "ZESS, Ruhr-Universität Bochum", "address": { "@type": "PostalAddress", "streetAddress": "Hans-Dobbertin-Straße 8", "addressLocality": "Bochum", "postalCode": "44803", "addressCountry": "DE" } },
       "organizer": { "@id": "https://maxclerkwell.tech/#skunkforce" },
       "performer": { "@id": "https://maxclerkwell.tech/#person" },
-      "workPerformed": { "@type": "CreativeWork", "name": "KIMBA und der Bodo mit dem Bagger", "inLanguage": "de" }
+      "workPerformed": { "@type": "CreativeWork", "name": "Everything, Everywhere, All at Once", "url": "https://maxclerkwell.tech/posts/pdsc4k-may-2026/" }
     },
     {
       "@type": "Event",

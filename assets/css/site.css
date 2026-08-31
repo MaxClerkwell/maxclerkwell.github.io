@@ -363,8 +363,22 @@ img { display: block; max-width: 100%; }
   transform: translateY(-2px);
 }
 .post-card a {
-  display: block;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
   color: var(--text-primary);
+}
+.post-thumb {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.post-card-body { min-width: 0; }
+@media (max-width: 480px) {
+  .post-thumb { flex-basis: 56px; width: 56px; height: 56px; }
 }
 .post-card a:hover { color: var(--text-primary); }
 

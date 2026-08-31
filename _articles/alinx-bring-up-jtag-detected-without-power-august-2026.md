@@ -834,4 +834,5 @@ The next step is Stage 3 of the plan: a Linux built for this board with
 chain. The groundwork is already in place: U-Boot sits resident in QSPI, the
 lab network with DHCP and TFTP is running, and `bootm` is waiting for a
 kernel. (The image server of Stage 2 grows naturally out of the same lab
-network along the way.) That build gets its own article.
+network along the way.) That build now has its own article:
+[a Yocto Linux in QSPI flash that fetches its own updates](/posts/alinx-ax7020-yocto-linux-qspi-august-2026/).

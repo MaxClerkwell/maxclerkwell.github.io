@@ -50,9 +50,13 @@ U-Boot can fetch files over TFTP, and the Ethernet port of the AX7020 hangs dire
 
 That requires infrastructure on my side, a small image server: TFTP for U-Boot, plus something to serve rootfs images. This is deliberately part of the project rather than an annoyance. If the endgame is treating hardware deployment like software deployment, then the boot images themselves should also come from a server I can push to, not from an SD card I have to carry around. The UART stays connected during all of this as the rescue line; serial consoles are to embedded bring-up what stack traces are to software.
 
+(Spoiler from the future: this stage did not survive contact with a managed switch in its planned form. What actually happened is in the [Stages 2 & 3 article](/posts/alinx-ax7020-yocto-linux-qspi-august-2026/).)
+
 ### Stage 3: A Linux built for this board
 
 With netboot working, the board needs a proper operating system. PetaLinux, the vendor's offering, is a wrapper around Yocto, so I will skip the wrapper and use Yocto directly with the meta-xilinx layer, mainline kernel, mainline U-Boot. The Zynq-7000 is mature enough to be genuinely well supported upstream; the Ethernet controller, the SD controller, and, crucially for this project, the FPGA configuration interface all have mainline drivers.
+
+How this stage actually went, including a flash bug that defeated every checksum and a switch that silenced U-Boot for good, is documented in [ALINX AX7020, Stages 2 & 3: A Yocto Linux in QSPI Flash That Fetches Its Own Updates](/posts/alinx-ax7020-yocto-linux-qspi-august-2026/).
 
 The one feature this Linux absolutely must have is the kernel's FPGA manager framework. On the Zynq, the processor configures the FPGA fabric through an internal port called PCAP, and the mainline `zynq-fpga` driver exposes it in sysfs. Loading a new hardware design then degenerates into writing a filename into a sysfs node. No cable, no vendor tool, just a file write that any process with the right permissions can perform.
 
