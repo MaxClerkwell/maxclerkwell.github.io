@@ -6,7 +6,8 @@
       "@type": "Person",
       "@id": "https://maxclerkwell.tech/#person",
       "name": "Stephan Bökelmann",
-      "alternateName": ["MaxClerkwell", "maxclerkwell", "_maxclerkwell", "Stephan Boekelmann", "nabla B", "\u2207B", "施泓杰"],
+      "alternateName": ["MaxClerkwell", "maxclerkwell", "_maxclerkwell", "Stephan Boekelmann", "Stefan Bökelmann", "Stefan Boekelmann", "Stephan Böckelmann", "Stephan Boeckelmann", "Stephan Bockelmann", "Stephan Bokelmann", "S. Bökelmann", "nabla B", "\u2207B", "施泓杰"],
+      "disambiguatingDescription": "German engineer and physicist in Bochum, alias MaxClerkwell (a wordplay on James Clerk Maxwell). Not related to the UK agency Clerkswell, the musician Stephan Bodzin, or the actor Ludger Bökelmann. Professionally active since 2007, when he started as an electronics technician.",
       "url": "https://maxclerkwell.tech/",
       "image": "https://maxclerkwell.tech/slides/Avatar.jpg",
       "identifier": {
@@ -38,7 +39,7 @@
           "skills": "programming, object-oriented design, databases, hardware-oriented programming"
         }
       ],
-      "description": "Engineer, physicist, and freelance consultant based in Bochum, Germany. Works on decentralised data acquisition and observability: embedded firmware, PCB design, FPGA development, measurement and DAQ systems, and monitoring infrastructure. PhD candidate in experimental hadron physics, developing HV-MAPS ASICs for minimum ionizing particle detection for the PANDA experiment at FAIR.",
+      "description": "Engineer, physicist, and freelance consultant based in Bochum, Germany. Professionally active since 2007. Works on decentralised data acquisition and observability: embedded firmware, PCB design, FPGA development, measurement and DAQ systems, and monitoring infrastructure. PhD candidate in experimental hadron physics, developing HV-MAPS ASICs for minimum ionizing particle detection for the PANDA experiment at FAIR.",
       "nationality": { "@type": "Country", "name": "Germany" },
       "homeLocation": { "@type": "Place", "name": "Bochum, Germany" },
       "worksFor": { "@id": "https://maxclerkwell.tech/#nablab" },
@@ -47,12 +48,26 @@
           "@type": "CollegeOrUniversity",
           "name": "Ruhr-Universität Bochum",
           "department": "Institut für Experimentalphysik I, Chair of Experimental Hadron Physics",
-          "url": "https://www.ruhr-uni-bochum.de/"
+          "url": "https://www.ruhr-uni-bochum.de/",
+          "sameAs": "https://ror.org/04tsk2644"
         },
         {
           "@type": "CollegeOrUniversity",
           "name": "THGA Bochum (University of Applied Sciences Georg Agricola Bochum)",
-          "url": "https://www.thga.de/"
+          "url": "https://www.thga.de/",
+          "sameAs": "https://ror.org/033jd5r25"
+        },
+        {
+          "@type": "Organization",
+          "name": "GSI Helmholtzzentrum für Schwerionenforschung / FAIR",
+          "url": "https://www.gsi.de/",
+          "sameAs": "https://ror.org/02k8cbn47"
+        },
+        {
+          "@type": "Organization",
+          "name": "CERN",
+          "url": "https://home.cern/",
+          "sameAs": "https://ror.org/01ggx4157"
         }
       ],
       "alumniOf": [
@@ -74,24 +89,24 @@
         { "@type": "EducationalOccupationalCredential", "credentialCategory": "master degree", "name": "M.Eng. Information Technology / Computer Engineering" }
       ],
       "knowsAbout": [
+        "decentralised data acquisition (DAQ) systems",
+        "decentralised monitoring and observability",
         "embedded systems",
         "microcontroller firmware",
         "PCB design",
         "KiCad",
         "FPGA development",
-        "VHDL",
         "Zynq SoCs",
         "open-source FPGA toolchains (Yosys, nextpnr)",
-        "data acquisition (DAQ) systems",
-        "decentralised monitoring and observability",
-        "condition monitoring and predictive maintenance",
-        "mixed-signal design",
+        "VHDL",
+        "wire bonding",
         "silicon pixel detectors",
         "HV-MAPS ASICs",
-        "wire bonding",
         "experimental hadron physics",
         "PANDA experiment at FAIR",
         "Geant4 simulation",
+        "condition monitoring and predictive maintenance",
+        "mixed-signal design",
         "EMC certification (CE, FCC, CCC)",
         "C++",
         "Python",
@@ -105,12 +120,24 @@
         { "@type": "Language", "name": "Chinese" }
       ],
       "memberOf": [
-        { "@type": "Organization", "name": "open Skunkforce e.V.", "description": "Founding member and chairman" },
-        { "@type": "Organization", "name": "PANDA Collaboration at FAIR/GSI" },
-        { "@type": "Organization", "name": "IHK Mittleres Ruhrgebiet examination board for IT specialists" },
-        { "@type": "Organization", "name": "emBO++ — International Technical Symposium for Embedded Systems Development", "location": { "@type": "Place", "name": "Bochum, Germany" }, "description": "Principal organiser" },
-        { "@type": "Organization", "name": "KiCon Europe", "description": "Organiser" },
-        { "@type": "Organization", "name": "Practical Data Science Congress Bochum", "description": "Co-organiser" }
+        { "@id": "https://maxclerkwell.tech/#skunkforce" },
+        { "@id": "https://maxclerkwell.tech/#autointern" },
+        { "@type": "Organization", "name": "PANDA Collaboration at FAIR/GSI", "description": "Member; Young Scientist Convent chair and Young PANDA representative on the Collaboration Board" },
+        { "@type": "Organization", "name": "IHK Mittleres Ruhrgebiet examination board for IT specialists", "description": "Board member since 2020" },
+        { "@type": "Organization", "name": "emBO++ — International Technical Symposium for Embedded Systems Development", "url": "https://embo.io/", "location": { "@type": "Place", "name": "Bochum, Germany" }, "description": "Principal organiser since 2015" },
+        { "@type": "Organization", "name": "KiCon Europe", "url": "https://kicon.kicad.org/", "description": "Organiser since 2020" },
+        { "@type": "Organization", "name": "Practical Data Science Congress Bochum (PDSC4K)", "description": "Co-organiser since 2024" },
+        { "@type": "Organization", "name": "pottCPP — Ruhr C++ User Group", "url": "https://www.meetup.com/pottcpp/", "description": "Organiser since 2017" }
+      ],
+      "performerIn": [
+        { "@id": "https://maxclerkwell.tech/talks/#kicon-asia-2025" },
+        { "@id": "https://maxclerkwell.tech/talks/#pdsc4k-2026" },
+        { "@id": "https://maxclerkwell.tech/talks/#embo-2024" },
+        { "@id": "https://maxclerkwell.tech/talks/#dsruhr-2019" }
+      ],
+      "subjectOf": [
+        { "@type": "WebPage", "url": "https://maxclerkwell.tech/talks/", "name": "Talks & Conference Appearances" },
+        { "@type": "WebPage", "url": "https://maxclerkwell.tech/publications/", "name": "Publications, Patents & Software" }
       ],
       "sameAs": [
         "https://github.com/maxclerkwell",
@@ -133,11 +160,51 @@
       "@id": "https://maxclerkwell.tech/#nablab",
       "name": "nabla B",
       "alternateName": ["\u2207B", "nabla-B"],
-      "legalName": "nabla B Ingenieurbüro und Dienstleistungs-UG",
-      "description": "Engineering office focused on data acquisition and physical measurement systems, embedded hardware, and custom development projects at the interface of industry and research. Consulting on development and use of digital measuring instruments; training engineers in digital measurement technology and data acquisition.",
+      "legalName": "nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt)",
+      "description": "Engineering office focused on data acquisition and physical measurement systems, embedded hardware, and custom development projects at the interface of industry and research. Consulting on development and use of digital measuring instruments; training engineers in digital measurement technology and data acquisition. Part of the AI-Gruppe umbrella brand.",
       "founder": { "@id": "https://maxclerkwell.tech/#person" },
-      "foundingDate": "2020",
+      "foundingDate": "2020-07-20",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "German Trade Register",
+        "value": "Amtsgericht Bochum HRB 18817"
+      },
+      "vatID": "DE338747475",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Herner Str. 299, Gebäude B29",
+        "addressLocality": "Bochum",
+        "postalCode": "44809",
+        "addressCountry": "DE"
+      },
       "location": { "@type": "Place", "name": "Bochum, Germany" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://maxclerkwell.tech/#skunkforce",
+      "name": "open Skunkforce e.V.",
+      "nonprofitStatus": "https://schema.org/NonprofitType",
+      "url": "https://skunkforce.org/",
+      "foundingDate": "2021",
+      "description": "Non-profit association for open hardware and software engineering, Bochum. Stephan Bökelmann is a founding member and has been its chairman (1. Vorsitzender) since 2021. Organiser of the Practical Data Science Congress (PDSC4K).",
+      "founder": { "@id": "https://maxclerkwell.tech/#person" },
+      "location": { "@type": "Place", "name": "Bochum, Germany" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://maxclerkwell.tech/#autointern",
+      "name": "Auto-Intern GmbH",
+      "url": "https://auto-intern.de/",
+      "foundingDate": "2000",
+      "description": "Automotive diagnostics and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand. Stephan Bökelmann works with Auto-Intern on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
+      "location": { "@type": "Place", "name": "Bochum, Germany" }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://maxclerkwell.tech/#aigruppe",
+      "name": "AI-Gruppe",
+      "url": "https://gruppe.ai/",
+      "description": "Umbrella brand (not a legal entity) for Auto-Intern GmbH, CCD Car Diagnostics, nabla B, nerd_force1, open Skunkforce e.V. and the skAInet project."
     },
     {
       "@type": "Organization",
@@ -150,6 +217,16 @@
         "url": "https://maxclerkwell.tech/slides/Avatar.jpg"
       },
       "founder": { "@id": "https://maxclerkwell.tech/#person" },
+      "performerIn": [
+        { "@id": "https://maxclerkwell.tech/talks/#kicon-asia-2025" },
+        { "@id": "https://maxclerkwell.tech/talks/#pdsc4k-2026" },
+        { "@id": "https://maxclerkwell.tech/talks/#embo-2024" },
+        { "@id": "https://maxclerkwell.tech/talks/#dsruhr-2019" }
+      ],
+      "subjectOf": [
+        { "@type": "WebPage", "url": "https://maxclerkwell.tech/talks/", "name": "Talks & Conference Appearances" },
+        { "@type": "WebPage", "url": "https://maxclerkwell.tech/publications/", "name": "Publications, Patents & Software" }
+      ],
       "sameAs": [
         "https://github.com/maxclerkwell",
         "https://discord.gg/2BXuUY6hrX"

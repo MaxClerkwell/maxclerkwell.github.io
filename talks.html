@@ -1,104 +1,63 @@
 ---
 layout: default
-title: "Talks & Conference Videos"
-description: "Recorded conference talks and lectures by Stephan Bökelmann (MaxClerkwell) on embedded systems, FPGA development, wire bonding and data acquisition."
-sitemap: false
-noindex: true
+title: "Talks & Conference Appearances"
+description: "Conference talks, lectures and organiser roles of Stephan Bökelmann (MaxClerkwell): emBO++, KiCon, PDSC4K, PANDA collaboration meetings, Data Science Ruhrgebiet."
 permalink: /talks/
 ---
 
 <div class="post-layout">
-<article class="post-content">
+<article class="post-content" markdown="1">
 
-  <h1>Talks &amp; Conference Videos</h1>
+# Talks & Conference Appearances
 
-  <p class="post-excerpt">
-    Recorded talks and lectures by Stephan Bökelmann (MaxClerkwell) on embedded
-    systems, FPGA development, detector instrumentation and data acquisition.
-    Most recordings live on the organisers' channels; this page collects them in
-    one place.
-  </p>
+Talks and conference appearances by **Stephan Bökelmann** (MaxClerkwell).
+Recordings, where they exist, live on the organisers' channels.
 
-  <!--
-    ── HOW TO ADD A TALK ────────────────────────────────────────────────────
-    1. Copy one <section class="talk"> block below.
-    2. Replace every YOUTUBE_ID placeholder with the real video id, and fill in
-       name / description / uploadDate / duration / publisher.
-    3. Delete the "placeholder" class and the placeholder notice paragraph.
-    4. Never ship a JSON-LD block that still contains YOUTUBE_ID — remove the
-       whole <script> until the real video URL is known.
-    Roles: author/creator = the Person entity (#person); publisher = the
-    channel/organisation that hosts the recording.
-  -->
+## Conference talks
 
-  <!-- ═══ PLACEHOLDER 1 — not yet published, no real video URL known ═══ -->
-  <section class="talk placeholder" id="talk-placeholder-1">
-    <h2>Wire Bonding CLICpix and MuPix Detector Chips <em>(placeholder)</em></h2>
-    <p class="post-meta"><span class="post-tag">placeholder</span> Conference talk — recording not linked yet.</p>
-    <p>
-      Two years of hands-on wire bonding of CLICpix and MuPix detector chips on a
-      Delvotec bonder, condensed into one talk. <strong>Placeholder entry:</strong>
-      the video embed and the structured data below are activated once the
-      organiser's recording URL is confirmed.
-    </p>
-    <!-- Embed goes here once the video id is known:
-    <div class="talk-embed">
-      <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Wire Bonding CLICpix and MuPix Detector Chips"
-              width="560" height="315" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
-              allowfullscreen></iframe>
-    </div>
-    -->
-  </section>
+- **"Poor Man's Introduction to Wire-Bonding"** — [KiCon Asia 2025](https://kicon.kicad.org/asia2025/),
+  Shenzhen, 15 November 2025. Two years of hands-on wire bonding of CLICpix
+  and MuPix detector chips on a Delvotec bonder, in 25 minutes.
+- **"KIMBA und der Bodo mit dem Bagger"** — [PDSC4K, Practical Data Science
+  Congress 4000](https://skunkforce.org/pdsc4k/), ZESS, Ruhr-Universität
+  Bochum, 22 May 2026 (for AI-Gruppe).
+- **"RTCS"** — [emBO++ 2024](https://embo.io/programm-2024/), Bochum,
+  March 2024. Plus the conference opening on both days and
+  ["Roast for Clarify"](https://www.youtube.com/watch?v=wCL-0NgVf3I)
+  on the *Introduction to Programming* course at THGA Bochum (recording on
+  YouTube).
+- **"Wer viel misst, misst Mist? Ein Plädoyer für modernere Datenanbindung
+  von Messgeräten im Namen der Industrie 4.0"** —
+  [Data Science Ruhrgebiet Kongress 2019](https://data-science.ruhr/speaker/stephan-boekelmann/),
+  Bochum.
 
-  <!-- ═══ PLACEHOLDER 2 — not yet published, no real video URL known ═══ -->
-  <section class="talk placeholder" id="talk-placeholder-2">
-    <h2>Deploying Hardware Like Software: A Zynq Bitstream Pipeline <em>(placeholder)</em></h2>
-    <p class="post-meta"><span class="post-tag">placeholder</span> Conference talk — recording not linked yet.</p>
-    <p>
-      An open-source path from JTAG bring-up to a REST API that loads a bitstream
-      onto a Zynq FPGA, without vendor tools in the loop.
-      <strong>Placeholder entry:</strong> see the written version in
-      <a href="/posts/zynq-bitstream-deployment-concept-august-2026/">the Zynq bitstream deployment article</a>
-      until the recording is available.
-    </p>
-  </section>
+## PANDA collaboration meetings (2019–2025)
 
-  <!--
-    ── VideoObject JSON-LD TEMPLATE (one block per video) ───────────────────
-    Shipped with a non-standard script type on purpose: search engines ignore
-    it, so no placeholder video URL ever enters the structured data. To publish
-    a talk, copy this block into the talk's <section>, fill in every field and
-    change the type to "application/ld+json".
-  -->
-  <script type="application/ld+json-template" id="videoobject-template">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "@id": "https://maxclerkwell.tech/talks/#TALK_SLUG-video",
-    "name": "TALK TITLE",
-    "description": "One or two sentences on what the talk covers. Speaker: Stephan Bökelmann (MaxClerkwell).",
-    "thumbnailUrl": [
-      "https://i.ytimg.com/vi/YOUTUBE_ID/maxresdefault.jpg",
-      "https://i.ytimg.com/vi/YOUTUBE_ID/hqdefault.jpg"
-    ],
-    "uploadDate": "YYYY-MM-DD",
-    "duration": "PT25M",
-    "embedUrl": "https://www.youtube.com/embed/YOUTUBE_ID",
-    "contentUrl": "https://www.youtube.com/watch?v=YOUTUBE_ID",
-    "url": "https://maxclerkwell.tech/talks/#TALK_SLUG",
-    "inLanguage": "en",
-    "isBasedOn": "https://www.youtube.com/watch?v=YOUTUBE_ID",
-    "author":  { "@id": "https://maxclerkwell.tech/#person" },
-    "creator": { "@id": "https://maxclerkwell.tech/#person" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE / CHANNEL NAME",
-      "url": "https://example.org/"
-    },
-    "isPartOf": { "@id": "https://maxclerkwell.tech/talks/#list" }
-  }
-  </script>
+Progress talks on parts of the PANDA luminosity detector at the
+[PANDA Collaboration](https://panda.gsi.de/) meetings at GSI Darmstadt,
+held roughly three times a year (talks are collaboration-internal, not
+public): CM 19/1 (Mar 2019), 19/3 (Nov 2019), 2020-III (online),
+21/1–21/3 (2021, online), 22/1 (May/Jun 2022), 22/3 (Oct 2022),
+23/1–23/3 (2023), 24/2 (Jun 2024), and subsequent meetings through 2025.
+
+## Workshops & teaching appearances
+
+- **"Plötzlich Chef*in. Vom Gründen zur Führung"** — leadership workshop for
+  founders, [Hochschule Bochum / TZR](https://www.hochschule-bochum.de/en/news/n/workshop-ploetzlich-chefin/),
+  27 October 2025 (instructor).
+
+## Organiser roles
+
+- [emBO++](https://embo.io/) — International Technical Symposium for Embedded
+  Systems Development, Bochum. Principal organiser **since 2015**.
+- [KiCon Europe](https://kicon.kicad.org/) — KiCad conference. Organiser
+  **since 2020**, host of KiCon Europe 2024 in Bochum.
+- [PDSC4K](https://skunkforce.org/pdsc4k/) — Practical Data Science Congress,
+  Bochum. Co-organiser **since 2024** (via open Skunkforce e.V.).
+- [pottCPP](https://www.meetup.com/pottcpp/) — Ruhr C++ User Group. Organiser
+  **since 2017**.
+- IHK Mittleres Ruhrgebiet — examination board for IT specialists
+  (Fachinformatiker), board member **since 2020**.
 
 </article>
 </div>
@@ -109,12 +68,66 @@ permalink: /talks/
   "@type": "CollectionPage",
   "@id": "https://maxclerkwell.tech/talks/#list",
   "url": "https://maxclerkwell.tech/talks/",
-  "name": "Talks & Conference Videos — Stephan Bökelmann",
-  "description": "Recorded conference talks and lectures by Stephan Bökelmann (MaxClerkwell) on embedded systems, FPGA development, wire bonding and data acquisition.",
+  "name": "Talks & Conference Appearances — Stephan Bökelmann",
   "inLanguage": "en",
   "about":     { "@id": "https://maxclerkwell.tech/#person" },
   "author":    { "@id": "https://maxclerkwell.tech/#person" },
   "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
-  "isPartOf":  { "@id": "https://maxclerkwell.tech/#website" }
+  "isPartOf":  { "@id": "https://maxclerkwell.tech/#website" },
+  "hasPart": [
+    {
+      "@type": "Event",
+      "@id": "https://maxclerkwell.tech/talks/#kicon-asia-2025",
+      "name": "KiCon Asia 2025",
+      "startDate": "2025-11-15",
+      "endDate": "2025-11-15",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": { "@type": "Place", "name": "Atour Hotel Nanshan", "address": { "@type": "PostalAddress", "addressLocality": "Shenzhen", "addressCountry": "CN" } },
+      "organizer": { "@type": "Organization", "name": "KiCad", "url": "https://www.kicad.org/" },
+      "performer": { "@id": "https://maxclerkwell.tech/#person" },
+      "workPerformed": { "@type": "CreativeWork", "name": "Poor Man's Introduction to Wire-Bonding" }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://maxclerkwell.tech/talks/#pdsc4k-2026",
+      "name": "PDSC4K — Practical Data Science Congress 4000",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-22",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": { "@type": "Place", "name": "ZESS, Ruhr-Universität Bochum", "address": { "@type": "PostalAddress", "streetAddress": "Hans-Dobbertin-Straße 8", "addressLocality": "Bochum", "postalCode": "44803", "addressCountry": "DE" } },
+      "organizer": { "@id": "https://maxclerkwell.tech/#skunkforce" },
+      "performer": { "@id": "https://maxclerkwell.tech/#person" },
+      "workPerformed": { "@type": "CreativeWork", "name": "KIMBA und der Bodo mit dem Bagger", "inLanguage": "de" }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://maxclerkwell.tech/talks/#embo-2024",
+      "name": "emBO++ 2024",
+      "startDate": "2024-03",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": { "@type": "Place", "name": "Bochum", "address": { "@type": "PostalAddress", "addressLocality": "Bochum", "addressCountry": "DE" } },
+      "organizer": { "@id": "https://maxclerkwell.tech/#person" },
+      "performer": { "@id": "https://maxclerkwell.tech/#person" },
+      "workPerformed": [
+        { "@type": "CreativeWork", "name": "RTCS" },
+        { "@type": "CreativeWork", "name": "Roast for Clarify", "url": "https://www.youtube.com/watch?v=wCL-0NgVf3I" }
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://maxclerkwell.tech/talks/#dsruhr-2019",
+      "name": "Data Science Ruhrgebiet Kongress 2019",
+      "startDate": "2019",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": { "@type": "Place", "name": "Bochum", "address": { "@type": "PostalAddress", "addressLocality": "Bochum", "addressCountry": "DE" } },
+      "organizer": { "@type": "Organization", "name": "Data Science Ruhrgebiet", "url": "https://data-science.ruhr/" },
+      "performer": { "@id": "https://maxclerkwell.tech/#person" },
+      "workPerformed": { "@type": "CreativeWork", "name": "Wer viel misst, misst Mist? Ein Plädoyer für modernere Datenanbindung von Messgeräten im Namen der Industrie 4.0", "inLanguage": "de" }
+    }
+  ]
 }
 </script>

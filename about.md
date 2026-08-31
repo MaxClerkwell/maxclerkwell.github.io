@@ -37,7 +37,28 @@ I'm a **lecturer** at **THGA Bochum** (University of Applied Sciences Georg Agri
 
 **Bochum AI-Gruppe**: together with Odin Holmes I co-lead this meetup group for engineers working with machine learning in production and science contexts.
 
-I'm also a member of the **examination board of the Chamber of Commerce** for IT specialists.
+**pottCPP**: I've been organising the Ruhr C++ user group since 2017.
+
+I'm also a member of the **examination board of the Chamber of Commerce** (IHK Mittleres Ruhrgebiet) for IT specialists, since 2020.
+
+## Teaching
+
+- **Einführung in die Programmierung** — THGA Bochum, every winter term since WS 2019
+- **Objektorientierte Programmierung** — THGA Bochum, every summer term since SS 2019
+- **Einführung in DBMS** — THGA Bochum, since SS 2026
+- **Moderne Webtechnologien 2** — Hochschule Bochum, SS 2025
+- **Einführung in die hardwarenahe Programmierung** (for Cybersecurity and Applied Computer Science) — Ruhr-Universität Bochum, summer terms 2023–2025
+- **Azubi-Zusatzkurs Fachinformatiker Anwendungsentwicklung** — online course via nabla B, since 2022
+
+Course material is not public; external accounts for the THGA courses can be requested at [moodle.thga.de](https://moodle.thga.de).
+
+See also: [Publications, Patents & Software](/publications/) and [Talks & Conference Appearances](/talks/).
+
+## Citing me
+
+Not to be confused with the UK agency Clerkswell, the musician Stephan Bodzin, or the actor Ludger Bökelmann. If your keyboard lacks an "ö": *Stephan Boekelmann*.
+
+> **Stephan Bökelmann** — ORCID [0000-0002-2119-0064](https://orcid.org/0000-0002-2119-0064) — https://maxclerkwell.tech
 
 ## Projects
 
