@@ -5,6 +5,7 @@ author: "Stephan Bökelmann"
 description: "Stages 2 and 3 of the open bitstream pipeline: a self-built Yocto Linux for the ALINX AX7020, resident in QSPI flash, discoverable on the company network, key-only SSH: the walkthrough that works, followed by the nine detours it took to get there."
 tags: [fpga, alinx, zynq, yocto, linux, u-boot, kexec, dropbear, fit-image, qspi, embedded, bring-up]
 image: /assets/posts/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png
+hire_cta: "Zynq or embedded-Linux"
 ---
 
 Stage 1 ended with mainline U-Boot booting from QSPI flash and answering over

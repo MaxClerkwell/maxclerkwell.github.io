@@ -28,6 +28,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 ## Key pages
 
 - [About / full bio](https://maxclerkwell.tech/about/): background, positions, and a complete list of R&D projects
+- [Hire](https://maxclerkwell.tech/hire/): freelance engineering services via nabla B — FPGA/Zynq development, PCB design and bring-up, embedded firmware and Linux, data-acquisition and monitoring systems
 - [Blog index](https://maxclerkwell.tech/): all posts, newest first
 - [Talks](https://maxclerkwell.tech/talks/): conference talks (KiCon Asia 2025, emBO++, PDSC4K, Data Science Ruhrgebiet 2019), PANDA collaboration meeting talks, and organiser roles with dates
 - [Publications](https://maxclerkwell.tech/publications/): peer-reviewed papers with DOIs, preprints, the granted German patent DE 10 2020 128 143, and open-source software with roles

@@ -31,6 +31,7 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.hire_cta %}{% include hire-cta.html topic=page.hire_cta %}{% endif %}
   {% include author-box.html %}
 
   <section class="comments">

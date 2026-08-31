@@ -148,6 +148,33 @@ img { display: block; max-width: 100%; }
   justify-content: center;
 }
 
+.hero-hire-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1.4rem;
+  background: linear-gradient(135deg, #14331f 0%, #0c2415 100%);
+  border: 1px solid rgba(74, 222, 128, 0.55);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  box-shadow: 0 0 18px rgba(74, 222, 128, 0.15);
+  transition:
+    background var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+.hero-hire-btn:hover {
+  background: linear-gradient(135deg, #1b4429 0%, #12301c 100%);
+  box-shadow: 0 8px 36px rgba(74, 222, 128, 0.4);
+  transform: translateY(-3px);
+  color: var(--text-primary);
+}
+.hero-hire-btn i {
+  font-size: 1.9rem;
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
 .hero-discord-btn {
   display: flex;
   align-items: center;
@@ -806,6 +833,37 @@ details.sidebar-widget[open] > .sidebar-widget-title::after {
   padding: 0 0.35rem;
   font-size: 0.7rem;
   color: var(--text-dim);
+}
+
+/* ── Hire CTA under posts ─────────────────────────────────── */
+.hire-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2em;
+  padding: 1rem 1.3rem;
+  background: var(--bg-2);
+  border: 1px solid rgba(74, 222, 128, 0.45);
+  border-radius: var(--radius);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.hire-cta > div { flex: 1 1 260px; }
+.hire-cta-btn {
+  flex: 0 0 auto;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(135deg, #14331f 0%, #0c2415 100%);
+  border: 1px solid rgba(74, 222, 128, 0.55);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  white-space: nowrap;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.hire-cta-btn:hover {
+  box-shadow: 0 4px 24px rgba(74, 222, 128, 0.35);
+  transform: translateY(-2px);
+  color: var(--text-primary);
 }
 
 /* ── Sidebar social links ─────────────────────────────────── */
