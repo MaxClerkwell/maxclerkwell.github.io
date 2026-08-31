@@ -4,6 +4,7 @@ date: 2026-08-30
 author: "Stephan Bökelmann"
 description: "Stage 1 of the open bitstream pipeline: putting mainline U-Boot on an ALINX AX7020 over JTAG and Ethernet only: a clean walkthrough of what works, followed by the nine detours it took to find out."
 tags: [fpga, alinx, zynq, jtag, openocd, u-boot, spl, device-tree, netconsole, bring-up, linux]
+image: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg
 ---
 
 I thought this would be an afternoon. Load a bootloader over JTAG, poke it a

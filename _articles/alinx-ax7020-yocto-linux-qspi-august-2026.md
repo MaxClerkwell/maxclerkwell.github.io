@@ -4,6 +4,7 @@ date: 2026-08-31
 author: "Stephan Bökelmann"
 description: "Stages 2 and 3 of the open bitstream pipeline: a self-built Yocto Linux for the ALINX AX7020, resident in QSPI flash, discoverable on the company network, key-only SSH: the walkthrough that works, followed by the nine detours it took to get there."
 tags: [fpga, alinx, zynq, yocto, linux, u-boot, kexec, dropbear, fit-image, qspi, embedded, bring-up]
+image: /assets/posts/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png
 ---
 
 Stage 1 ended with mainline U-Boot booting from QSPI flash and answering over
@@ -409,6 +410,8 @@ configuration is `-s` alone, with `*` in root's password field.
 | login with a different key | ❌ rejected |
 | login without a key | ❌ `Permission denied (publickey)` |
 | login with a password | ❌ `Permission denied (publickey)` |
+
+![Key-only SSH login on the AX7020](/assets/posts/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png)
 
 Stage 3 complete. BootROM, SPL, U-Boot, FIT, Linux: everything from flash,
 on the company network, reachable only with the right key, with a tested
