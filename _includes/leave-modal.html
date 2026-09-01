@@ -1,0 +1,69 @@
+{% comment %}
+  Interstitial shown before following a link from the blog to one of the
+  company sites. Purpose: no mental break for the reader. The blog is the
+  personal site; nabla-b.engineering is the company through which freelance
+  work is contracted. The outgoing URL gets ?ref=maxclerkwell.tech appended so
+  the target site can show its matching "you came from the blog" notice.
+
+  Add a site by extending LEAVE_TARGETS below (host -> texts).
+{% endcomment %}
+<dialog id="leave-modal" class="leave-modal" aria-labelledby="leave-modal-title">
+  <form method="dialog">
+    <p class="leave-modal-kicker">You are leaving maxclerkwell.tech</p>
+    <h2 id="leave-modal-title">Continuing to <span data-leave-host></span></h2>
+    <p data-leave-text></p>
+    <p class="leave-modal-small">The link opens in this tab. Your browser's back button brings you back here.</p>
+    <div class="leave-modal-actions">
+      <button type="button" class="leave-modal-stay" value="cancel">Stay on the blog</button>
+      <a class="leave-modal-go" data-leave-go href="#" rel="noopener">Continue →</a>
+    </div>
+  </form>
+</dialog>
+<script>
+(function () {
+  var LEAVE_TARGETS = {
+    "nabla-b.engineering": {
+      name: "nabla-b.engineering",
+      text: "nabla B is Stephan Bökelmann's engineering office in Bochum, the company through which the freelance work described on this blog is contracted. Same person, same projects; the company site carries the commercial side: services, team, references and contact."
+    },
+    "edge-compute.skainet.io": {
+      name: "edge-compute.skainet.io",
+      text: "The skAInet Edge-Compute is a product of Auto-Intern GmbH, where Stephan Bökelmann is Chief Operating Officer and the product's system architect. The product site is run by Auto-Intern; blog articles about the platform stay here."
+    }
+  };
+  var REF = "ref=maxclerkwell.tech";
+  var dlg = document.getElementById("leave-modal");
+  if (!dlg || typeof dlg.showModal !== "function") return;
+  var hostEl = dlg.querySelector("[data-leave-host]");
+  var textEl = dlg.querySelector("[data-leave-text]");
+  var goEl = dlg.querySelector("[data-leave-go]");
+  var stayEl = dlg.querySelector(".leave-modal-stay");
+
+  function targetFor(a) {
+    var u;
+    try { u = new URL(a.href, location.href); } catch (e) { return null; }
+    var host = u.hostname.replace(/^www\./, "");
+    return LEAVE_TARGETS[host] ? { url: u, cfg: LEAVE_TARGETS[host] } : null;
+  }
+  function withRef(u) {
+    if (u.search.indexOf(REF) === -1) u.search += (u.search ? "&" : "?") + REF;
+    return u.toString();
+  }
+  document.addEventListener("click", function (ev) {
+    if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    var a = ev.target.closest && ev.target.closest("a[href]");
+    if (!a || a.hasAttribute("data-no-leave")) return;
+    var t = targetFor(a);
+    if (!t) return;
+    ev.preventDefault();
+    hostEl.textContent = t.cfg.name;
+    textEl.textContent = t.cfg.text;
+    goEl.href = withRef(t.url);
+    goEl.removeAttribute("target");
+    dlg.showModal();
+    goEl.focus();
+  });
+  stayEl.addEventListener("click", function () { dlg.close(); });
+  dlg.addEventListener("click", function (ev) { if (ev.target === dlg) dlg.close(); });
+})();
+</script>

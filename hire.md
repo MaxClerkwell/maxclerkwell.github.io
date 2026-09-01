@@ -12,13 +12,13 @@ last_modified_at: 2026-08-31
 # Freelance FPGA, Zynq, PCB & DAQ Engineering
 
 I take on **freelance engineering projects** through my company
-[nabla B](https://nabla-b.engineering) in Bochum, Germany — on-site in the
+[nabla B](https://nabla-b.engineering/) in Bochum, Germany — on-site in the
 DACH region, remote worldwide, in English or German. From feasibility study
 to serial product, from "we need a prototype" to "our vendor toolchain is
 holding us hostage".
 
 **Start a project:** [office@nabla-b.engineering](mailto:office@nabla-b.engineering?subject=Project%20inquiry%20via%20maxclerkwell.tech)
-· [LinkedIn](https://linkedin.com/in/accelerator-stephan)
+· [LinkedIn](https://www.linkedin.com/in/accelerator-stephan/)
 · Direct: [stephan@boekelmann.net](mailto:stephan@boekelmann.net)
 
 ## What I do
@@ -96,31 +96,52 @@ like, timeline:
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://maxclerkwell.tech/hire/#service",
-  "name": "nabla B — Freelance FPGA, Zynq, PCB & DAQ Engineering",
-  "url": "https://maxclerkwell.tech/hire/",
-  "parentOrganization": { "@id": "https://maxclerkwell.tech/#nablab" },
-  "founder": { "@id": "https://maxclerkwell.tech/#person" },
-  "employee": { "@id": "https://maxclerkwell.tech/#person" },
-  "email": "office@nabla-b.engineering",
-  "address": { "@type": "PostalAddress", "addressLocality": "Bochum", "addressCountry": "DE" },
-  "areaServed": [
-    { "@type": "Country", "name": "Germany" },
-    { "@type": "Country", "name": "Austria" },
-    { "@type": "Country", "name": "Switzerland" },
-    { "@type": "Place", "name": "Remote / worldwide" }
-  ],
-  "knowsLanguage": ["de", "en"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Engineering services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "FPGA and Zynq development", "description": "HDL design (VHDL/Verilog), Zynq-7000 PS/PL systems, AXI integration, board bring-up with mainline U-Boot, open toolchains (Yosys, nextpnr) and Vivado/Vitis." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PCB design and bring-up", "description": "Schematic and layout in KiCad, multilayer, signal integrity, EMC preparation, manufacturing hand-off, supply-chain work with manufacturers in China and Europe, wire bonding." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Embedded firmware and Linux", "description": "Microcontroller firmware (bare-metal, RTOS), embedded Linux with Yocto, mainline U-Boot and kernel, device trees, remote update paths." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data acquisition and monitoring systems", "description": "Decentralised DAQ from analog front-end through ADC and transport to server infrastructure: sensor signal chains, high-throughput acquisition, monitoring platforms." } }
-    ]
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://maxclerkwell.tech/hire/#webpage",
+      "url": "https://maxclerkwell.tech/hire/",
+      "name": "Hire Stephan Bökelmann — Freelance FPGA, Zynq, PCB & DAQ Engineering via nabla B",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://maxclerkwell.tech/#website" },
+      "about": { "@id": "https://nabla-b.engineering/#organization" },
+      "mainEntity": { "@id": "https://nabla-b.engineering/#organization" },
+      "author": { "@id": "https://maxclerkwell.tech/#person" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxclerkwell.tech/" },
+          { "@type": "ListItem", "position": 2, "name": "Hire" }
+        ]
+      }
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://nabla-b.engineering/#organization",
+      "name": "nabla B",
+      "url": "https://nabla-b.engineering/",
+      "email": "mailto:office@nabla-b.engineering",
+      "founder": { "@id": "https://maxclerkwell.tech/#person" },
+      "employee": { "@id": "https://maxclerkwell.tech/#person" },
+      "areaServed": [
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "Austria" },
+        { "@type": "Country", "name": "Switzerland" },
+        { "@type": "Place", "name": "Remote / worldwide" }
+      ],
+      "knowsLanguage": ["de", "en"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://maxclerkwell.tech/hire/#offers",
+        "name": "Engineering services offered through nabla B",
+        "itemListElement": [
+          { "@type": "Offer", "offeredBy": { "@id": "https://nabla-b.engineering/#organization" }, "itemOffered": { "@type": "Service", "name": "FPGA and Zynq development", "provider": { "@id": "https://nabla-b.engineering/#organization" }, "description": "HDL design (VHDL/Verilog), Zynq-7000 PS/PL systems, AXI integration, board bring-up with mainline U-Boot, open toolchains (Yosys, nextpnr) and Vivado/Vitis." } },
+          { "@type": "Offer", "offeredBy": { "@id": "https://nabla-b.engineering/#organization" }, "itemOffered": { "@type": "Service", "name": "PCB design and bring-up", "provider": { "@id": "https://nabla-b.engineering/#organization" }, "description": "Schematic and layout in KiCad, multilayer, signal integrity, EMC preparation, manufacturing hand-off, supply-chain work with manufacturers in China and Europe, wire bonding." } },
+          { "@type": "Offer", "offeredBy": { "@id": "https://nabla-b.engineering/#organization" }, "itemOffered": { "@type": "Service", "name": "Embedded firmware and Linux", "provider": { "@id": "https://nabla-b.engineering/#organization" }, "description": "Microcontroller firmware (bare-metal, RTOS), embedded Linux with Yocto, mainline U-Boot and kernel, device trees, remote update paths." } },
+          { "@type": "Offer", "offeredBy": { "@id": "https://nabla-b.engineering/#organization" }, "itemOffered": { "@type": "Service", "name": "Data acquisition and monitoring systems", "provider": { "@id": "https://nabla-b.engineering/#organization" }, "description": "Decentralised DAQ from analog front-end through ADC and transport to server infrastructure: sensor signal chains, high-throughput acquisition, monitoring platforms." } }
+        ]
+      }
+    }
+  ]
 }
 </script>

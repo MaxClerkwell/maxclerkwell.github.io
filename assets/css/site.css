@@ -1000,3 +1000,48 @@ details.sidebar-widget[open] > .sidebar-widget-title::after {
 @media (max-width: 660px) {
   .about-banner { padding: 0 1.2rem; margin-top: 1.2rem; }
 }
+
+/* ---------- leave-site interstitial (see _includes/leave-modal.html) ---------- */
+.leave-modal {
+  background: var(--bg-2, #0b1220);
+  color: var(--text-primary);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.8rem;
+  max-width: 34rem;
+  width: calc(100% - 2rem);
+  box-shadow: var(--shadow-hv);
+  font-family: var(--font-sans);
+}
+.leave-modal::backdrop { background: rgba(3, 8, 18, 0.72); backdrop-filter: blur(2px); }
+.leave-modal-kicker {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-bright);
+}
+.leave-modal h2 { margin: 0 0 0.8rem; font-size: 1.25rem; line-height: 1.3; }
+.leave-modal h2 span { color: var(--blue-pale); font-family: var(--font-mono); font-size: 1.05rem; }
+.leave-modal p { margin: 0 0 0.8rem; line-height: 1.55; color: var(--text-primary); }
+.leave-modal-small { font-size: 0.85rem; color: var(--text-secondary); }
+.leave-modal-actions { display: flex; gap: 0.7rem; justify-content: flex-end; flex-wrap: wrap; margin-top: 1.2rem; }
+.leave-modal-stay, .leave-modal-go {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.55rem 1.05rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+}
+.leave-modal-stay { background: transparent; color: var(--text-secondary); border: 1px solid var(--border-mid); }
+.leave-modal-stay:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.leave-modal-go { background: var(--blue-mid); color: #fff; border: 1px solid var(--blue-mid); }
+.leave-modal-go:hover { background: var(--blue-bright); border-color: var(--blue-bright); }
+@media (max-width: 480px) {
+  .leave-modal { padding: 1.2rem 1.1rem; }
+  .leave-modal-actions { flex-direction: column-reverse; }
+  .leave-modal-stay, .leave-modal-go { text-align: center; }
+}

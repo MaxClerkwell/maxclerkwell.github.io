@@ -47,9 +47,23 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
 
 ### What is generated automatically (never duplicate by hand)
 
-- `_layouts/default.html` includes `{% seo %}` (jekyll-seo-tag), which emits the
+- `_layouts/default.html` writes `<title>`, meta description, the
   `<link rel="canonical">` pointing at `site.url` (https://maxclerkwell.tech),
-  plus the Open Graph and Twitter Card tags.
+  and the Open Graph and Twitter Card tags by hand from the front matter.
+  jekyll-seo-tag is deliberately NOT used: it emitted its own `@id`-less
+  Person/WebSite JSON-LD on every page, duplicating the entities in
+  `_includes/structured-data.html`. Do not reintroduce `{% seo %}`.
+- Canonical entity `@id`s shared across maxclerkwell.tech,
+  nabla-b.engineering and edge-compute.skainet.io (never invent local
+  aliases for these): person `https://maxclerkwell.tech/#person`, nabla B
+  `https://nabla-b.engineering/#organization`, Auto-Intern GmbH
+  `https://www.auto-intern.de/#organization`, skAInet brand
+  `https://www.skainet.io/#brand`, AI-Gruppe `https://gruppe.ai/#brand`,
+  Edge-Compute `https://edge-compute.skainet.io/#product`. LinkedIn is
+  always written as `https://www.linkedin.com/in/accelerator-stephan/`.
+- Links to nabla-b.engineering and edge-compute.skainet.io open an
+  interstitial (`_includes/leave-modal.html`) and get `?ref=maxclerkwell.tech`
+  appended; add `data-no-leave` to an anchor to bypass it.
 - `_includes/structured-data.html` is included on every page and holds the
   site-wide schema.org `@graph` (Person, nabla B, publisher Organization,
   WebSite) with stable `@id` values under `https://maxclerkwell.tech/#...`.

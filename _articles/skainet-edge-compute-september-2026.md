@@ -92,12 +92,12 @@ all down.
 
 ## Where I fit in
 
-I joined Auto-Intern in 2014 and was head of development from 2016 to 2018,
-which is when the PoE-first architecture became the house style. Since then
-I have worked with Auto-Intern on contract through
-[nabla B](/about/), and the Edge-Compute is the platform underneath most of
-the monitoring projects listed on my [about page](/about/). My role on it
-is system architect: I was system architect on the reflow oven monitor
+I joined Auto-Intern in 2014, was head of development from 2016 to 2018,
+which is when the PoE-first architecture became the house style, and have
+been Chief Operating Officer since 2018. In parallel I run
+[nabla B](https://nabla-b.engineering/), my own engineering office. The
+Edge-Compute is the platform underneath most of the monitoring projects
+listed on my [about page](/about/). My role on it is system architect: I was system architect on the reflow oven monitor
 built on top of it, co-developed the M12 adapter, and specified the
 cabling. [Odin Holmes](https://x.com/odinthenerd) owns
 hardware and firmware, [Tabea Bökelmann](https://x.com/tabeatheunicorn)

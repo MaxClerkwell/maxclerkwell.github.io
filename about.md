@@ -13,7 +13,7 @@ I'm an engineer, physicist, and freelance consultant based in Bochum, Germany, o
 
 ## Work With Me
 
-I'm available as a **freelancer** through my company **nabla B** for engineering projects: embedded firmware and microcontroller work, PCB design and bring-up, FPGA development, measurement and DAQ systems, and the monitoring infrastructure around them. From feasibility study to serial product, from "we need a prototype" to "our toolchain is holding us hostage": write to [stephan@boekelmann.net](mailto:stephan@boekelmann.net).
+I'm available as a **freelancer** through my company **[nabla B](https://nabla-b.engineering/)** for engineering projects: embedded firmware and microcontroller work, PCB design and bring-up, FPGA development, measurement and DAQ systems, and the monitoring infrastructure around them. From feasibility study to serial product, from "we need a prototype" to "our toolchain is holding us hostage": write to [stephan@boekelmann.net](mailto:stephan@boekelmann.net).
 
 For **social media collaborations** (sponsored boards and tools, conference coverage, video and article partnerships under the MaxClerkwell brand), reach out via [collaboration@maxclerkwell.tech](mailto:collaboration@maxclerkwell.tech). Editorial independence is non-negotiable: sponsors never get a say in what I write.
 
@@ -23,7 +23,7 @@ My education runs the whole way up the stack, from the workbench to the cleanroo
 
 My engineering career started in 2007. In 2009 I co-founded a diagnostics workshop with Stephan "Stegen" Freye, doing hands-on measurement and repair work; that business was later acquired by AUTO INTERN. Between 2010 and 2011 I worked as a junior consultant at **PROLAB Produkt + Produktion** under Prof. Gereon Kortenbruck at TFH Bochum (now THGA), alongside Lukas Jakubczyk, advising manufacturing companies in the Ruhrgebiet. From 2011 to 2014 I was at **Puls Plasmatechnik** in Dortmund, where I worked on measurement and power systems for research facilities, including projects for DESY, CERN, and GSI. That work led me into accelerator-adjacent instrumentation and the world of large-scale physics infrastructure.
 
-In 2014 I joined **AUTO INTERN**, and together with Odin Holmes helped transform it into a sought-after contract developer for process diagnostics in industry and science. I'm now self-employed as managing director of **nabla B**, consulting on the development and use of digital measuring instruments and training engineers in digital measurement technology and data acquisition, and I continue to work closely with AUTO INTERN on contract, most visibly as system architect of the [skAInet Edge-Compute](https://edge-compute.skainet.io/) platform.
+In 2014 I joined **AUTO INTERN**, and together with Odin Holmes helped transform it into a sought-after contract developer for process diagnostics in industry and science. I'm now managing director of **[nabla B](https://nabla-b.engineering/)**, consulting on the development and use of digital measuring instruments and training engineers in digital measurement technology and data acquisition, and I remain Chief Operating Officer of AUTO INTERN, most visibly as system architect of the [skAInet Edge-Compute](https://edge-compute.skainet.io/) platform.
 
 I'm a **lecturer** at **THGA Bochum** (University of Applied Sciences Georg Agricola Bochum), where I lecture on programming, object-oriented design, and databases, and build supplementary teaching material for students.
 
@@ -75,7 +75,7 @@ Typical symptoms: measurement data living in Excel islands, USB instruments tied
 Professionally active since 2007, trained from the workbench up: mechanic, electrician, B.Eng., M.Eng., PhD work on DAQ for the PANDA experiment at FAIR, projects for CERN, DESY and GSI, a granted German patent ([DE 10 2020 128 143](/publications/)), and lecturing at three universities. See [Publications](/publications/) and [Talks](/talks/).
 
 **What is nabla B?**
-nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt) is his engineering office in Bochum (Amtsgericht Bochum HRB 18817, founded 2020) — the legal home of the freelance work. It is part of the AI-Gruppe umbrella brand.
+nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt) is his engineering office in Bochum (Amtsgericht Bochum HRB 18817, founded 2020) — the legal home of the freelance work. It is part of the AI-Gruppe umbrella brand; company website: [nabla-b.engineering](https://nabla-b.engineering/).
 
 **Who do I contract with when I hire Stephan Bökelmann?**
 With nabla B UG (Bochum, HRB 18817). Collaboration with Auto-Intern GmbH and the other AI-Gruppe companies adds capacity when a project needs it — the contract and the responsibility stay with nabla B.
@@ -110,7 +110,7 @@ Not to be confused with the UK agency Clerkswell, the musician Stephan Bodzin, o
 | 2023 – 2025 | **Research associate, Forschungszentrum Nachbergbau** (post-mining research), geomonitoring department, THGA Bochum: multi-sensor geomonitoring and data fusion |
 | 2020 – 2025 | **Research associate, Chair of Experimental Hadron Physics** (Prof. Dr. Miriam Fritsch), Ruhr-Universität Bochum: mixed-signal silicon detectors and high-throughput DAQ for PANDA/FAIR, luminosity detector design and construction, HV-MAPS characterisation with GSI Darmstadt |
 | since 2018 | **Lecturer** at THGA Bochum, Hochschule Bochum, and Ruhr-Universität Bochum |
-| 2018 – 2021 | **Chief Operating Officer, AI-Gruppe**: operational responsibility for the group, product line strategy, scalable manufacturing, international certification and development projects (incl. China) |
+| since 2018 | **Chief Operating Officer, Auto-Intern GmbH (AI-Gruppe)**: operational responsibility for the group, product line strategy, scalable manufacturing, international certification and development projects (incl. China); system architect of the skAInet Edge-Compute |
 | 2016 – 2018 | **Head of development, Auto-Intern GmbH**: led the development team, responsible for system architecture of diagnostics and monitoring systems for automotive and rail infrastructure |
 | 2014 – 2016 | **Developer, Auto-Intern GmbH**: hardware and software for vehicle diagnostics and condition monitoring, incl. for DB Netz AG |
 | foundings | Kfz-Technik Bökelmann (2012, merged into Auto-Intern 2014) · CCD Car Diagnostics UG (2017, co-founder) · nerd_force1 UG (2018, co-founder) · nabla B UG (2020, co-founder) |
@@ -162,8 +162,8 @@ This blog is the canonical home for longform writing, usually one post per week.
   <a class="u-email" href="mailto:collaboration@maxclerkwell.tech">
     <i class="fas fa-handshake"></i> collaboration@maxclerkwell.tech <span style="opacity:0.6;">(social media collaborations)</span>
   </a>
-  <a class="u-url" href="https://linkedin.com/in/accelerator-stephan" target="_blank" rel="me noopener noreferrer">
-    <i class="fab fa-linkedin"></i> linkedin.com/in/accelerator-stephan
+  <a class="u-url" href="https://www.linkedin.com/in/accelerator-stephan/" target="_blank" rel="me noopener noreferrer">
+    <i class="fab fa-linkedin"></i> www.linkedin.com/in/accelerator-stephan
   </a>
   <a class="u-url" href="https://x.com/maxclerkwell" target="_blank" rel="me noopener noreferrer">
     <i class="fab fa-x-twitter"></i> @MaxClerkwell

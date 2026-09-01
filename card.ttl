@@ -17,7 +17,7 @@ sitemap: false
     foaf:familyName "Bökelmann" ;
     foaf:nick "MaxClerkwell" ;
     rdfs:label "Stephan Bökelmann" ;
-    foaf:title "Engineer, physicist, freelance consultant; system architect of the skAInet Edge-Compute" ;
+    foaf:title "Engineer, physicist, freelance consultant; managing director of nabla B, COO of Auto-Intern GmbH, system architect of the skAInet Edge-Compute" ;
     foaf:based_near "Bochum, Germany" ;
     foaf:homepage <https://maxclerkwell.tech/> ;
     foaf:workplaceHomepage <https://www.ruhr-uni-bochum.de/> ;
@@ -37,7 +37,7 @@ sitemap: false
         <https://arxiv.org/a/0000-0002-2119-0064.html>,
         <https://www.researchgate.net/profile/Stephan-Boekelmann>,
         <https://github.com/maxclerkwell>,
-        <https://linkedin.com/in/accelerator-stephan>,
+        <https://www.linkedin.com/in/accelerator-stephan/>,
         <https://x.com/maxclerkwell>,
         <https://www.youtube.com/@MaxClerkwell>,
         <https://www.thethingsnetwork.org/u/MaxClerkwell> ;
@@ -47,13 +47,12 @@ sitemap: false
         <https://instagram.com/_maxclerkwell> ;
     foaf:made <https://maxclerkwell.tech/> ;
     schema:knowsAbout <https://edge-compute.skainet.io/#product> ;
-    org:memberOf <https://maxclerkwell.tech/#nablab>, <https://maxclerkwell.tech/#autointern> .
+    org:memberOf <https://nabla-b.engineering/#organization>, <https://www.auto-intern.de/#organization> .
 
-<https://maxclerkwell.tech/#autointern>
+<https://www.auto-intern.de/#organization>
     a foaf:Organization, schema:Organization ;
     foaf:name "Auto-Intern GmbH" ;
-    foaf:homepage <https://auto-intern.de/> ;
-    owl:sameAs <https://www.auto-intern.de/#organization> ;
+    foaf:homepage <https://www.auto-intern.de/> ;
     schema:brand <https://www.skainet.io/#brand> ;
     foaf:member <https://maxclerkwell.tech/#person> .
 
@@ -61,13 +60,14 @@ sitemap: false
     a schema:Product ;
     schema:name "skAInet Edge-Compute" ;
     schema:url <https://edge-compute.skainet.io/> ;
-    schema:manufacturer <https://maxclerkwell.tech/#autointern> ;
+    schema:manufacturer <https://www.auto-intern.de/#organization> ;
     schema:brand <https://www.skainet.io/#brand> ;
     schema:subjectOf <https://maxclerkwell.tech/posts/skainet-edge-compute-september-2026/> .
 
-<https://maxclerkwell.tech/#nablab>
+<https://nabla-b.engineering/#organization>
     a foaf:Organization, schema:Organization ;
     foaf:name "nabla B" ;
+    foaf:homepage <https://nabla-b.engineering/> ;
     rdfs:label "nabla B Ingenieurbüro und Dienstleistungs-UG" ;
     dct:created "2020" ;
     foaf:member <https://maxclerkwell.tech/#person> .

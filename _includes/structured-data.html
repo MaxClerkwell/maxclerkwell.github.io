@@ -17,7 +17,7 @@
         "url": "https://orcid.org/0000-0002-2119-0064"
       },
       "email": "mailto:stephan@boekelmann.net",
-      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "System Architect, skAInet Edge-Compute (Auto-Intern GmbH)"],
+      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "Managing Director, nabla B", "Chief Operating Officer, Auto-Intern GmbH", "System Architect, skAInet Edge-Compute"],
       "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
       "hasOccupation": [
         {
@@ -28,9 +28,9 @@
         },
         {
           "@type": "Occupation",
-          "name": "System architect, skAInet Edge-Compute (Auto-Intern GmbH, on contract via nabla B)",
+          "name": "Chief Operating Officer and system architect, Auto-Intern GmbH (skAInet Edge-Compute)",
           "occupationLocation": { "@type": "City", "name": "Bochum, Germany" },
-          "skills": "PoE-first system architecture, M12 industrial Ethernet, edge data acquisition, EMC certification, Yocto Linux"
+          "skills": "operations, product line strategy, scalable manufacturing, international certification, PoE-first system architecture, M12 industrial Ethernet, edge data acquisition, Yocto Linux"
         },
         {
           "@type": "Occupation",
@@ -48,7 +48,10 @@
       "description": "Engineer, physicist, and freelance consultant based in Bochum, Germany. Professionally active since 2007. Works on decentralised data acquisition and observability: embedded firmware, PCB design, FPGA development, measurement and DAQ systems, and monitoring infrastructure. PhD candidate in experimental hadron physics, developing HV-MAPS ASICs for minimum ionizing particle detection for the PANDA experiment at FAIR.",
       "nationality": { "@type": "Country", "name": "Germany" },
       "homeLocation": { "@type": "Place", "name": "Bochum, Germany" },
-      "worksFor": { "@id": "https://maxclerkwell.tech/#nablab" },
+      "worksFor": [
+        { "@id": "https://nabla-b.engineering/#organization" },
+        { "@id": "https://www.auto-intern.de/#organization" }
+      ],
       "affiliation": [
         {
           "@type": "CollegeOrUniversity",
@@ -130,7 +133,7 @@
       ],
       "memberOf": [
         { "@id": "https://maxclerkwell.tech/#skunkforce" },
-        { "@id": "https://maxclerkwell.tech/#autointern" },
+        { "@id": "https://www.auto-intern.de/#organization" },
         { "@type": "Organization", "name": "PANDA Collaboration at FAIR/GSI", "description": "Member; Young Scientist Convent chair and Young PANDA representative on the Collaboration Board" },
         { "@type": "Organization", "name": "IHK Mittleres Ruhrgebiet examination board for IT specialists", "description": "Board member since 2020" },
         { "@type": "Organization", "name": "emBO++ — International Technical Symposium for Embedded Systems Development", "url": "https://embo.io/", "location": { "@type": "Place", "name": "Bochum, Germany" }, "description": "Principal organiser since 2015" },
@@ -147,12 +150,13 @@
       "subjectOf": [
         { "@type": "WebPage", "url": "https://maxclerkwell.tech/talks/", "name": "Talks & Conference Appearances" },
         { "@type": "WebPage", "url": "https://maxclerkwell.tech/publications/", "name": "Publications, Patents & Software" },
-        { "@type": "WebPage", "url": "https://edge-compute.skainet.io/team", "name": "skAInet Edge-Compute team, Auto-Intern GmbH" }
+        { "@type": "WebPage", "url": "https://edge-compute.skainet.io/team", "name": "skAInet Edge-Compute team, Auto-Intern GmbH" },
+        { "@type": "WebPage", "url": "https://nabla-b.engineering/team/", "name": "nabla B team" }
       ],
       "sameAs": [
         "https://github.com/maxclerkwell",
         "https://x.com/maxclerkwell",
-        "https://linkedin.com/in/accelerator-stephan",
+        "https://www.linkedin.com/in/accelerator-stephan/",
         "https://orcid.org/0000-0002-2119-0064",
         "https://arxiv.org/a/0000-0002-2119-0064.html",
         "https://inspirehep.net/authors/2177110",
@@ -167,9 +171,16 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://maxclerkwell.tech/#nablab",
+      "@id": "https://nabla-b.engineering/#organization",
       "name": "nabla B",
+      "url": "https://nabla-b.engineering/",
       "alternateName": ["\u2207B", "nabla-B"],
+      "sameAs": [
+        "https://github.com/nabla-B",
+        "https://nabla-b.engineering/en/",
+        "https://maxclerkwell.tech/hire/"
+      ],
+      "brand": { "@id": "https://gruppe.ai/#brand" },
       "legalName": "nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt)",
       "description": "Engineering office focused on data acquisition and physical measurement systems, embedded hardware, and custom development projects at the interface of industry and research. Consulting on development and use of digital measuring instruments; training engineers in digital measurement technology and data acquisition. Part of the AI-Gruppe umbrella brand.",
       "founder": { "@id": "https://maxclerkwell.tech/#person" },
@@ -198,20 +209,23 @@
       "foundingDate": "2021",
       "description": "Non-profit association for open hardware and software engineering, Bochum. Stephan Bökelmann is a founding member and has been its chairman (1. Vorsitzender) since 2021. Organiser of the Practical Data Science Congress (PDSC4K).",
       "founder": { "@id": "https://maxclerkwell.tech/#person" },
+      "brand": { "@id": "https://gruppe.ai/#brand" },
       "location": { "@type": "Place", "name": "Bochum, Germany" }
     },
     {
       "@type": "Organization",
-      "@id": "https://maxclerkwell.tech/#autointern",
+      "@id": "https://www.auto-intern.de/#organization",
       "name": "Auto-Intern GmbH",
       "url": "https://auto-intern.de/",
       "email": "mailto:info@auto-intern.de",
       "foundingDate": "2000",
-      "description": "Automotive diagnostics, industrial monitoring and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand; skAInet is its brand and engineering office for decentralised monitoring. Manufacturer of the skAInet Edge-Compute, an M12-PoE switch, router and Linux compute module for industrial edge data acquisition. Stephan Bökelmann was developer (2014 to 2016) and head of development (2016 to 2018) and works with Auto-Intern on contract; he is system architect of the skAInet Edge-Compute and works on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
-      "brand": { "@id": "https://www.skainet.io/#brand" },
+      "description": "Automotive diagnostics, industrial monitoring and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand; skAInet is its brand and engineering office for decentralised monitoring. Manufacturer of the skAInet Edge-Compute, an M12-PoE switch, router and Linux compute module for industrial edge data acquisition. Stephan Bökelmann was developer (2014 to 2016) and head of development (2016 to 2018) and has been Chief Operating Officer since 2018; he is system architect of the skAInet Edge-Compute and works on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
+      "brand": [
+        { "@id": "https://www.skainet.io/#brand" },
+        { "@id": "https://gruppe.ai/#brand" }
+      ],
       "owns": { "@id": "https://edge-compute.skainet.io/#product" },
       "sameAs": [
-        "https://www.auto-intern.de/#organization",
         "https://www.skainet.io/",
         "https://edge-compute.skainet.io/",
         "https://github.com/auto-intern-skainet"
@@ -236,16 +250,17 @@
       "category": "Industrial edge computing / IIoT gateway",
       "countryOfOrigin": { "@type": "Country", "name": "Germany" },
       "brand": { "@id": "https://www.skainet.io/#brand" },
-      "manufacturer": { "@id": "https://maxclerkwell.tech/#autointern" },
+      "manufacturer": { "@id": "https://www.auto-intern.de/#organization" },
       "contributor": { "@type": "Role", "roleName": "System Architect", "contributor": { "@id": "https://maxclerkwell.tech/#person" } },
       "subjectOf": { "@id": "https://maxclerkwell.tech/posts/skainet-edge-compute-september-2026/#article" }
     },
     {
       "@type": "Brand",
-      "@id": "https://maxclerkwell.tech/#aigruppe",
+      "@id": "https://gruppe.ai/#brand",
       "name": "AI-Gruppe",
       "url": "https://gruppe.ai/",
-      "description": "Umbrella brand (not a legal entity) for Auto-Intern GmbH, CCD Car Diagnostics, nabla B, nerd_force1, open Skunkforce e.V. and the skAInet project."
+      "description": "Umbrella brand (not a legal entity) for Auto-Intern GmbH, CCD Car Diagnostics, nabla B, nerd_force1, open Skunkforce e.V. and the skAInet project. Canonical identifier for the brand across all AI-Gruppe web properties.",
+      "sameAs": ["https://gruppe.ai/"]
     },
     {
       "@type": "Organization",
