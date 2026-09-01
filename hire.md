@@ -61,6 +61,9 @@ observable.
   self-updating Yocto Linux on an ALINX AX7020, documented as a
   [public series](/posts/zynq-bitstream-deployment-concept-august-2026/) (since 2026)
 - **PCB design for an embedded vision system with AI acceleration** — customer under NDA (2026)
+- **[skAInet Edge-Compute](https://edge-compute.skainet.io/)** — M12-PoE switch, router and
+  Linux compute module for industrial edge DAQ by Auto-Intern; system architect,
+  M12 cabling specification and EMC campaign ([write-up](/posts/skainet-edge-compute-september-2026/)) (2016–2026)
 - **Reflow-oven monitoring for predictive solder-quality assessment** —
   Kurtz Ersa, including [EMC certification in China](/posts/dongguan-emc-march-2026/) (2022–2026)
 - **Electrochemical impedance spectroscope for biofilm detection** in US

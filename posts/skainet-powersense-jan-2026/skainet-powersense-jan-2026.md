@@ -7,6 +7,7 @@ description: "How we built a non-contact PoE power monitor for DB Netz railway s
 image: assets/photo_1_2026-04-21_12-42-49.jpg
 keywords: "non-contact voltage measurement, PoE sensor, railway monitoring, EMC certification, E-field sensing, skAInet, DB Netz, PowerSense, industrial IoT"
 permalink: /posts/skainet-powersense-jan-2026/
+last_modified_at: 2026-09-01
 ---
 
 January 2016. A call came in through a mutual contact — [Steffen Scholle](https://eximentor.de/en/home/), at the time an Ex-inspector at DEKRA and today a respected Ex-consultant — connecting us with DB Netz AG. They had a problem: they needed a smarter way to monitor the power supply of their railway switching systems. Three-phase, 16A lines, 1.5mm² cross-section. And they needed it non-intrusively, clip-on, retrofit. No rewiring. No outages. No excuses.
@@ -103,6 +104,8 @@ Looking back now, a decade later, the skAInet-PowerSense was not just a product.
 ![Custom-developed PoE infrastructure for the switching stations: QUINT POWER 48V supply feeding two DB ECG PoE8 DIN-rail switches — built because the right hardware simply didn't exist yet.](assets/photo_2_2026-04-21_12-42-49.jpg)
 
 ![DIANA Edge Computer Gateway — DB-branded prototype of the rack-mount edge compute unit developed alongside the PowerSense to aggregate and forward sensor data.](assets/photo_3_2026-04-21_12-42-49.jpg)
+
+*The DIANA gateway is the direct ancestor of what Auto-Intern sells today as the [skAInet Edge-Compute](https://edge-compute.skainet.io/): one WAN port, seven M12 PoE ports, a Linux compute module in a sealed aluminium block. [More on that lineage here](/posts/skainet-edge-compute-september-2026/).*
 
 **PoE first.** Always. If you commit to PoE, you get TCP/IP, power, and a standards-compliant physical layer in a single cable. Everything the network has to offer becomes accessible to your device. We have not seriously considered an alternative since 2016.
 

@@ -7,6 +7,7 @@ description: "CE, FCC, and CCC certification in Dongguan — four days at NTC te
 image: assets/photo_7_2026-04-14_14-19-10.jpg
 keywords: "EMC testing, CE certification, FCC certification, CCC certification, Dongguan, NTC lab, PoE monitoring, reflow oven, M12 connector, skainet"
 permalink: /posts/dongguan-emc-march-2026/
+last_modified_at: 2026-09-01
 ---
 
 In March I flew to Dongguan, China for four days of EMC testing. It was the last major milestone before our reflow oven monitoring system goes into production. After two and a half years of development, the question was simple: does this thing radiate, and can it take a hit?
@@ -24,6 +25,8 @@ The development was handled by [**skainet.io**](https://skainet.io), the enginee
 ## System Architecture: PoE, Linux, and 36-Point Temperature Measurement
 
 The core of the system is a central compute module — a compact Linux box with a quad-core processor and more RAM than you would expect for its size. It has two separate Ethernet interfaces: one dedicated WAN uplink, and one connected to an integrated switch chip that exposes seven downstream ports, all of them Power over Ethernet.
+
+*Update, September 2026: that compute module has since become a product in its own right, the [skAInet Edge-Compute](https://edge-compute.skainet.io/), now with an 8-core CPU and 8 GB RAM. [Short write-up here](/posts/skainet-edge-compute-september-2026/).*
 
 Every downstream device is powered and communicated with over those PoE ports. At minimum, the system ships with:
 

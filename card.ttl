@@ -17,7 +17,7 @@ sitemap: false
     foaf:familyName "Bökelmann" ;
     foaf:nick "MaxClerkwell" ;
     rdfs:label "Stephan Bökelmann" ;
-    foaf:title "Engineer, physicist, freelance consultant" ;
+    foaf:title "Engineer, physicist, freelance consultant; system architect of the skAInet Edge-Compute" ;
     foaf:based_near "Bochum, Germany" ;
     foaf:homepage <https://maxclerkwell.tech/> ;
     foaf:workplaceHomepage <https://www.ruhr-uni-bochum.de/> ;
@@ -46,7 +46,24 @@ sitemap: false
         <https://x.com/maxclerkwell>,
         <https://instagram.com/_maxclerkwell> ;
     foaf:made <https://maxclerkwell.tech/> ;
-    org:memberOf <https://maxclerkwell.tech/#nablab> .
+    schema:knowsAbout <https://edge-compute.skainet.io/#product> ;
+    org:memberOf <https://maxclerkwell.tech/#nablab>, <https://maxclerkwell.tech/#autointern> .
+
+<https://maxclerkwell.tech/#autointern>
+    a foaf:Organization, schema:Organization ;
+    foaf:name "Auto-Intern GmbH" ;
+    foaf:homepage <https://auto-intern.de/> ;
+    owl:sameAs <https://www.auto-intern.de/#organization> ;
+    schema:brand <https://www.skainet.io/#brand> ;
+    foaf:member <https://maxclerkwell.tech/#person> .
+
+<https://edge-compute.skainet.io/#product>
+    a schema:Product ;
+    schema:name "skAInet Edge-Compute" ;
+    schema:url <https://edge-compute.skainet.io/> ;
+    schema:manufacturer <https://maxclerkwell.tech/#autointern> ;
+    schema:brand <https://www.skainet.io/#brand> ;
+    schema:subjectOf <https://maxclerkwell.tech/posts/skainet-edge-compute-september-2026/> .
 
 <https://maxclerkwell.tech/#nablab>
     a foaf:Organization, schema:Organization ;

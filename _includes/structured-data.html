@@ -17,7 +17,7 @@
         "url": "https://orcid.org/0000-0002-2119-0064"
       },
       "email": "mailto:stephan@boekelmann.net",
-      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer"],
+      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "System Architect, skAInet Edge-Compute (Auto-Intern GmbH)"],
       "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
       "hasOccupation": [
         {
@@ -25,6 +25,12 @@
           "name": "Engineering consultant, data acquisition and measurement systems",
           "occupationLocation": { "@type": "City", "name": "Bochum, Germany" },
           "skills": "embedded firmware, PCB design, FPGA development, DAQ systems, monitoring infrastructure"
+        },
+        {
+          "@type": "Occupation",
+          "name": "System architect, skAInet Edge-Compute (Auto-Intern GmbH, on contract via nabla B)",
+          "occupationLocation": { "@type": "City", "name": "Bochum, Germany" },
+          "skills": "PoE-first system architecture, M12 industrial Ethernet, edge data acquisition, EMC certification, Yocto Linux"
         },
         {
           "@type": "Occupation",
@@ -106,6 +112,9 @@
         "PANDA experiment at FAIR",
         "Geant4 simulation",
         "condition monitoring and predictive maintenance",
+        "industrial edge computing and IIoT gateways",
+        "M12 industrial Ethernet and Power over Ethernet (PoE)",
+        { "@id": "https://edge-compute.skainet.io/#product" },
         "mixed-signal design",
         "EMC certification (CE, FCC, CCC)",
         "C++",
@@ -137,7 +146,8 @@
       ],
       "subjectOf": [
         { "@type": "WebPage", "url": "https://maxclerkwell.tech/talks/", "name": "Talks & Conference Appearances" },
-        { "@type": "WebPage", "url": "https://maxclerkwell.tech/publications/", "name": "Publications, Patents & Software" }
+        { "@type": "WebPage", "url": "https://maxclerkwell.tech/publications/", "name": "Publications, Patents & Software" },
+        { "@type": "WebPage", "url": "https://edge-compute.skainet.io/team", "name": "skAInet Edge-Compute team, Auto-Intern GmbH" }
       ],
       "sameAs": [
         "https://github.com/maxclerkwell",
@@ -195,9 +205,40 @@
       "@id": "https://maxclerkwell.tech/#autointern",
       "name": "Auto-Intern GmbH",
       "url": "https://auto-intern.de/",
+      "email": "mailto:info@auto-intern.de",
       "foundingDate": "2000",
-      "description": "Automotive diagnostics and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand. Stephan Bökelmann works with Auto-Intern on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
+      "description": "Automotive diagnostics, industrial monitoring and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand; skAInet is its brand and engineering office for decentralised monitoring. Manufacturer of the skAInet Edge-Compute, an M12-PoE switch, router and Linux compute module for industrial edge data acquisition. Stephan Bökelmann was developer (2014 to 2016) and head of development (2016 to 2018) and works with Auto-Intern on contract; he is system architect of the skAInet Edge-Compute and works on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
+      "brand": { "@id": "https://www.skainet.io/#brand" },
+      "owns": { "@id": "https://edge-compute.skainet.io/#product" },
+      "sameAs": [
+        "https://www.auto-intern.de/#organization",
+        "https://www.skainet.io/",
+        "https://edge-compute.skainet.io/",
+        "https://github.com/auto-intern-skainet"
+      ],
       "location": { "@type": "Place", "name": "Bochum, Germany" }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://www.skainet.io/#brand",
+      "name": "skAInet",
+      "url": "https://www.skainet.io/",
+      "description": "Brand and engineering office of Auto-Intern GmbH for decentralised industrial monitoring: PoE measurement devices (PowerSense, temperature and digital I/O modules) and the skAInet Edge-Compute platform."
+    },
+    {
+      "@type": "Product",
+      "@id": "https://edge-compute.skainet.io/#product",
+      "name": "skAInet Edge-Compute",
+      "alternateName": ["Edge-Compute v1.5", "skAInet Edge Compute"],
+      "url": "https://edge-compute.skainet.io/",
+      "image": "https://edge-compute.skainet.io/img/edge-branded.jpg",
+      "description": "Programmable M12-PoE switch, router and compute module for industrial edge applications: sealed anodized aluminium enclosure, 7 M12 PoE LAN ports plus 1 M12 WAN port, 48 to 72 V DC input, 8-core 64-bit ARM CPU, 8 GB RAM, 32 GB eMMC, Yocto Linux with documented SBOM. Made in Germany by Auto-Intern GmbH.",
+      "category": "Industrial edge computing / IIoT gateway",
+      "countryOfOrigin": { "@type": "Country", "name": "Germany" },
+      "brand": { "@id": "https://www.skainet.io/#brand" },
+      "manufacturer": { "@id": "https://maxclerkwell.tech/#autointern" },
+      "contributor": { "@type": "Role", "roleName": "System Architect", "contributor": { "@id": "https://maxclerkwell.tech/#person" } },
+      "subjectOf": { "@id": "https://maxclerkwell.tech/posts/skainet-edge-compute-september-2026/#article" }
     },
     {
       "@type": "Brand",

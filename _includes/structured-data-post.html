@@ -29,7 +29,8 @@
   "isPartOf": [
     { "@id": "https://maxclerkwell.tech/#blog" },
     { "@id": "https://maxclerkwell.tech/#website" }
-  ],{% if page.video and page.video.id %}
+  ],{% if page.about_id %}
+  "about": { "@id": {{ page.about_id | jsonify }} },{% endif %}{% if page.video and page.video.id %}
   "video": { "@id": {{ page.url | absolute_url | append: '#video' | jsonify }} },{% endif %}
   "author": {
     "@type": "Person",

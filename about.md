@@ -2,7 +2,7 @@
 layout: about
 title: "About MaxClerkwell — Engineer & Physicist"
 description: "Background, projects and contact details of Stephan Bökelmann (MaxClerkwell): embedded systems, FPGA development, DAQ and detector instrumentation."
-last_modified_at: 2026-08-27
+last_modified_at: 2026-09-01
 permalink: /about/
 profile: true
 ---
@@ -23,7 +23,7 @@ My education runs the whole way up the stack, from the workbench to the cleanroo
 
 My engineering career started in 2007. In 2009 I co-founded a diagnostics workshop with Stephan "Stegen" Freye, doing hands-on measurement and repair work; that business was later acquired by AUTO INTERN. Between 2010 and 2011 I worked as a junior consultant at **PROLAB Produkt + Produktion** under Prof. Gereon Kortenbruck at TFH Bochum (now THGA), alongside Lukas Jakubczyk, advising manufacturing companies in the Ruhrgebiet. From 2011 to 2014 I was at **Puls Plasmatechnik** in Dortmund, where I worked on measurement and power systems for research facilities, including projects for DESY, CERN, and GSI. That work led me into accelerator-adjacent instrumentation and the world of large-scale physics infrastructure.
 
-In 2014 I joined **AUTO INTERN**, and together with Odin Holmes helped transform it into a sought-after contract developer for process diagnostics in industry and science. I'm now self-employed as managing director of **nabla B**, consulting on the development and use of digital measuring instruments and training engineers in digital measurement technology and data acquisition, and I continue to work closely with AUTO INTERN on contract.
+In 2014 I joined **AUTO INTERN**, and together with Odin Holmes helped transform it into a sought-after contract developer for process diagnostics in industry and science. I'm now self-employed as managing director of **nabla B**, consulting on the development and use of digital measuring instruments and training engineers in digital measurement technology and data acquisition, and I continue to work closely with AUTO INTERN on contract, most visibly as system architect of the [skAInet Edge-Compute](https://edge-compute.skainet.io/) platform.
 
 I'm a **lecturer** at **THGA Bochum** (University of Applied Sciences Georg Agricola Bochum), where I lecture on programming, object-oriented design, and databases, and build supplementary teaching material for students.
 
@@ -91,6 +91,8 @@ Not to be confused with the UK agency Clerkswell, the musician Stephan Bodzin, o
 
 ## Projects
 
+**[skAInet Edge-Compute](https://edge-compute.skainet.io/)**: Auto-Intern's programmable M12-PoE switch, router and Linux compute module for industrial edge data acquisition; one WAN port, seven sealed PoE ports, an 8-core ARM compute module and a Yocto Linux with documented SBOM. The platform under most of the monitoring projects below; my role is system architect: I contributed the PoE-first architecture, the M12 cabling specification and the system architecture of the reflow-oven monitor built on it. [Background on the blog](/posts/skainet-edge-compute-september-2026/).
+
 **[OmnAIScope](/posts/omnaiscope-august-2025/)**: a simplified digital oscilloscope that turns waveform diagnostics into something an automotive workshop can actually use day to day. Grown out of the aw4null research programme, patent pending, and the hardware story behind it is [on the blog](/posts/omnaiscope-august-2025/).
 
 **aw4null (autowerkstatt4null)**: a BMWK-funded, federated AI ecosystem for independent car workshops. Measurement data from off-board diagnostics feeds machine-learning models that help workshops diagnose faults without sending their data to a central silo.
@@ -126,6 +128,7 @@ Not to be confused with the UK agency Clerkswell, the musician Stephan Bodzin, o
 | 2026 | **Dual-uplink office networking**: Starlink failover and load balancing for a 15-person office on plain Linux routing ([write-up](/posts/dual-uplink-load-balancing-july-2026/)) |
 | 2024 – 2026 | Building up a **wire-bonding production line** for HV-MAPS silicon detectors, Ruhr-Universität Bochum ([talk at KiCon Asia](/posts/kicon-asia-2025/)) |
 | 2023 – 2026 | **Electrical resonance spectroscope for biofilm assessment** in rivers across the continental US, with Prof. Warnat, Montana State University ([field report](/posts/msu-eis-2024/)) |
+| 2016 – 2026 | **skAInet Edge-Compute**: M12-PoE edge platform of Auto-Intern GmbH, from the DIANA gateway prototype to the v1.5 product; system architect: PoE-first architecture, M12 cabling specification, EMC certification ([product site](https://edge-compute.skainet.io/), [write-up](/posts/skainet-edge-compute-september-2026/)) |
 | 2022 – 2026 | Integrated **monitoring system for predictive assessment of solder quality factors** on reflow machines, Kurtz Ersa ([EMC certification story](/posts/dongguan-emc-march-2026/)) |
 | 2020 – 2026 | Multiple **test stands for characterising HV-MAPS sensors** for minimum ionizing particles (PANDA/FAIR) ([Geant4 simulation post](/posts/hv-maps-energy-loss-simulation-may-2026/)) |
 | 2025 | **Big-data storage cluster** based on CephFS, THGA Bochum |

@@ -7,6 +7,7 @@ description: "Auto-Intern GmbH turns 25. This is the story of how it started: tw
 image: assets/AutoSpion.jpg
 keywords: "Auto-Intern GmbH, VCDS, OBD diagnostics, Ross-Tech, automotive diagnostics, VW Golf GTI, RS-232 OBD adapter, origin story"
 permalink: /posts/auto-intern-obd-vcds-may-2026/
+last_modified_at: 2026-09-01
 ---
 
 I joined Auto-Intern in 2014, when the company acquired my workshop, Kfz-Technik Bökelmann. By then, Auto-Intern was already an institution in the German-speaking automotive world — the go-to address for VCDS diagnostic interfaces. But the story of how it got there is one I have spent the last decade slowly piecing together from the people who lived it. This year, Auto-Intern turns 25. It feels like the right moment to write it down.
@@ -105,7 +106,7 @@ Final assembly still happens in Bochum. That has not changed.
 
 ## Twenty-Five Years Later
 
-Auto-Intern's core engineering competencies have shifted substantially over the years — today the company works heavily in decentralized monitoring and industrial diagnostics, which is a different world from RS-232 adapters assembled on a bedroom workbench. But VCDS remains a real part of the business and, more than that, a real part of the identity.
+Auto-Intern's core engineering competencies have shifted substantially over the years — today the company works heavily in decentralized monitoring and industrial diagnostics (its current platform is the [skAInet Edge-Compute](https://edge-compute.skainet.io/), a sealed M12-PoE Linux box for the factory floor), which is a different world from RS-232 adapters assembled on a bedroom workbench. But VCDS remains a real part of the business and, more than that, a real part of the identity.
 
 What started as a hack to make a car radio louder turned into a company that shaped the independent workshop market in Germany, Austria, and Switzerland for a quarter century. It gave mechanics the same visibility into vehicles that manufacturers had reserved for themselves. It made the diagnostic gap between a franchised dealership and a good independent workshop much, much smaller.
 

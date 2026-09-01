@@ -5,6 +5,7 @@ author: "Stephan Bökelmann"
 description: "Stage 1 of the open bitstream pipeline: putting mainline U-Boot on an ALINX AX7020 over JTAG and Ethernet only: a clean walkthrough of what works, followed by the nine detours it took to find out."
 tags: [fpga, alinx, zynq, jtag, openocd, u-boot, spl, device-tree, netconsole, bring-up, linux]
 image: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg
+last_modified_at: 2026-09-01
 hire_cta: "board bring-up"
 ---
 
@@ -103,7 +104,7 @@ adapter from [Auto-Intern GmbH](https://auto-intern.de), which I
 co-developed; the cable comes from Dongguan Guanghui Electronic Technology
 (GH Electronic). In March I visited their factory and worked out our
 Ethernet cable specifications with their engineers; the same cables now
-ship in Auto-Intern's new products. Industrial Ethernet cabling (M12
+ship with Auto-Intern's new [skAInet Edge-Compute](https://edge-compute.skainet.io/). Industrial Ethernet cabling (M12
 X-coded, shielding, IP rating, EMC and the certification paperwork that
 goes with it) is a topic I enjoy, and I am happy to help teams in the EU and
 the USA specify and certify correct cables. [Get in touch](/about/) if that
@@ -134,7 +135,7 @@ is a problem you have.
   </figure>
   <figure>
     <img src="/assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/emc-lab-test.jpg" alt="EMC lab test of the jointly specified cables with Auto-Intern's new edge-compute hardware" loading="lazy">
-    <figcaption>Testing the jointly specified cables in the EMC lab with Auto-Intern's new edge-compute hardware.</figcaption>
+    <figcaption>Testing the jointly specified cables in the EMC lab with Auto-Intern's new <a href="https://edge-compute.skainet.io/">skAInet Edge-Compute</a>.</figcaption>
   </figure>
 </div>
 <div id="post-lightbox"><img alt=""></div>
