@@ -52,6 +52,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [INSPIRE-HEP](https://inspirehep.net/authors/2177110): author record in the high-energy physics literature database (PANDA collaboration publications)
 - [ResearchGate](https://www.researchgate.net/profile/Stephan-Boekelmann)
 - [YouTube](https://www.youtube.com/@MaxClerkwell)
+- [Instagram](https://www.instagram.com/_maxclerkwell/)
 - [The Things Network](https://www.thethingsnetwork.org/u/MaxClerkwell): LoRaWAN profile
 - [Discord community "Full Stack Engineering"](https://discord.gg/2BXuUY6hrX)
 

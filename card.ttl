@@ -40,11 +40,12 @@ sitemap: false
         <https://www.linkedin.com/in/accelerator-stephan/>,
         <https://x.com/maxclerkwell>,
         <https://www.youtube.com/@MaxClerkwell>,
-        <https://www.thethingsnetwork.org/u/MaxClerkwell> ;
+        <https://www.thethingsnetwork.org/u/MaxClerkwell>,
+        <https://www.instagram.com/_maxclerkwell/> ;
     foaf:account
         <https://github.com/maxclerkwell>,
         <https://x.com/maxclerkwell>,
-        <https://instagram.com/_maxclerkwell> ;
+        <https://www.instagram.com/_maxclerkwell/> ;
     foaf:made <https://maxclerkwell.tech/> ;
     schema:knowsAbout <https://edge-compute.skainet.io/#product> ;
     org:memberOf <https://nabla-b.engineering/#organization>, <https://www.auto-intern.de/#organization> .
