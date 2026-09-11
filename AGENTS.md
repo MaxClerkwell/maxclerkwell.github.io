@@ -112,6 +112,21 @@ tags: [tag1, tag2]                      # optional, becomes JSON-LD keywords
 keywords: "comma, separated, phrases"   # optional, used only when tags are absent
 image: /assets/posts/<slug>/cover.jpg   # optional, absolute path; falls back to /slides/Avatar.jpg
 last_modified_at: YYYY-MM-DD            # optional, becomes dateModified (defaults to date)
+about_id: https://.../#id               # optional, @id of a site-graph entity the post is about
+video:                                  # optional, emits a VideoObject (see structured-data-video.html)
+  id: YOUTUBE_ID
+  name: "Video title"
+  description: "One sentence."
+  upload_date: YYYY-MM-DD
+event:                                  # optional, emits an Event node for conference reports
+  name: "KiCon Europe 2026"             # (see structured-data-event.html for all keys)
+  start_date: YYYY-MM-DD
+  end_date: YYYY-MM-DD
+  location: "Venue"
+  city: "Bochum"
+  country: "DE"
+  organizer_id: https://maxclerkwell.tech/#skunkforce
+  role: organizer                       # organizer | performer | attendee
 ---
 ```
 
@@ -120,6 +135,11 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
 - `description` is preferred; if missing, the include falls back to the
   generated `excerpt`. An explicit `description` is always better, because the
   same value is reused for the post card and for the llms.txt line.
+- `image` MUST be an absolute path (`/posts/<slug>/assets/x.jpg` for legacy
+  posts, `/assets/posts/<slug>/x.jpg` for new ones) or a full URL. A relative
+  `assets/x.jpg` renders a 404 in JSON-LD, og:image and Twitter Card.
+- `about_id`, `video` and `event` are all optional; `about` on the BlogPosting
+  becomes a list when both `about_id` and `event` are set.
 - `tags` win over `keywords`: if `tags` is non-empty it is joined into the
   JSON-LD `keywords` field and `keywords` is ignored.
 - `layout: post` and the `/posts/<slug>/` permalink come from `_config.yml`

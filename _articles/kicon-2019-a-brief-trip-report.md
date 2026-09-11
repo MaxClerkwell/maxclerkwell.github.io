@@ -6,6 +6,15 @@ description: "Chicago, April 2019: the first KiCon ever, organised by Chris Gamm
 tags: [kicad, conferences, open-source, pcb, chicago]
 keywords: "KiCon 2019, KiCad conference Chicago, mHub, Pumping Station One, Chris Gammell, trip report"
 image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmVWxHIPOfsJyOAKBdFroNPbXG7ZaBRnYbOzQ9JcWzzT7iS11TjHCVol5xndY3a5u0e3qc8CkLiUnegNBkBA6lIdpIgphwlYsc376UWlM_VTT7ndSxSSEDdI5posgIKJ5faAszyZNPiE0M/s1600/Selfie.jpg
+event:
+  name: "KiCon 2019"
+  start_date: 2019-04-26
+  end_date: 2019-04-27
+  url: https://contextualelectronics.com/kicon-2019/
+  location: "mHUB"
+  city: "Chicago"
+  country: "US"
+  role: attendee
 ---
 
 > **Editor's note (September 2026):** This is the trip report I wrote on

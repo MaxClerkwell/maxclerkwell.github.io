@@ -7,6 +7,19 @@ tags: [kicad, conferences, open-source, pcb, bochum, skunkforce]
 keywords: "KiCon Europe 2026, KiCad conference Bochum, Gleis 9, KiCad 11, ngspice 47, Open Skunkforce, Seth Hillbrand, Wayne Stambaugh, trip report"
 image: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/audience-selfie.jpg
 hire_cta: "KiCad or PCB design"
+about_id: "https://maxclerkwell.tech/#skunkforce"
+event:
+  name: "KiCon Europe 2026"
+  start_date: 2026-09-07
+  end_date: 2026-09-09
+  url: https://kicon.kicad.org/europe2026/
+  location: "Gleis 9"
+  street: "Am Kulturgleis 9"
+  city: "Bochum"
+  postal_code: "44787"
+  country: "DE"
+  organizer_id: https://maxclerkwell.tech/#skunkforce
+  role: organizer
 ---
 
 In April 2019 I flew to Chicago for the very first KiCon and wrote a

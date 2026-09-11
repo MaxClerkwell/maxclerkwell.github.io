@@ -4,9 +4,10 @@ title: "Ten Years of Conferences: What They're Actually For"
 date: 2026-03-15
 tags: [conferences, personal, open-source]
 description: "Ten years of attending and organising technical conferences — what they're actually for, why the hallway track beats the programme, and how emBO++ grew from four people to 250. Lessons from Meeting C++, KiCon, GSI, and ISO C++."
-image: assets/stephan_und_bjarne.png
+image: /posts/why-conferences-march-2026/assets/stephan_und_bjarne.png
 keywords: "technical conferences, emBO++, Open Skunkforce, KiCon, Meeting C++, conference organisation, developer community, embedded C++"
 permalink: /posts/why-conferences-march-2026/
+about_id: "https://maxclerkwell.tech/#skunkforce"
 ---
 
 In 2015 I went to my first real conference. I came back a different engineer. That sounds dramatic, but it's accurate, and it took me a while to understand why. This post is an attempt to write that down — both for myself, after ten years, and for the companies, universities, and open-source projects that keep asking us at [Open Skunkforce e.V.](https://skunkforce.org) how we think about this.

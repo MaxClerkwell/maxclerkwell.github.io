@@ -4,7 +4,7 @@ title: "Travelling to China with a Peli Case Full of Electronics"
 date: 2026-04-09
 tags: [electronics, conferences]
 description: "Practical guide for engineers flying to China with professional electronics — ATA Carnet process, Frankfurt customs, Guangzhou departure, apps to install, and a full pre-trip checklist."
-image: assets/photo_1_2026-04-14_16-02-16.jpg
+image: /posts/ata-carnet-china-travel/assets/photo_1_2026-04-14_16-02-16.jpg
 keywords: "ATA Carnet, China travel electronics, Frankfurt customs export, Guangzhou airport customs, Peli case travel, Holafly eSIM, WeChat China, EMC testing China logistics"
 permalink: /posts/ata-carnet-china-travel/
 ---

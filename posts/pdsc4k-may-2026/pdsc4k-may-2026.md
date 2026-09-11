@@ -4,9 +4,19 @@ title: "PDSC4K 2026: Everything, Everywhere, All at Once"
 date: 2026-05-23
 tags: [conferences]
 description: "The Practical Data Science Congress (PDSC4K) in Bochum proved that small, deliberately compact events can deliver more signal than most large conferences — especially when the real topic is the messy reality of getting data from the physical world into models that don't lie to you."
-image: assets/keynote-me-on-stage.jpg
+image: /posts/pdsc4k-may-2026/assets/keynote-me-on-stage.jpg
 keywords: "PDSC4K 2026, data science conference Bochum, practical data science, data pipelines, Open Skunkforce, physical world data"
 permalink: /posts/pdsc4k-may-2026/
+about_id: "https://maxclerkwell.tech/#skunkforce"
+event:
+  name: "Practical Data Science Congress 4000 (PDSC4K) 2026"
+  start_date: 2026-05-22
+  end_date: 2026-05-22
+  location: "ZESS, Ruhr-Universität Bochum"
+  city: "Bochum"
+  country: "DE"
+  organizer_id: https://maxclerkwell.tech/#skunkforce
+  role: organizer
 ---
 
 On 22 May 2026 the **Practical Data Science Congress 4000** — PDSC4K for short — took place at the ZESS in Bochum. The goal was explicit: show data science as a practical tool for real problems, not as a buzzword. With roughly twenty participants from industry, research, and academia, the format was kept intentionally small. That constraint created the conditions for something rarer than most conferences manage: actual conversation instead of performance.

@@ -4,9 +4,10 @@ title: "If We Can Measure It, You Can Improve It"
 date: 2026-04-20
 tags: [ai, monitoring, philosophy]
 description: "Why we build monitoring systems — the case for industrial automation as human liberation, retrofit over greenfield, and why the sensor is the critical missing link between AI and the physical world."
-image: assets/intro-bild.jpg
+image: /posts/ai-gruppe-manifesto/assets/intro-bild.jpg
 keywords: "industrial monitoring, automation, retrofit sensors, PoE sensor, Industry 4.0, predictive maintenance, Auto-Intern, skainet, manufacturing intelligence"
 permalink: /posts/ai-gruppe-manifesto/
+about_id: "https://gruppe.ai/#brand"
 ---
 
 ![Four people in a VW bus on the way to somewhere that matters](assets/intro-bild.jpg)

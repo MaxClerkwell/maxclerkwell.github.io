@@ -5,7 +5,7 @@ date: 2026-05-18
 tags: [physics]
 math: true
 description: "A first-principles walkthrough of using Geant4 to simulate how much energy an antiproton deposits in a thin HV-MAPS silicon sensor — including a hand-worked Bethe-Bloch example, the Landau distribution, and why this matters for detector design before you ever see a beam."
-image: assets/me-being-anti-proton.jpg
+image: /posts/hv-maps-energy-loss-simulation-may-2026/assets/me-being-anti-proton.jpg
 keywords: "Geant4 simulation, HV-MAPS, antiproton energy loss, Bethe-Bloch, Landau distribution, silicon detector, PANDA experiment, FAIR, particle physics simulation"
 permalink: /posts/hv-maps-energy-loss-simulation-may-2026/
 ---

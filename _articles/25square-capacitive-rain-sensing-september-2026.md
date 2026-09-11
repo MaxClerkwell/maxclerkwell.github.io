@@ -6,6 +6,7 @@ description: "How Auto-Intern built the street-level rain sensors for the 25squa
 tags: [daq, measurement, stm32, lwip, poe, mqtt, lora, sensors, patent, mfund, bochum, edge-compute]
 image: /assets/posts/25square-capacitive-rain-sensing-september-2026/25square-sensor-impact-plate.jpg
 hire_cta: "data-acquisition or monitoring"
+about_id: "https://www.auto-intern.de/#organization"
 ---
 
 When people talk about AI-based heavy-rain forecasting, the conversation

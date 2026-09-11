@@ -77,6 +77,7 @@
   {% if page.date %}{% include structured-data-post.html %}{% endif %}
   {% if page.date %}{% include structured-data-breadcrumb.html %}{% endif %}
   {% if page.video and page.video.id %}{% include structured-data-video.html %}{% endif %}
+  {% if page.event and page.event.name %}{% include structured-data-event.html %}{% endif %}
   {% if page.profile %}{% include structured-data-profile.html %}{% endif %}
   {% if page.math %}
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>

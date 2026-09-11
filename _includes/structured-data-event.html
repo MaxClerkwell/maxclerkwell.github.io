@@ -1,0 +1,51 @@
+{% comment %}
+  Event JSON-LD for a conference report. Driven by the post front matter:
+
+    event:
+      name: "KiCon Europe 2026"        # required
+      start_date: YYYY-MM-DD           # required
+      end_date: YYYY-MM-DD             # optional, defaults to start_date
+      url: https://...                 # optional, official event page
+      location: "Venue name"           # optional
+      street: "..."                    # optional
+      city: "Bochum"                   # optional
+      postal_code: "44787"             # optional
+      country: "DE"                    # optional, ISO 3166-1 alpha-2
+      organizer_id: https://...#id     # optional, @id from structured-data.html
+      role: organizer|performer|attendee   # optional, how the author relates
+
+  Emitted only when page.event.name is present. The BlogPosting in
+  structured-data-post.html references this node via "about".
+{% endcomment %}
+{% if page.event and page.event.name %}
+{% assign ev_end = page.event.end_date | default: page.event.start_date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "@id": {{ page.url | absolute_url | append: '#event' | jsonify }},
+  "name": {{ page.event.name | jsonify }},
+  "startDate": {{ page.event.start_date | date: '%Y-%m-%d' | jsonify }},
+  "endDate": {{ ev_end | date: '%Y-%m-%d' | jsonify }},
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",{% if page.event.url %}
+  "url": {{ page.event.url | jsonify }},{% endif %}
+  "location": {
+    "@type": "Place",{% if page.event.location %}
+    "name": {{ page.event.location | jsonify }},{% endif %}
+    "address": {
+      "@type": "PostalAddress",{% if page.event.street %}
+      "streetAddress": {{ page.event.street | jsonify }},{% endif %}{% if page.event.postal_code %}
+      "postalCode": {{ page.event.postal_code | jsonify }},{% endif %}{% if page.event.city %}
+      "addressLocality": {{ page.event.city | jsonify }},{% endif %}{% if page.event.country %}
+      "addressCountry": {{ page.event.country | jsonify }}{% endif %}
+    }
+  },{% if page.event.organizer_id %}
+  "organizer": { "@id": {{ page.event.organizer_id | jsonify }} },{% endif %}{% if page.event.role == 'organizer' %}
+  "contributor": { "@type": "Role", "roleName": "Organizer", "contributor": { "@id": "https://maxclerkwell.tech/#person" } },{% elsif page.event.role == 'performer' %}
+  "performer": { "@id": "https://maxclerkwell.tech/#person" },{% elsif page.event.role == 'attendee' %}
+  "attendee": { "@id": "https://maxclerkwell.tech/#person" },{% endif %}
+  "subjectOf": { "@id": {{ page.url | absolute_url | append: '#article' | jsonify }} }
+}
+</script>
+{% endif %}

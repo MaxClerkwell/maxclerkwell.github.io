@@ -4,9 +4,20 @@ title: "KiCon Europe 2024: Bochum Goes International"
 date: 2024-09-20
 tags: [pcb, conferences, open-source]
 description: "KiCon Europe 2024 in Bochum — 150 engineers and designers, KiCad lead developers Wayne Stambaugh and Seth Hilbrand on stage, talks on open hardware, PCB design, and KiCad development. Full recap and YouTube playlist."
-image: assets/PXL_20240919_072728340.MP.jpg
+image: /posts/kicon-europe-2024/assets/PXL_20240919_072728340.MP.jpg
 keywords: "KiCon Europe 2024, KiCad conference, open source hardware, PCB design conference, Open Skunkforce, Bochum"
 permalink: /posts/kicon-europe-2024/
+about_id: "https://maxclerkwell.tech/#skunkforce"
+event:
+  name: "KiCon Europe 2024"
+  start_date: 2024-09-19
+  end_date: 2024-09-20
+  url: https://kicon.kicad.org/
+  location: "Rotunde Bochum"
+  city: "Bochum"
+  country: "DE"
+  organizer_id: https://maxclerkwell.tech/#skunkforce
+  role: organizer
 ---
 
 **KiCon Europe 2024** took place on September 19–20 in the [Rotunde Bochum](https://rotunde-bochum.de), organised by [**Open Skunkforce e.V.**](https://skunkforce.org) together with the KiCad project. Around 150 people came — designers, engineers, developers, hobbyists — from across Europe and beyond. It was the largest KiCon we had run in Bochum.

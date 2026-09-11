@@ -4,7 +4,7 @@ title: "Dual Uplink for 15 People: Starlink, Heimdall, and Linux Routing"
 date: 2026-02-27
 tags: [networking, linux]
 description: "How to set up dual uplink failover for an office network using Linux routing, Starlink, and metric-based default routes — with a Python dashboard to monitor both links in real time."
-image: assets/PXL_20260306_175202894.jpg
+image: /posts/dual-uplink-feb-2026/assets/PXL_20260306_175202894.jpg
 keywords: "dual uplink failover, Linux routing, Starlink, metric-based routing, ip route, Debian networking, two ISP failover, office network"
 permalink: /posts/dual-uplink-feb-2026/
 ---

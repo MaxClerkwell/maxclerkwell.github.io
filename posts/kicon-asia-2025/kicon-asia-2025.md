@@ -4,9 +4,22 @@ title: "KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen"
 date: 2025-11-15
 tags: [pcb, conferences, physics]
 description: "Talk at KiCon Asia 2025 in Shenzhen on wire bonding CLICpix and MuPix detector chips — two years of hands-on bonding with a Delvotec, condensed into 25 minutes. Slides and video included."
-image: assets/photo_8_2026-04-15_13-23-32.jpg
+image: /posts/kicon-asia-2025/assets/photo_8_2026-04-15_13-23-32.jpg
 keywords: "wire bonding, KiCon Asia 2025, Shenzhen, CLICpix, MuPix, HV-MAPS, Delvotec, particle physics detector, KiCad conference"
 permalink: /posts/kicon-asia-2025/
+video:
+  id: dNBwY7L6niI
+  name: "Poor man's intro to Wire-Bonding | Stephan Bökelmann @ KiCon Europe 2025"
+  description: "Recording of the wire bonding talk: bonding CLICpix and MuPix detector chips with a Delvotec, failure modes and lessons from two years in the lab."
+  upload_date: 2025-10-29
+event:
+  name: "KiCon Asia 2025"
+  start_date: 2025-11-14
+  end_date: 2025-11-15
+  url: https://kicon.kicad.org/asia2025/
+  city: "Shenzhen"
+  country: "CN"
+  role: performer
 ---
 
 **KiCon Asia 2025** took place in Shenzhen on November 13–15, co-organised by the KiCad project and [Huaqiu PCB](https://www.huaqiu.com). I was there as a speaker — and spent the rest of the time walking around one of the most interesting manufacturing cities in the world.

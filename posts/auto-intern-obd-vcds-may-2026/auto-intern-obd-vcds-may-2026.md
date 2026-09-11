@@ -4,10 +4,11 @@ title: "How Two Teenagers, a Printer Plug, and a Forum Post Built a Company"
 date: 2026-05-06
 tags: [automotive, personal]
 description: "Auto-Intern GmbH turns 25. This is the story of how it started: two kids in a bedroom, a GTI, an RS-232 adapter, and the accidental invention of a market."
-image: assets/AutoSpion.jpg
+image: /posts/auto-intern-obd-vcds-may-2026/assets/AutoSpion.jpg
 keywords: "Auto-Intern GmbH, VCDS, OBD diagnostics, Ross-Tech, automotive diagnostics, VW Golf GTI, RS-232 OBD adapter, origin story"
 permalink: /posts/auto-intern-obd-vcds-may-2026/
 last_modified_at: 2026-09-01
+about_id: "https://www.auto-intern.de/#organization"
 ---
 
 I joined Auto-Intern in 2014, when the company acquired my workshop, Kfz-Technik Bökelmann. By then, Auto-Intern was already an institution in the German-speaking automotive world — the go-to address for VCDS diagnostic interfaces. But the story of how it got there is one I have spent the last decade slowly piecing together from the people who lived it. This year, Auto-Intern turns 25. It feels like the right moment to write it down.
