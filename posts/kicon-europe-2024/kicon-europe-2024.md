@@ -31,7 +31,7 @@ The setup was a production in itself. Everything that could go wrong did, at lea
 
 For both days, **Wayne Stambaugh** and **Seth Hilbrand** — the two people most responsible for where KiCad is today — were present in Bochum. It was the first time either of them had come here.
 
-I had met Wayne once before, at the original **KiCon 2019 in Chicago**, which was organised by [Chris Gammel](https://contextualelectronics.com) of Contextual Electronics. That was a much smaller event, but it planted the idea that a regular European equivalent was worth building. Five years later, here we were.
+I had met Wayne once before, at the original [**KiCon 2019 in Chicago**](/posts/kicon-2019-a-brief-trip-report/), which was organised by [Chris Gammel](https://contextualelectronics.com) of Contextual Electronics. That was a much smaller event, but it planted the idea that a regular European equivalent was worth building. Five years later, here we were.
 
 ## Highlights from the Programme
 
@@ -85,3 +85,9 @@ KiCon Europe 2024 was made possible with support from **AI Gruppe** and **Auto I
 ---
 
 *All talks: [YouTube playlist](https://www.youtube.com/watch?v=T1jR1usucbk&list=PLIXq8kws1BI3Ex13QI9m3bDXm99TjHSLH). Organised by [Open Skunkforce e.V.](https://skunkforce.org) and the KiCad project.*
+
+## Other KiCon write-ups
+
+- [KiCon 2019: A Brief Trip Report](/posts/kicon-2019-a-brief-trip-report/): Chicago, where the idea started
+- [KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen](/posts/kicon-asia-2025/)
+- [KiCon Europe 2026: Trip Report without the Trip](/posts/kicon-europe-2026-trip-report-without-the-trip/)

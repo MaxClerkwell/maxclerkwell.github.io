@@ -74,3 +74,9 @@ I'm also involved on the organisational side of KiCon in Germany. Together with 
 ---
 
 *Slides are [openly available](assets/slides.pdf). Video from the bonding lab: [YouTube](https://www.youtube.com/watch?v=l0TbzeoqFSs). KiCon Europe recording: [YouTube](https://www.youtube.com/watch?v=dNBwY7L6niI).*
+
+## Other KiCon write-ups
+
+- [KiCon 2019: A Brief Trip Report](/posts/kicon-2019-a-brief-trip-report/): Chicago, where the idea started
+- [KiCon Europe 2024: Bochum Goes International](/posts/kicon-europe-2024/)
+- [KiCon Europe 2026: Trip Report without the Trip](/posts/kicon-europe-2026-trip-report-without-the-trip/)
