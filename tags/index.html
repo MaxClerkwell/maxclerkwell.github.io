@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Tags"
+description: "Every tag used on maxclerkwell.tech with the number of articles behind it."
+permalink: /tags/
+---
+{% include get-blog-posts.html %}
+{% assign all_tags = "" | split: "" %}
+{% for post in blog_posts %}{% for t in post.tags %}{% assign all_tags = all_tags | push: t %}{% endfor %}{% endfor %}
+{% assign uniq = all_tags | uniq | sort %}
+<section class="blog-archive">
+  <h1>Tags</h1>
+  <p class="archive-intro">{{ uniq.size }} tags across {{ blog_posts.size }} posts.</p>
+  <ul class="tag-cloud">
+  {% for t in uniq %}{% assign n = all_tags | where_exp: "x", "x == t" | size %}
+    <li><a class="post-tag" href="{{ '/tags/' | append: t | append: '/' | relative_url }}">{{ t }} <span class="tag-count">{{ n }}</span></a></li>
+  {% endfor %}
+  </ul>
+</section>

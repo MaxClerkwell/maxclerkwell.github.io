@@ -68,39 +68,10 @@ description: "Technical articles by Stephan Bökelmann on embedded systems, FPGA
     <a class="p-author h-card" href="{{ '/about/' | absolute_url }}" hidden>{{ site.author.name }}</a>
     {% include get-blog-posts.html %}
 
-    {% for post in blog_posts %}
-    {%- assign thumb = post.image -%}
-    {%- if thumb -%}
-      {%- assign thumb_first = thumb | slice: 0 -%}
-      {%- unless thumb_first == "/" or thumb contains "://" -%}
-        {%- assign thumb = post.url | append: thumb -%}
-      {%- endunless -%}
-    {%- endif -%}
-    <div class="post-card h-entry" data-tags="{{ post.tags | join: ' ' }}">
-      <a class="u-url" href="{{ post.url | relative_url }}">
-        {% if thumb %}
-        <img class="post-thumb u-photo" src="{{ thumb | relative_url }}" alt="" loading="lazy" width="72" height="72">
-        {% endif %}
-        <div class="post-card-body">
-        <h3 class="p-name">{{ post.title }}</h3>
-        <div class="post-meta">
-          <time class="date dt-published" datetime="{{ post.date | date_to_xmlschema }}">
-            <i class="far fa-calendar-alt"></i>
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-          {% for tag in post.tags %}
-            <span class="post-tag p-category">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        {% if post.description %}
-        <p class="post-excerpt p-summary">{{ post.description }}</p>
-        {% elsif post.excerpt %}
-        <p class="post-excerpt p-summary">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
-        {% endif %}
-        </div>
-      </a>
-    </div>
-    {% endfor %}
+    {% for post in blog_posts limit: 25 %}{% include post-card.html post=post %}{% endfor %}
+    {% if blog_posts.size > 25 %}
+    <p class="all-posts-link"><a href="{{ '/blog/' | relative_url }}">All {{ blog_posts.size }} posts &rarr;</a></p>
+    {% endif %}
 
     {% if blog_posts.size == 0 %}
     <p class="no-posts">The first post is being written. Check back soon.</p>

@@ -82,7 +82,7 @@ It wouldn't be my last time in China — a few months later I was back in [Dongg
 
 ## KiCon Bochum
 
-I'm also involved on the organisational side of KiCon in Germany. Together with [Open Skunkforce e.V.](https://openskunkforce.de), we run **KiCon Bochum** — a local German instance of the KiCon format. If you're in the area and use KiCad, keep an eye on what we announce.
+I'm also involved on the organisational side of KiCon in Germany. Together with [Open Skunkforce e.V.](https://skunkforce.org/), we run **KiCon Bochum** — a local German instance of the KiCon format. If you're in the area and use KiCad, keep an eye on what we announce.
 
 ---
 

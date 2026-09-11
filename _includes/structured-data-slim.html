@@ -1,0 +1,68 @@
+{% comment %}
+  Slim site graph for article and utility pages. The full graph in
+  structured-data.html (occupations, affiliations, credentials, product) is
+  only emitted on the home page, /about/, /hire/ and /talks/. Every @id that
+  a BlogPosting, Event or about_id can reference must still resolve here, so
+  the entities are present as short stubs with the same canonical @id.
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://maxclerkwell.tech/#person",
+      "name": "Stephan Bökelmann",
+      "alternateName": ["MaxClerkwell", "Stephan Boekelmann"],
+      "url": "https://maxclerkwell.tech/",
+      "image": "https://maxclerkwell.tech/slides/Avatar.jpg",
+      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant"],
+      "homeLocation": { "@type": "Place", "name": "Bochum, Germany" },
+      "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
+      "worksFor": [
+        { "@id": "https://nabla-b.engineering/#organization" },
+        { "@id": "https://www.auto-intern.de/#organization" }
+      ],
+      "sameAs": [
+        "https://orcid.org/0000-0002-2119-0064",
+        "https://github.com/maxclerkwell",
+        "https://www.linkedin.com/in/accelerator-stephan/",
+        "https://www.youtube.com/@MaxClerkwell"
+      ]
+    },
+    { "@type": "Organization", "@id": "https://nabla-b.engineering/#organization", "name": "nabla B", "url": "https://nabla-b.engineering/", "founder": { "@id": "https://maxclerkwell.tech/#person" } },
+    { "@type": "Organization", "@id": "https://maxclerkwell.tech/#skunkforce", "name": "open Skunkforce e.V.", "url": "https://skunkforce.org/", "nonprofitStatus": "https://schema.org/NonprofitType", "founder": { "@id": "https://maxclerkwell.tech/#person" } },
+    { "@type": "Organization", "@id": "https://www.auto-intern.de/#organization", "name": "Auto-Intern GmbH", "url": "https://auto-intern.de/" },
+    { "@type": "Brand", "@id": "https://www.skainet.io/#brand", "name": "skAInet", "url": "https://www.skainet.io/" },
+    { "@type": "Brand", "@id": "https://gruppe.ai/#brand", "name": "AI-Gruppe", "url": "https://gruppe.ai/" },
+    {
+      "@type": "Organization",
+      "@id": "https://maxclerkwell.tech/#publisher",
+      "name": "MaxClerkwell",
+      "url": "https://maxclerkwell.tech/",
+      "logo": { "@type": "ImageObject", "@id": "https://maxclerkwell.tech/#logo", "url": "https://maxclerkwell.tech/slides/Avatar.jpg" },
+      "founder": { "@id": "https://maxclerkwell.tech/#person" }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://maxclerkwell.tech/#blog",
+      "url": "https://maxclerkwell.tech/",
+      "name": "Stephan Bökelmann — From tape-out to TypeScript",
+      "inLanguage": "en",
+      "author": { "@id": "https://maxclerkwell.tech/#person" },
+      "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
+      "isPartOf": { "@id": "https://maxclerkwell.tech/#website" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://maxclerkwell.tech/#website",
+      "url": "https://maxclerkwell.tech/",
+      "name": "Stephan Bökelmann — MaxClerkwell",
+      "inLanguage": "en",
+      "author": { "@id": "https://maxclerkwell.tech/#person" },
+      "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
+      "mainEntity": { "@id": "https://maxclerkwell.tech/#blog" }
+    }
+  ]
+}
+</script>

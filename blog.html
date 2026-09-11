@@ -1,0 +1,13 @@
+---
+layout: default
+title: "All posts"
+description: "Every article on maxclerkwell.tech, newest first: electronics, FPGA, embedded Linux, physics, conferences and the occasional essay."
+permalink: /blog/
+---
+<section class="blog-archive">
+  <h1>All posts</h1>
+  <p class="archive-intro">{% include get-blog-posts.html %}{{ blog_posts.size }} articles, newest first. Browse by <a href="{{ '/tags/' | relative_url }}">tag</a> instead.</p>
+  <div class="post-list h-feed">
+    {% for post in blog_posts %}{% include post-card.html post=post %}{% endfor %}
+  </div>
+</section>

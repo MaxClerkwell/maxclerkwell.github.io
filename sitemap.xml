@@ -30,6 +30,20 @@ layout: null
   </url>
   {% endfor %}
 
+  <!-- Archive and tag pages -->
+  {% assign archive_blog = site.pages | where: "url", "/blog/" %}
+  {% assign archive_tags = site.pages | where: "url", "/tags/" %}
+  {% assign archive_tag  = site.pages | where: "layout", "tag" %}
+  {% assign archive_pages = archive_blog | concat: archive_tags | concat: archive_tag %}
+  {% for page in archive_pages %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  {% endfor %}
+
   <!-- Blog posts -->
   {% include get-blog-posts.html %}
   {% assign blog_posts = blog_posts | where_exp: "p", "p.sitemap != false" %}

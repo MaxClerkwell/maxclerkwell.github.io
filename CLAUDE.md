@@ -84,8 +84,11 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
 - Links to nabla-b.engineering and edge-compute.skainet.io open an
   interstitial (`_includes/leave-modal.html`) and get `?ref=maxclerkwell.tech`
   appended; add `data-no-leave` to an anchor to bypass it.
-- `_includes/structured-data.html` is included on every page and holds the
-  site-wide schema.org `@graph` (Person, nabla B, publisher Organization,
+- `_includes/structured-data.html` holds the full site-wide schema.org
+  `@graph` and is emitted only on `/`, `/about/`, `/hire/`, `/talks/` and the
+  Edge-Compute article; every other page gets `structured-data-slim.html`,
+  short stubs with the same canonical `@id`s (add a stub there whenever a new
+  `about_id` or `organizer_id` target is introduced). The full graph (Person, nabla B, publisher Organization,
   WebSite) with stable `@id` values under `https://maxclerkwell.tech/#...`.
 - `_includes/structured-data-post.html` is included only when `page.date`
   exists and emits the per-post `BlogPosting` JSON-LD, referencing the

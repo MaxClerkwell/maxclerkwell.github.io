@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% include get-blog-posts.html %}
+{% assign tagged = blog_posts | where_exp: "p", "p.tags contains page.tag" %}
+<section class="blog-archive tag-archive">
+  <h1>Tag: {{ page.tag }}</h1>
+  <p class="archive-intro">{{ tagged.size }} article{% if tagged.size != 1 %}s{% endif %} tagged <em>{{ page.tag }}</em>. See <a href="{{ '/tags/' | relative_url }}">all tags</a> or <a href="{{ '/blog/' | relative_url }}">all posts</a>.</p>
+  <div class="post-list h-feed">
+    {% for post in tagged %}{% include post-card.html post=post %}{% endfor %}
+  </div>
+</section>

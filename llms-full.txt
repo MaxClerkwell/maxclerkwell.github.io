@@ -5,14 +5,14 @@ sitemap: false
 ---
 # Stephan Bökelmann (MaxClerkwell) — full text of all articles
 
-> Complete text of every article published on https://maxclerkwell.tech, newest
-> first. For the short site summary and profile links see
+> Full text of the 30 most recent articles on https://maxclerkwell.tech, newest
+> first. Older articles are listed in llms.txt and available at their canonical URL. For the short site summary and profile links see
 > https://maxclerkwell.tech/llms.txt
 >
 > Author: Stephan Bökelmann (MaxClerkwell), ORCID 0000-0002-2119-0064.
 > Preferred citation: author name, article title, canonical URL on maxclerkwell.tech.
 
-{% include get-blog-posts.html %}{% for post in blog_posts %}
+{% include get-blog-posts.html %}{% for post in blog_posts limit: 30 %}
 ================================================================================
 ## {{ post.title }}
 

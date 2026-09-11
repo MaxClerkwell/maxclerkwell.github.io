@@ -4,7 +4,7 @@ date: 2026-06-15
 tags: [fpga, electronics, education]
 description: "FPGAs are not microcontrollers with more pins. They are a fundamentally different category of IC, and understanding what lives inside one changes how you think about digital hardware entirely."
 keywords: "FPGA, field programmable gate array, VHDL, Verilog, yosys, nextpnr, iCEstick, routing fabric, bitstream, digital design, LUT, logic synthesis"
-image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png
+image: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.jpg
 video:
   id: IRem743Eb7E
   name: "WTF is an FPGA? The most trivial explaination I can give!"
@@ -12,7 +12,7 @@ video:
   upload_date: 2026-07-09
 ---
 
-![A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors](/assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.png)
+![A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors](/assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.jpg)
 
 📺 Companion video:
 
@@ -103,7 +103,7 @@ This is why FPGAs appear in domains where timing is everything:
 - **Particle physics trigger systems**: at facilities like CERN, detectors produce far more data than can be stored or transmitted. FPGAs evaluate trigger conditions in real time and decide within microseconds whether an event is worth recording.
 - **DAQ systems**: data acquisition pipelines that need to handle thousands of parallel analog channels without dropping samples. At EP1 at Ruhr-Universität Bochum, Florian Feldbauer, Niels Boelger, and I use Kintex-7 FPGAs to read out HV-MAPS sensors for the PANDA and LHCb experiments. The boards in the photo below are from exactly that setup.
 
-![Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification, used at EP1/RUB for HV-MAPS sensor readout in the PANDA and LHCb experiments](/assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.png)
+![Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification, used at EP1/RUB for HV-MAPS sensor readout in the PANDA and LHCb experiments](/assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.jpg)
 
 - **Custom processor development**: when you are designing a new CPU architecture, an FPGA lets you instantiate your design in real silicon-like hardware before committing to a mask. This is how many research processors are prototyped.
 - **Cryptography**: certain algorithms map extremely efficiently onto parallel hardware. An FPGA can execute specific cryptographic functions with far less energy than a general-purpose CPU or even a GPU, because every gate is doing exactly one useful thing.
@@ -193,7 +193,7 @@ FPGAs come in a wide range of packages and boards:
 - **Larger development boards** like the Digilent Nexys or Basys series: more I/O, bigger FPGAs, more on-board peripherals (VGA, audio, switches). A step up once you have outgrown the smaller boards.
 - **PCIe boards**: high-bandwidth FPGAs intended for accelerator workloads, plugged directly into a server's PCIe bus. Used in HFT, ML inference, and network offload.
 
-![A Xilinx Kintex-7 evaluation board in PCIe form factor, with two Panda FMC mezzanine cards attached, an SFP cage, SMA connectors, and a small cooling fan over the FPGA package](/assets/posts/wtf-are-fpgas-june-2026/kintex7-pcie.png)
+![A Xilinx Kintex-7 evaluation board in PCIe form factor, with two Panda FMC mezzanine cards attached, an SFP cage, SMA connectors, and a small cooling fan over the FPGA package](/assets/posts/wtf-are-fpgas-june-2026/kintex7-pcie.jpg)
 
 The choice of form factor follows from the application. For learning the toolchain, a USB stick is plenty. For a particle physics trigger system, you want something closer to the PCIe end of the spectrum.
 

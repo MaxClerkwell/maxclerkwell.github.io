@@ -19,7 +19,7 @@ almost nothing of a convective cell that dumps its load on six street blocks
 and misses the rest of the city entirely.
 
 **25square** set out to fix that: a research project funded through the
-[mFUND programme](https://bmdv.bund.de/DE/Themen/Digitales/mFund/Ueberblick/ueberblick.html)
+[mFUND programme](https://www.bmv.de/DE/Themen/Mobilitaet/mFund/Ueberblick/ueberblick.html)
 of the German federal ministry of transport (our sub-project at Auto-Intern
 ran under grant 19F1064B), started in August 2020 together with
 [Okeanos](https://www.okeanos.ai/), then still Okeanos Consulting, founded
@@ -189,7 +189,7 @@ architecture lessons were already flowing into the M12-PoE platform that
 became the Edge-Compute. So when the follow-up project was taking shape, we
 passed the baton and turned our attention there. Okeanos carried the mission
 forward, and did it well: in **heavyRAIN**
-([mFUND](https://bmdv.bund.de/DE/Themen/Digitales/mFund/Ueberblick/ueberblick.html),
+([mFUND](https://www.bmv.de/DE/Themen/Mobilitaet/mFund/Ueberblick/ueberblick.html),
 September 2022 to August 2025, together with
 [hydro & meteo](https://www.hydrometeo.de/), [BO-I-T](https://bo-i-t.de/projekte/heavyrain/)
 and LANUK NRW) they scaled the idea to four cities (Bochum, Hagen,

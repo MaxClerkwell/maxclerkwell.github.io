@@ -9,7 +9,7 @@ permalink: /posts/machine-consciousness-may-2026/
 math: true
 ---
 
-![Are Machines Conscious?](assets/title1.png)
+![Are Machines Conscious?](assets/title1.jpg)
 
 *What follows is not a finished argument and not a manifesto. It is a snapshot — an attempt to sort out thoughts that have been occupying me for a while. I explicitly reserve the right to think differently tomorrow.*
 

@@ -73,7 +73,8 @@
   <link rel="me" href="https://inspirehep.net/authors/2177110">
   <link rel="me" href="https://www.thethingsnetwork.org/u/MaxClerkwell">
   <link rel="author" href="{{ '/about/' | absolute_url }}">
-  {% include structured-data.html %}
+  {%- comment -%} Full entity graph only where the person/site is the subject; slim stubs elsewhere. {%- endcomment -%}
+  {% if page.url == '/' or page.url == '/about/' or page.url == '/hire/' or page.url == '/talks/' or page.about_id contains 'edge-compute' %}{% include structured-data.html %}{% else %}{% include structured-data-slim.html %}{% endif %}
   {% if page.date %}{% include structured-data-post.html %}{% endif %}
   {% if page.date %}{% include structured-data-breadcrumb.html %}{% endif %}
   {% if page.video and page.video.id %}{% include structured-data-video.html %}{% endif %}
@@ -108,7 +109,7 @@
     <a href="{{ '/' | relative_url }}" class="nav-brand">Max<span>Clerkwell</span></a>
     <div class="nav-links">
       <a href="{{ '/' | relative_url }}"
-         {% if page.url == '/' %}class="active"{% endif %}>Blog</a>
+         {% if page.url == '/' or page.url == '/blog/' or page.url contains '/tags/' %}class="active"{% endif %}>Blog</a>
       <a href="{{ '/about/' | relative_url }}"
          {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
       <a href="{{ '/talks/' | relative_url }}"

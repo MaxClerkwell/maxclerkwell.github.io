@@ -21,14 +21,14 @@ layout: default
       <data class="dt-updated" value="{{ mod | date_to_xmlschema }}"></data>
       {% if page.tags %}
         {% for tag in page.tags %}
-          <span class="post-tag p-category">{{ tag }}</span>
+          <a class="post-tag p-category" href="{{ '/tags/' | append: tag | append: '/' | relative_url }}">{{ tag }}</a>
         {% endfor %}
       {% endif %}
     </div>
   </header>
 
   <div class="post-body e-content">
-    {{ content }}
+    {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' }}
   </div>
 
   {% if page.hire_cta %}{% include hire-cta.html topic=page.hire_cta %}{% endif %}
@@ -58,4 +58,28 @@ layout: default
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" crossorigin="anonymous"></script>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <img class="lightbox-img" alt="">
+  <p class="lightbox-caption"></p>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('lightbox'); if(!box) return;
+  var img=box.querySelector('.lightbox-img'), cap=box.querySelector('.lightbox-caption');
+  function open(src,alt,caption){ img.src=src; img.alt=alt||''; cap.textContent=caption||alt||''; box.hidden=false; document.body.classList.add('lightbox-open'); }
+  function close(){ box.hidden=true; img.src=''; document.body.classList.remove('lightbox-open'); }
+  document.querySelectorAll('.post-body img').forEach(function(el){
+    if(el.closest('a')) return;
+    el.classList.add('zoomable'); el.tabIndex=0; el.setAttribute('role','button');
+    var fig=el.closest('figure'); var fc=fig&&fig.querySelector('figcaption');
+    var go=function(){ open(el.currentSrc||el.src, el.alt, fc?fc.textContent:''); };
+    el.addEventListener('click',go);
+    el.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
+  box.addEventListener('click',function(e){ if(e.target!==img) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!box.hidden) close(); });
+})();
+</script>
+
+<script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
