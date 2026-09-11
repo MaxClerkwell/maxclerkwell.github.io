@@ -52,6 +52,15 @@ to the first KiCon at [mHub](https://mhubchicago.com/). Since 2024 the project i
 co-organiser, which changes a lot about the budget and nothing about the
 atmosphere.
 
+On our side, every one of these events runs through
+[Open Skunkforce e.V.](https://skunkforce.org/), the non-profit
+association we founded in Bochum for exactly this purpose. It is the legal
+entity behind KiCon Bochum, KiCon Europe, [emBO++](https://embo.io/) and the
+[Practical Data Science Conference](/posts/pdsc4k-may-2026/): it signs the
+venue contract, holds the storage room with the crates, and makes sure the
+tickets cover the costs rather than a profit margin. No sponsor money goes
+anywhere except into the next event.
+
 If you want the earlier chapters, they are all on this blog:
 [KiCon 2019 in Chicago](/posts/kicon-2019-a-brief-trip-report/),
 [KiCon Europe 2024](/posts/kicon-europe-2024/), the first edition with the
