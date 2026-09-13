@@ -6,6 +6,7 @@ description: "Three days of KiCon Europe 2026 at Gleis 9 in Bochum from the orga
 tags: [kicad, conferences, open-source, pcb, bochum, skunkforce]
 keywords: "KiCon Europe 2026, KiCad conference Bochum, Gleis 9, KiCad 11, ngspice 47, Open Skunkforce, Seth Hillbrand, Wayne Stambaugh, trip report"
 image: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/audience-selfie.jpg
+last_modified_at: 2026-09-13
 hire_cta: "KiCad or PCB design"
 about_id: "https://maxclerkwell.tech/#skunkforce"
 event:
@@ -254,6 +255,15 @@ who is allowed to change what, and when, and how you keep two people from
 routing through the same via. And interactive routing needs serious compute
 if you want complex DRC evaluated live while you drag a trace. Interesting to see where
 it goes, but for my daily work it does not solve a problem I have yet.
+
+*Update, 13 September:* Viktor sent me the link to the public demo at
+[demo.pcbjam.com](https://demo.pcbjam.com/), and the real launch is
+scheduled for next week. Having clicked through it, I stand by the above
+for my own boards: for the more complex layouts I do, PCBJam is not going
+to be enough. But as a way to get started with a PCB workflow, without
+installing anything, with a colleague looking over your shoulder from
+another city, it is a perfectly valid tool. Give it a spin. I remain KiCad
+ride-or-die.
 
 Sigurd Henriksen of [WCP Electronics](http://www.wcp-electronics.com/) is a
 wild one. His talk on miniaturising designs went from the KiCad features
