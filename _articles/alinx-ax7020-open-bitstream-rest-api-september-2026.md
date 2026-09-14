@@ -6,6 +6,7 @@ description: "Stages 4 and 5 of the open bitstream pipeline: a Yosys/nextpnr bit
 tags: [fpga, alinx, zynq, yosys, nextpnr, prjxray, openxc7, fpga-manager, kexec, fastapi, rest-api, yocto, linux, jtag, openocd, embedded, bring-up]
 image: /assets/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/api-swagger-ax7020.png
 last_modified_at: 2026-09-14
+series: alinx
 hire_cta: "FPGA or embedded-Linux"
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: "Hire Me — Freelance FPGA, Zynq, PCB & DAQ Engineering | Stephan Bökelmann"
 description: "Freelance embedded engineering from Bochum, Germany: FPGA and Zynq development, PCB design and bring-up in KiCad, embedded Linux (Yocto, U-Boot), and data-acquisition systems. Feasibility study to serial product, on-site in DACH or remote."
 permalink: /hire/
-last_modified_at: 2026-08-31
+last_modified_at: 2026-09-14
 ---
 
 <div class="post-layout">
@@ -57,9 +57,9 @@ observable.
 
 ## Selected projects
 
-- **Open Zynq bitstream deployment pipeline** — JTAG bring-up to
-  self-updating Yocto Linux on an ALINX AX7020, documented as a
-  [public series](/posts/zynq-bitstream-deployment-concept-august-2026/) (since 2026)
+- **Open Zynq bitstream deployment pipeline** — JTAG bring-up, self-updating
+  Yocto Linux and an open-toolchain bitstream REST API on an ALINX AX7020,
+  documented as a [public series](/alinx/) (since 2026)
 - **PCB design for an embedded vision system with AI acceleration** — customer under NDA (2026)
 - **[skAInet Edge-Compute](https://edge-compute.skainet.io/)** — M12-PoE switch, router and
   Linux compute module for industrial edge DAQ by Auto-Intern; system architect,

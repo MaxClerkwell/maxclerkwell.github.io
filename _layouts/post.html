@@ -27,6 +27,8 @@ layout: default
     </div>
   </header>
 
+  {% if page.series %}{% include series-nav.html %}{% endif %}
+
   <div class="post-body e-content">
     {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' }}
   </div>

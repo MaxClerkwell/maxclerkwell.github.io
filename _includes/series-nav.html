@@ -1,0 +1,18 @@
+{% comment %} Series banner for posts with `series: <slug>` in front matter. Expects a landing page whose front matter has the same `series` value. {% endcomment %}
+{% include get-blog-posts.html %}
+{% assign s_posts = blog_posts | where_exp: "p", "p.series == page.series" | sort: "date" %}
+{% assign s_page = site.pages | where_exp: "p", "p.series == page.series" | where_exp: "p", "p.series_landing" | first %}
+{% assign s_idx = 0 %}
+{% for p in s_posts %}{% if p.url == page.url %}{% assign s_idx = forloop.index %}{% endif %}{% endfor %}
+{% assign s_prev_i = s_idx | minus: 2 %}{% assign s_next_i = s_idx %}
+<aside class="series-nav">
+  <p class="series-nav-title">
+    <i class="fas fa-layer-group"></i>
+    Part {{ s_idx }} of {{ s_posts.size }} in
+    {% if s_page %}<a href="{{ s_page.url | relative_url }}">{{ s_page.series_name | default: s_page.title }}</a>{% else %}the {{ page.series }} series{% endif %}
+  </p>
+  <div class="series-nav-links">
+    {% if s_idx > 1 %}{% assign s_prev = s_posts[s_prev_i] %}<a href="{{ s_prev.url | relative_url }}" class="series-nav-prev"><i class="fas fa-arrow-left"></i> {{ s_prev.title | truncate: 60 }}</a>{% endif %}
+    {% if s_idx < s_posts.size %}{% assign s_next = s_posts[s_next_i] %}<a href="{{ s_next.url | relative_url }}" class="series-nav-next">{{ s_next.title | truncate: 60 }} <i class="fas fa-arrow-right"></i></a>{% endif %}
+  </div>
+</aside>

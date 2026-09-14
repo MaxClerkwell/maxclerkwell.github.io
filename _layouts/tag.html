@@ -6,6 +6,7 @@ layout: default
 <section class="blog-archive tag-archive">
   <h1>Tag: {{ page.tag }}</h1>
   <p class="archive-intro">{{ tagged.size }} article{% if tagged.size != 1 %}s{% endif %} tagged <em>{{ page.tag }}</em>. See <a href="{{ '/tags/' | relative_url }}">all tags</a> or <a href="{{ '/blog/' | relative_url }}">all posts</a>.</p>
+  {% if page.series_url %}<p class="archive-intro series-hint"><i class="fas fa-layer-group"></i> {{ page.series_hint | default: "These posts form a series." }} <a href="{{ page.series_url | relative_url }}">Start at the series page &rarr;</a></p>{% endif %}
   <div class="post-list h-feed">
     {% for post in tagged %}{% include post-card.html post=post %}{% endfor %}
   </div>

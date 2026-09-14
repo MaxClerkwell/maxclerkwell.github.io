@@ -5,12 +5,13 @@ tags: [fpga, embedded, linux, open-source]
 description: "Alinx sent me an AX7020 board. Here is the plan: an open-source path from JTAG bring-up to a REST API that accepts a bitstream and loads it onto the FPGA, no vendor tools in the loop."
 keywords: "Zynq 7020, AX7020, Alinx, U-Boot SPL, JTAG, TFTP, yosys, nextpnr-xilinx, openXC7, FPGA manager, bitstream, REST API, FPGA deployment"
 last_modified_at: 2026-09-14
+series: alinx
 hire_cta: "Zynq or FPGA"
 ---
 
 A while ago, [Alinx](https://www.alinx.com/) reached out and asked whether I would like one of their boards for my content work. I said yes, and a few days later an AX7020 arrived on my desk. Full disclosure up front: the board is a sponsorship gift. Alinx has no say in what I write about it, and as you will see below, my plan involves ignoring most of the vendor-recommended workflow anyway.
 
-This article is not a tutorial. It is the concept post for a small series: what I want to build, why I want to build it that way, and where I expect things to get uncomfortable. The follow-up articles will document each stage as it actually happens, including the parts that fail.
+This article is not a tutorial. It is the concept post for a small series: what I want to build, why I want to build it that way, and where I expect things to get uncomfortable. The follow-up articles will document each stage as it actually happens, including the parts that fail. All of them, in order, are collected on the [series page](/alinx/).
 
 ---
 

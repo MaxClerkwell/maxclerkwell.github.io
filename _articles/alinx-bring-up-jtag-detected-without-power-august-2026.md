@@ -6,6 +6,7 @@ description: "Stage 1 of the open bitstream pipeline: putting mainline U-Boot on
 tags: [fpga, alinx, zynq, jtag, openocd, u-boot, spl, device-tree, netconsole, bring-up, linux]
 image: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg
 last_modified_at: 2026-09-01
+series: alinx
 hire_cta: "board bring-up"
 ---
 

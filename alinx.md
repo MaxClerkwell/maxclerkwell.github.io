@@ -3,14 +3,15 @@ layout: default
 title: "ALINX AX7020 — The Open Bitstream Pipeline Series"
 description: "A public, article-by-article build of an open-source deployment pipeline for the ALINX AX7020 Zynq-7000 board: mainline U-Boot over JTAG, Yocto Linux in QSPI, Yosys/nextpnr bitstreams, and a REST API that loads them. No vendor tools in the loop."
 permalink: /alinx/
-image: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg
+series: alinx
+series_landing: true
+series_name: "the ALINX AX7020 series"
+image: /assets/posts/alinx-series/ax7020-board.jpg
 last_modified_at: 2026-09-14
 ---
 
 {% include get-blog-posts.html %}
-{% assign tagged = blog_posts | where_exp: "p", "p.tags contains 'alinx'" %}
-{% assign concept = blog_posts | where_exp: "p", "p.url contains 'zynq-bitstream-deployment-concept'" %}
-{% assign series = tagged | concat: concept | uniq | sort: "date" %}
+{% assign series = blog_posts | where_exp: "p", "p.series == 'alinx'" | sort: "date" %}
 
 <!-- ── Hero ─────────────────────────────────────────────── -->
 <section class="series-hero">
@@ -48,10 +49,10 @@ last_modified_at: 2026-09-14
 <!-- ── The board ────────────────────────────────────────── -->
 <section class="series-board">
   <figure class="series-board-figure">
-    <img src="{{ '/assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg' | relative_url }}"
-         alt="ALINX AX7020 on the bench, connected to the lab network through an M12 adapter"
+    <img src="{{ '/assets/posts/alinx-series/ax7020-board.jpg' | relative_url }}"
+         alt="ALINX AX7020 on the bench: Zynq XC7Z020 in the centre, boot jumper J13 on JTAG, Ethernet and JTAG attached"
          loading="lazy">
-    <figcaption>The AX7020 on the bench. No serial cable, no SD card: the board is operated over Ethernet from the first bootloader on.</figcaption>
+    <figcaption>The AX7020 on the bench. Ethernet, power and the FT232H on JTAG; no serial cable, no SD card. The board is operated over the network from the first bootloader on.</figcaption>
   </figure>
   <div class="series-board-text">
     <h2>The board</h2>

@@ -1107,12 +1107,15 @@ a.post-tag { text-decoration: none; }
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
   gap: 2.5rem;
-  align-items: start;
+  align-items: stretch;
 }
-.series-board-figure { margin: 0; }
+.series-board-figure { margin: 0; display: flex; flex-direction: column; }
 .series-board-figure img {
   width: 100%;
-  height: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  object-fit: cover;
+  object-position: 55% 50%;
   border-radius: var(--radius);
   border: 1px solid var(--border-mid);
 }
@@ -1198,4 +1201,36 @@ a.post-tag { text-decoration: none; }
 
 @media (max-width: 860px) {
   .series-board { grid-template-columns: 1fr; }
+  .series-board-figure img { height: auto; flex: none; }
 }
+
+/* ── Series banner in posts ──────────────────────────────── */
+.series-nav {
+  margin: 0 0 1.8rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border-mid);
+  border-left: 3px solid var(--blue-bochum);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.series-nav-title { margin: 0 0 0.4rem; color: var(--text-secondary); }
+.series-nav-title i { margin-right: 0.35rem; }
+.series-nav-title a { color: var(--blue-bright); font-weight: 600; }
+.series-nav-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; }
+.series-nav-links a { color: var(--blue-pale); }
+.series-nav-next { margin-left: auto; text-align: right; }
+
+/* ── Sidebar series widget ───────────────────────────────── */
+.sidebar-series a { display: block; color: var(--text-primary); }
+.sidebar-series img { display: block; width: 100%; height: 140px; object-fit: cover; }
+.sidebar-series-body { display: block; padding: 0.75rem 0.9rem 0.9rem; }
+.sidebar-series-kicker { display: block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.25rem; }
+.sidebar-series-title { display: block; font-weight: 600; line-height: 1.35; margin-bottom: 0.3rem; }
+.sidebar-series-note { display: block; font-size: 0.8rem; color: var(--blue-pale); line-height: 1.45; }
+.sidebar-series a:hover .sidebar-series-title { color: var(--blue-bright); }
+.series-hint { border-left: 3px solid var(--blue-bochum); padding-left: 0.8rem; }
+/* Home sidebar: line up with the first post card, not with the divider */
+.home-layout .sidebar { margin-top: 3.75rem; }
+@media (max-width: 860px) { .home-layout .sidebar { margin-top: 0; } }

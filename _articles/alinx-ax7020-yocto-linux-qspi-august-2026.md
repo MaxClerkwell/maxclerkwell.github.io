@@ -6,6 +6,7 @@ description: "Stages 2 and 3 of the open bitstream pipeline: a self-built Yocto 
 tags: [fpga, alinx, zynq, yocto, linux, u-boot, kexec, dropbear, fit-image, qspi, embedded, bring-up]
 last_modified_at: 2026-09-14
 image: /assets/posts/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png
+series: alinx
 hire_cta: "Zynq or embedded-Linux"
 ---
 
