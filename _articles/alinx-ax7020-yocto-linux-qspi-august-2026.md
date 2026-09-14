@@ -4,6 +4,7 @@ date: 2026-08-31
 author: "Stephan Bökelmann"
 description: "Stages 2 and 3 of the open bitstream pipeline: a self-built Yocto Linux for the ALINX AX7020, resident in QSPI flash, discoverable on the company network, key-only SSH: the walkthrough that works, followed by the nine detours it took to get there."
 tags: [fpga, alinx, zynq, yocto, linux, u-boot, kexec, dropbear, fit-image, qspi, embedded, bring-up]
+last_modified_at: 2026-09-14
 image: /assets/posts/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png
 hire_cta: "Zynq or embedded-Linux"
 ---
@@ -623,5 +624,6 @@ Next is Stage 4: a bitstream from the open toolchain, Yosys and
 nextpnr-xilinx, written into `/sys/class/fpga_manager/fpga0/firmware` over
 SSH. The FPGA manager is registered and waiting, the board is one `curl`
 away, and somewhere behind an EMIO pin there is a real-time clock that
-would very much like a bitstream to finally exist. That build gets its own
-article.
+would very much like a bitstream to finally exist. That build now has its
+own article:
+[an open bitstream over REST, and the one missing line that hangs both cores](/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/).

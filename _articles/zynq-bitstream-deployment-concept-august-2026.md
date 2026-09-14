@@ -4,6 +4,7 @@ date: 2026-08-23
 tags: [fpga, embedded, linux, open-source]
 description: "Alinx sent me an AX7020 board. Here is the plan: an open-source path from JTAG bring-up to a REST API that accepts a bitstream and loads it onto the FPGA, no vendor tools in the loop."
 keywords: "Zynq 7020, AX7020, Alinx, U-Boot SPL, JTAG, TFTP, yosys, nextpnr-xilinx, openXC7, FPGA manager, bitstream, REST API, FPGA deployment"
+last_modified_at: 2026-09-14
 hire_cta: "Zynq or FPGA"
 ---
 
@@ -67,11 +68,15 @@ Now the FPGA side. The Zynq-7020 is a 7-series device, which means it is covered
 
 I want to be honest about expectations here. The open 7-series flow works, but it is not Vivado. Timing analysis is rudimentary and some hard blocks are awkward to use. For this stage the design will be deliberately boring, a blinker or a counter on AXI, because the design is not the point. The point is the pipeline: synthesize on my desk, `scp` the bitstream to the board, log in over SSH, write it into the FPGA manager, watch the LED blink. The moment that works, the full loop exists, and every piece of it is open source.
 
+(How this went, including a valid bitstream that hung both processor cores without a single log line, is in [Stages 4 & 5: An Open Bitstream Over REST](/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/).)
+
 ### Stage 5: The REST API
 
 The final stage removes the human from stage 4. A small service on the board, probably a few hundred lines, accepts a bitstream over HTTP, validates it, hands it to the FPGA manager, and reports back whether the fabric came up.
 
 Validation is the part I refuse to hand-wave. A bitstream is arbitrary hardware configuration. The service will at minimum check the sync word and the device IDCODE so that only bitstreams built for this exact chip get loaded, and the endpoint will be authenticated. There is also a sharper issue lurking here: a design containing an AXI master has full access to system memory, DMA-style. An API that loads unreviewed bitstreams is remote code execution with extra steps, hardware edition. For my lab that is an acceptable and clearly labeled risk. For anything beyond a lab it is the reason AWS wraps every customer design on their FPGA instances in a fixed shell that polices its memory access. Knowing that this problem exists, and understanding why the cloud providers solved it the way they did, is half the educational value of building the small version.
+
+(The first, manual version of this API, with sync-word, IDCODE and checksum validation, now runs on the board: see the [Stages 4 & 5 article](/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/).)
 
 ---
 
