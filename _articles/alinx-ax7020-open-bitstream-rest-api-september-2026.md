@@ -5,7 +5,7 @@ author: "Stephan Bökelmann"
 description: "Stages 4 and 5 of the open bitstream pipeline: a Yosys/nextpnr bitstream loaded into the ALINX AX7020 through the kernel's FPGA manager, a kexec updater that finally runs, and a FastAPI service that accepts bitstreams over HTTP, all without a single vendor tool; then the detours, including a PL design that silently drowned both Cortex-A9 cores in FIQs."
 tags: [fpga, alinx, zynq, yosys, nextpnr, prjxray, openxc7, fpga-manager, kexec, fastapi, rest-api, yocto, linux, jtag, openocd, embedded, bring-up]
 image: /assets/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/api-swagger-ax7020.png
-last_modified_at: 2026-09-14
+last_modified_at: 2026-09-15
 series: alinx
 hire_cta: "FPGA or embedded-Linux"
 ---
@@ -654,8 +654,8 @@ Yocto recipe and a service inside the large image, the maintenance image
 gets its `IMAGE_URL`, the flash gets one last manual write, and from then
 on the small Linux in flash boots, fetches the large Linux from the
 network, `kexec`s into it, and the API comes up on its own. When that
-works, unattended, from a cold power-on, the pipeline is finished. That
-gets its own article.
+works, unattended, from a cold power-on, the pipeline is finished. It now
+does: [cold power-on to a bitstream API, nobody logged in](/posts/alinx-ax7020-cold-boot-to-bitstream-api-september-2026/).
 
 Everything is in
 [github.com/MaxClerkwell/ax7020-bringup](https://github.com/MaxClerkwell/ax7020-bringup):

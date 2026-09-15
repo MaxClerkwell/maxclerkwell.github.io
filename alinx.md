@@ -7,7 +7,7 @@ series: alinx
 series_landing: true
 series_name: "the ALINX AX7020 series"
 image: /assets/posts/alinx-series/ax7020-board.jpg
-last_modified_at: 2026-09-14
+last_modified_at: 2026-09-15
 ---
 
 {% include get-blog-posts.html %}
@@ -15,7 +15,7 @@ last_modified_at: 2026-09-14
 
 <!-- ── Hero ─────────────────────────────────────────────── -->
 <section class="series-hero">
-  <p class="series-kicker">Article series · since August 2026</p>
+  <p class="series-kicker">Article series · August to September 2026</p>
   <h1>Deploying hardware like software,<br>on an <span>ALINX AX7020</span></h1>
   <p class="series-lead">
     ALINX sent me a Zynq-7000 development board. Instead of following the
@@ -101,10 +101,52 @@ last_modified_at: 2026-09-14
     {% endfor %}
   </ol>
   <p class="series-next">
-    <strong>Next up:</strong> the maintenance Linux in flash fetches the
-    full image on its own, and that image brings the bitstream API up as a
-    service. Cold power-on to a working REST endpoint, nobody logged in.
+    <strong>Status: goal reached.</strong> Since 15 September 2026 the board
+    goes from a cold power-on to a bitstream-accepting REST API on its own:
+    the maintenance Linux in flash fetches the full image from an internal
+    URL, kexecs into it, and systemd starts the service. Open items are
+    authentication, a bitstream in the boot manifest, and a build stamp.
   </p>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ── Tutorial download ────────────────────────────────── -->
+<section class="series-download" id="tutorial">
+  <div>
+    <p class="series-kicker">Tutorial · PDF</p>
+    <h2>The clean path, as one document</h2>
+    <p>
+      The five articles above tell the story with every detour. The tutorial
+      is the other view: every command in the order it is needed, a checkpoint
+      after each step, and the few rules you cannot get through without,
+      from a blank board to a bitstream-accepting REST API. 17 pages, in English and Simplified Chinese.
+      Built from LaTeX sources in the repository, licensed CC BY 4.0: use it freely, with attribution.
+    </p>
+  </div>
+  <div class="series-download-actions">
+    <a href="https://raw.githubusercontent.com/MaxClerkwell/ax7020-bringup/master/tutorial/ax7020-open-bitstream-pipeline.pdf" class="hero-hire-btn" data-no-leave>
+      <i class="fas fa-file-pdf"></i>
+      <span class="hero-discord-text">
+        <span class="discord-name">Download the tutorial</span>
+        <span class="discord-note">PDF · English · v1.0, September 2026</span>
+      </span>
+    </a>
+    <a href="https://raw.githubusercontent.com/MaxClerkwell/ax7020-bringup/master/tutorial/ax7020-open-bitstream-pipeline-zh.pdf" class="hero-discord-btn" data-no-leave>
+      <i class="fas fa-file-pdf"></i>
+      <span class="hero-discord-text">
+        <span class="discord-name">下载教程（简体中文）</span>
+        <span class="discord-note">PDF · Simplified Chinese · v1.0</span>
+      </span>
+    </a>
+    <a href="https://github.com/MaxClerkwell/ax7020-bringup/tree/master/tutorial" class="hero-discord-btn" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i>
+      <span class="hero-discord-text">
+        <span class="discord-name">LaTeX sources</span>
+        <span class="discord-note">tutorial/ in ax7020-bringup</span>
+      </span>
+    </a>
+  </div>
 </section>
 
 <div class="divider"><hr></div>
@@ -145,6 +187,7 @@ last_modified_at: 2026-09-14
       "isPartOf": { "@id": "https://maxclerkwell.tech/#website" },
       "author": { "@id": "https://maxclerkwell.tech/#person" },
       "about": { "@id": "https://maxclerkwell.tech/alinx/#board" },
+      "hasPart": { "@id": "https://maxclerkwell.tech/alinx/#tutorial" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -161,6 +204,32 @@ last_modified_at: 2026-09-14
           { "@type": "ListItem", "position": {{ forloop.index }}, "url": "{{ post.url | absolute_url }}", "name": {{ post.title | jsonify }} }{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ]
+      }
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://maxclerkwell.tech/alinx/#tutorial",
+      "name": "An Open Bitstream Pipeline for the ALINX AX7020",
+      "description": "Tutorial PDF: mainline U-Boot over JTAG, Yocto Linux in QSPI, kexec updater, Yosys/nextpnr bitstreams and a REST API on a Zynq-7000 board, without vendor tools.",
+      "url": "https://raw.githubusercontent.com/MaxClerkwell/ax7020-bringup/master/tutorial/ax7020-open-bitstream-pipeline.pdf",
+      "encodingFormat": "application/pdf",
+      "inLanguage": "en",
+      "datePublished": "2026-09-15",
+      "version": "1.0",
+      "author": { "@id": "https://maxclerkwell.tech/#person" },
+      "about": { "@id": "https://maxclerkwell.tech/alinx/#board" },
+      "isPartOf": { "@id": "https://maxclerkwell.tech/alinx/#webpage" },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "workTranslation": {
+        "@type": "DigitalDocument",
+        "@id": "https://maxclerkwell.tech/alinx/#tutorial-zh",
+        "name": "ALINX AX7020 开放比特流流水线",
+        "url": "https://raw.githubusercontent.com/MaxClerkwell/ax7020-bringup/master/tutorial/ax7020-open-bitstream-pipeline-zh.pdf",
+        "encodingFormat": "application/pdf",
+        "inLanguage": "zh-Hans",
+        "translationOfWork": { "@id": "https://maxclerkwell.tech/alinx/#tutorial" },
+        "author": { "@id": "https://maxclerkwell.tech/#person" },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
       }
     },
     {
