@@ -2,7 +2,7 @@
 layout: about
 title: "About MaxClerkwell — Engineer & Physicist"
 description: "Background, projects and contact details of Stephan Bökelmann (MaxClerkwell): embedded systems, FPGA development, DAQ and detector instrumentation."
-last_modified_at: 2026-09-01
+last_modified_at: 2026-09-16
 permalink: /about/
 profile: true
 ---
@@ -152,6 +152,10 @@ Not to be confused with the UK agency Clerkswell, the musician Stephan Bodzin, o
 ## Writing
 
 This blog is the canonical home for longform writing, usually one post per week. I cover **decentralised DAQ and monitoring systems**, **university lecture material** from THGA Bochum, **particle physics instrumentation**, and **firsthand visits to manufacturing sites, labs, and accelerator facilities** around the world.
+
+## Collaborators
+
+**[Meihui Huang](https://kathamatician.com/)** (黄美慧, [kathamatician](https://github.com/kathamatician) on GitHub) is a physicist in Witten and my collaborator on outreach: she runs the MaxClerkwell social media channels and handles collaboration requests, sponsored content and partnership enquiries under the MaxClerkwell brand, and is my bridge into the Chinese tech community. If you write to [collaboration@maxclerkwell.tech](mailto:collaboration@maxclerkwell.tech), she is the one who answers.
 
 ## Contact
 

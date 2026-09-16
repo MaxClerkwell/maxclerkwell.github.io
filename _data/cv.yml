@@ -1,0 +1,18 @@
+# Curriculum vitae PDFs under /assets/cv/. Deliberately not linked from the
+# navigation; they are exposed to crawlers via sitemap.xml, llms.txt and the
+# DigitalDocument nodes in _includes/structured-data.html.
+- path: /assets/cv/cv-stephan-boekelmann.pdf
+  lang: en
+  name: "Stephan Bökelmann — Curriculum Vitae (English)"
+  description: "ATS-friendly CV of Stephan Bökelmann (MaxClerkwell), engineer and physicist in Bochum, Germany: FPGA/Zynq, embedded firmware, PCB design, data acquisition, hadron physics instrumentation."
+  updated: 2026-09-16
+- path: /assets/cv/lebenslauf-stephan-boekelmann.pdf
+  lang: de
+  name: "Stephan Bökelmann — Lebenslauf (Deutsch)"
+  description: "ATS-tauglicher Lebenslauf von Stephan Bökelmann (MaxClerkwell), Ingenieur und Physiker aus Bochum: FPGA/Zynq, Embedded-Firmware, Leiterplattenentwicklung, Messdatenerfassung, Hadronenphysik-Instrumentierung."
+  updated: 2026-09-16
+- path: /assets/cv/cv-stephan-boekelmann-zh.pdf
+  lang: zh-Hans
+  name: "施泓杰 (Stephan Bökelmann) — 简历（简体中文）"
+  description: "Stephan Bökelmann（MaxClerkwell，施泓杰）的简历，德国波鸿的工程师与物理学家：FPGA/Zynq、嵌入式固件、PCB 设计、数据采集、强子物理仪器。"
+  updated: 2026-09-16

@@ -19,6 +19,11 @@
       "email": "mailto:stephan@boekelmann.net",
       "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "Managing Director, nabla B", "Chief Operating Officer, Auto-Intern GmbH", "System Architect, skAInet Edge-Compute"],
       "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
+      "subjectOf": [
+        { "@id": "https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann.pdf" },
+        { "@id": "https://maxclerkwell.tech/assets/cv/lebenslauf-stephan-boekelmann.pdf" },
+        { "@id": "https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann-zh.pdf" }
+      ],
       "hasOccupation": [
         {
           "@type": "Occupation",
@@ -48,10 +53,18 @@
       "description": "Engineer, physicist, and freelance consultant based in Bochum, Germany. Professionally active since 2007. Works on decentralised data acquisition and observability: embedded firmware, PCB design, FPGA development, measurement and DAQ systems, and monitoring infrastructure. PhD candidate in experimental hadron physics, developing HV-MAPS ASICs for minimum ionizing particle detection for the PANDA experiment at FAIR.",
       "nationality": { "@type": "Country", "name": "Germany" },
       "homeLocation": { "@type": "Place", "name": "Bochum, Germany" },
-      "worksFor": [
-        { "@id": "https://nabla-b.engineering/#organization" },
-        { "@id": "https://www.auto-intern.de/#organization" }
-      ],
+      "colleague": {
+        "@type": "Person",
+        "@id": "https://kathamatician.github.io/#person",
+        "name": "Meihui Huang",
+        "alternateName": ["黄美慧", "kathamatician"],
+        "url": "https://kathamatician.com/",
+        "sameAs": ["https://kathamatician.github.io/", "https://github.com/kathamatician", "https://orcid.org/0009-0003-3477-9024", "https://www.linkedin.com/in/meihui-huang/"],
+        "jobTitle": "Physicist; outreach and collaborations for MaxClerkwell",
+        "email": "mailto:collaboration@maxclerkwell.tech",
+        "colleague": { "@id": "https://maxclerkwell.tech/#person" }
+      },
+      "worksFor": { "@id": "https://nabla-b.engineering/#organization" },
       "affiliation": [
         {
           "@type": "CollegeOrUniversity",
@@ -328,7 +341,21 @@
         },
         "query-input": "required name=search_term_string"
       }
-    }
+    }{% for cv in site.data.cv %},
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://maxclerkwell.tech{{ cv.path }}",
+      "url": "https://maxclerkwell.tech{{ cv.path }}",
+      "name": {{ cv.name | jsonify }},
+      "description": {{ cv.description | jsonify }},
+      "inLanguage": "{{ cv.lang }}",
+      "encodingFormat": "application/pdf",
+      "dateModified": "{{ cv.updated }}",
+      "about": { "@id": "https://maxclerkwell.tech/#person" },
+      "author": { "@id": "https://maxclerkwell.tech/#person" },
+      "publisher": { "@id": "https://maxclerkwell.tech/#publisher" },
+      "isAccessibleForFree": true
+    }{% endfor %}
   ]
 }
 </script>

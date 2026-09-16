@@ -48,7 +48,7 @@ sitemap: false
         <https://www.instagram.com/_maxclerkwell/> ;
     foaf:made <https://maxclerkwell.tech/> ;
     schema:knowsAbout <https://edge-compute.skainet.io/#product> ;
-    org:memberOf <https://nabla-b.engineering/#organization>, <https://www.auto-intern.de/#organization> .
+    org:memberOf <https://nabla-b.engineering/#organization> .
 
 <https://www.auto-intern.de/#organization>
     a foaf:Organization, schema:Organization ;

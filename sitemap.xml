@@ -55,5 +55,14 @@ layout: null
     <priority>0.8</priority>
   </url>
   {% endfor %}
+  <!-- Curriculum vitae (unlinked from navigation, indexable) -->
+  {% for cv in site.data.cv %}
+  <url>
+    <loc>{{ site.url }}{{ cv.path }}</loc>
+    <lastmod>{{ cv.updated | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  {% endfor %}
 
 </urlset>
