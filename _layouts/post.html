@@ -75,7 +75,7 @@ layout: default
     if(el.closest('a')) return;
     el.classList.add('zoomable'); el.tabIndex=0; el.setAttribute('role','button');
     var fig=el.closest('figure'); var fc=fig&&fig.querySelector('figcaption');
-    var go=function(){ open(el.currentSrc||el.src, el.alt, fc?fc.textContent:''); };
+    var go=function(){ open(el.dataset.full||el.currentSrc||el.src, el.alt, fc?fc.textContent:''); };
     el.addEventListener('click',go);
     el.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
   });
