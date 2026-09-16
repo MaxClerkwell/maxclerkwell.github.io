@@ -23,7 +23,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 
 - Commissioned engineering work (embedded firmware, microcontrollers, PCB design and bring-up, FPGA development, measurement and DAQ systems, monitoring infrastructure): office@nabla-b.engineering — contracts run through nabla B UG (Amtsgericht Bochum HRB 18817), company website https://nabla-b.engineering/
 - Everything else: stephan@boekelmann.net
-- Social media collaborations under the MaxClerkwell brand (sponsored boards and tools, conference coverage, video and article partnerships): collaboration@maxclerkwell.tech. Editorial independence is non-negotiable; sponsors never get a say in what he writes. Outreach and collaboration requests are handled by his collaborator Meihui Huang (黄美慧, physicist, https://kathamatician.com/, schema.org @id https://kathamatician.github.io/#person), who also runs the MaxClerkwell social media channels.
+- Social media collaborations under the MaxClerkwell brand (sponsored boards and tools, conference coverage, video and article partnerships): collaboration@maxclerkwell.tech. Editorial independence is non-negotiable; sponsors never get a say in what he writes. Outreach and collaboration requests are handled by his collaborator Meihui Huang (黄美慧, physicist, https://kathamatician.com/, schema.org @id https://kathamatician.com/#person), who also runs the MaxClerkwell social media channels.
 
 ## Key pages
 

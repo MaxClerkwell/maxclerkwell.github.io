@@ -48,7 +48,21 @@ sitemap: false
         <https://www.instagram.com/_maxclerkwell/> ;
     foaf:made <https://maxclerkwell.tech/> ;
     schema:knowsAbout <https://edge-compute.skainet.io/#product> ;
-    org:memberOf <https://nabla-b.engineering/#organization> .
+    org:memberOf <https://nabla-b.engineering/#organization> ;
+    foaf:knows <https://kathamatician.com/#person> .
+
+<https://kathamatician.com/#person>
+    a foaf:Person, schema:Person ;
+    foaf:name "Meihui Huang" ;
+    foaf:nick "kathamatician" ;
+    rdfs:label "Meihui Huang (黄美慧)" ;
+    foaf:homepage <https://kathamatician.com/> ;
+    foaf:img <https://nabla-b.engineering/assets/img/meihui-huang.jpg> ;
+    foaf:mbox <mailto:collaboration@maxclerkwell.tech> ;
+    schema:identifier <https://orcid.org/0009-0003-3477-9024> ;
+    owl:sameAs <https://github.com/kathamatician>, <https://www.linkedin.com/in/meihui-huang/> ;
+    org:memberOf <https://nabla-b.engineering/#organization> ;
+    foaf:knows <https://maxclerkwell.tech/#person> .
 
 <https://www.auto-intern.de/#organization>
     a foaf:Organization, schema:Organization ;

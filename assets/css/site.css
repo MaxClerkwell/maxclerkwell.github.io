@@ -633,6 +633,24 @@ img { display: block; max-width: 100%; }
 .about-content a:hover { color: #fff; border-bottom-color: #fff; }
 .about-content strong { color: var(--text-primary); }
 
+.about-collaborator {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+}
+.about-collaborator img {
+  flex: 0 0 120px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--bg-3);
+}
+.about-collaborator p { margin: 0; }
+@media (max-width: 600px) {
+  .about-collaborator { flex-direction: column; }
+}
+
 .about-contact {
   margin-top: 2rem;
   display: flex;

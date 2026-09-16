@@ -155,7 +155,10 @@ This blog is the canonical home for longform writing, usually one post per week.
 
 ## Collaborators
 
-**[Meihui Huang](https://kathamatician.com/)** (黄美慧, [kathamatician](https://github.com/kathamatician) on GitHub) is a physicist in Witten and my collaborator on outreach: she runs the MaxClerkwell social media channels and handles collaboration requests, sponsored content and partnership enquiries under the MaxClerkwell brand, and is my bridge into the Chinese tech community. If you write to [collaboration@maxclerkwell.tech](mailto:collaboration@maxclerkwell.tech), she is the one who answers.
+<div class="about-collaborator">
+  <img src="https://nabla-b.engineering/assets/img/meihui-huang.jpg" alt="Meihui Huang" width="200" height="200" loading="lazy">
+  <p markdown="1">**[Meihui Huang](https://kathamatician.com/)** (黄美慧, [kathamatician](https://github.com/kathamatician) on GitHub) is a physicist in Witten and my collaborator on outreach: she runs the MaxClerkwell social media channels and handles collaboration requests, sponsored content and partnership enquiries under the MaxClerkwell brand, and is my bridge into the Chinese tech community. If you write to [collaboration@maxclerkwell.tech](mailto:collaboration@maxclerkwell.tech), she is the one who answers.</p>
+</div>
 
 ## Contact
 
