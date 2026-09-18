@@ -1,6 +1,7 @@
 ---
 title: "Counting Raindrops with a Capacitor: The 25square Sensor, Its STM32, and the Patent Behind It"
 date: 2026-09-02
+last_modified_at: 2026-09-18
 author: "Stephan Bökelmann"
 description: "How Auto-Intern built the street-level rain sensors for the 25square heavy-rain nowcasting project: a capacitive impact plate instead of a piezo, an STM32 with lwIP over PoE, a LoRa variant for the lampposts, and the jointly held patent DE 10 2020 119 488 B4 with Okeanos."
 tags: [daq, measurement, stm32, lwip, poe, mqtt, lora, sensors, patent, mfund, bochum, edge-compute]
@@ -33,6 +34,11 @@ pipeline; BO-I-T ran the server infrastructure; and at
 **Tabea Bökelmann (then Röthemeyer) as project lead**, [Odin
 Holmes](https://github.com/odinthenerd) on hardware and bare-metal firmware,
 and me on system architecture and the path from the sensor into the backend.
+
+The project start was announced in a joint press release of the three
+partners, published by the ministry:
+[Forschungsprojekt 25square: Starkregenvorhersage durch den Einsatz günstiger autarker Messzellen](https://www.bmv.de/SharedDocs/DE/Anlage/mFUND/25square-pressemitteilung.pdf?__blob=publicationFile)
+(PDF, German; [archived copy](/assets/posts/25square-capacitive-rain-sensing-september-2026/25square-pressemitteilung-2020.pdf)).
 
 ![The 25square project team at the IUZ Sternwarte Bochum, where the first two sensors went into the ground in May 2021. Front left: Tabea, project lead at Auto-Intern.](/assets/posts/25square-capacitive-rain-sensing-september-2026/25square-inline-3.jpg)
 
