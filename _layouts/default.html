@@ -47,7 +47,7 @@
   {% if page.math %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <!-- Font Awesome 6 free — self-hosted -->
   <link rel="stylesheet" href="{{ '/assets/fontawesome/all.min.css' | relative_url }}">
   <!-- Fonts — self-hosted, no Google requests -->

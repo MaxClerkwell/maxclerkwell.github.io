@@ -110,7 +110,7 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   padding: 3rem 1.5rem 2rem;
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: minmax(300px, 1fr) auto auto;
   align-items: center;
   gap: 2.5rem;
 }
