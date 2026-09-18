@@ -33,6 +33,8 @@ keywords: "comma, separated, phrases"   # optional, used only when tags are abse
 image: /assets/posts/<slug>/cover.jpg   # optional, absolute path; falls back to /slides/Avatar.jpg
 last_modified_at: YYYY-MM-DD            # optional, becomes dateModified (defaults to date)
 about_id: https://.../#id               # optional, @id of a site-graph entity the post is about
+mentions_ids: [https://.../#id]         # optional, @ids of people/entities the post mentions (needs a stub in structured-data-slim.html)
+license: https://.../                   # optional, overrides the default CC BY-SA 4.0 (see /licensing/)
 video:                                  # optional, emits a VideoObject (see structured-data-video.html)
   id: YOUTUBE_ID
   name: "Video title"
@@ -77,7 +79,9 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
   nabla-b.engineering and edge-compute.skainet.io (never invent local
   aliases for these): person `https://maxclerkwell.tech/#person`, nabla B
   `https://nabla-b.engineering/#organization`, Auto-Intern GmbH
-  `https://www.auto-intern.de/#organization`, skAInet brand
+  `https://www.auto-intern.de/#organization`, Meihui Huang
+  `https://kathamatician.com/#person` (link her name to
+  `https://kathamatician.com/`, never to GitHub), skAInet brand
   `https://www.skainet.io/#brand`, AI-Gruppe `https://gruppe.ai/#brand`,
   Edge-Compute `https://edge-compute.skainet.io/#product`. LinkedIn is
   always written as `https://www.linkedin.com/in/accelerator-stephan/`.
@@ -93,6 +97,12 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
 - `_includes/structured-data-post.html` is included only when `page.date`
   exists and emits the per-post `BlogPosting` JSON-LD, referencing the
   site-wide nodes by `@id` instead of repeating them.
+- Licensing: `licensing.md` (`/licensing/`) is the single rights page. Every
+  BlogPosting gets `license` (CC BY-SA 4.0 unless the front matter sets
+  `license:`), `usageInfo`, `copyrightHolder` and `copyrightNotice`
+  automatically; `default.html` emits `<link rel="license">`. Image files
+  point at `/licensing/#images` via XMP `WebStatement`. Attribution must name
+  "MaxClerkwell" and link back; keep that wording consistent with `ai.txt`.
 - `llms.txt` (root, `permalink: /llms.txt`) is a Liquid template. Its
   "All writing" section is regenerated on every Jekyll build from
   `_includes/get-blog-posts.html`. Never add post entries manually.
@@ -117,6 +127,9 @@ JSON-LD, canonical URL, feed, sitemap and llms.txt follow automatically.
 
 ### Repository rule
 
-**Never commit binary files.** Images that genuinely belong to a post go to
-`assets/posts/<kebab-slug>/` and must be discussed before being added; anything
-else (archives, PDFs, binaries, build artefacts) stays out of the repository.
+**Never commit binary files other than images that went through the image
+pipeline.** Every image needs a watermarked master in `assets/images/`, a
+downscaled display copy where the page uses it, and a manifest entry in
+`_data/images.yml` — run `python3 scripts/images.py`, see "Images" in
+`AGENTS.md`. Anything else (archives, PDFs, binaries, build artefacts) stays out
+of the repository.

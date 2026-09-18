@@ -5,6 +5,8 @@
   and the website node are referenced by @id instead of being repeated here.
   All values come from the post front matter (title, date, description,
   image, tags/keywords); the avatar is used as image fallback.
+  The licence defaults to CC BY-SA 4.0 (see /licensing/); an optional
+  `license:` URL in the front matter overrides it for a single post.
 {% endcomment %}
 {% assign post_image = page.image | default: '/slides/Avatar.jpg' | absolute_url %}
 {% assign post_desc = page.description | default: page.excerpt | strip_html | normalize_whitespace | strip %}
@@ -26,6 +28,11 @@
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ post_modified | date_to_xmlschema | jsonify }},
   "inLanguage": "{{ site.lang | default: 'en' }}",
+  "license": {{ page.license | default: 'https://creativecommons.org/licenses/by-sa/4.0/' | jsonify }},
+  "usageInfo": "https://maxclerkwell.tech/licensing/#text",
+  "copyrightHolder": { "@id": "https://maxclerkwell.tech/#person" },
+  "copyrightYear": {{ page.date | date: '%Y' | plus: 0 }},
+  "copyrightNotice": "© {{ page.date | date: '%Y' }} Stephan Bökelmann (MaxClerkwell). CC BY-SA 4.0 — attribute MaxClerkwell and link back to the original.",
   "isPartOf": [
     { "@id": "https://maxclerkwell.tech/#blog" },
     { "@id": "https://maxclerkwell.tech/#website" }
@@ -37,6 +44,8 @@
   "about": { "@id": {{ page.about_id | jsonify }} },{% elsif page.event.name %}
   "about": { "@id": {{ page.url | absolute_url | append: '#event' | jsonify }} },{% endif %}{% if page.video and page.video.id %}
   "video": { "@id": {{ page.url | absolute_url | append: '#video' | jsonify }} },{% endif %}
+{% if page.mentions_ids %}
+  "mentions": [{% for m in page.mentions_ids %}{ "@id": {{ m | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],{% endif %}
   "author": {
     "@type": "Person",
     "@id": "https://maxclerkwell.tech/#person",

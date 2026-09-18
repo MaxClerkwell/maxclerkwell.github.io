@@ -1,0 +1,35 @@
+{% comment %}
+  Image lightbox. Thumbnails on the page are the downscaled display copies;
+  the lightbox always loads the full-resolution master from /assets/images/
+  (mapping from _data/images.yml, see "Images" in AGENTS.md). Works for
+  images inside .post-body and for plain links marked with data-lightbox.
+{% endcomment %}
+{% assign lb_slug = page.url | split: '/' | last %}
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <img class="lightbox-img" alt="">
+  <p class="lightbox-caption"></p>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('lightbox'); if(!box) return;
+  var masters={ {% for i in site.data.images %}{% if i.file and i.display and i.post == lb_slug %}{{ i.display | jsonify }}:{{ i.file | jsonify }},{% endif %}{% endfor %} };
+  var img=box.querySelector('.lightbox-img'), cap=box.querySelector('.lightbox-caption');
+  function full(src){ try{ var p=decodeURIComponent(new URL(src,location.href).pathname); return masters[p]||src; }catch(e){ return src; } }
+  function open(src,alt,caption){ img.src=src; img.alt=alt||''; cap.textContent=caption||alt||''; box.hidden=false; document.body.classList.add('lightbox-open'); }
+  function close(){ box.hidden=true; img.src=''; document.body.classList.remove('lightbox-open'); }
+  document.querySelectorAll('.post-body img').forEach(function(el){
+    if(el.closest('a')||el.closest('.post-photo-grid')) return;
+    el.classList.add('zoomable'); el.tabIndex=0; el.setAttribute('role','button');
+    var fig=el.closest('figure'); var fc=fig&&fig.querySelector('figcaption');
+    var go=function(){ open(full(el.dataset.full||el.currentSrc||el.src), el.alt, fc?fc.textContent:''); };
+    el.addEventListener('click',go);
+    el.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
+  document.querySelectorAll('a[data-lightbox]').forEach(function(a){
+    a.addEventListener('click',function(e){ e.preventDefault(); open(a.href, a.dataset.alt||a.textContent, a.dataset.caption||''); });
+  });
+  box.addEventListener('click',function(e){ if(e.target!==img) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!box.hidden) close(); });
+})();
+</script>

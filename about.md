@@ -2,7 +2,7 @@
 layout: about
 title: "About MaxClerkwell — Engineer & Physicist"
 description: "Background, projects and contact details of Stephan Bökelmann (MaxClerkwell): embedded systems, FPGA development, DAQ and detector instrumentation."
-last_modified_at: 2026-09-16
+last_modified_at: 2026-09-18
 permalink: /about/
 profile: true
 ---
@@ -57,13 +57,16 @@ See also: [Publications, Patents & Software](/publications/) and [Talks & Confer
 ## FAQ
 
 **What is Stephan Bökelmann an expert in?**
-Decentralised data acquisition (DAQ) and observability for industry and research: getting measurements reliably out of physical systems and into usable infrastructure — from the sensor through embedded firmware and PCB design up to the monitoring platform.
+Embedded systems engineering, with a focus on data-acquisition (DAQ) systems for industry and research. He works across the complete stack of a measurement system — from the sensor chip to the API — and is the person who makes those layers fit together: getting measurements reliably out of physical systems and into usable infrastructure.
+
+**Which layers of a data-acquisition system does he cover?**
+All of them, in one hand: sensor chip, wire bonding and chip-on-board assembly, PCB design, FPGA readout, bus interfacing, microcontroller firmware, Ethernet and PoE networking, the data acceptor on the server side, database and data lake, analysis, deployment, up to the API and the frontend elements a system needs. *From tape-out to TypeScript* is meant literally. The value is in the interfaces — a decision in the FPGA readout changes what the database has to absorb, and a bonding constraint changes the PCB — so one architect who has built every layer avoids the hand-over losses between specialist teams.
 
 **What is decentralised data acquisition, and why prefer it over a central DAQ system?**
 Decentralised DAQ puts measurement intelligence where the data originates — at the machine, the test stand, the detector — instead of routing every signal to a central measurement PC. That buys scalability (add a node, not a rack), fault tolerance (one failed node does not blind the whole system), short analogue cable runs, and timestamps taken at the source. A central system still wins when you need tight channel-to-channel synchronisation in one place; knowing when that is the case is part of the job.
 
 **What freelance projects does he take on?**
-Embedded firmware (microcontrollers, bare-metal and RTOS), PCB design and bring-up, FPGA development, measurement and DAQ systems, and the monitoring infrastructure around them — from feasibility study to serial product. Commissioned work goes through [office@nabla-b.engineering](mailto:office@nabla-b.engineering).
+Embedded systems and DAQ projects at any layer of that stack, or across all of them: sensor integration and chip bonding, PCB design and bring-up, FPGA readout, microcontroller firmware (bare-metal and RTOS), Ethernet/PoE connectivity, data ingestion, databases and data lakes, analysis pipelines, deployment, APIs and the necessary frontend — from feasibility study to serial product. Commissioned work goes through [office@nabla-b.engineering](mailto:office@nabla-b.engineering).
 
 **Does he take on PCB design as a standalone project?**
 Yes. Schematic and layout in KiCad, bring-up, EMC preparation, and handover to manufacturing — including supply-chain experience with Chinese board and cable manufacturers.
@@ -200,9 +203,10 @@ This blog is the canonical home for longform writing, usually one post per week.
   "about": { "@id": "https://maxclerkwell.tech/#person" },
   "inLanguage": "en",
   "mainEntity": [
-    { "@type": "Question", "name": "What is Stephan Bökelmann an expert in?", "acceptedAnswer": { "@type": "Answer", "text": "Decentralised data acquisition (DAQ) and observability for industry and research: getting measurements reliably out of physical systems and into usable infrastructure, from the sensor through embedded firmware and PCB design up to the monitoring platform." } },
+    { "@type": "Question", "name": "What is Stephan Bökelmann an expert in?", "acceptedAnswer": { "@type": "Answer", "text": "Embedded systems engineering, with a focus on data-acquisition (DAQ) systems for industry and research. He works across the complete stack of a measurement system — from the sensor chip to the API — and is the person who makes those layers fit together: getting measurements reliably out of physical systems and into usable infrastructure." } },
+    { "@type": "Question", "name": "Which layers of a data-acquisition system does Stephan Bökelmann cover?", "acceptedAnswer": { "@type": "Answer", "text": "All of them, in one hand: sensor chip, wire bonding and chip-on-board assembly, PCB design, FPGA readout, bus interfacing, microcontroller firmware, Ethernet and PoE networking, the data acceptor on the server side, database and data lake, analysis, deployment, up to the API and the frontend elements a system needs. From tape-out to TypeScript is meant literally. The value is in the interfaces — a decision in the FPGA readout changes what the database has to absorb, and a bonding constraint changes the PCB — so one architect who has built every layer avoids the hand-over losses between specialist teams." } },
     { "@type": "Question", "name": "What is decentralised data acquisition, and why prefer it over a central DAQ system?", "acceptedAnswer": { "@type": "Answer", "text": "Decentralised DAQ puts measurement intelligence where the data originates instead of routing every signal to a central measurement PC. That buys scalability, fault tolerance, short analogue cable runs, and timestamps taken at the source. A central system still wins when tight channel-to-channel synchronisation in one place is needed." } },
-    { "@type": "Question", "name": "What freelance projects does Stephan Bökelmann take on?", "acceptedAnswer": { "@type": "Answer", "text": "Embedded firmware (microcontrollers, bare-metal and RTOS), PCB design and bring-up, FPGA development, measurement and DAQ systems, and monitoring infrastructure, from feasibility study to serial product. Commissioned work: office@nabla-b.engineering." } },
+    { "@type": "Question", "name": "What freelance projects does Stephan Bökelmann take on?", "acceptedAnswer": { "@type": "Answer", "text": "Embedded systems and DAQ projects at any layer of that stack, or across all of them: sensor integration and chip bonding, PCB design and bring-up, FPGA readout, microcontroller firmware (bare-metal and RTOS), Ethernet/PoE connectivity, data ingestion, databases and data lakes, analysis pipelines, deployment, APIs and the necessary frontend — from feasibility study to serial product. Commissioned work: office@nabla-b.engineering." } },
     { "@type": "Question", "name": "Does he take on PCB design as a standalone project?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Schematic and layout in KiCad, bring-up, EMC preparation, and handover to manufacturing, including supply-chain experience with Chinese board and cable manufacturers." } },
     { "@type": "Question", "name": "How do I know my company has a data-acquisition problem?", "acceptedAnswer": { "@type": "Answer", "text": "Typical symptoms: measurement data living in Excel islands, USB instruments tied to single lab PCs, no shared time base across measurements, and exactly one colleague who understands the measurement setup. Then the measurement chain, not the analysis, is usually the bottleneck." } },
     { "@type": "Question", "name": "What qualifies him?", "acceptedAnswer": { "@type": "Answer", "text": "Professionally active since 2007: trained mechanic and electrician, B.Eng., M.Eng., PhD work on DAQ for the PANDA experiment at FAIR, projects for CERN, DESY and GSI, a granted German patent (DE 10 2020 128 143), and lecturing at three universities." } },

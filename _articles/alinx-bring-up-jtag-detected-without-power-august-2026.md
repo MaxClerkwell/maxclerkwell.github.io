@@ -144,7 +144,7 @@ is a problem you have.
 (function(){
   var lb=document.getElementById('post-lightbox'), lbimg=lb.querySelector('img');
   document.querySelectorAll('.post-photo-grid img').forEach(function(im){
-    im.addEventListener('click',function(){ lbimg.src=im.src; lbimg.alt=im.alt; lb.classList.add('open'); });
+    im.addEventListener('click',function(){ lbimg.src=im.src.replace('/assets/posts/','/assets/images/'); lbimg.alt=im.alt; lb.classList.add('open'); });
   });
   lb.addEventListener('click',function(){ lb.classList.remove('open'); lbimg.src=''; });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('open'); });

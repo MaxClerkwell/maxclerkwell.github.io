@@ -8,6 +8,7 @@ image: /posts/omnaiscope-august-2025/assets/early_prototype.jpg
 keywords: "USB oscilloscope, automotive diagnostics, RP2040, OmnAIScope, multi-channel synchronisation, KiCad, open hardware, car workshop diagnostics"
 permalink: /posts/omnaiscope-august-2025/
 about_id: "https://www.auto-intern.de/#organization"
+mentions_ids: [https://kathamatician.com/#person]
 ---
 
 The **OmnAIScope** is a single-channel USB oscilloscope designed for automotive diagnostics. It started as a prototype within the [autowerkstatt4null](https://github.com/nabla-B/paper_aw4null-overview) project — a three-year, federally funded initiative to bring AI-driven diagnostics to independent car workshops. This post covers what it is, how the synchronisation works, and where it's going.
@@ -69,7 +70,7 @@ The full context — the automotive diagnostic landscape, the federated architec
 
 I'm a fan of open access. The paper exists to be read and built upon, not to sit behind a subscription.
 
-**Authors:** Stephan Bökelmann (Ruhr University Bochum), René Glitza (Ruhr University Bochum), Meihui Huang / 黄美慧 (nabla B engineering UG), Odin Holmes (Auto-Intern GmbH), Lukas Jakubczyk (THGA Bochum), Tabea Röthemeyer (Auto-Intern GmbH).
+**Authors:** Stephan Bökelmann (Ruhr University Bochum), René Glitza (Ruhr University Bochum), [Meihui Huang / 黄美慧](https://kathamatician.com/) (nabla B engineering UG), Odin Holmes (Auto-Intern GmbH), Lukas Jakubczyk (THGA Bochum), Tabea Röthemeyer (Auto-Intern GmbH).
 
 ## What's Next
 

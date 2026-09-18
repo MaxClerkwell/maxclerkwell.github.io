@@ -19,6 +19,7 @@
   <meta name="description" content="{{ seo_desc | escape }}">
   <meta name="author" content="{{ site.author.name }}">
   <link rel="canonical" href="{{ seo_url }}">
+  <link rel="license" href="{{ '/licensing/' | absolute_url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
@@ -126,7 +127,9 @@
   <footer class="footer">
     <p>© {{ 'now' | date: '%Y' }} Stephan Bökelmann ·
       <a href="mailto:{{ site.email }}">{{ site.email }}</a> ·
-      <a href="{{ '/imprint/' | relative_url }}">Imprint</a>
+      <a href="{{ '/imprint/' | relative_url }}">Imprint</a> ·
+      <a href="{{ '/images/' | relative_url }}">Images</a> ·
+      <a href="{{ '/licensing/' | relative_url }}" rel="license">Licensing</a>
     </p>
   </footer>
 

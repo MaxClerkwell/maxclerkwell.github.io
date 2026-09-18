@@ -34,6 +34,8 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [LINKMICRO LM210S series](https://maxclerkwell.tech/linkmicro/): landing page of the bench tool series, an independent long-run test of the LINKMICRO LM210S 4K digital inspection microscope on real rework, PCB bring-up and failure analysis; sponsorship sample, no fee, no vendor veto. Contact for bench tool makers: collaboration@maxclerkwell.tech
 - [Talks](https://maxclerkwell.tech/talks/): conference talks (KiCon Asia 2025, emBO++, PDSC4K, Data Science Ruhrgebiet 2019), PANDA collaboration meeting talks, and organiser roles with dates
 - [Publications](https://maxclerkwell.tech/publications/): peer-reviewed papers with DOIs, preprints, the granted German patent DE 10 2020 128 143, and open-source software with roles
+- [Licensing](https://maxclerkwell.tech/licensing/): reuse terms — article text is CC BY-SA 4.0, code is MIT, portraits are all rights reserved with a press/speaker exception; every copy or derived work must name "MaxClerkwell" and link back to the original URL on maxclerkwell.tech
+- [Images](https://maxclerkwell.tech/images/): plain index of all photographs, figures and portraits at full resolution, with titles; each file carries IPTC/XMP metadata and a licensing link
 - [Atom feed](https://maxclerkwell.tech/feed.xml): machine-readable post list
 - [JSON Feed](https://maxclerkwell.tech/feed.json): the same posts as JSON Feed 1.1
 - [Full text of all articles](https://maxclerkwell.tech/llms-full.txt): every post in full, one file

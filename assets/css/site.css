@@ -229,11 +229,20 @@ img { display: block; max-width: 100%; }
 }
 .hero-name h1 span { color: var(--blue-bright); }
 
-.hero-tagline {
+.hero-claim {
   color: var(--text-secondary);
-  font-style: italic;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 0;
+}
+.hero-claim span { display: block; }
+
+.hero-tagline {
+  color: var(--text-primary);
+  font-style: italic;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0.15rem 0;
 }
 
 
@@ -1073,6 +1082,11 @@ details.sidebar-widget[open] > .sidebar-widget-title::after {
 .lightbox-caption { color: #ddd; font-size: .9rem; margin: .75rem 0 0; text-align: center; max-width: 60ch; }
 .lightbox-close { position: absolute; top: .75rem; right: 1rem; background: none; border: 0; color: #fff; font-size: 2.25rem; line-height: 1; cursor: pointer; }
 body.lightbox-open { overflow: hidden; }
+
+/* ---- plain image index (/images/) ---- */
+.image-index { list-style: none; padding: 0; line-height: 1.9; }
+.image-index-group { font-size: 1rem; margin-top: 1.75rem; }
+.image-index-file { color: var(--text-dim); font-family: var(--font-mono, monospace); font-size: .78em; margin-left: .4em; }
 
 /* ---- archive, tags, 404 ---- */
 .blog-archive, .not-found { max-width: 52rem; margin: 0 auto; padding: 2rem 1rem; }

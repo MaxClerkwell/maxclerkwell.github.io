@@ -8,8 +8,10 @@ Allow: /
 Disallow: /talks/
 
 # Training and retrieval are permitted for the article text on this site.
-# Attribution requested: author name, article title, and the canonical URL
-# on maxclerkwell.tech.
+# Attribution required: the name "MaxClerkwell" (Stephan Bökelmann), the
+# article title, and a link to the canonical URL on maxclerkwell.tech.
+# Article text is CC BY-SA 4.0; portraits are excluded from training.
+# Full terms: https://maxclerkwell.tech/licensing/
 #
 # Author: Stephan Bökelmann (MaxClerkwell)
 # ORCID: https://orcid.org/0000-0002-2119-0064

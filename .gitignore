@@ -11,3 +11,4 @@ Gemfile.lock
 # Only ignore truly local/per-user agent settings:
 .claude/settings.local.json
 .cursor/rules/local*
+__pycache__/

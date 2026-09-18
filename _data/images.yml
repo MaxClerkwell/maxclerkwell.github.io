@@ -1,0 +1,2074 @@
+- file: /assets/images/portraits/Stephan_Boekelmann_Avatar_2020.jpg
+  display: null
+  post: null
+  title: Stephan Bökelmann – Portrait 2020
+  description: Portrait of Stephan Bökelmann (施泓杰, MaxClerkwell), embedded systems architect from Bochum, smiling, in a white dotted shirt (2020).
+  year: '2020'
+  source: https://maxclerkwell.tech/
+  license: All rights reserved
+  rights: own
+  keywords: []
+  dct_master: 16.0
+- file: /assets/images/portraits/Stephan_Boekelmann_Avatar_2024.jpg
+  display: /slides/Avatar.jpg
+  post: null
+  title: Stephan Bökelmann – Portrait 2024
+  description: Portrait of Stephan Bökelmann (施泓杰, MaxClerkwell), embedded systems architect from Bochum, with beard and dark hoodie (2024).
+  year: '2024'
+  source: https://maxclerkwell.tech/
+  license: All rights reserved
+  rights: own
+  keywords: []
+  dct_master: 7.5
+  dct_display: 13.6
+- file: /assets/images/portraits/Stephan_Boekelmann_Comic_Avatar.jpg
+  display: null
+  post: null
+  title: Stephan Bökelmann – Comic Avatar
+  description: Illustrated comic-style avatar of Stephan Bökelmann (施泓杰, MaxClerkwell) with beard and dark hoodie.
+  year: '2024'
+  source: https://maxclerkwell.tech/
+  license: All rights reserved
+  rights: own
+  keywords: []
+  dct_master: 5.5
+- file: /assets/images/portraits/Stephan_Boekelmann_Kfz-Technik_2010.jpg
+  display: null
+  post: null
+  title: Stephan Bökelmann – Kfz-Technik, Haltern 2010
+  description: Stephan Bökelmann (施泓杰, MaxClerkwell) in a blue work jacket with work gloves, arms crossed, in front of his automotive workshop (Kfz-Technik) in Haltern am See, 2010.
+  year: '2010'
+  source: https://maxclerkwell.tech/
+  license: All rights reserved
+  rights: own
+  keywords: []
+  dct_master: 22.3
+- file: /assets/images/portraits/Stephan_Boekelmann_at_CERN_2018.jpg
+  display: /assets/about/cern-banner.jpg
+  post: null
+  title: Stephan Bökelmann at CERN, 2018
+  description: Stephan Bökelmann (施泓杰, MaxClerkwell) standing next to the blue LHC dipole magnet with the lettering 'Accelerating Science' at CERN, 2018.
+  year: '2018'
+  source: https://maxclerkwell.tech/
+  license: All rights reserved
+  rights: own
+  keywords: []
+  dct_master: 5.5
+  dct_display: 4.6
+- file: /assets/images/portraits/Stephan_Boekelmann_suit_2021.jpg
+  display: null
+  post: null
+  title: Stephan Bökelmann – Business Portrait 2021
+  description: Business portrait of Stephan Bökelmann (施泓杰, MaxClerkwell), embedded systems architect from Bochum, in a dark blazer (2021).
+  year: '2021'
+  source: https://maxclerkwell.tech/
+  license: All rights reserved
+  rights: own
+  keywords: []
+  dct_master: 3.8
+- file: /assets/images/25square-capacitive-rain-sensing-september-2026/25square-inline-3.jpg
+  display: /assets/posts/25square-capacitive-rain-sensing-september-2026/25square-inline-3.jpg
+  post: 25square-capacitive-rain-sensing-september-2026
+  title: The 25square project team at the IUZ Sternwarte Bochum, where the first two sensors went into the ground in May…
+  description: 'The 25square project team at the IUZ Sternwarte Bochum, where the first two sensors went into the ground in May 2021. Front left: Tabea, project lead at Auto-Intern. — from the article “Counting Raindrops with a Capacitor: The 25square Sensor, Its STM32, and the Patent Behind It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/25square-capacitive-rain-sensing-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - daq
+  - measurement
+  - stm32
+  - lwip
+  - poe
+  - mqtt
+  - lora
+  - sensors
+  - patent
+  - mfund
+  - bochum
+  - edge-compute
+  dct_master: 11.3
+  dct_display: 6.2
+- file: /assets/images/25square-capacitive-rain-sensing-september-2026/25square-sensor-impact-plate.jpg
+  display: /assets/posts/25square-capacitive-rain-sensing-september-2026/25square-sensor-impact-plate.jpg
+  post: 25square-capacitive-rain-sensing-september-2026
+  title: 'One of the sensors up close: the impact plate on its mast, the electronics in the sealed box below, PoE via the…'
+  description: 'One of the sensors up close: the impact plate on its mast, the electronics in the sealed box below, PoE via the orange cable. — from the article “Counting Raindrops with a Capacitor: The 25square Sensor, Its STM32, and the Patent Behind It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/25square-capacitive-rain-sensing-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - daq
+  - measurement
+  - stm32
+  - lwip
+  - poe
+  - mqtt
+  - lora
+  - sensors
+  - patent
+  - mfund
+  - bochum
+  - edge-compute
+  dct_master: 11.6
+  dct_display: 6.3
+- file: /assets/images/25square-capacitive-rain-sensing-september-2026/25square-sensor-sternwarte-bochum.jpg
+  display: /assets/posts/25square-capacitive-rain-sensing-september-2026/25square-sensor-sternwarte-bochum.jpg
+  post: 25square-capacitive-rain-sensing-september-2026
+  title: Tabea with one of the first installed sensors at the Sternwarte.
+  description: 'Tabea with one of the first installed sensors at the Sternwarte. — from the article “Counting Raindrops with a Capacitor: The 25square Sensor, Its STM32, and the Patent Behind It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/25square-capacitive-rain-sensing-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - daq
+  - measurement
+  - stm32
+  - lwip
+  - poe
+  - mqtt
+  - lora
+  - sensors
+  - patent
+  - mfund
+  - bochum
+  - edge-compute
+  dct_master: 7.7
+  dct_display: 7.6
+- display: /assets/posts/25square-capacitive-rain-sensing-september-2026/okeanos-logo.png
+  post: 25square-capacitive-rain-sensing-september-2026
+  rights: third-party
+- file: /assets/images/alinx-ax7020-cold-boot-to-bitstream-api-september-2026/blinky-running.gif
+  display: /assets/posts/alinx-ax7020-cold-boot-to-bitstream-api-september-2026/blinky-running.gif
+  post: alinx-ax7020-cold-boot-to-bitstream-api-september-2026
+  title: The ALINX AX7020 on the bench with the four PL LEDs blinking, the open-toolchain blinky loaded through the REST API
+  description: 'The ALINX AX7020 on the bench with the four PL LEDs blinking, the open-toolchain blinky loaded through the REST API — from the article “ALINX AX7020, Stage 5 Complete: Cold Power-On to a Bitstream API, Nobody Logged In” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-ax7020-cold-boot-to-bitstream-api-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - yocto
+  - systemd
+  - kexec
+  - fastapi
+  - rest-api
+  - linux
+  - u-boot
+  - qspi
+  - nginx
+  - embedded
+  - bring-up
+  - deployment
+  watermark: metadata only (animated GIF)
+  dct_master: null
+  dct_display: null
+- file: /assets/images/alinx-ax7020-open-bitstream-rest-api-september-2026/api-swagger-ax7020.png
+  display: /assets/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/api-swagger-ax7020.png
+  post: alinx-ax7020-open-bitstream-rest-api-september-2026
+  title: Swagger UI of the bitstream service, served by the AX7020 itself
+  description: 'Swagger UI of the bitstream service, served by the AX7020 itself — from the article “ALINX AX7020, Stages 4 & 5: An Open Bitstream Over REST, and the One Missing Line That Hangs Both Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-ax7020-open-bitstream-rest-api-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - yosys
+  - nextpnr
+  - prjxray
+  - openxc7
+  - fpga-manager
+  - kexec
+  - fastapi
+  - rest-api
+  - yocto
+  - linux
+  - jtag
+  - openocd
+  - embedded
+  - bring-up
+  dct_master: 5.3
+  dct_display: 4.8
+- file: /assets/images/alinx-bring-up-jtag-detected-without-power-august-2026/boot-mode-jumper-jtag.jpg
+  display: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/boot-mode-jumper-jtag.jpg
+  post: alinx-bring-up-jtag-detected-without-power-august-2026
+  title: Boot-mode header J13 with the jumper on the JTAG position
+  description: 'Boot-mode header J13 with the jumper on the JTAG position — from the article “ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-bring-up-jtag-detected-without-power-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - jtag
+  - openocd
+  - u-boot
+  - spl
+  - device-tree
+  - netconsole
+  - bring-up
+  - linux
+  dct_master: 7.1
+  dct_display: 6.0
+- file: /assets/images/alinx-bring-up-jtag-detected-without-power-august-2026/boot-mode-jumper-qspi.jpg
+  display: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/boot-mode-jumper-qspi.jpg
+  post: alinx-bring-up-jtag-detected-without-power-august-2026
+  title: Boot-mode header J13 with the jumper on the QSPI position
+  description: 'Boot-mode header J13 with the jumper on the QSPI position — from the article “ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-bring-up-jtag-detected-without-power-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - jtag
+  - openocd
+  - u-boot
+  - spl
+  - device-tree
+  - netconsole
+  - bring-up
+  - linux
+  dct_master: 7.5
+  dct_display: 6.3
+- file: /assets/images/alinx-bring-up-jtag-detected-without-power-august-2026/emc-lab-test.jpg
+  display: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/emc-lab-test.jpg
+  post: alinx-bring-up-jtag-detected-without-power-august-2026
+  title: EMC lab test of the jointly specified cables with Auto-Intern's new edge-compute hardware
+  description: 'EMC lab test of the jointly specified cables with Auto-Intern''s new edge-compute hardware — from the article “ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-bring-up-jtag-detected-without-power-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - jtag
+  - openocd
+  - u-boot
+  - spl
+  - device-tree
+  - netconsole
+  - bring-up
+  - linux
+  dct_master: 7.7
+  dct_display: 6.6
+- file: /assets/images/alinx-bring-up-jtag-detected-without-power-august-2026/gh-factory-visit.jpg
+  display: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/gh-factory-visit.jpg
+  post: alinx-bring-up-jtag-detected-without-power-august-2026
+  title: Visiting the GH Electronic team in Dongguan
+  description: 'Visiting the GH Electronic team in Dongguan — from the article “ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-bring-up-jtag-detected-without-power-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - jtag
+  - openocd
+  - u-boot
+  - spl
+  - device-tree
+  - netconsole
+  - bring-up
+  - linux
+  dct_master: 9.6
+  dct_display: 8.2
+- file: /assets/images/alinx-bring-up-jtag-detected-without-power-august-2026/gh-production.jpg
+  display: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/gh-production.jpg
+  post: alinx-bring-up-jtag-detected-without-power-august-2026
+  title: Cable production floor at GH Electronic
+  description: 'Cable production floor at GH Electronic — from the article “ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-bring-up-jtag-detected-without-power-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - jtag
+  - openocd
+  - u-boot
+  - spl
+  - device-tree
+  - netconsole
+  - bring-up
+  - linux
+  dct_master: 8.2
+  dct_display: 6.9
+- file: /assets/images/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg
+  display: /assets/posts/alinx-bring-up-jtag-detected-without-power-august-2026/m12-adapter.jpg
+  post: alinx-bring-up-jtag-detected-without-power-august-2026
+  title: Auto-Intern M12 Ethernet adapter connected to the ALINX AX7020
+  description: 'Auto-Intern M12 Ethernet adapter connected to the ALINX AX7020 — from the article “ALINX AX7020 Bring-up: Mainline U-Boot Over JTAG, No FSBL, No Serial Cable” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-bring-up-jtag-detected-without-power-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - jtag
+  - openocd
+  - u-boot
+  - spl
+  - device-tree
+  - netconsole
+  - bring-up
+  - linux
+  dct_master: 11.1
+  dct_display: 10.1
+- file: /assets/images/alinx-series/ax7020-board.jpg
+  display: /assets/posts/alinx-series/ax7020-board.jpg
+  post: alinx-series
+  title: 'ALINX AX7020 on the bench: Zynq XC7Z020 in the centre, boot jumper J13 on JTAG, Ethernet and JTAG attached'
+  description: 'ALINX AX7020 on the bench: Zynq XC7Z020 in the centre, boot jumper J13 on JTAG, Ethernet and JTAG attached — from the article “ALINX AX7020 — The Open Bitstream Pipeline Series” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/alinx/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords: []
+  dct_master: 6.9
+  dct_display: 6.1
+- display: /assets/posts/cunninghams-law-june-2026/cunninghams-law-quora.png
+  post: cunninghams-law-june-2026
+  rights: third-party
+- display: /assets/posts/from-aristotle-to-the-bit-july-2026/claude-shannon.jpg
+  post: from-aristotle-to-the-bit-july-2026
+  rights: third-party
+- file: /assets/images/hdl-for-netlists/routing.png
+  display: /assets/posts/hdl-for-netlists/routing.png
+  post: hdl-for-netlists
+  title: 'PCB layout view showing dense copper routing, vias, and component placement: a constraint-satisfaction problem of a…'
+  description: 'PCB layout view showing dense copper routing, vias, and component placement: a constraint-satisfaction problem of a different order than schematic capture — from the article “A Hill I Am Willing to Die On: HDL for PCB Netlists” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hdl-for-netlists-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords: []
+  dct_master: 3.5
+  dct_display: 7.8
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/audience-selfie.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/audience-selfie.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Selfie in the main hall of Gleis 9 with the KiCon Europe 2026 audience behind me
+  description: 'Selfie in the main hall of Gleis 9 with the KiCon Europe 2026 audience behind me — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 9.8
+  dct_display: 6.7
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/cpresser-workshop-talk.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/cpresser-workshop-talk.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: cpresser on stage with his one-page Design a Circuit Board with KiCad handout on the screen
+  description: 'cpresser on stage with his one-page Design a Circuit Board with KiCad handout on the screen — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 10.3
+  dct_display: 7.4
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/eub-test-rig.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/eub-test-rig.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Magnus Axelsson and Simon Lindh from EUB on stage with a red 3D-printed test rig on the lectern
+  description: 'Magnus Axelsson and Simon Lindh from EUB on stage with a red 3D-printed test rig on the lectern — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 9.7
+  dct_display: 7.2
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/lunch-courtyard-gleis9.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/lunch-courtyard-gleis9.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Lunch break in the covered courtyard of Gleis 9 with deck chairs and the Würth Elektronik stand
+  description: 'Lunch break in the covered courtyard of Gleis 9 with deck chairs and the Würth Elektronik stand — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 8.4
+  dct_display: 6.7
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/raphael-specht-wuerth-3d-models.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/raphael-specht-wuerth-3d-models.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Raphael Specht of Würth Elektronik presenting KiCad 3D models
+  description: 'Raphael Specht of Würth Elektronik presenting KiCad 3D models — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 7.9
+  dct_display: 6.2
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/registration-desk.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/registration-desk.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Seth Hillbrand at the registration and merchandise desk at the Gleis 9 bar
+  description: 'Seth Hillbrand at the registration and merchandise desk at the Gleis 9 bar — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 9.1
+  dct_display: 7.2
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/storage-crates.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/storage-crates.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Yellow crate labelled KiCon on top of boxes of thermos pots in the storage room
+  description: 'Yellow crate labelled KiCon on top of boxes of thermos pots in the storage room — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 8.0
+  dct_display: 7.2
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/storage-shelf.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/storage-shelf.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Storage shelf with mugs, glasses and flight cases after the conference
+  description: 'Storage shelf with mugs, glasses and flight cases after the conference — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 8.5
+  dct_display: 6.7
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/workshop-seth-day3.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/workshop-seth-day3.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: 'Training day at Gleis 9: attendees at laptops following Seth Hillbrand through a KiCad schematic'
+  description: 'Training day at Gleis 9: attendees at laptops following Seth Hillbrand through a KiCad schematic — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 7.7
+  dct_display: 6.1
+- file: /assets/images/kicon-europe-2026-trip-report-without-the-trip/workshop-seth-lectern.jpg
+  display: /assets/posts/kicon-europe-2026-trip-report-without-the-trip/workshop-seth-lectern.jpg
+  post: kicon-europe-2026-trip-report-without-the-trip
+  title: Seth Hillbrand at the lectern with the KiCad schematic editor on the screen
+  description: 'Seth Hillbrand at the lectern with the KiCad schematic editor on the screen — from the article “KiCon Europe 2026: Trip Report without the Trip” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2026-trip-report-without-the-trip/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - kicad
+  - conferences
+  - open-source
+  - pcb
+  - bochum
+  - skunkforce
+  dct_master: 8.7
+  dct_display: 6.7
+- file: /assets/images/orbitals-to-bands-august-2026/fig_band_formation.png
+  display: /assets/posts/orbitals-to-bands-august-2026/fig_band_formation.png
+  post: orbitals-to-bands-august-2026
+  title: 'From two atoms to N atoms: levels merge into bands'
+  description: 'From two atoms to N atoms: levels merge into bands — from the article “Why Does Copper Conduct? A Tour for Non-Physicists” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/orbitals-to-bands-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  - education
+  dct_master: 3.2
+  dct_display: 5.5
+- file: /assets/images/orbitals-to-bands-august-2026/fig_band_types.png
+  display: /assets/posts/orbitals-to-bands-august-2026/fig_band_types.png
+  post: orbitals-to-bands-august-2026
+  title: Metal, semiconductor, insulator in the band picture
+  description: Metal, semiconductor, insulator in the band picture — from the article “Why Does Copper Conduct? A Tour for Non-Physicists” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/orbitals-to-bands-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  - education
+  dct_master: 4.0
+  dct_display: 4.7
+- file: /assets/images/orbitals-to-bands-august-2026/fig_bonding_antibonding_nodes.png
+  display: /assets/posts/orbitals-to-bands-august-2026/fig_bonding_antibonding_nodes.png
+  post: orbitals-to-bands-august-2026
+  title: Bonding and antibonding states of two coupled atoms
+  description: Bonding and antibonding states of two coupled atoms — from the article “Why Does Copper Conduct? A Tour for Non-Physicists” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/orbitals-to-bands-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  - education
+  dct_master: 2.1
+  dct_display: 2.9
+- file: /assets/images/physics-math-engineering/titlepic.jpg
+  display: /assets/posts/physics-math-engineering/titlepic.jpg
+  post: physics-math-engineering
+  title: 'Three figures around a boulder in the mountains: a physicist with equations, a mathematician at a chalkboard, an…'
+  description: 'Three figures around a boulder in the mountains: a physicist with equations, a mathematician at a chalkboard, an engineer with blueprints. Caption: Different minds. One mission. — from the article “Physics, Math, or Engineering? How do you decide” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/physics-math-or-engineering-how-do-you-decide/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords: []
+  dct_master: 5.9
+  dct_display: 5.1
+- file: /assets/images/what-ai-actually-is-july-2026/interpolation-vs-extrapolation.png
+  display: /assets/posts/what-ai-actually-is-july-2026/interpolation-vs-extrapolation.png
+  post: what-ai-actually-is-july-2026
+  title: 'Two plots side by side. Left: three training points with a parabola fitting them perfectly. Right: the same three…'
+  description: 'Two plots side by side. Left: three training points with a parabola fitting them perfectly. Right: the same three points plus a fourth point outside the training range, where the parabola fails and only a cubic polynomial fits correctly. — from the article “What AI Actually Is” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/what-ai-actually-is-july-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - ai
+  - philosophy
+  - education
+  dct_master: 6.9
+  dct_display: 6.9
+- file: /assets/images/wtf-are-fpgas-june-2026/basys3-icestick-title.jpg
+  display: /assets/posts/wtf-are-fpgas-june-2026/basys3-icestick-title.jpg
+  post: wtf-are-fpgas-june-2026
+  title: 'A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum,…'
+  description: 'A Lattice iCEstick USB dongle next to a Digilent Basys3 development board: two ends of the FPGA beginner spectrum, from a 25-euro USB stick to a full Artix-7 board with switches, seven-segment displays, and Pmod connectors — from the article “WTF are FPGAs: A Beginner''s Overview of Field-Programmable Gate Arrays” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/wtf-are-fpgas-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  dct_master: 4.2
+  dct_display: 4.3
+- file: /assets/images/wtf-are-fpgas-june-2026/fpga-architecture-diagram.png
+  display: /assets/posts/wtf-are-fpgas-june-2026/fpga-architecture-diagram.png
+  post: wtf-are-fpgas-june-2026
+  title: FPGA architecture diagram showing a grid of orange Logic Blocks connected by a Programmable Interconnect fabric,…
+  description: 'FPGA architecture diagram showing a grid of orange Logic Blocks connected by a Programmable Interconnect fabric, with blue Input/Output Blocks around the perimeter. Source: Afzal et al., J. Phys.: Conf. Ser. 2786 012004 (2024), doi:10.1088/1742-6596/2786/1/012004 — from the article “WTF are FPGAs: A Beginner''s Overview of Field-Programmable Gate Arrays” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/wtf-are-fpgas-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  dct_master: 2.9
+  dct_display: 5.9
+- file: /assets/images/wtf-are-fpgas-june-2026/kintex7-oszi.jpg
+  display: /assets/posts/wtf-are-fpgas-june-2026/kintex7-oszi.jpg
+  post: wtf-are-fpgas-june-2026
+  title: Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification,…
+  description: 'Two Xilinx Kintex-7 development boards connected to an oscilloscope for post-implementation signal verification, used at EP1/RUB for HV-MAPS sensor readout in the PANDA and LHCb experiments — from the article “WTF are FPGAs: A Beginner''s Overview of Field-Programmable Gate Arrays” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/wtf-are-fpgas-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  dct_master: 7.1
+  dct_display: 5.3
+- file: /assets/images/wtf-are-fpgas-june-2026/kintex7-pcie.jpg
+  display: /assets/posts/wtf-are-fpgas-june-2026/kintex7-pcie.jpg
+  post: wtf-are-fpgas-june-2026
+  title: A Xilinx Kintex-7 evaluation board in PCIe form factor, with two Panda FMC mezzanine cards attached, an SFP cage,…
+  description: 'A Xilinx Kintex-7 evaluation board in PCIe form factor, with two Panda FMC mezzanine cards attached, an SFP cage, SMA connectors, and a small cooling fan over the FPGA package — from the article “WTF are FPGAs: A Beginner''s Overview of Field-Programmable Gate Arrays” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/wtf-are-fpgas-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  dct_master: 6.7
+  dct_display: 5.4
+- display: /assets/posts/zero-to-one-python-libraries-environments-june-2026/python-logo.png
+  post: zero-to-one-python-libraries-environments-june-2026
+  rights: third-party
+- display: /assets/valid-atom.png
+  post: null
+  rights: third-party
+- file: /assets/images/ai-gruppe-manifesto/intro-bild.jpg
+  display: /posts/ai-gruppe-manifesto/assets/intro-bild.jpg
+  post: ai-gruppe-manifesto
+  title: Four people in a VW bus on the way to somewhere that matters
+  description: Four people in a VW bus on the way to somewhere that matters — from the article “If We Can Measure It, You Can Improve It” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/ai-gruppe-manifesto/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - ai
+  - monitoring
+  - philosophy
+  dct_master: 12.8
+  dct_display: 21.7
+- file: /assets/images/ata-carnet-china-travel/photo_1_2026-04-14_16-02-16.jpg
+  display: /posts/ata-carnet-china-travel/assets/photo_1_2026-04-14_16-02-16.jpg
+  post: ata-carnet-china-travel
+  title: 'Peli case packed: foam cut to fit, modules secured, cables coiled alongside'
+  description: 'Peli case packed: foam cut to fit, modules secured, cables coiled alongside — from the article “Travelling to China with a Peli Case Full of Electronics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/ata-carnet-china-travel/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - conferences
+  dct_master: 6.5
+  dct_display: 6.1
+- file: /assets/images/ata-carnet-china-travel/photo_2_2026-04-14_16-02-16.jpg
+  display: /posts/ata-carnet-china-travel/assets/photo_2_2026-04-14_16-02-16.jpg
+  post: ata-carnet-china-travel
+  title: TSA-compliant lock — one of two on the case. One didn't make it back.
+  description: TSA-compliant lock — one of two on the case. One didn't make it back. — from the article “Travelling to China with a Peli Case Full of Electronics” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/ata-carnet-china-travel/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - conferences
+  dct_master: 18.5
+  dct_display: 13.3
+- file: /assets/images/ata-carnet-china-travel/photo_5_2026-04-14_14-19-10.jpg
+  display: /posts/ata-carnet-china-travel/assets/photo_5_2026-04-14_14-19-10.jpg
+  post: ata-carnet-china-travel
+  title: Black Peli hard case for the ATA Carnet equipment
+  description: Black Peli-style hard case with wheels standing in an airport hall — the equipment case that travelled to China under an ATA Carnet. By Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/ata-carnet-china-travel/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - conferences
+  dct_master: 15.4
+  dct_display: 10.2
+- file: /assets/images/auto-intern-obd-vcds-may-2026/AutoSpion.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/AutoSpion.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: AutoSpion — front view
+  description: AutoSpion — front view — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 24.1
+  dct_display: 16.3
+- file: /assets/images/auto-intern-obd-vcds-may-2026/AutoSpionBack.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/AutoSpionBack.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: AutoSpion — rear view
+  description: AutoSpion — rear view — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 30.5
+  dct_display: 18.5
+- file: /assets/images/auto-intern-obd-vcds-may-2026/HEX-V2.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/HEX-V2.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: HEX-V2 interface — current product
+  description: HEX-V2 interface — current product — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 9.5
+  dct_display: 8.6
+- file: /assets/images/auto-intern-obd-vcds-may-2026/Multiscan.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/Multiscan.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: Auto-Intern Multiscan USB
+  description: Auto-Intern Multiscan USB — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 12.7
+  dct_display: 9.3
+- file: /assets/images/auto-intern-obd-vcds-may-2026/VAG1551.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/VAG1551.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: The V.A.G 1551 — the factory diagnostic tool that started it all
+  description: The V.A.G 1551 — the factory diagnostic tool that started it all — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 12.5
+  dct_display: 9.3
+- file: /assets/images/auto-intern-obd-vcds-may-2026/VCDS-Screenshot_1_2026-05-06_11-34-03.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/VCDS-Screenshot_1_2026-05-06_11-34-03.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: VCDS main menu
+  description: VCDS main menu — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 3.2
+  dct_display: 3.3
+- file: /assets/images/auto-intern-obd-vcds-may-2026/VCDS-Screenshot_2_2026-05-06_11-34-03.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/VCDS-Screenshot_2_2026-05-06_11-34-03.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: VCDS — ECU identification screen
+  description: VCDS — ECU identification screen — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 3.0
+  dct_display: 3.1
+- file: /assets/images/auto-intern-obd-vcds-may-2026/VCDS-Screenshot_5_2026-05-06_11-34-03.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/VCDS-Screenshot_5_2026-05-06_11-34-03.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: VCDS — long coding with bit-level editor
+  description: VCDS — long coding with bit-level editor — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 3.1
+  dct_display: 3.3
+- file: /assets/images/dongguan-emc-march-2026/photo_1_2026-04-14_14-19-10.jpg
+  display: /posts/dongguan-emc-march-2026/assets/photo_1_2026-04-14_14-19-10.jpg
+  post: dongguan-emc-march-2026
+  title: Stopover in Shenzhen — the trip begins
+  description: 'Stopover in Shenzhen — the trip begins — from the article “EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dongguan-emc-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 8.8
+  dct_display: 7.5
+- file: /assets/images/dongguan-emc-march-2026/photo_2_2026-04-14_14-19-10.jpg
+  display: /posts/dongguan-emc-march-2026/assets/photo_2_2026-04-14_14-19-10.jpg
+  post: dongguan-emc-march-2026
+  title: Setup in progress — the NTC technician preparing the conducted immunity test
+  description: 'Setup in progress — the NTC technician preparing the conducted immunity test — from the article “EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dongguan-emc-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 11.1
+  dct_display: 8.3
+- file: /assets/images/dongguan-emc-march-2026/photo_3_2026-04-14_14-19-10.jpg
+  display: /posts/dongguan-emc-march-2026/assets/photo_3_2026-04-14_14-19-10.jpg
+  post: dongguan-emc-march-2026
+  title: Top-down view of the test arrangement
+  description: 'Top-down view of the test arrangement — from the article “EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dongguan-emc-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 8.0
+  dct_display: 6.9
+- file: /assets/images/dongguan-emc-march-2026/photo_4_2026-04-14_14-19-10.jpg
+  display: /posts/dongguan-emc-march-2026/assets/photo_4_2026-04-14_14-19-10.jpg
+  post: dongguan-emc-march-2026
+  title: Inside the anechoic chamber — radiated emissions test in progress
+  description: 'Inside the anechoic chamber — radiated emissions test in progress — from the article “EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dongguan-emc-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 8.1
+  dct_display: 6.8
+- file: /assets/images/dongguan-emc-march-2026/photo_5_2026-04-14_14-19-10.jpg
+  display: /posts/dongguan-emc-march-2026/assets/photo_5_2026-04-14_14-19-10.jpg
+  post: dongguan-emc-march-2026
+  title: Everything packed into a Peli case for the flight to Dongguan
+  description: 'Everything packed into a Peli case for the flight to Dongguan — from the article “EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dongguan-emc-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 15.4
+  dct_display: 10.2
+- file: /assets/images/dongguan-emc-march-2026/photo_7_2026-04-14_14-19-10.jpg
+  display: /posts/dongguan-emc-march-2026/assets/photo_7_2026-04-14_14-19-10.jpg
+  post: dongguan-emc-march-2026
+  title: Full test bench at NTC — compute module, sensor nodes, M12 PoE cables, ThinkPad for monitoring
+  description: 'Full test bench at NTC — compute module, sensor nodes, M12 PoE cables, ThinkPad for monitoring — from the article “EMC in Dongguan: 2.5 Years of Work, 4 Days in a Test Chamber” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dongguan-emc-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 8.2
+  dct_display: 6.6
+- file: /assets/images/dual-uplink-feb-2026/PXL_20260306_175202894.jpg
+  display: /posts/dual-uplink-feb-2026/assets/PXL_20260306_175202894.jpg
+  post: dual-uplink-feb-2026
+  title: Setup workspace in the basement — AI-heimdall in the mini-rack on the right, terminal output on the monitor
+  description: 'Setup workspace in the basement — AI-heimdall in the mini-rack on the right, terminal output on the monitor — from the article “Dual Uplink for 15 People: Starlink, Heimdall, and Linux Routing” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dual-uplink-feb-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - networking
+  - linux
+  dct_master: 11.1
+  dct_display: 7.0
+- file: /assets/images/dual-uplink-feb-2026/PXL_20260306_205143846.jpg
+  display: /posts/dual-uplink-feb-2026/assets/PXL_20260306_205143846.jpg
+  post: dual-uplink-feb-2026
+  title: '`ip a` on AI-heimdall — eno1 (DSL), eno2 (Starlink), and eno4 (internal network) all active'
+  description: '`ip a` on AI-heimdall — eno1 (DSL), eno2 (Starlink), and eno4 (internal network) all active — from the article “Dual Uplink for 15 People: Starlink, Heimdall, and Linux Routing” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/dual-uplink-feb-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - networking
+  - linux
+  dct_master: 7.2
+  dct_display: 4.3
+- file: /assets/images/enclosureless-cases-april-2026/photo_enclosureless_temphumid.jpg
+  display: /posts/enclosureless-cases-april-2026/assets/photo_enclosureless_temphumid.jpg
+  post: enclosureless-cases-april-2026
+  title: Enclosureless Cases components and assembled unit — bottom board, frame spacer, cover board, and the finished sensor
+  description: 'Enclosureless Cases components and assembled unit — bottom board, frame spacer, cover board, and the finished sensor — from the article “Enclosureless Cases: When the PCB Is the Enclosure” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/enclosureless-cases-april-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - open-source
+  dct_master: 8.3
+  dct_display: 9.3
+- file: /assets/images/fpga-blinky-vhdl-icestick-may-2026/gtkwave.png
+  display: /posts/fpga-blinky-vhdl-icestick-may-2026/assets/gtkwave.png
+  post: fpga-blinky-vhdl-icestick-may-2026
+  title: GTKWave showing tb_blinky with dut selected in the SST tree and clk, counter, led_reg visible in the wave view
+  description: 'GTKWave showing tb_blinky with dut selected in the SST tree and clk, counter, led_reg visible in the wave view — from the article “Zero to One: VHDL and a Lattice iCEstick” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/fpga-blinky-vhdl-icestick-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - zero-to-one
+  dct_master: 3.0
+  dct_display: 4.2
+- file: /assets/images/fpga-blinky-vhdl-icestick-may-2026/titlepic.jpg
+  display: /posts/fpga-blinky-vhdl-icestick-may-2026/assets/titlepic.jpg
+  post: fpga-blinky-vhdl-icestick-may-2026
+  title: iCEstick leaning against a Ruhr-Universität Bochum physics department mug, mixer and monitor in the background
+  description: 'iCEstick leaning against a Ruhr-Universität Bochum physics department mug, mixer and monitor in the background — from the article “Zero to One: VHDL and a Lattice iCEstick” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/fpga-blinky-vhdl-icestick-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - zero-to-one
+  dct_master: 8.6
+  dct_display: 7.1
+- file: /assets/images/game-of-life-may-2026/GoL-Opener.png
+  display: /posts/game-of-life-may-2026/assets/GoL-Opener.png
+  post: game-of-life-may-2026
+  title: Conway's Game of Life — structures evolving on a grid
+  description: Conway's Game of Life — structures evolving on a grid — from the article “The Game of Life and the Limits of Prediction” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/game-of-life-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - philosophy
+  - physics
+  dct_master: 4.8
+  dct_display: 5.8
+- file: /assets/images/game-of-life-may-2026/statistical-mechanics.png
+  display: /posts/game-of-life-may-2026/assets/statistical-mechanics.png
+  post: game-of-life-may-2026
+  title: Boltzmann — Thermodynamics and Statistical Mechanics
+  description: Boltzmann — Thermodynamics and Statistical Mechanics — from the article “The Game of Life and the Limits of Prediction” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/game-of-life-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - philosophy
+  - physics
+  dct_master: 4.1
+  dct_display: 9.4
+- file: /assets/images/getting-started/title.jpg
+  display: /posts/getting-started/assets/title.jpg
+  post: getting-started
+  title: Stephan Bökelmann at CERN, Geneva — accelerator pipe reading "Accelerating Science"
+  description: 'Stephan Bökelmann at CERN, Geneva — accelerator pipe reading "Accelerating Science" — from the article “Getting Started: From Tape-Out to TypeScript” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/getting-started/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - personal
+  - engineering
+  dct_master: 4.9
+  dct_display: 4.6
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/Bonding-Verification-Station.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/Bonding-Verification-Station.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: Bonding verification station with readout crate and test PCB
+  description: 'Bonding verification station in the lab: a monitor with the readout software on top of a rack crate, next to a green test PCB carrying a freshly wire-bonded sensor chip. By Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 9.9
+  dct_display: 7.6
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/SIS100.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/SIS100.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: The SIS100 tunnel at FAIR, Darmstadt — superconducting dipole magnets installed, connection pipes between magnets…
+  description: The SIS100 tunnel at FAIR, Darmstadt — superconducting dipole magnets installed, connection pipes between magnets not yet in place — from the article “Simulating Antiproton Energy Loss in an HV-MAPS Silicon Sensor with Geant4” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 9.8
+  dct_display: 7.5
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/chips.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/chips.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: Bare HV-MAPS silicon chips in a waffle pack
+  description: Four bare HV-MAPS silicon pixel sensor chips with golden surfaces lying in the compartments of a black waffle-pack tray. By Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 21.9
+  dct_display: 14.5
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/first-try-antiproton.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/first-try-antiproton.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: Python surface plots of the HESR parameter sweep — MPV deposited energy, mean deposited energy, and e/h pairs at MPV…
+  description: Python surface plots of the HESR parameter sweep — MPV deposited energy, mean deposited energy, and e/h pairs at MPV across momentum and thickness. — from the article “Simulating Antiproton Energy Loss in an HV-MAPS Silicon Sensor with Geant4” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 3.5
+  dct_display: 3.1
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/geant-exampleB1.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/geant-exampleB1.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: The Geant4 Qt GUI running exampleB1 — 3D geometry viewer on the right, command tree on the left, output log at the…
+  description: The Geant4 Qt GUI running exampleB1 — 3D geometry viewer on the right, command tree on the left, output log at the bottom. — from the article “Simulating Antiproton Energy Loss in an HV-MAPS Silicon Sensor with Geant4” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 6.2
+  dct_display: 4.4
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/me-being-anti-proton (Edited).jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/me-being-anti-proton (Edited).jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: Stephan Bökelmann in front of the PROTON supermarket, sign circled
+  description: Stephan Bökelmann in a Hawaiian shirt giving a thumbs-down next to a colleague giving a thumbs-up in front of a supermarket called PROTON; the shop sign is circled in white — a pun on being anti-proton. By Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 2.8
+  dct_display: 6.4
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/me-being-anti-proton.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/me-being-anti-proton.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: Stephan Bökelmann a.k.a MaxClerkwell and another researcher from RUB standing in a supermarket parking lot on Corfu…
+  description: Stephan Bökelmann a.k.a MaxClerkwell and another researcher from RUB standing in a supermarket parking lot on Corfu — the store sign reads "PROTON". Stephan holds his thumb down, because he is firmly on Team Antiproton. — from the article “Simulating Antiproton Energy Loss in an HV-MAPS Silicon Sensor with Geant4” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 5.8
+  dct_display: 5.5
+- file: /assets/images/hv-maps-energy-loss-simulation-may-2026/mupix-8-beamtime.jpg
+  display: /posts/hv-maps-energy-loss-simulation-may-2026/assets/mupix-8-beamtime.jpg
+  post: hv-maps-energy-loss-simulation-may-2026
+  title: MuPix8 evaluation board mounted in the COSY test beam setup, 2022
+  description: MuPix8 evaluation board mounted in the COSY test beam setup, 2022 — from the article “Simulating Antiproton Energy Loss in an HV-MAPS Silicon Sensor with Geant4” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hv-maps-energy-loss-simulation-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  dct_master: 12.4
+  dct_display: 8.6
+- file: /assets/images/kicon-asia-2025/photo_1_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_1_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: KiCon 2025 Asia conference programme banner
+  description: 'KiCon 2025 Asia conference programme banner — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 7.4
+  dct_display: 6.0
+- file: /assets/images/kicon-asia-2025/photo_2_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_2_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: Another speaker presenting on the LLM ecosystem — the scale of the screens was something
+  description: 'Another speaker presenting on the LLM ecosystem — the scale of the screens was something — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 7.3
+  dct_display: 6.4
+- file: /assets/images/kicon-asia-2025/photo_3_2026-04-15_13-23-08.jpg
+  display: /posts/kicon-asia-2025/assets/photo_3_2026-04-15_13-23-08.jpg
+  post: kicon-asia-2025
+  title: Shenzhen night skyline — the twin towers near the venue
+  description: 'Shenzhen night skyline — the twin towers near the venue — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 8.4
+  dct_display: 7.3
+- file: /assets/images/kicon-asia-2025/photo_4_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_4_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: The prize koala, sitting on the KiCad × Huaqiu conference folder
+  description: 'The prize koala, sitting on the KiCad × Huaqiu conference folder — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 16.6
+  dct_display: 13.2
+- file: /assets/images/kicon-asia-2025/photo_5_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_5_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: Dell laptop showing wire bonding slides — CLICpix and MuPix microscope images
+  description: 'Dell laptop showing wire bonding slides — CLICpix and MuPix microscope images — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 8.8
+  dct_display: 7.0
+- file: /assets/images/kicon-asia-2025/photo_6_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_6_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: Shenzhen street scene — daytime, near the conference area
+  description: 'Shenzhen street scene — daytime, near the conference area — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 6.5
+  dct_display: 5.8
+- file: /assets/images/kicon-asia-2025/photo_7_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_7_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: Stephan in Shenzhen — obligatory selfie with the skyline
+  description: 'Stephan in Shenzhen — obligatory selfie with the skyline — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 6.3
+  dct_display: 5.8
+- file: /assets/images/kicon-asia-2025/photo_8_2026-04-15_13-23-32.jpg
+  display: /posts/kicon-asia-2025/assets/photo_8_2026-04-15_13-23-32.jpg
+  post: kicon-asia-2025
+  title: Presenting at KiCon Asia 2025 — CLICpix microscope image on screen behind
+  description: 'Presenting at KiCon Asia 2025 — CLICpix microscope image on screen behind — from the article “KiCon Asia 2025: Speaking on Wire Bonding in Shenzhen” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/kicon-asia-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - physics
+  dct_master: 7.8
+  dct_display: 7.1
+- file: /assets/images/kicon-europe-2024/PXL_20240918_182811826.jpg
+  display: /posts/kicon-europe-2024/assets/PXL_20240918_182811826.jpg
+  post: kicon-europe-2024
+  title: Pre-conference social the evening before — group dinner at a traditional Bochum pub
+  description: 'Pre-conference social the evening before — group dinner at a traditional Bochum pub — from the article “KiCon Europe 2024: Bochum Goes International” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2024'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - open-source
+  dct_master: 11.9
+  dct_display: 7.2
+- file: /assets/images/kicon-europe-2024/PXL_20240918_192310290.jpg
+  display: /posts/kicon-europe-2024/assets/PXL_20240918_192310290.jpg
+  post: kicon-europe-2024
+  title: The Rotunde the evening before doors open — standing tables set up, venue empty
+  description: 'The Rotunde the evening before doors open — standing tables set up, venue empty — from the article “KiCon Europe 2024: Bochum Goes International” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2024'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - open-source
+  dct_master: 13.4
+  dct_display: 8.2
+- file: /assets/images/kicon-europe-2024/PXL_20240919_072728340.MP.jpg
+  display: /posts/kicon-europe-2024/assets/PXL_20240919_072728340.MP.jpg
+  post: kicon-europe-2024
+  title: Lukas Hartmann presenting on open hardware CPU modules at KiCon Europe 2024
+  description: 'Lukas Hartmann presenting on open hardware CPU modules at KiCon Europe 2024 — from the article “KiCon Europe 2024: Bochum Goes International” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2024'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - open-source
+  dct_master: 11.7
+  dct_display: 6.4
+- file: /assets/images/kicon-europe-2024/PXL_20240920_070542079.MP.jpg
+  display: /posts/kicon-europe-2024/assets/PXL_20240920_070542079.MP.jpg
+  post: kicon-europe-2024
+  title: Odin Holmes on stage at KiCon Europe 2024 — Edgy talk
+  description: 'Odin Holmes on stage at KiCon Europe 2024 — Edgy talk — from the article “KiCon Europe 2024: Bochum Goes International” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2024'
+  source: https://maxclerkwell.tech/posts/kicon-europe-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - conferences
+  - open-source
+  dct_master: 12.1
+  dct_display: 6.2
+- file: /assets/images/machine-consciousness-may-2026/title1.jpg
+  display: /posts/machine-consciousness-may-2026/assets/title1.jpg
+  post: machine-consciousness-may-2026
+  title: Are Machines Conscious?
+  description: Are Machines Conscious? — from the article “Are Machines Conscious? A Snapshot” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/machine-consciousness-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - ai
+  - philosophy
+  dct_master: 7.4
+  dct_display: 15.4
+- file: /assets/images/msu-eis-2024/PXL_20240902_154058745.MP.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240902_154058745.MP.jpg
+  post: msu-eis-2024
+  title: Tabea Bökelmann on the MSU campus — Bronze Bobcat in the background, first day in Bozeman
+  description: 'Tabea Bökelmann on the MSU campus — Bronze Bobcat in the background, first day in Bozeman — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 9.5
+  dct_display: 6.7
+- file: /assets/images/msu-eis-2024/PXL_20240903_190205585.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240903_190205585.jpg
+  post: msu-eis-2024
+  title: Final preparations in Prof. Warnat's lab the day before deployment
+  description: 'Final preparations in Prof. Warnat''s lab the day before deployment — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 12.8
+  dct_display: 6.7
+- file: /assets/images/msu-eis-2024/PXL_20240904_133642042.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_133642042.jpg
+  post: msu-eis-2024
+  title: The rented Ram Rebel — transport for the deployment equipment
+  description: 'The rented Ram Rebel — transport for the deployment equipment — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 8.9
+  dct_display: 6.9
+- file: /assets/images/msu-eis-2024/PXL_20240904_160651813.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_160651813.jpg
+  post: msu-eis-2024
+  title: Deployment team at the Clark Fork site — bridge crossing, canopy tent, and a lot of cable
+  description: 'Deployment team at the Clark Fork site — bridge crossing, canopy tent, and a lot of cable — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 10.8
+  dct_display: 7.6
+- file: /assets/images/msu-eis-2024/PXL_20240904_164739822.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_164739822.jpg
+  post: msu-eis-2024
+  title: 'The sensor housing: PVC tube with the EIS electrode chip and flow apertures'
+  description: 'The sensor housing: PVC tube with the EIS electrode chip and flow apertures — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 41.4
+  dct_display: 16.8
+- file: /assets/images/msu-eis-2024/PXL_20240904_164825527.MP.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_164825527.MP.jpg
+  post: msu-eis-2024
+  title: Running cable from the bridge to the measurement hut
+  description: 'Running cable from the bridge to the measurement hut — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 6.3
+  dct_display: 5.2
+- file: /assets/images/msu-eis-2024/PXL_20240904_165019636.MP.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_165019636.MP.jpg
+  post: msu-eis-2024
+  title: Installing the sensor array at the riverbank — just below the bridge footing
+  description: 'Installing the sensor array at the riverbank — just below the bridge footing — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 8.0
+  dct_display: 5.7
+- file: /assets/images/msu-eis-2024/PXL_20240904_172602699.MP.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_172602699.MP.jpg
+  post: msu-eis-2024
+  title: Field command centre — reviewing progress under the canopy
+  description: 'Field command centre — reviewing progress under the canopy — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 9.6
+  dct_display: 6.5
+- file: /assets/images/msu-eis-2024/PXL_20240904_192645256.jpg
+  display: /posts/msu-eis-2024/assets/PXL_20240904_192645256.jpg
+  post: msu-eis-2024
+  title: Commissioning the datalogger software inside the measurement hut — first live EIS data from the Clark Fork
+  description: 'Commissioning the datalogger software inside the measurement hut — first live EIS data from the Clark Fork — from the article “Biofilms in Rivers: EIS at the Clark Fork” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/msu-eis-2024/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  dct_master: 9.1
+  dct_display: 6.2
+- file: /assets/images/omnaiscope-august-2025/architecture.png
+  display: /posts/omnaiscope-august-2025/assets/architecture.png
+  post: omnaiscope-august-2025
+  title: 'Data-server architecture: oscilloscope → local server → REST/WebSocket → analysis services'
+  description: 'Data-server architecture: oscilloscope → local server → REST/WebSocket → analysis services — from the article “OmnAIScope: A USB Oscilloscope for Automotive Diagnostics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/omnaiscope-august-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - automotive
+  - open-source
+  dct_master: 3.1
+  dct_display: 7.0
+- file: /assets/images/omnaiscope-august-2025/demosetup.jpg
+  display: /posts/omnaiscope-august-2025/assets/demosetup.jpg
+  post: omnaiscope-august-2025
+  title: Demo setup at an automotive trade show — four scopes, a laptop, the Messkit 153 case
+  description: 'Demo setup at an automotive trade show — four scopes, a laptop, the Messkit 153 case — from the article “OmnAIScope: A USB Oscilloscope for Automotive Diagnostics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/omnaiscope-august-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - automotive
+  - open-source
+  dct_master: 13.9
+  dct_display: 9.3
+- file: /assets/images/omnaiscope-august-2025/early_prototype.jpg
+  display: /posts/omnaiscope-august-2025/assets/early_prototype.jpg
+  post: omnaiscope-august-2025
+  title: Four OmnAIScope prototypes — BNC input on top, USB-C on the bottom
+  description: 'Four OmnAIScope prototypes — BNC input on top, USB-C on the bottom — from the article “OmnAIScope: A USB Oscilloscope for Automotive Diagnostics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/omnaiscope-august-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - automotive
+  - open-source
+  dct_master: 25.8
+  dct_display: 17.0
+- file: /assets/images/omnaiscope-august-2025/omnaiscope-kit.jpg
+  display: /posts/omnaiscope-august-2025/assets/omnaiscope-kit.jpg
+  post: omnaiscope-august-2025
+  title: OmnAIScope complete kit — scope, BNC adapter, USB cable, probe, and accessories in carry case
+  description: 'OmnAIScope complete kit — scope, BNC adapter, USB cable, probe, and accessories in carry case — from the article “OmnAIScope: A USB Oscilloscope for Automotive Diagnostics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/omnaiscope-august-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - automotive
+  - open-source
+  dct_master: 10.4
+  dct_display: 6.8
+- file: /assets/images/omnaiscope-august-2025/omnaiscope-retail.jpg
+  display: /posts/omnaiscope-august-2025/assets/omnaiscope-retail.jpg
+  post: omnaiscope-august-2025
+  title: OmnAIScope USB oscilloscope with BNC probe cable — red anodised aluminium housing
+  description: 'OmnAIScope USB oscilloscope with BNC probe cable — red anodised aluminium housing — from the article “OmnAIScope: A USB Oscilloscope for Automotive Diagnostics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/omnaiscope-august-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - automotive
+  - open-source
+  dct_master: 6.0
+  dct_display: 6.9
+- file: /assets/images/omnaiscope-august-2025/photo_2026-04-14_16-25-24.jpg
+  display: /posts/omnaiscope-august-2025/assets/photo_2026-04-14_16-25-24.jpg
+  post: omnaiscope-august-2025
+  title: PCB, BNC connector, and housing — the three components before assembly
+  description: 'PCB, BNC connector, and housing — the three components before assembly — from the article “OmnAIScope: A USB Oscilloscope for Automotive Diagnostics” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2025'
+  source: https://maxclerkwell.tech/posts/omnaiscope-august-2025/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - pcb
+  - electronics
+  - automotive
+  - open-source
+  dct_master: 16.1
+  dct_display: 10.5
+- file: /assets/images/pdsc4k-may-2026/architecture.png
+  display: /posts/pdsc4k-may-2026/assets/architecture.png
+  post: pdsc4k-may-2026
+  title: The four zones of a real data pipeline — acquisition, warehousing, conditioning, and distribution
+  description: 'The four zones of a real data pipeline — acquisition, warehousing, conditioning, and distribution — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 5.4
+  dct_display: 5.4
+- file: /assets/images/pdsc4k-may-2026/gemesys.jpg
+  display: /posts/pdsc4k-may-2026/assets/gemesys.jpg
+  post: pdsc4k-may-2026
+  title: Real systems and real data – one of the practical examples on display
+  description: 'Real systems and real data – one of the practical examples on display — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 10.3
+  dct_display: 7.8
+- file: /assets/images/pdsc4k-may-2026/keynote-me-on-stage.jpg
+  display: /posts/pdsc4k-may-2026/assets/keynote-me-on-stage.jpg
+  post: pdsc4k-may-2026
+  title: Delivering the keynote at PDSC4K – four zones, one responsibility per box
+  description: 'Delivering the keynote at PDSC4K – four zones, one responsibility per box — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 9.5
+  dct_display: 8.1
+- file: /assets/images/pdsc4k-may-2026/last-of-the-last.jpg
+  display: /posts/pdsc4k-may-2026/assets/last-of-the-last.jpg
+  post: pdsc4k-may-2026
+  title: Last of the last – conversations still going strong on the rooftop
+  description: 'Last of the last – conversations still going strong on the rooftop — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 11.6
+  dct_display: 10.1
+- file: /assets/images/pdsc4k-may-2026/lukas-jakubczyk-motor-vibration-analysis.jpg
+  display: /posts/pdsc4k-may-2026/assets/lukas-jakubczyk-motor-vibration-analysis.jpg
+  post: pdsc4k-may-2026
+  title: Lukas Jakubczyk presenting motor vibration analysis at PDSC4K
+  description: Lukas Jakubczyk at the lectern in front of a projected slide during his talk on motor vibration analysis at PDSC4K 2026, stage lit in magenta. By Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 15.7
+  dct_display: 10.9
+- file: /assets/images/pdsc4k-may-2026/lunch.jpg
+  display: /posts/pdsc4k-may-2026/assets/lunch.jpg
+  post: pdsc4k-may-2026
+  title: Lunch and the conversations that actually move projects forward
+  description: 'Lunch and the conversations that actually move projects forward — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 15.0
+  dct_display: 9.3
+- file: /assets/images/pdsc4k-may-2026/slides-english-architecture.png
+  display: /posts/pdsc4k-may-2026/assets/slides-english/architecture.png
+  post: pdsc4k-may-2026
+  title: The four zones of a real data pipeline — acquisition, warehousing, conditioning, and distribution
+  description: 'The four zones of a real data pipeline — acquisition, warehousing, conditioning, and distribution — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 5.4
+  dct_display: 5.4
+- file: /assets/images/pdsc4k-may-2026/slides-english-ceph.png
+  display: /posts/pdsc4k-may-2026/assets/slides-english/ceph.png
+  post: pdsc4k-may-2026
+  title: Selfie in the lab with a row of tower PCs forming a Ceph cluster
+  description: Selfie of Stephan Bökelmann in a lab with a row of recycled tower PCs on a bench forming a Ceph storage cluster, a colleague working at a desk beside them — slide from the PDSC4K 2026 talk. By Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 12.2
+  dct_display: 8.4
+- file: /assets/images/pdsc4k-may-2026/slides-english-horus.png
+  display: /posts/pdsc4k-may-2026/assets/slides-english/horus.png
+  post: pdsc4k-may-2026
+  title: horus monitoring PoE gateway in red aluminium housing
+  description: 'Two red anodised aluminium housings of the horus monitoring gateway on a wooden table: one showing eight M12 PoE ports, a WAN port and 48 V DC input, the other opened to reveal a skAInet carrier board with a compute module — slide from the PDSC4K 2026 talk. By Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/pdsc4k-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  dct_master: 12.1
+  dct_display: 10.6
+- file: /assets/images/skainet-powersense-jan-2026/photo_1_2026-04-21_12-42-49.jpg
+  display: /posts/skainet-powersense-jan-2026/assets/photo_1_2026-04-21_12-42-49.jpg
+  post: skainet-powersense-jan-2026
+  title: 'Three generations of housing (left to right: early black prototype, tall white variant, final grey enclosure with…'
+  description: 'Three generations of housing (left to right: early black prototype, tall white variant, final grey enclosure with red locking clip and RJ45 port) alongside the ferrite-embedded clamping mechanism for the three-phase conductors. — from the article “Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/skainet-powersense-jan-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  - engineering
+  dct_master: 11.3
+  dct_display: 10.0
+- file: /assets/images/skainet-powersense-jan-2026/photo_2_2026-04-21_12-42-49.jpg
+  display: /posts/skainet-powersense-jan-2026/assets/photo_2_2026-04-21_12-42-49.jpg
+  post: skainet-powersense-jan-2026
+  title: 'Custom-developed PoE infrastructure for the switching stations: QUINT POWER 48V supply feeding two DB ECG PoE8…'
+  description: 'Custom-developed PoE infrastructure for the switching stations: QUINT POWER 48V supply feeding two DB ECG PoE8 DIN-rail switches — built because the right hardware simply didn''t exist yet. — from the article “Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/skainet-powersense-jan-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  - engineering
+  dct_master: 9.4
+  dct_display: 7.0
+- file: /assets/images/skainet-powersense-jan-2026/photo_3_2026-04-21_12-42-49.jpg
+  display: /posts/skainet-powersense-jan-2026/assets/photo_3_2026-04-21_12-42-49.jpg
+  post: skainet-powersense-jan-2026
+  title: DIANA Edge Computer Gateway — DB-branded prototype of the rack-mount edge compute unit developed alongside the…
+  description: 'DIANA Edge Computer Gateway — DB-branded prototype of the rack-mount edge compute unit developed alongside the PowerSense to aggregate and forward sensor data. — from the article “Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/skainet-powersense-jan-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  - engineering
+  dct_master: 9.5
+  dct_display: 9.2
+- file: /assets/images/skainet-powersense-jan-2026/photo_4_2026-04-21_12-42-49.jpg
+  display: /posts/skainet-powersense-jan-2026/assets/photo_4_2026-04-21_12-42-49.jpg
+  post: skainet-powersense-jan-2026
+  title: 'Two bare PCBs: the sensor antenna board (top) and the PoE main board with RJ45 connector (bottom) — before any…'
+  description: 'Two bare PCBs: the sensor antenna board (top) and the PoE main board with RJ45 connector (bottom) — before any housing existed — from the article “Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/skainet-powersense-jan-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  - engineering
+  dct_master: 9.0
+  dct_display: 8.6
+- file: /assets/images/swd-openocd-blinky-may-2026/Title.jpg
+  display: /posts/swd-openocd-blinky-may-2026/assets/Title.jpg
+  post: swd-openocd-blinky-may-2026
+  title: STM32F303K8 Nucleo-32 on the desk
+  description: 'STM32F303K8 Nucleo-32 on the desk — from the article “Zero to One: Fun with SWD” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/swd-openocd-blinky-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - embedded
+  - zero-to-one
+  dct_master: 13.7
+  dct_display: 8.8
+- file: /assets/images/swd-openocd-blinky-may-2026/screenshot.png
+  display: /posts/swd-openocd-blinky-may-2026/assets/screenshot.png
+  post: swd-openocd-blinky-may-2026
+  title: Telnet session screenshot
+  description: 'Telnet session screenshot — from the article “Zero to One: Fun with SWD” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/swd-openocd-blinky-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - embedded
+  - zero-to-one
+  dct_master: 6.3
+  dct_display: 5.5
+- file: /assets/images/why-conferences-march-2026/20190202_220352.jpg
+  display: /posts/why-conferences-march-2026/assets/20190202_220352.jpg
+  post: why-conferences-march-2026
+  title: Bar social at code:dive, Wrocław — the evenings are the real conference
+  description: 'Bar social at code:dive, Wrocław — the evenings are the real conference — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 11.3
+  dct_display: 5.6
+- file: /assets/images/why-conferences-march-2026/20190218_071328.jpg
+  display: /posts/why-conferences-march-2026/assets/20190218_071328.jpg
+  post: why-conferences-march-2026
+  title: Early morning on the Kona waterfront — ISO C++ Committee meeting, February 2019
+  description: 'Early morning on the Kona waterfront — ISO C++ Committee meeting, February 2019 — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 11.7
+  dct_display: 7.1
+- file: /assets/images/why-conferences-march-2026/IMG_20220531_220208.jpg
+  display: /posts/why-conferences-march-2026/assets/IMG_20220531_220208.jpg
+  post: why-conferences-march-2026
+  title: emBO++ social evening — the conversations here continue all the way through the programme
+  description: 'emBO++ social evening — the conversations here continue all the way through the programme — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 15.5
+  dct_display: 7.9
+- file: /assets/images/why-conferences-march-2026/IMG_20220601_131444.jpg
+  display: /posts/why-conferences-march-2026/assets/IMG_20220601_131444.jpg
+  post: why-conferences-march-2026
+  title: GSI/FAIR campus in Darmstadt — PANDA collaboration meeting
+  description: 'GSI/FAIR campus in Darmstadt — PANDA collaboration meeting — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 12.6
+  dct_display: 7.6
+- file: /assets/images/why-conferences-march-2026/IMG_20230324_092047.jpg
+  display: /posts/why-conferences-march-2026/assets/IMG_20230324_092047.jpg
+  post: why-conferences-march-2026
+  title: emBO++ 2023 — the conference back at full pace after the pandemic years
+  description: 'emBO++ 2023 — the conference back at full pace after the pandemic years — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 3.9
+  dct_display: 2.7
+- file: /assets/images/why-conferences-march-2026/PXL_20231103_182701752.MP.jpg
+  display: /posts/why-conferences-march-2026/assets/PXL_20231103_182701752.MP.jpg
+  post: why-conferences-march-2026
+  title: A smaller OSF evening event — focused format, green lighting, engaged audience
+  description: 'A smaller OSF evening event — focused format, green lighting, engaged audience — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 8.4
+  dct_display: 5.6
+- file: /assets/images/why-conferences-march-2026/PXL_20240411_144041411.MP.jpg
+  display: /posts/why-conferences-march-2026/assets/PXL_20240411_144041411.MP.jpg
+  post: why-conferences-march-2026
+  title: Inside a PANDA collaboration session — "a glimpse at the many experimental groups"
+  description: 'Inside a PANDA collaboration session — "a glimpse at the many experimental groups" — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 19.9
+  dct_display: 9.1
+- file: /assets/images/why-conferences-march-2026/PXL_20240919_072728340.MP.jpg
+  display: /posts/why-conferences-march-2026/assets/PXL_20240919_072728340.MP.jpg
+  post: why-conferences-march-2026
+  title: KiCon Europe 2024, Rotunde Bochum — Lukas Hartmann on open hardware
+  description: 'KiCon Europe 2024, Rotunde Bochum — Lukas Hartmann on open hardware — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 11.7
+  dct_display: 6.4
+- file: /assets/images/why-conferences-march-2026/PXL_20250306_155554013.MP.jpg
+  display: /posts/why-conferences-march-2026/assets/PXL_20250306_155554013.MP.jpg
+  post: why-conferences-march-2026
+  title: emBO++ 2025 — conferences have not fully recovered to pre-COVID numbers yet
+  description: 'emBO++ 2025 — conferences have not fully recovered to pre-COVID numbers yet — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 10.5
+  dct_display: 6.7
+- file: /assets/images/why-conferences-march-2026/PXL_20260320_082116266.MP.jpg
+  display: /posts/why-conferences-march-2026/assets/PXL_20260320_082116266.MP.jpg
+  post: why-conferences-march-2026
+  title: emBO++ 2026 — still running, still worth it
+  description: 'emBO++ 2026 — still running, still worth it — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 13.5
+  dct_display: 8.0
+- file: /assets/images/why-conferences-march-2026/stephan_und_bjarne.png
+  display: /posts/why-conferences-march-2026/assets/stephan_und_bjarne.png
+  post: why-conferences-march-2026
+  title: With Bjarne Stroustrup — Kona, 2019
+  description: 'With Bjarne Stroustrup — Kona, 2019 — from the article “Ten Years of Conferences: What They''re Actually For” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-conferences-march-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - conferences
+  - personal
+  - open-source
+  dct_master: 5.2
+  dct_display: 10.5
+- file: /assets/images/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png
+  display: /assets/posts/alinx-ax7020-yocto-linux-qspi-august-2026/ssh-login-ax7020.png
+  post: alinx-ax7020-yocto-linux-qspi-august-2026
+  title: Key-only SSH login on the AX7020
+  description: 'Key-only SSH login on the AX7020 — from the article “ALINX AX7020, Stages 2 & 3: A Yocto Linux in QSPI Flash That Fetches Its Own Updates” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/alinx-ax7020-yocto-linux-qspi-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - alinx
+  - zynq
+  - yocto
+  - linux
+  - u-boot
+  - kexec
+  - dropbear
+  - fit-image
+  - qspi
+  - embedded
+  - bring-up
+  dct_master: 4.5
+  dct_display: 7.4
+- file: /assets/images/alinx-series/ax7020-board-thumb.jpg
+  display: /assets/posts/alinx-series/ax7020-board-thumb.jpg
+  post: alinx-series
+  title: ALINX AX7020 Zynq-7020 board powered up (thumbnail)
+  description: Close-up of the ALINX AX7020 development board with the Xilinx Zynq-7020 SoC, a red power LED lit, USB, Ethernet and boot-mode jumpers visible. By Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/alinx/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords: []
+  dct_master: 4.3
+  dct_display: 7.4
+- file: /assets/images/hdl-for-netlists/titlepic.png
+  display: /assets/posts/hdl-for-netlists/titlepic.png
+  post: hdl-for-netlists
+  title: 'A dense KiCad schematic with multiple Ethernet PHY blocks, bypass capacitors, and interconnected nets: the kind of…'
+  description: 'A dense KiCad schematic with multiple Ethernet PHY blocks, bypass capacitors, and interconnected nets: the kind of drawing that is hard to review and harder to diff — from the article “A Hill I Am Willing to Die On: HDL for PCB Netlists” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/hdl-for-netlists-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords: []
+  dct_master: 4.5
+  dct_display: 7.4
+- file: /assets/images/orbitals-to-bands-august-2026/fig_atom_levels.png
+  display: /assets/posts/orbitals-to-bands-august-2026/fig_atom_levels.png
+  post: orbitals-to-bands-august-2026
+  title: Discrete energy levels of a single atom
+  description: Discrete energy levels of a single atom — from the article “Why Does Copper Conduct? A Tour for Non-Physicists” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/orbitals-to-bands-august-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - physics
+  - education
+  dct_master: 3.8
+  dct_display: 5.4
+- file: /assets/images/wtf-are-fpgas-june-2026/vivado-sim.png
+  display: /assets/posts/wtf-are-fpgas-june-2026/vivado-sim.png
+  post: wtf-are-fpgas-june-2026
+  title: 'Vivado simulation waveform: signal list on the left, time-domain traces on the right. State machine signals, AXI4…'
+  description: 'Vivado simulation waveform: signal list on the left, time-domain traces on the right. State machine signals, AXI4 bus signals, and UDP Tx module outputs are visible across a ~40 ns window around 602 µs. — from the article “WTF are FPGAs: A Beginner''s Overview of Field-Programmable Gate Arrays” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/wtf-are-fpgas-june-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  dct_master: 3.8
+  dct_display: 3.0
+- file: /assets/images/auto-intern-obd-vcds-may-2026/VCDS-Screenshot_3_2026-05-06_11-34-03.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/VCDS-Screenshot_3_2026-05-06_11-34-03.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: VCDS — fault memory readout
+  description: VCDS — fault memory readout — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 4.2
+  dct_display: 2.6
+- file: /assets/images/auto-intern-obd-vcds-may-2026/VCDS-Screenshot_4_2026-05-06_11-34-03.jpg
+  display: /posts/auto-intern-obd-vcds-may-2026/assets/VCDS-Screenshot_4_2026-05-06_11-34-03.jpg
+  post: auto-intern-obd-vcds-may-2026
+  title: VCDS — extended live data
+  description: VCDS — extended live data — from the article “How Two Teenagers, a Printer Plug, and a Forum Post Built a Company” by Stephan Bökelmann (MaxClerkwell).
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/auto-intern-obd-vcds-may-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - automotive
+  - personal
+  dct_master: 3.6
+  dct_display: 4.6
+- file: /assets/images/skainet-powersense-jan-2026/photo_1_2026-04-21_12-43-36.jpg
+  display: /posts/skainet-powersense-jan-2026/assets/photo_1_2026-04-21_12-43-36.jpg
+  post: skainet-powersense-jan-2026
+  title: Measured current waveforms for L1, L2, L3 against reference — phase angles 257°, 262°, 323°. Orange (measured) and…
+  description: 'Measured current waveforms for L1, L2, L3 against reference — phase angles 257°, 262°, 323°. Orange (measured) and blue (reference) traces align closely across all three phases. — from the article “Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/skainet-powersense-jan-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  - engineering
+  dct_master: 3.9
+  dct_display: 4.1
+- file: /assets/images/skainet-powersense-jan-2026/photo_2_2026-04-21_12-43-36.jpg
+  display: /posts/skainet-powersense-jan-2026/assets/photo_2_2026-04-21_12-43-36.jpg
+  post: skainet-powersense-jan-2026
+  title: 'B-field crosstalk between phases: L1→L1 at 100%, L1→L2 at 2.22%, L1→L3 at 0.34% — demonstrating excellent channel…'
+  description: 'B-field crosstalk between phases: L1→L1 at 100%, L1→L2 at 2.22%, L1→L3 at 0.34% — demonstrating excellent channel isolation from the embedded ferrite geometry. — from the article “Ten Years of PowerSense: Blood, Sweat, and Ferrite Cores” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/skainet-powersense-jan-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - monitoring
+  - engineering
+  dct_master: 3.6
+  dct_display: 5.6

@@ -26,6 +26,71 @@ Jekyll requires Ruby and Bundler. The site uses `github-pages` gem to mirror the
 - `_articles/<slug>.md` — **new** blog posts (Jekyll `articles` collection)
 - `_includes/get-blog-posts.html` — single source of truth for the unified post list (legacy pages + new collection documents)
 
+## Images (mandatory pipeline)
+
+Every picture that is used on the site, **and** every picture Stephan merely
+wants to have crawlable on the web without using it on a page, lives as a
+full-resolution **master** in the archive folder `assets/images/`:
+
+- `assets/images/<post-slug>/<file>` for article images,
+- `assets/images/portraits/` for portraits and other stand-alone pictures,
+- `assets/images/site/` for anything else.
+
+A master ALWAYS carries all four of these, no exceptions:
+
+1. the four-line text watermark (`https://maxclerkwell.tech` / `Stephan Bökelmann`
+   / `施泓杰` / `MaxClerkwell`), centred, filling the frame, at **2 % opacity**,
+2. the keyed **DCT (frequency-domain) watermark** with payload `maxclerkwell.tech`
+   (`scripts/dct_watermark.py`; key from env `WM_KEY`),
+3. complete **IPTC/XMP/EXIF metadata** (title, description = alt text, creator,
+   copyright, credit, keywords, source URL, year),
+4. the **licensing link**: XMP `WebStatement` → `https://maxclerkwell.tech/licensing/#images`
+   and `LicensorURL` → `…/licensing/#contact`.
+
+When a picture is shown anywhere on the site, the page never embeds the master.
+It embeds a **display copy**: downscaled (longest side 960 px, JPEG q80) for
+fast loading, and again with text watermark, a freshly embedded DCT watermark
+(scaling destroys the master's) and the same metadata. Display copies live where
+the page expects them (`assets/posts/<slug>/…`, legacy `posts/<slug>/assets/…`,
+`slides/Avatar.jpg`, …) — legacy paths are never moved or renamed.
+
+**Lightboxes always open the master** from `assets/images/`, not the display
+copy. `_includes/lightbox.html` does this via the display→master map generated
+from `_data/images.yml`; use that include instead of writing a new lightbox.
+
+`/images/` (`images.html`, linked in the footer) is a plain text list of all
+masters without previews; each entry opens the master in the lightbox. It is
+generated from the manifest — never edit it by hand.
+
+### Workflow for a new picture
+
+1. Put the original at the display path (or, for a crawl-only picture, process
+   it by hand into `assets/images/portraits/` and add a manifest entry with
+   `display: null`).
+2. Write a meaningful alt text in the Markdown — it becomes title, description
+   and alt metadata.
+3. Run `python3 scripts/images.py`. It creates the master, replaces the file at
+   the display path with the display copy, verifies that both DCT watermarks
+   read back, and appends the entry to `_data/images.yml`. Entries already in
+   the manifest are never reprocessed. `--remeta` re-reads the alt texts after you edited them and rewrites manifest and file metadata (pixels untouched), `--check` re-verifies all watermarks,
+   `--redisplay` rebuilds all display copies from the masters.
+4. Commit master, display copy and manifest together.
+
+Rules and edge cases:
+
+- **Third-party pictures** (logos, historic photos, screenshots of other
+  people's content) are never watermarked and never get Stephan's copyright
+  metadata. List them in `THIRD_PARTY` in `scripts/images.py`; they appear in the
+  manifest as `rights: third-party` and are not shown on `/images/`. When in
+  doubt whether a picture is Stephan's own, ask.
+- Portraits are `license: All rights reserved`; article figures and photos are
+  `CC BY-SA 4.0` (see `/licensing/`).
+- Animated GIFs keep their pixels (metadata only); SVGs are not processed.
+- The original, unwatermarked file is not kept in the working tree. Never run
+  the pipeline on a file that is already a display copy (the manifest prevents
+  this; do not delete manifest entries to "redo" an image — restore the
+  original from git history first).
+
 ## Adding a blog post
 
 ### Legacy posts (the 26 articles that already exist)

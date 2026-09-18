@@ -60,7 +60,7 @@ sitemap: false
     foaf:img <https://nabla-b.engineering/assets/img/meihui-huang.jpg> ;
     foaf:mbox <mailto:collaboration@maxclerkwell.tech> ;
     schema:identifier <https://orcid.org/0009-0003-3477-9024> ;
-    owl:sameAs <https://github.com/kathamatician>, <https://www.linkedin.com/in/meihui-huang/> ;
+    owl:sameAs <https://kathamatician.com/>, <https://kathamatician.github.io/>, <https://github.com/kathamatician>, <https://orcid.org/0009-0003-3477-9024>, <https://www.linkedin.com/in/meihui-huang/>, <https://www.researchgate.net/profile/Meihui-Huang> ;
     org:memberOf <https://nabla-b.engineering/#organization> ;
     foaf:knows <https://maxclerkwell.tech/#person> .
 

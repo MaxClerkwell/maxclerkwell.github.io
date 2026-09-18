@@ -1,0 +1,23 @@
+---
+layout: imprint
+title: "Images"
+description: "Plain index of all photographs, figures and portraits published on maxclerkwell.tech by Stephan Bökelmann (MaxClerkwell), each linked at full resolution."
+permalink: /images/
+---
+<h1>Images</h1>
+<p>All pictures published on this site, at full resolution. Click a name to open it.
+Reuse terms: <a href="{{ '/licensing/#images' | relative_url }}">Licensing</a> — name
+“MaxClerkwell” and link back.</p>
+
+{% assign own = site.data.images | where: "rights", "own" %}
+{% assign groups = own | group_by: "source" %}
+{% for g in groups %}
+<h2 class="image-index-group">{% if g.name contains '/posts/' or g.name contains '/alinx/' %}<a href="{{ g.name | remove: site.url }}">{{ g.items.first.description | split: '“' | last | split: '”' | first }}</a>{% else %}Portraits{% endif %}</h2>
+<ul class="image-index">
+  {% for i in g.items %}
+  <li><a href="{{ i.file | relative_url }}" data-lightbox data-alt="{{ i.description | escape }}" data-caption="{{ i.title | escape }} · © {{ i.year }} Stephan Bökelmann (MaxClerkwell) · {{ i.license }}">{{ i.title }}</a> <span class="image-index-file">{{ i.file | split: '/' | last }}</span></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+{% include lightbox.html %}

@@ -3,6 +3,7 @@ title: "Post the Wrong Answer. You'll Learn More."
 date: 2026-06-19
 tags: [philosophy, personal]
 description: "Cunningham's Law says the fastest way to get the right answer online is to post the wrong one. I've been doing this accidentally for years, and I think there's something serious underneath the joke."
+mentions_ids: [https://kathamatician.com/#person]
 ---
 
 Someone on Quora asked: "Murphy's Law states that the best way to get the right answer on the internet is not to ask a question, it's to post the wrong answer. What are some examples where you applied this law?"
@@ -33,7 +34,7 @@ On Xiaohongshu, the comments were good. Several people with actual philosophy of
 
 The post did what I wanted it to do: it attracted people who knew more than me.
 
-This happens in person too. A few days ago I was talking to [Meihui Huang](https://github.com/kathamatician), a physicist who had just given a [presentation on neutrino oscillations](https://github.com/kathamatician/neutrino_oscillations). She mentioned that during the talk, someone had asked why a particular graph showed a sharp peak around 6 PeV. When she told me about it, I immediately started arguing that the most likely explanation was blazars: their jets produce a fairly narrow energy distribution, so if you detect them they can look nearly monoenergetic. I was confident. I was wrong.
+This happens in person too. A few days ago I was talking to [Meihui Huang](https://kathamatician.com/), a physicist who had just given a [presentation on neutrino oscillations](https://github.com/kathamatician/neutrino_oscillations). She mentioned that during the talk, someone had asked why a particular graph showed a sharp peak around 6 PeV. When she told me about it, I immediately started arguing that the most likely explanation was blazars: their jets produce a fairly narrow energy distribution, so if you detect them they can look nearly monoenergetic. I was confident. I was wrong.
 
 She listened, thought about it, and later that night sent me a message pointing out the Glashow resonance. At that moment I realised I had not been looking at an energy spectrum of detected events at all. I had been looking at a diagram of the effective cross section. Two completely different things. I found the paper, read it, and corrected my understanding.
 

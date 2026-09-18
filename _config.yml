@@ -1,6 +1,6 @@
 timezone: Europe/Berlin
 title: "Stephan Bökelmann"
-tagline: "From tape-out to TypeScript."
+tagline: "Embedded Systems Architect (DAQ, FPGA, PCB). From tape-out to TypeScript. Bochum."
 email: "stephan@boekelmann.net"
 url: "https://maxclerkwell.tech"
 baseurl: ""
@@ -46,6 +46,7 @@ exclude:
   - AGENTS.md
   - CLAUDE.md
   - "*.sh"
+  - scripts/
 
 collections:
   articles:
