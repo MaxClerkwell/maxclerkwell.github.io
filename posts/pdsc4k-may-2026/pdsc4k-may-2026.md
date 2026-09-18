@@ -85,6 +85,8 @@ The full slide deck (English version of the keynote) is embedded below.
   <p><a href="assets/slides.pdf">Download the full keynote slides as PDF</a></p>
 </object>
 
+The LaTeX source of the slides, in English and German, is on GitHub: [MaxClerkwell/pdsc4k-talk](https://github.com/MaxClerkwell/pdsc4k-talk).
+
 ## The Rest of the Day
 
 Philipp Lehmann followed with a practical report on building a low-budget Ceph cluster. The combination of the morning keynote and his talk made the central tension of many data projects visible: how do you collect data reliably, and how do you store it in a way that remains usable and affordable for years?

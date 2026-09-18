@@ -1646,7 +1646,7 @@
   dct_master: 15.0
   dct_display: 9.3
 - file: /assets/images/pdsc4k-may-2026/slides-english-architecture.png
-  display: /posts/pdsc4k-may-2026/assets/slides-english/architecture.png
+  display: null
   post: pdsc4k-may-2026
   title: The four zones of a real data pipeline — acquisition, warehousing, conditioning, and distribution
   description: 'The four zones of a real data pipeline — acquisition, warehousing, conditioning, and distribution — from the article “PDSC4K 2026: Everything, Everywhere, All at Once” by Stephan Bökelmann (MaxClerkwell).'
@@ -1657,9 +1657,8 @@
   keywords:
   - conferences
   dct_master: 5.4
-  dct_display: 5.4
 - file: /assets/images/pdsc4k-may-2026/slides-english-ceph.png
-  display: /posts/pdsc4k-may-2026/assets/slides-english/ceph.png
+  display: null
   post: pdsc4k-may-2026
   title: Selfie in the lab with a row of tower PCs forming a Ceph cluster
   description: Selfie of Stephan Bökelmann in a lab with a row of recycled tower PCs on a bench forming a Ceph storage cluster, a colleague working at a desk beside them — slide from the PDSC4K 2026 talk. By Stephan Bökelmann (MaxClerkwell).
@@ -1670,9 +1669,8 @@
   keywords:
   - conferences
   dct_master: 12.2
-  dct_display: 8.4
 - file: /assets/images/pdsc4k-may-2026/slides-english-horus.png
-  display: /posts/pdsc4k-may-2026/assets/slides-english/horus.png
+  display: null
   post: pdsc4k-may-2026
   title: horus monitoring PoE gateway in red aluminium housing
   description: 'Two red anodised aluminium housings of the horus monitoring gateway on a wooden table: one showing eight M12 PoE ports, a WAN port and 48 V DC input, the other opened to reveal a skAInet carrier board with a compute module — slide from the PDSC4K 2026 talk. By Stephan Bökelmann (MaxClerkwell).'
@@ -1683,7 +1681,6 @@
   keywords:
   - conferences
   dct_master: 12.1
-  dct_display: 10.6
 - file: /assets/images/skainet-powersense-jan-2026/photo_1_2026-04-21_12-42-49.jpg
   display: /posts/skainet-powersense-jan-2026/assets/photo_1_2026-04-21_12-42-49.jpg
   post: skainet-powersense-jan-2026
