@@ -85,6 +85,8 @@ Rules and edge cases:
   doubt whether a picture is Stephan's own, ask.
 - Portraits are `license: All rights reserved`; article figures and photos are
   `CC BY-SA 4.0` (see `/licensing/`).
+- A thumbnail named `<name>-800.jpg` next to `<name>.jpg` (used with `data-full`) shares the master of the full
+  file; it is recorded as `variant: true` and hidden from `/images/`.
 - Animated GIFs keep their pixels (metadata only); SVGs are not processed.
 - The original, unwatermarked file is not kept in the working tree. Never run
   the pipeline on a file that is already a display copy (the manifest prevents

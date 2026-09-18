@@ -10,6 +10,7 @@ Reuse terms: <a href="{{ '/licensing/#images' | relative_url }}">Licensing</a> �
 “MaxClerkwell” and link back.</p>
 
 {% assign own = site.data.images | where: "rights", "own" %}
+{% assign own = own | where_exp: "i", "i.variant != true" %}
 {% assign groups = own | group_by: "source" %}
 {% for g in groups %}
 <h2 class="image-index-group">{% if g.name contains '/posts/' or g.name contains '/alinx/' %}<a href="{{ g.name | remove: site.url }}">{{ g.items.first.description | split: '“' | last | split: '”' | first }}</a>{% else %}Portraits{% endif %}</h2>

@@ -70,8 +70,8 @@ def post_of(path):
         return None, None
     slug = m.group(1)
     cands = [ROOT / "_articles" / f"{slug}.md", *sorted((ROOT / "posts" / slug).glob("*.md"))]
-    if slug == "alinx-series":
-        cands.insert(0, ROOT / "alinx.md")
+    if slug.endswith("-series"):            # series landing pages: alinx.md, linkmicro.md, …
+        cands.insert(0, ROOT / f"{slug[:-7]}.md")
     md = next((c for c in cands if c.exists()), None)
     if md is None:                          # slug of the asset folder differs from the article file name
         needle = f"/assets/posts/{slug}/"
@@ -220,10 +220,21 @@ def main():
         return
 
     known = {e["display"].lstrip("/") for e in manifest if e.get("display")}
-    for rel in tracked_images():
-        if rel in known:
-            continue
+    # "<name>-800.jpg" next to "<name>.jpg" is a thumbnail of the same picture: it shares the
+    # master of the full file and is processed after it.
+    todo = [r for r in tracked_images() if r not in known]
+    def full_of(r):
+        m = re.match(r"(.*)-\d{3,4}(\.\w+)$", r)
+        return m.group(1) + m.group(2) if m and (ROOT / (m.group(1) + m.group(2))).exists() else None
+    todo.sort(key=lambda r: (full_of(r) is not None, r))
+    for rel in todo:
         src = ROOT / rel
+        if full_of(rel):
+            parent = next(x for x in manifest if x.get("display") == "/" + full_of(rel))
+            make_display(ROOT / parent["file"].lstrip("/"), src)
+            manifest.append({**parent, "display": "/" + rel, "variant": True, "dct_display": score(src)})
+            print("variant", rel)
+            continue
         slug, md = post_of(rel)
         if rel in THIRD_PARTY:
             manifest.append({"display": "/" + rel, "post": slug, "rights": "third-party"})
@@ -243,7 +254,7 @@ def main():
         sub = Path(rel).parent.name if Path(rel).parent.name not in ("assets", slug or "") else ""
         name = f"{sub}-{src.name}" if sub else src.name
         master = ROOT / ARCHIVE / (slug or "site") / name
-        purl = f"{SITE}/posts/{slug}/" if slug and slug != "alinx-series" else (f"{SITE}/alinx/" if slug else SITE + "/")
+        purl = f"{SITE}/posts/{slug}/" if slug and not slug.endswith("-series") else (f"{SITE}/{slug[:-7]}/" if slug else SITE + "/")
         e = {
             "file": "/" + str(master.relative_to(ROOT)),
             "display": "/" + rel,
