@@ -1,6 +1,7 @@
 ---
 title: "Post the Wrong Answer. You'll Learn More."
 date: 2026-06-19
+section: thoughts
 tags: [philosophy, personal]
 description: "Cunningham's Law says the fastest way to get the right answer online is to post the wrong one. I've been doing this accidentally for years, and I think there's something serious underneath the joke."
 mentions_ids: [https://kathamatician.com/#person]

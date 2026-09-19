@@ -2,6 +2,7 @@
 layout: post
 title: "If We Can Measure It, You Can Improve It"
 date: 2026-04-20
+section: thoughts
 tags: [ai, monitoring, philosophy]
 description: "Why we build monitoring systems — the case for industrial automation as human liberation, retrofit over greenfield, and why the sensor is the critical missing link between AI and the physical world."
 image: /posts/ai-gruppe-manifesto/assets/intro-bild.jpg

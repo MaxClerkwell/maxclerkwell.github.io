@@ -1,0 +1,19 @@
+{% comment %}
+  Splits the unified post list into the two sections of the site.
+
+  A post belongs to `thoughts` when its front matter says so:
+
+      section: thoughts
+
+  Everything else is `tech`. That way only the essays carry the field and the
+  43 technical articles need no front matter change at all. Both lists keep the
+  order established by get-blog-posts.html (newest first) and every post stays
+  at its existing URL — the split is a view, not a move.
+
+  Callers get: blog_posts (all), tech_posts, thoughts_posts.
+{% endcomment %}
+
+{% include get-blog-posts.html %}
+
+{% assign thoughts_posts = blog_posts | where_exp: "p", "p.section == 'thoughts'" %}
+{% assign tech_posts     = blog_posts | where_exp: "p", "p.section != 'thoughts'" %}

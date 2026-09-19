@@ -2,6 +2,7 @@
 layout: post
 title: "The Game of Life and the Limits of Prediction"
 date: 2026-05-04
+section: thoughts
 tags: [philosophy, physics]
 description: "A colleague called it 'useless math but super fun.' I objected. Conway's Game of Life connects self-replicating machines, Wolfram's computational irreducibility, and the unsettling possibility that entropy is not just disorder — it is the universe refusing to be calculated."
 keywords: "Conway Game of Life, cellular automata, computational irreducibility, Wolfram, entropy, complexity theory, self-replicating machines"

@@ -60,6 +60,8 @@
   {%- comment -%} Feed autodiscovery {%- endcomment -%}
   {% feed_meta %}
   <link rel="alternate" type="application/feed+json" title="{{ site.title }} (JSON Feed)" href="{{ '/feed.json' | absolute_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — Tech" href="{{ '/feed-tech.xml' | absolute_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — Thoughts" href="{{ '/feed-thoughts.xml' | absolute_url }}">
   <link rel="alternate" type="text/turtle" title="FOAF profile" href="{{ '/card.ttl' | absolute_url }}">
   <link rel="search" type="application/opensearchdescription+xml" title="{{ site.title }}" href="{{ '/opensearch.xml' | absolute_url }}">
   <!-- rel="me" — identity edges; the back-links on the platforms are set by the profile owner -->
@@ -111,6 +113,23 @@
     <div class="nav-links">
       <a href="{{ '/' | relative_url }}"
          {% if page.url == '/' or page.url == '/blog/' or page.url contains '/tags/' %}class="active"{% endif %}>Blog</a>
+      {%- comment -%}
+        A post highlights its own section; the archive pages highlight themselves.
+        Split into assigns on purpose: Liquid evaluates `and`/`or` right-to-left
+        with no precedence, so a compound condition here would not mean what it reads like.
+      {%- endcomment -%}
+      {%- assign in_thoughts = false -%}
+      {%- assign in_tech = false -%}
+      {%- if page.url == '/thoughts/' -%}{%- assign in_thoughts = true -%}
+      {%- elsif page.url == '/tech/' -%}{%- assign in_tech = true -%}
+      {%- elsif page.date -%}
+        {%- if page.section == 'thoughts' -%}{%- assign in_thoughts = true -%}
+        {%- else -%}{%- assign in_tech = true -%}{%- endif -%}
+      {%- endif -%}
+      <a href="{{ '/tech/' | relative_url }}"
+         {% if in_tech %}class="active"{% endif %}>Tech</a>
+      <a href="{{ '/thoughts/' | relative_url }}"
+         {% if in_thoughts %}class="active"{% endif %}>Thoughts</a>
       <a href="{{ '/about/' | relative_url }}"
          {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
       <a href="{{ '/talks/' | relative_url }}"
