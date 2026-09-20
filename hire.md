@@ -18,7 +18,7 @@ to serial product, from "we need a prototype" to "our vendor toolchain is
 holding us hostage".
 
 **Start a project:** [office@nabla-b.engineering](mailto:office@nabla-b.engineering?subject=Project%20inquiry%20via%20maxclerkwell.tech)
-· [LinkedIn](https://www.linkedin.com/in/accelerator-stephan/)
+· [LinkedIn](https://www.linkedin.com/in/stephan-boekelmann-bochum/)
 · Direct: [stephan@boekelmann.net](mailto:stephan@boekelmann.net)
 
 ## What I do

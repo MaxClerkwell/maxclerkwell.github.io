@@ -172,8 +172,8 @@ This blog is the canonical home for longform writing, usually one post per week.
   <a class="u-email" href="mailto:collaboration@maxclerkwell.tech">
     <i class="fas fa-handshake"></i> collaboration@maxclerkwell.tech <span style="opacity:0.6;">(social media collaborations)</span>
   </a>
-  <a class="u-url" href="https://www.linkedin.com/in/accelerator-stephan/" target="_blank" rel="me noopener noreferrer">
-    <i class="fab fa-linkedin"></i> www.linkedin.com/in/accelerator-stephan
+  <a class="u-url" href="https://www.linkedin.com/in/stephan-boekelmann-bochum/" target="_blank" rel="me noopener noreferrer">
+    <i class="fab fa-linkedin"></i> www.linkedin.com/in/stephan-boekelmann-bochum
   </a>
   <a class="u-url" href="https://x.com/maxclerkwell" target="_blank" rel="me noopener noreferrer">
     <i class="fab fa-x-twitter"></i> @MaxClerkwell

@@ -84,7 +84,7 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
   `https://kathamatician.com/`, never to GitHub), skAInet brand
   `https://www.skainet.io/#brand`, AI-Gruppe `https://gruppe.ai/#brand`,
   Edge-Compute `https://edge-compute.skainet.io/#product`. LinkedIn is
-  always written as `https://www.linkedin.com/in/accelerator-stephan/`.
+  always written as `https://www.linkedin.com/in/stephan-boekelmann-bochum/`.
 - Links to nabla-b.engineering and edge-compute.skainet.io open an
   interstitial (`_includes/leave-modal.html`) and get `?ref=maxclerkwell.tech`
   appended; add `data-no-leave` to an anchor to bypass it.

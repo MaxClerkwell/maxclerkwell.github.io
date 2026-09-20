@@ -50,7 +50,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 ## Profiles
 
 - [GitHub](https://github.com/maxclerkwell)
-- [LinkedIn](https://www.linkedin.com/in/accelerator-stephan/)
+- [LinkedIn](https://www.linkedin.com/in/stephan-boekelmann-bochum/)
 - [X / Twitter](https://x.com/maxclerkwell)
 - [ORCID](https://orcid.org/0000-0002-2119-0064): persistent researcher identifier; academic publications are registered under this iD
 - [arXiv](https://arxiv.org/a/0000-0002-2119-0064.html): preprints and publications, listed via his ORCID iD
