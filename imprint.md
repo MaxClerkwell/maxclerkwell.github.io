@@ -22,6 +22,10 @@ DE-44809 Bochum
 USt-ID: DE338747475  
 Registergericht: Amtsgericht Bochum HRB 18817
 
+## Privacy
+
+How this site handles personal data is described in the [privacy notice](/privacy/).
+
 ## Contact
 
 Email: [stephan@boekelmann.net](mailto:stephan@boekelmann.net)  

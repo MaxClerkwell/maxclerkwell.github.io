@@ -1,0 +1,37 @@
+{% comment %} Script for the two-click Instagram embed, included once in default.html. {% endcomment %}
+<script>
+(function () {
+  var KEY = "ig-embed-consent";
+  var boxes = document.querySelectorAll(".ig-embed[data-ig-src]");
+  if (!boxes.length) return;
+  function stored() {
+    try { return localStorage.getItem(KEY) === "yes"; } catch (e) { return false; }
+  }
+  function remember(v) {
+    try { v ? localStorage.setItem(KEY, "yes") : localStorage.removeItem(KEY); } catch (e) {}
+  }
+  function load(box) {
+    if (box.classList.contains("is-loaded")) return;
+    var f = document.createElement("iframe");
+    f.src = box.getAttribute("data-ig-src");
+    f.title = box.getAttribute("data-ig-title") || "Instagram post";
+    f.width = "326"; f.height = "560";
+    f.setAttribute("frameborder", "0");
+    f.setAttribute("scrolling", "no");
+    f.setAttribute("allowfullscreen", "");
+    f.setAttribute("loading", "lazy");
+    box.innerHTML = "";
+    box.appendChild(f);
+    box.classList.add("is-loaded");
+  }
+  Array.prototype.forEach.call(boxes, function (box) {
+    var btn = box.querySelector(".ig-embed-load");
+    var chk = box.querySelector(".ig-embed-remember-box");
+    if (btn) btn.addEventListener("click", function () {
+      if (chk && chk.checked) remember(true);
+      load(box);
+    });
+  });
+  if (stored()) Array.prototype.forEach.call(boxes, load);
+})();
+</script>

@@ -1,0 +1,34 @@
+{% comment %}
+  Two-click Instagram embed (GDPR / § 25 TDDDG).
+
+  Nothing is loaded from Meta until the reader clicks "Load post". Until then
+  the page shows a local placeholder card with a link to the post on
+  Instagram. A "remember" checkbox stores the choice in localStorage of the
+  reader's own browser (key "ig-embed-consent"); no cookie is set and
+  nothing is sent anywhere. See /privacy/#instagram.
+
+  Usage:
+    {% include instagram-embed.html url="https://www.instagram.com/p/XXXX/" title="What the post shows" %}
+{% endcomment %}
+{% assign ig_url = include.url %}
+{% assign ig_embed = ig_url | append: "embed/" %}
+<div class="ig-embed" data-ig-src="{{ ig_embed }}" data-ig-title="{{ include.title | escape }}">
+  <div class="ig-embed-card">
+    <p class="ig-embed-kicker"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram post</p>
+    <p class="ig-embed-title">{{ include.title }}</p>
+    <p class="ig-embed-text">
+      This post is hosted by Instagram. Loading it here sends your IP address
+      and browser data to Meta Platforms Ireland Ltd., which may set cookies
+      and process the data in the USA.
+      <a href="{{ '/privacy/#instagram' | relative_url }}">Privacy notice</a>
+    </p>
+    <div class="ig-embed-actions">
+      <button type="button" class="ig-embed-load">Load post</button>
+      <a class="ig-embed-link" href="{{ ig_url }}" target="_blank" rel="noopener noreferrer">Open on Instagram</a>
+    </div>
+    <label class="ig-embed-remember">
+      <input type="checkbox" class="ig-embed-remember-box">
+      Always load Instagram posts in this browser
+    </label>
+  </div>
+</div>

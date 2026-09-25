@@ -97,29 +97,9 @@ The elegance is that none of this depends on the payload. You are not reading th
 
 This is exactly what I showed in a couple of short Instagram videos, if you want to see a real eye diagram open and close on a scope instead of just reading about it:
 
-<div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin: 1.5em 0;">
-  <iframe
-    src="https://www.instagram.com/reel/DbBlZC-taQJ/embed/"
-    width="326"
-    height="560"
-    title="What are eye diagrams?"
-    frameborder="0"
-    scrolling="no"
-    allowtransparency="true"
-    allowfullscreen
-    style="border-radius:6px; max-width:100%;"
-  ></iframe>
-  <iframe
-    src="https://www.instagram.com/reel/DbGlh0xsOt-/embed/"
-    width="326"
-    height="560"
-    title="More about eye diagrams"
-    frameborder="0"
-    scrolling="no"
-    allowtransparency="true"
-    allowfullscreen
-    style="border-radius:6px; max-width:100%;"
-  ></iframe>
+<div class="ig-embed-row">
+{% include instagram-embed.html url="https://www.instagram.com/reel/DbBlZC-taQJ/" title="What are eye diagrams?" %}
+{% include instagram-embed.html url="https://www.instagram.com/reel/DbGlh0xsOt-/" title="More about eye diagrams" %}
 </div>
 
 *Communication had exactly one job. From a thought in your head to a wave on a wire, it never stopped being the same job.*

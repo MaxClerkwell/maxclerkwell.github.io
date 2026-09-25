@@ -1325,3 +1325,38 @@ a.post-tag { text-decoration: none; }
 .post-body .figure-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.75rem 0; }
 .post-body .figure-row figure { margin: 0; }
 @media (max-width: 640px) { .post-body .figure-row { grid-template-columns: 1fr; } }
+
+/* ---------- two-click Instagram embed (see _includes/instagram-embed.html) ---------- */
+.ig-embed { display: flex; justify-content: center; margin: 1.5em 0; }
+.ig-embed iframe { border: 0; border-radius: 6px; max-width: 100%; }
+.ig-embed-card {
+  width: 326px; max-width: 100%; box-sizing: border-box;
+  padding: 1.2rem 1.1rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius);
+}
+.ig-embed-kicker {
+  margin: 0 0 0.4rem; font-family: var(--font-mono); font-size: 0.78rem;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-secondary);
+}
+.ig-embed-kicker i { margin-right: 0.35rem; color: var(--blue-pale); }
+.ig-embed-title { margin: 0 0 0.7rem; font-weight: 600; color: var(--text-primary); line-height: 1.35; }
+.ig-embed-text { margin: 0 0 1rem; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); }
+.ig-embed-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.ig-embed-load, .ig-embed-link {
+  font: inherit; font-size: 0.9rem; padding: 0.5rem 0.95rem;
+  border-radius: var(--radius-sm); cursor: pointer; text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+}
+.ig-embed-load { background: var(--blue-mid); color: #fff; border: 1px solid var(--blue-mid); }
+.ig-embed-load:hover { background: var(--blue-bright); border-color: var(--blue-bright); }
+.ig-embed-link { background: transparent; color: var(--text-secondary); border: 1px solid var(--border-mid); }
+.ig-embed-link:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.ig-embed-remember {
+  display: flex; align-items: center; gap: 0.45rem; margin-top: 0.9rem;
+  font-size: 0.8rem; color: var(--text-secondary); cursor: pointer;
+}
+.ig-embed-remember input { margin: 0; accent-color: var(--blue-mid); }
+.ig-embed-row { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin: 1.5em 0; }
+.ig-embed-row .ig-embed { margin: 0; }

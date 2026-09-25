@@ -2204,3 +2204,118 @@
   dct_master: 5.7
   dct_display: 9.0
   variant: true
+- file: /assets/images/naive-comparator-transistor-differential-pair-september-2026/dc-transfer.png
+  display: /assets/posts/naive-comparator-transistor-differential-pair-september-2026/dc-transfer.png
+  post: naive-comparator-transistor-differential-pair-september-2026
+  title: 'DC transfer plot of the transistor comparator: V_IN swept from 0 to 5 V on the x axis, voltages on the y axis. OUT (oran'
+  description: 'DC transfer plot of the transistor comparator: V_IN swept from 0 to 5 V on the x axis, voltages on the y axis. OUT (orange) is 0 V until V_IN reaches 2.48 V, then jumps to 5 V within a few millivolts. C1 (green) sits at 5 V, drops steeply to about 3.4 V at the threshold, keeps falling to 2.9 V at 3.4 V input and then rises linearly to 4.3 V at 5 V input. C2 (yellow) sits at 3.1 V and rises to 5 V at the threshold. A dashed line marks V_REF = 2.5 V, annotated with threshold 2.483 V — from the article “A Naive Comparator: Two NPNs, One PNP, and a SPICE Simulation to Prove It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/naive-comparator-transistor-differential-pair-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - analog
+  - transistors
+  - comparator
+  - differential-pair
+  - adc
+  - spice
+  - ngspice
+  - kicad
+  - skidl
+  - simulation
+  dct_master: 3.7
+  dct_display: 5.3
+- file: /assets/images/naive-comparator-transistor-differential-pair-september-2026/dc-vref-family.png
+  display: /assets/posts/naive-comparator-transistor-differential-pair-september-2026/dc-vref-family.png
+  post: naive-comparator-transistor-differential-pair-september-2026
+  title: Three DC transfer curves of OUT versus V_IN for V_REF = 1 V (blue), 2.5 V (orange) and 4 V (green), each with a dotted v
+  description: 'Three DC transfer curves of OUT versus V_IN for V_REF = 1 V (blue), 2.5 V (orange) and 4 V (green), each with a dotted vertical line at its reference. The 2.5 V and 4 V curves are near-vertical steps at 2.48 V and 3.93 V. The 1 V curve is a visibly softer S-shaped transition centred at about 1.24 V, to the right of its reference — from the article “A Naive Comparator: Two NPNs, One PNP, and a SPICE Simulation to Prove It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/naive-comparator-transistor-differential-pair-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - analog
+  - transistors
+  - comparator
+  - differential-pair
+  - adc
+  - spice
+  - ngspice
+  - kicad
+  - skidl
+  - simulation
+  dct_master: 3.9
+  dct_display: 5.6
+- file: /assets/images/naive-comparator-transistor-differential-pair-september-2026/schematic.png
+  display: /assets/posts/naive-comparator-transistor-differential-pair-september-2026/schematic.png
+  post: naive-comparator-transistor-differential-pair-september-2026
+  title: 'KiCad schematic of the transistor comparator: two 2N3904 NPN transistors Q1 and Q2 share an emitter node TAIL that goes '
+  description: 'KiCad schematic of the transistor comparator: two 2N3904 NPN transistors Q1 and Q2 share an emitter node TAIL that goes to ground through RE1 (4.7k); their collectors go to VCC through RC1 and RC2 (4.7k each); V_IN drives the base of Q1, V_REF the base of Q2; Q1''s collector node C1 feeds through RB1 (10k) into the base of a 2N3906 PNP Q3 whose emitter sits on VCC and whose collector is the OUT node, loaded to ground by RL1 (10k); sources V1 (5 V), VREF1 (2.5 V) and VIN1 (sine) on the left — from the article “A Naive Comparator: Two NPNs, One PNP, and a SPICE Simulation to Prove It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/naive-comparator-transistor-differential-pair-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - analog
+  - transistors
+  - comparator
+  - differential-pair
+  - adc
+  - spice
+  - ngspice
+  - kicad
+  - skidl
+  - simulation
+  dct_master: 5.3
+  dct_display: 6.7
+- file: /assets/images/naive-comparator-transistor-differential-pair-september-2026/tran-pulse.png
+  display: /assets/posts/naive-comparator-transistor-differential-pair-september-2026/tran-pulse.png
+  post: naive-comparator-transistor-differential-pair-september-2026
+  title: 'Transient plot over 40 µs. V_IN (blue) is a pulse train between 2.3 V and 2.7 V with 10 µs high and 10 µs low, around a '
+  description: 'Transient plot over 40 µs. V_IN (blue) is a pulse train between 2.3 V and 2.7 V with 10 µs high and 10 µs low, around a dashed 2.5 V line. OUT (orange) follows as a 0 to 5 V square wave: the rising edge follows the input almost immediately, the falling edge lags by more than a microsecond and is rounded. Title reads t_pd(LH) 160 ns, t_pd(HL) 1.33 µs — from the article “A Naive Comparator: Two NPNs, One PNP, and a SPICE Simulation to Prove It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/naive-comparator-transistor-differential-pair-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - analog
+  - transistors
+  - comparator
+  - differential-pair
+  - adc
+  - spice
+  - ngspice
+  - kicad
+  - skidl
+  - simulation
+  dct_master: 3.6
+  dct_display: 5.2
+- file: /assets/images/naive-comparator-transistor-differential-pair-september-2026/tran-sine.png
+  display: /assets/posts/naive-comparator-transistor-differential-pair-september-2026/tran-sine.png
+  post: naive-comparator-transistor-differential-pair-september-2026
+  title: 'Two stacked transient plots over 3 ms. Top: V_IN (blue) is a 1 kHz sine between 0.5 V and 4.5 V around a dashed 2.5 V li'
+  description: 'Two stacked transient plots over 3 ms. Top: V_IN (blue) is a 1 kHz sine between 0.5 V and 4.5 V around a dashed 2.5 V line, OUT (orange) is a 5 V square wave that is high while the sine is above 2.5 V and low otherwise. Bottom: collector node C2 (yellow) toggles between 3.1 V and 5 V in antiphase with the sine; C1 (green) is at 5 V while the input is low and, while the input is high, traces a W shape dipping to 2.9 V twice and rising to 3.8 V at the sine peak — from the article “A Naive Comparator: Two NPNs, One PNP, and a SPICE Simulation to Prove It” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/naive-comparator-transistor-differential-pair-september-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - electronics
+  - analog
+  - transistors
+  - comparator
+  - differential-pair
+  - adc
+  - spice
+  - ngspice
+  - kicad
+  - skidl
+  - simulation
+  dct_master: 3.9
+  dct_display: 5.5
