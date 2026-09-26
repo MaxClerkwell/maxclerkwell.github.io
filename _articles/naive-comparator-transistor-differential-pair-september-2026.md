@@ -111,6 +111,12 @@ uv run komparator.py                          # SKiDL -> netlist + schematic, co
 uv run simulate.py komparator.kicad_sch       # schematic -> ngspice -> table + figures
 ```
 
+The repository is archived on Zenodo and citable: the concept DOI
+[10.5281/zenodo.22965437](https://doi.org/10.5281/zenodo.22965437) always
+resolves to the latest release, and each release carries its own version
+DOI, for example [10.5281/zenodo.22965438](https://doi.org/10.5281/zenodo.22965438)
+for v1.0.0.
+
 The important property of this toolchain is that the schematic you look
 at and the netlist that gets simulated cannot drift apart. The generator
 re-exports the schematic with `kicad-cli` and compares its connectivity
@@ -151,15 +157,15 @@ because watching C2 in the simulation makes the current steering visible.
 Before the analysis, here is the same circuit in the
 [Falstad circuit simulator](https://www.falstad.com/circuit/), which runs
 entirely in your browser. Same three transistors, same resistor values,
-same 1 kHz sine at the input, with a scope trace for V_IN and one for OUT
-at the bottom. Drag the mouse over a wire to see its voltage, or double-click
+same 1 kHz sine at the input, with scope traces at the bottom for the
+input, the base of Q3, the tail node, the collector of Q2 and the output. Drag the mouse over a wire to see its voltage, or double-click
 the input source and change its offset to see the square wave at the output
 stretch and shrink as the sine spends more or less time above the reference.
 Falstad uses its own, simpler transistor model, so the exact threshold and
 the switching times differ from the ngspice numbers below, but the behaviour
 is the same.
 
-{% include falstad-embed.html url="https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIOuAzAOwCclAbA9QBy0AsDLlS11DqEACNEAJmqoADiITtKqAG4REJKAFtMKgKYBaJCgB8AKChRgAJSgAPRElqiotBlDsOG7VPATZUAdy8+6gCGVgoqCAD0xqbA0DbI9o7Ori4MgQGoyrLUBJHRZr7WtolIaS4l-J44eSZmaEXIZSnN9lXeUgB2tqhCWra56gD2iAAmWjBBAK4ANmiKvYh6+LyU9qLsvLR87NSi8+TeuEQ5tLz6LCzsLEiiJFG1Fg2UothJUM+v7m2B-tXBoeF7jE4ogPm8waV0n8sjtckCCk8XqlXhDKrBqvDgPV4pQiA4UhDWuj2lBJF1kD0+sgBmphggxhMZnMoAoFggdKIqOxsLcbkR3OckB4WUIDngiNgWNhaEQiLRpZCJbQajFCvEUi8WOUHOsoe1MWrQUjNe9jdzviqEerErrTa9dRbMSCEjrudr3thhRkoDCcj5MQBzBoEz3uj6O-LABQNJxQcQOWOuC1QX4U2BZJCEVBqEJhBB7KBCMBBLD5o6W4CGhCJkpNIkZQMx5zxt6iC4Rh5V3H4xKMLVJ4n+yNdrhh0eidYdmKWHHj9bvcf85OpwI5gFlu6R50bZLsdhQTj7oVe6H9LOY7GIQ8uPcHxN75NkxYoQtUzOrukMqazeZUnTi0R7CYbBqCIORxGoRh9kWcVLkYY4rhYdZ2BeeRMRnK9EzbO9nCcZdvTXPNN07Bp2ETMoyOSesMS3UiawcSi4yXQdMjPOFIyDeJGNuZxuN2KcrUwqiHDAo9qP1SMrAaWUe2oKAiGuOMBi8YUMDAWxhTQKkAHkAFUABUKyk9UCBcKUXB4Mz5GJVT1OQTSqQANQAfQASQAOSMp4rjjHJ3lOXzrJU1A1I01AtMQFzzAAUQAMS8+IXk+e15wYIKrxCuybnCpyAGFcoSsRMws+1KEoCz0tkTLbALCKEHMXKUExYyjVeJBKBROQKraWyapyxAGr2ZqGnEfdxCIOM2F8lgeuq5BaqpGLCtkSyhXKvc5KFAQbLm7L0EWgAhZaiCFONxHkwC4w62aoFC+b+vqgAZZa7H3GU4xuRwZp226socxBGorKtmgo0obxPCSHkGKAtHJdqQskDLiSsAtEfafIYkkFk-gwA5iJiCJBkjaHYbEayMDRgsvBRqRugxswsbzQJccBSNCeMYAInACBjCAA" title="The naive comparator: differential pair Q1/Q2 with PNP output stage Q3, 1 kHz sine at the input" height="560" %}
+{% include falstad-embed.html height="640" url="https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIiATLgBzYDMSAbBQCzUCcLRFjSLqIAEaUA7KgAOwhCzqoAbhEQkoAW0xKApgFokKAHwAoKFGAAlKAA9ESdhSjtGUG3cb9YOVAHd4CbKhUAhhZySggA9IbGwNBWyLb2js5OjH7uvqiK0iIE4ZEmnpbW8UzYTsUijKg+fhFGJmiFyClldknOVR5Q4gB21qiCGtY5qgD2iAAmGjABAK4ANmjyA4haVCJE2ERsLNgs7CLUdEQislByguS+uHQUSETU2Yz37BsU1Py1UeaxN6UOUL8oK4OukoN5OoFgqFPiYYohAf9ASUQalMixsjU8sACj8KKUSgC8U4KijcnVgA0ftwWoT8bZSV1esh+oNkMMVGMEJNpvNFmdlggtHgiOw+PdsLYmNQnkRKvzLsKRBQKEQjthWEgOEhWGSojiinY8dQaaxUtVdflGoCjbSoKbSTDsY0kqbbfa0pjyXC4oadjS6LsGWiMRbgABzZ3xAMsf14h1YuSNf4UJUJFoM8HM2CZJCEfxBEIICj9MABLBF3AkR36hD-NrNdoe0MR2LJ1PJ6jUePkmtHVpRxjGxvm6tWwf+8fKtwjrHfeGT1gAyeyjPm1QFyiV0PelhMJwsGMsVz76edHOET1RSmII8xviHusHhk9FYoKAC3OpDkTKazBZLVkWFwdgQM7TU7i4Cg6BOJZLiFfACF0WhqBVA8Uz4WhjlDOdpDrN4oD2RwHFXCENwQKssRrQjklKajhw8R0dzreJqJVOU13PPNHRbG9k1lAi22LJtR1iOj4i2O96WErELEaIhqRsEQoHuJA7WGHw3AwMBrDcNBWQAeQAVQAFVDWTYk-JxaCcBgrNODTUC0nTUD0xAADUAH0AEkADkzKtNg7WyAFRSC+yb0c7TkF01lPNMABRAAxfzYjxUpminIFwukSLrCE1yEDcgBhIqUsoXMbNKKC6Bs7LNKi7UXNZUwipQR1zPhIkkADAEZFqkF6ryprEBa4t2udCogrpVSUzq3LkHy5r4rK6RbL4GqDyUvh2IiqAnIW4aEFMAAhFaiD4O0U2Uih2DtAMBvmxr0GagAZFabBjF47W1ewuzSQbosO1rQxretaL3e9uyiEYoA0Jk+Ec8RKBBCxTiR0FYk8sBuigAJunGKAvI87GEDyKJxDOToMEuCi6nJymEFOamcAQ7ADm1WmojCEYsRhuH50R5G0lRiQ+kaY6yw0KA3Nx-HCagABFWQyZMCnC1SZnyItenCyZhVWZsVUOdDbnedh+G3wwdGhJ8EWuiF2JjICMA5ml2WCa80m6dVhmNZp7Wfd1xz9YIZhOZMU3yT5pk5StoXbbR+FUFiIqRjmOYNBANARmgGW8Y9xXixV4A1ap-2YR1pO9pDgh2ZVE2eaj83KGUOOixRoT0bcTGPJGGZFmL0vQU18PK8Z4OWYvfYnjDhvDGAMJwAgQwgA" title="The naive comparator: differential pair Q1/Q2 with PNP output stage Q3, 1 kHz sine at the input" %}
 
 The circuit file is also in the repository as `docs/falstad.xml`, for
 *File → Import From Text* in Falstad.
