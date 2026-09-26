@@ -113,9 +113,8 @@ uv run simulate.py komparator.kicad_sch       # schematic -> ngspice -> table + 
 
 The repository is archived on Zenodo and citable: the concept DOI
 [10.5281/zenodo.22965437](https://doi.org/10.5281/zenodo.22965437) always
-resolves to the latest release, and each release carries its own version
-DOI, for example [10.5281/zenodo.22965438](https://doi.org/10.5281/zenodo.22965438)
-for v1.0.0.
+resolves to the latest release; the release this article refers to is
+v1.1.0, DOI [10.5281/zenodo.22979080](https://doi.org/10.5281/zenodo.22979080).
 
 The important property of this toolchain is that the schematic you look
 at and the netlist that gets simulated cannot drift apart. The generator
