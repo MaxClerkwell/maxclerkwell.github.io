@@ -7,6 +7,7 @@ tags: [electronics, analog, transistors, comparator, differential-pair, adc, spi
 image: /assets/posts/naive-comparator-transistor-differential-pair-september-2026/schematic.png
 hire_cta: "analog front-ends or measurement electronics"
 math: true
+last_modified_at: 2026-09-26
 ---
 
 A while ago I posted a short video on Instagram in which I drew a naive
@@ -144,6 +145,24 @@ Reading it from left to right:
 
 Only C1 is used. C2 is there because the pair needs to be symmetric, and
 because watching C2 in the simulation makes the current steering visible.
+
+## Play with it first
+
+Before the analysis, here is the same circuit in the
+[Falstad circuit simulator](https://www.falstad.com/circuit/), which runs
+entirely in your browser. Same three transistors, same resistor values,
+same 1 kHz sine at the input, with a scope trace for V_IN and one for OUT
+at the bottom. Drag the mouse over a wire to see its voltage, or double-click
+the input source and change its offset to see the square wave at the output
+stretch and shrink as the sine spends more or less time above the reference.
+Falstad uses its own, simpler transistor model, so the exact threshold and
+the switching times differ from the ngspice numbers below, but the behaviour
+is the same.
+
+{% include falstad-embed.html url="https://www.falstad.com/circuit/circuitjs.html?ctz=DwYwlgTgBAZgvAIgIwKgFwM6IAwDpsEECsqYIOuAzAOwCclAbA9QBy0AsDLlS11DqEACNEAJmqoADiITtKqAG4REJKAFtMKgKYBaJCgB8AKChRgAJSgAPRElqiotBlDsOG7VPATZUAdy8+6gCGVgoqCAD0xqbA0DbI9o7Ori4MgQGoyrLUBJHRZr7WtolIaS4l-J44eSZmaEXIZSnN9lXeUgB2tqhCWra56gD2iAAmWjBBAK4ANmiKvYh6+LyU9qLsvLR87NSi8+TeuEQ5tLz6LCzsLEiiJFG1Fg2UothJUM+v7m2B-tXBoeF7jE4ogPm8waV0n8sjtckCCk8XqlXhDKrBqvDgPV4pQiA4UhDWuj2lBJF1kD0+sgBmphggxhMZnMoAoFggdKIqOxsLcbkR3OckB4WUIDngiNgWNhaEQiLRpZCJbQajFCvEUi8WOUHOsoe1MWrQUjNe9jdzviqEerErrTa9dRbMSCEjrudr3thhRkoDCcj5MQBzBoEz3uj6O-LABQNJxQcQOWOuC1QX4U2BZJCEVBqEJhBB7KBCMBBLD5o6W4CGhCJkpNIkZQMx5zxt6iC4Rh5V3H4xKMLVJ4n+yNdrhh0eidYdmKWHHj9bvcf85OpwI5gFlu6R50bZLsdhQTj7oVe6H9LOY7GIQ8uPcHxN75NkxYoQtUzOrukMqazeZUnTi0R7CYbBqCIORxGoRh9kWcVLkYY4rhYdZ2BeeRMRnK9EzbO9nCcZdvTXPNN07Bp2ETMoyOSesMS3UiawcSi4yXQdMjPOFIyDeJGNuZxuN2KcrUwqiHDAo9qP1SMrAaWUe2oKAiGuOMBi8YUMDAWxhTQKkAHkAFUABUKyk9UCBcKUXB4Mz5GJVT1OQTSqQANQAfQASQAOSMp4rjjHJ3lOXzrJU1A1I01AtMQFzzAAUQAMS8+IXk+e15wYIKrxCuybnCpyAGFcoSsRMws+1KEoCz0tkTLbALCKEHMXKUExYyjVeJBKBROQKraWyapyxAGr2ZqGnEfdxCIOM2F8lgeuq5BaqpGLCtkSyhXKvc5KFAQbLm7L0EWgAhZaiCFONxHkwC4w62aoFC+b+vqgAZZa7H3GU4xuRwZp226socxBGorKtmgo0obxPCSHkGKAtHJdqQskDLiSsAtEfafIYkkFk-gwA5iJiCJBkjaHYbEayMDRgsvBRqRugxswsbzQJccBSNCeMYAInACBjCAA" title="The naive comparator: differential pair Q1/Q2 with PNP output stage Q3, 1 kHz sine at the input" height="560" %}
+
+The circuit file is also in the repository as `docs/falstad.xml`, for
+*File → Import From Text* in Falstad.
 
 ## How the differential pair compares
 

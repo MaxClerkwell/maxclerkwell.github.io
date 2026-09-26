@@ -1,0 +1,34 @@
+{% comment %}
+  Two-click embed of a Falstad circuit simulation (GDPR / § 25 TDDDG).
+
+  Nothing is loaded from falstad.com until the reader clicks "Load simulator".
+  Until then the page shows a local placeholder card with a link that opens
+  the circuit on falstad.com in a new tab. A "remember" checkbox stores the
+  choice in localStorage of the reader's own browser (key
+  "falstad-embed-consent"); no cookie is set and nothing is sent anywhere.
+  See /privacy/#falstad.
+
+  Usage:
+    {% include falstad-embed.html url="https://www.falstad.com/circuit/circuitjs.html?ctz=..." title="What the circuit is" height="560" %}
+{% endcomment %}
+{% assign fs_height = include.height | default: 560 %}
+<div class="ig-embed falstad-embed" data-fs-src="{{ include.url }}" data-fs-title="{{ include.title | escape }}" data-fs-height="{{ fs_height }}">
+  <div class="ig-embed-card">
+    <p class="ig-embed-kicker"><i class="fas fa-wave-square" aria-hidden="true"></i> Interactive circuit simulation</p>
+    <p class="ig-embed-title">{{ include.title }}</p>
+    <p class="ig-embed-text">
+      This simulation runs in the Falstad circuit simulator, hosted on
+      falstad.com. Loading it here sends your IP address and browser data to
+      that server.
+      <a href="{{ '/privacy/#falstad' | relative_url }}">Privacy notice</a>
+    </p>
+    <div class="ig-embed-actions">
+      <button type="button" class="ig-embed-load">Load simulator</button>
+      <a class="ig-embed-link" href="{{ include.url }}" target="_blank" rel="noopener noreferrer">Open on falstad.com</a>
+    </div>
+    <label class="ig-embed-remember">
+      <input type="checkbox" class="ig-embed-remember-box">
+      Always load Falstad simulations in this browser
+    </label>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+{% comment %} Script for the two-click Falstad embed, included once in default.html. {% endcomment %}
+<script>
+(function () {
+  var KEY = "falstad-embed-consent";
+  var boxes = document.querySelectorAll(".falstad-embed[data-fs-src]");
+  if (!boxes.length) return;
+  function stored() {
+    try { return localStorage.getItem(KEY) === "yes"; } catch (e) { return false; }
+  }
+  function remember(v) {
+    try { v ? localStorage.setItem(KEY, "yes") : localStorage.removeItem(KEY); } catch (e) {}
+  }
+  function load(box) {
+    if (box.classList.contains("is-loaded")) return;
+    var f = document.createElement("iframe");
+    f.src = box.getAttribute("data-fs-src");
+    f.title = box.getAttribute("data-fs-title") || "Falstad circuit simulation";
+    f.width = "100%"; f.height = box.getAttribute("data-fs-height") || "560";
+    f.setAttribute("frameborder", "0");
+    f.setAttribute("loading", "lazy");
+    f.setAttribute("allowfullscreen", "");
+    box.innerHTML = "";
+    box.appendChild(f);
+    box.classList.add("is-loaded");
+  }
+  Array.prototype.forEach.call(boxes, function (box) {
+    var btn = box.querySelector(".ig-embed-load");
+    var chk = box.querySelector(".ig-embed-remember-box");
+    if (btn) btn.addEventListener("click", function () {
+      if (chk && chk.checked) remember(true);
+      load(box);
+    });
+  });
+  if (stored()) Array.prototype.forEach.call(boxes, load);
+})();
+</script>

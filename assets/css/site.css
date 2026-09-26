@@ -1360,3 +1360,7 @@ a.post-tag { text-decoration: none; }
 .ig-embed-remember input { margin: 0; accent-color: var(--blue-mid); }
 .ig-embed-row { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin: 1.5em 0; }
 .ig-embed-row .ig-embed { margin: 0; }
+/* two-click Falstad embed reuses the card styles above, but spans the text column */
+.falstad-embed { display: block; }
+.falstad-embed .ig-embed-card { width: 100%; }
+.falstad-embed iframe { width: 100%; display: block; background: #000; }
