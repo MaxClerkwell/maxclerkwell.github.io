@@ -2319,3 +2319,37 @@
   - simulation
   dct_master: 3.9
   dct_display: 5.5
+- file: /assets/images/why-a-lut-is-programmable-october-2026/gtkwave.png
+  display: /assets/posts/why-a-lut-is-programmable-october-2026/gtkwave.png
+  post: why-a-lut-is-programmable-october-2026
+  title: 'GTKWave displaying the simulation of the two-input LUT: the stored table as a hexadecimal vector, the inputs A and B and'
+  description: 'GTKWave displaying the simulation of the two-input LUT: the stored table as a hexadecimal vector, the inputs A and B and the output Y as logic signals, the selected table index, and below them the analog traces of the multiplexer nodes N0 and N1, the tree output YI and the two buffer stages — from the article “Why a LUT Is Programmable: Twenty Transistors, Sixteen Functions” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-a-lut-is-programmable-october-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  - cmos
+  - skidl
+  dct_master: 3.6
+  dct_display: 4.0
+- file: /assets/images/why-a-lut-is-programmable-october-2026/lut2.png
+  display: /assets/posts/why-a-lut-is-programmable-october-2026/lut2.png
+  post: why-a-lut-is-programmable-october-2026
+  title: 'One 800 ns function window of the simulation, with the LUT configured as XOR: the four table bits, the two inputs steppi'
+  description: 'One 800 ns function window of the simulation, with the LUT configured as XOR: the four table bits, the two inputs stepping through the Gray-code sequence, and the output Y following the selected table entry, with the multiplexer node voltages plotted underneath — from the article “Why a LUT Is Programmable: Twenty Transistors, Sixteen Functions” by Stephan Bökelmann (MaxClerkwell).'
+  year: '2026'
+  source: https://maxclerkwell.tech/posts/why-a-lut-is-programmable-october-2026/
+  license: CC BY-SA 4.0
+  rights: own
+  keywords:
+  - fpga
+  - electronics
+  - education
+  - cmos
+  - skidl
+  dct_master: 3.2
+  dct_display: 4.9
