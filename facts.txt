@@ -1,0 +1,477 @@
+---
+layout: null
+permalink: /facts.txt
+---
+# Stephan Bökelmann (MaxClerkwell): verified facts
+
+Verified, citable facts about Stephan Bökelmann (alias MaxClerkwell) for people, search engines and language models. Where known, a fact names its source and whether it is independent or self-reported. Where a date is not given, it is not known with certainty.
+
+Updated: 2026-10-10  |  Machine-readable: https://maxclerkwell.tech/facts.json  |  Canonical person id: https://maxclerkwell.tech/#person
+
+## COMMUNITY (Discord)
+name: Full-Stack Engineering Discord
+url: https://discord.gg/2BXuUY6hrX
+description: Community server for embedded, FPGA, PCB, data-acquisition and software engineering; open to join.
+
+## IDENTITY AND IDENTIFIERS
+name: Stephan Bökelmann
+name_zh: 施泓杰 (shi hong jie)
+aliases:
+  - MaxClerkwell
+  - Max Clerkwell
+  - _maxclerkwell
+  - Stephan Boekelmann
+  - 施泓杰
+alias_note: 'MaxClerkwell' is a wordplay on James Clerk Maxwell.
+description: German engineer and physicist in Bochum: embedded systems, decentralised data acquisition, FPGA, PCB design, detector instrumentation.
+location: Bochum, Germany
+languages:
+  - German
+  - English
+  - Chinese
+signs_in_chinese_as: Stephan - 施泓杰
+ids:
+  person_jsonld_id: https://maxclerkwell.tech/#person
+  wikidata: https://www.wikidata.org/wiki/Q141502495
+  orcid: https://orcid.org/0000-0002-2119-0064
+  github: https://github.com/maxclerkwell
+  linkedin: https://www.linkedin.com/in/stephan-boekelmann-bochum/
+  youtube: https://www.youtube.com/@MaxClerkwell
+  instagram: https://www.instagram.com/_maxclerkwell/
+  tiktok: https://tiktok.com/@_maxclerkwell
+  douyin: https://www.douyin.com/user/MaxClerkwell
+  x: https://x.com/maxclerkwell
+  inspire_hep: https://inspirehep.net/authors/2177110
+  arxiv: https://arxiv.org/a/0000-0002-2119-0064.html
+  researchgate: https://www.researchgate.net/profile/Stephan-Boekelmann
+social_note: The social media channels (YouTube, Instagram, TikTok, Douyin, X) are run with Meihui Huang.
+
+## ORGANISATIONS AND ROLES
+- name: nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt)
+  role: Managing director (Geschäftsführer)
+  since: 2020
+  facts: Amtsgericht Bochum HRB 18817; memorandum 2020-07-20, registered 2020-09-28; Herner Str. 299, Geb. B29, 44809 Bochum.
+  ids:
+    jsonld: https://nabla-b.engineering/#organization
+    wikidata: https://www.wikidata.org/wiki/Q141688544
+    web: https://nabla-b.engineering/
+  source: independent (commercial register via North Data)
+- name: Auto-Intern GmbH
+  role: Development lead / Chief Operating Officer (COO) under a contract between Auto-Intern GmbH and nabla B (since 2020). Before that employee from 2014 to 2020.
+  career:
+    - Student assistant (Studentische Hilfskraft)
+    - Research engineer
+    - VP Research & Development and deputy managing director
+    - COO and deputy managing director (COO since 2018)
+  facts: Founder and managing director: Odin Holmes. Stephan Bökelmann is system architect of the skAInet Edge-Compute product.
+  ids:
+    jsonld: https://www.auto-intern.de/#organization
+    wikidata: https://www.wikidata.org/wiki/Q141509023
+    web: https://www.auto-intern.de/
+  source: independent for deputy managing director 2018 (RUHRMOTOR18, Bochum Wirtschaftsentwicklung) and VP R&D 2021 (STARTUP TEENS); the contract arrangement is self-reported
+- name: Kfz-Technik Bökelmann
+  role: Founder
+  since: 2009
+  until: 2014
+  facts: First company. Mobile electronic vehicle diagnostics for workshops in the Münsterland: collected cars, found and documented faults, delivered the fault report to the workshop which then repaired the car. Not a workshop itself. Acquired by Auto-Intern GmbH in 2014.
+  source: self-reported
+- name: CCD Car Diagnostics UG
+  role: Co-founder
+  since: 2017
+  source: self-reported
+- name: nerd_force1 UG
+  role: Co-founder
+  since: 2018
+  source: self-reported
+- name: open Skunkforce e.V.
+  role: Co-founder and chairman (1. Vorsitzender)
+  ids:
+    jsonld: https://maxclerkwell.tech/#skunkforce
+    wikidata: https://www.wikidata.org/wiki/Q141688756
+    web: https://skunkforce.org/
+  source: chairman: stated on skunkforce.org (self-published association site)
+- name: AI-Gruppe
+  role: Umbrella brand, not a legal entity
+  facts: Covers Auto-Intern GmbH, CCD Car Diagnostics, nabla B, nerd_force1, open Skunkforce e.V. and the skAInet project. The Bochum 'AI-Gruppe' meetup is co-led with Odin Holmes.
+  web: https://gruppe.ai/
+
+## EDUCATION
+- Trained mechanic (apprenticeship)
+- Trained electrician for automation technology (apprenticeship)
+- Staatlich geprüfter Techniker, Konstruktion und Entwicklung
+- B.Eng. Elektro- und Informationstechnik
+- M.Eng. Informationstechnologie
+- Doctorate (Promotion) at Ruhr-Universität Bochum, since 2020
+
+## ACADEMIC ROLES
+- role: Research associate (wissenschaftlicher Mitarbeiter), Ruhr-Universität Bochum, Institut für Experimentalphysik I, group Fritsch; PANDA experiment at FAIR (luminosity detector, HV-MAPS sensors)
+  since: 2020
+  source: independent (RUB EP1 staff page lists him in the group)
+- role: Member of the PANDA Collaboration; chair of the Young Scientist Convent
+  from: 2023 (summer)
+  until: 2025 (summer)
+  source: self-reported
+- role: Research associate, geomonitoring, Forschungszentrum Nachbergbau (FZN), THGA Bochum, under Prof. Tobias Rudolph
+  from: 2022-02
+  until: 2024-02
+  source: independent (FZN science-day programme 2023, RUB News 2022)
+- role: Lecturer (Lehrbeauftragter), THGA Bochum: programming, object-oriented design, databases
+  since: 2019
+  source: independent (THGA staff list)
+- role: Member of the IHK Mittleres Ruhrgebiet examination board for IT specialists
+  since: 2020
+  source: self-reported
+
+## CONFERENCES AND COMMUNITY
+- name: emBO++
+  role: Principal organiser
+  facts: Embedded systems conference in Bochum (Ruhr-Universität Bochum). Started 2016 in a small circle, open to the public from 2017, ten public editions; last edition 18-20 March 2026. No further edition is planned.
+  wikidata: https://www.wikidata.org/wiki/Q141688777
+  web: https://www.embo.io/
+- name: KiCon (KiCad conference), Germany/Europe
+  role: Organiser since 2022 (idea after a conversation with Chris Gammell at KiCon 2019 in Chicago)
+  editions:
+    - year: 2022
+      name: KiCon Germany
+      venue: Husemannplatz, AI-Gruppe office, Bochum
+    - year: 2023
+      name: KiCon Germany
+      venue: Husemannplatz, AI-Gruppe office, Bochum
+    - year: 2024
+      name: KiCon Europe
+      venue: Rotunde, Bochum
+    - year: 2025
+      name: KiCon Europe
+      venue: Ruhr-Universität Bochum
+    - year: 2026
+      name: KiCon Europe 2026
+      venue: Gleis 9, Am Kulturgleis 9, 44787 Bochum
+      dates: 2026-09-07 to 2026-09-09
+      wikidata: https://www.wikidata.org/wiki/Q141688757
+      web: https://kicon.kicad.org/europe2026/
+  partner: KiCad Services Corporation (Seth Hillbrand)
+- name: Practical Data Science Congress (PDSC)
+  role: Co-organiser
+  facts: PDSC3k (2025), PDSC4k (2026-05-22, Bochum, organised by open Skunkforce e.V.). Gave a talk in 2026.
+  web: https://skunkforce.org/pdsc4k/
+- name: pottCPP (Ruhr C++ user group)
+  role: Organiser
+  since: 2017
+  web: https://www.meetup.com/pottcpp/
+
+## TIMELINE
+- year: 2007
+  event: Starts professional work in electronics and physical measurement technology (as electronics technician).
+- year: 2009
+  event: Founds Kfz-Technik Bökelmann (mobile electronic vehicle diagnostics for workshops, Münsterland).
+- year: 2014
+  event: Kfz-Technik Bökelmann is acquired by Auto-Intern GmbH; he joins Auto-Intern as student assistant, then research engineer.
+- year: 2016
+  event: First emBO++ in a small circle.
+- year: 2017
+  event: First public emBO++. Co-founds CCD Car Diagnostics UG. Starts organising pottCPP.
+- year: 2018
+  event: Becomes COO and deputy managing director of Auto-Intern (deputy managing director is documented in RUHRMOTOR18, February 2018). Co-founds nerd_force1 UG.
+- year: 2019
+  event: Attends the first KiCon in Chicago (April); conversation with Chris Gammell leads to the idea of a KiCon in Germany. Lecturer at THGA Bochum. Talk at the PANDA collaboration meeting CM 19/3 (2019-11-05, GSI).
+- year: 2020
+  event: Founds nabla B (registered 2020-09-28). Begins doctorate and research associate role at Ruhr-Universität Bochum (PANDA). Joins the IHK examination board. Patent DE 10 2020 119 488 filed on 2020-07-23. From now works for Auto-Intern under a contract with nabla B. Start of the autowerkstatt4null project (BMWK) with the OmnAIScope, and of test stands and a wire-bond line for HV-MAPS detectors at RUB (2020-2026).
+- year: 2021
+  event: 25square rain-sensing project (mFUND) is presented to the public with Auto-Intern, Okeanos and BO-I-T. PANDA papers appear in The European Physical Journal A.
+- year: 2022
+  event: February: research associate at the Forschungszentrum Nachbergbau (THGA). KiCon Germany 2022 in Bochum. Hosts the 'Future Talks' evening 'Bergbau und Nachhaltigkeit' (2022-06-15). Talk at the Grubenwassertagung kassel22 (2022-09-07). Starts work for globalPoint horus (Kurtz Ersa). Patent DE 10 2020 119 488 B4 granted (2022-12-22).
+- year: 2023
+  event: KiCon Germany 2023. Chair of the Young Scientist Convent (from summer). Montana State University resonance spectroscope project starts. The horus system wins the Productronica Innovation Award 2023. Talk at the FZN internal science day (reference architecture for geomonitoring systems with decentralised data acquisition).
+- year: 2024
+  event: KiCon Europe 2024 (Rotunde, Bochum). End of the FZN employment (February).
+- year: 2025
+  event: KiCon Europe 2025 (RUB). Speaker at KiCon Asia 2025, Shenzhen. PDSC3k. End of Young Scientist Convent chair (summer). Meihui Huang becomes contact for the MaxClerkwell brand.
+- year: 2026
+  event: Patent DE 10 2020 128 143 granted (January). Last emBO++ (18-20 March). PDSC4k (22 May) with a talk. KiCon Europe 2026 at Gleis 9 (7-9 September). Open-source Zynq bitstream pipeline for the ALINX AX7020 (cooperation with ALINX since August; contact Jean Chang). skAInet Edge-Compute 1.5 product page. Zenodo archives of four open works (19 September).
+
+## PATENTS AND UTILITY MODELS
+- number: DE 10 2020 119 488 B4
+  title: Verfahren und System zur Analyse von Niederschlagsereignissen sowie Computerprogrammprodukt und Verwendung
+  filed: 2020-07-23
+  granted: 2022-12-22
+  applicants:
+    - Okeanos Smart Data Solutions GmbH (formerly Okeanos Consulting)
+    - Auto-Intern GmbH
+  role: One of five named inventors
+  wikidata: https://www.wikidata.org/wiki/Q141688543
+  source: https://register.dpma.de/DPMAregister/pat/register?AKZ=1020201194889
+- number: DE 10 2020 128 143
+  title: Leiterplattengehäusevorrichtung
+  granted: 2026-01
+  role: Inventor
+  source: https://register.dpma.de/DPMAregister/pat/register?AKZ=1020201281439
+- number: Gebrauchsmuster
+  title: Leiterplatten-Gehäuse mit integrierter Sensorik
+  role: Inventor
+  status: in force
+- number: Gebrauchsmuster
+  title: Bodenfeuchtesensor
+  filed: 2023
+  role: Inventor
+  status: lapsed 2026
+
+## PUBLICATIONS
+- title: PANDA Phase One
+  venue: The European Physical Journal A
+  year: 2021
+  doi: 10.1140/epja/s10050-021-00475-y
+- title: Study of excited Xi baryons with the PANDA detector
+  venue: EPJ A
+  year: 2021
+  doi: 10.1140/epja/s10050-021-00444-5
+- title: The potential of Lambda and Xi- studies with PANDA at FAIR
+  venue: EPJ A
+  year: 2021
+  doi: 10.1140/epja/s10050-021-00386-y
+- title: Feasibility studies for the measurement of time-like proton electromagnetic form factors
+  venue: EPJ A
+  year: 2021
+  doi: 10.1140/epja/s10050-020-00333-3
+- title: Precision resonance energy scans with the PANDA experiment at FAIR
+  venue: EPJ A
+  year: 2019
+  doi: 10.1140/epja/i2019-12718-2
+- title: Microfabricated Electrochemical Sensors as a Sentinel System to Detect Biofilms in River Systems
+  venue: ECS Meeting Abstracts
+  year: 2025
+  doi: 10.1149/ma2025-02632961mtgabs
+- title: Hyperon signatures in the PANDA experiment at FAIR
+  type: preprint
+  year: 2023
+  arxiv: 2304.11977
+- title: Prospects for Spin-Parity Determination of Excited Baryons via the anti-Xi+ Lambda K- Final State
+  type: preprint
+  year: 2022
+  arxiv: 2201.03852
+
+## OPEN-SOURCE WORKS (archived on Zenodo)
+- name: ax7020-bringup
+  what: Mainline U-Boot and an open bitstream pipeline for the ALINX AX7020 (Zynq-7000) over JTAG and Ethernet
+  license: GPL-2.0-or-later
+  doi: 10.5281/zenodo.22850093
+  repo: https://github.com/MaxClerkwell/ax7020-bringup
+  wikidata: https://www.wikidata.org/wiki/Q141688758
+- name: open.cob.json
+  what: Open exchange format for chip-on-board wire bonding between chip and PCB design
+  license: CC BY 4.0
+  doi: 10.5281/zenodo.22850092
+  repo: https://github.com/MaxClerkwell/open.cob.json
+  wikidata: https://www.wikidata.org/wiki/Q141688759
+- name: orbitals-to-bands
+  what: Introduction to the electronic structure of solids and electrical conductivity
+  license: CC BY 4.0
+  doi: 10.5281/zenodo.22850099
+  repo: https://github.com/MaxClerkwell/orbitals-to-bands
+  wikidata: https://www.wikidata.org/wiki/Q141688760
+- name: pdsc4k-talk
+  what: Slides: Everything, Everywhere, All at Once - automated data collection
+  license: CC BY 4.0
+  doi: 10.5281/zenodo.22850096
+  repo: https://github.com/MaxClerkwell/pdsc4k-talk
+  wikidata: https://www.wikidata.org/wiki/Q141688761
+- name: edgy_boards
+  repo: https://github.com/skunkforce/edgy_boards
+
+## PROJECTS
+- name: 25square
+  years: presented to the public in 2021
+  what: Low-cost rain-sensor network with AI for street-level heavy-rain forecasts. Funded by mFUND (BMVI). Partners: Auto-Intern (sensors and acquisition software), Okeanos (analysis software and AI), BO-I-T (server infrastructure), Bochum fire brigade (sensor sites).
+  source: independent (LebensraumWasser 2021, WAZ 2021)
+- name: autowerkstatt4null / OmnAIScope
+  years: 2020-2024
+  what: Research project funded by the BMWK with a simplified digital oscilloscope for car workshops (patent pending).
+- name: globalPoint horus / Kurtz Ersa
+  years: 2022-ongoing
+  what: Reflow profiling and monitoring; Productronica Innovation Award 2023.
+- name: Resonance spectroscope for biofilm monitoring
+  years: 2023-2026
+  what: With Montana State University.
+- name: HV-MAPS test stands and wire-bond line
+  years: 2020-2026
+  what: For the PANDA luminosity detector at Ruhr-Universität Bochum.
+- name: skAInet Edge-Compute
+  what: Programmable M12-PoE switch, router and Linux compute node by Auto-Intern GmbH (version 1.5). Stephan Bökelmann is system architect. It is a product of Auto-Intern, not of nabla B.
+  web: https://edge-compute.skainet.io/
+
+## TALKS
+- title: Automation of the Linear Shift Mechanism
+  event: PANDA collaboration meeting CM 19/3, Lumi Detector Session, GSI Darmstadt
+  date: 2019-11-05
+  source: https://indico.gsi.de/event/9531/
+- title: Geo und IT - Praktische und systematische Gedanken zur Einrichtung und dem Betrieb zukunftsweisender Geomonitoringsysteme
+  event: Grubenwassertagung kassel22, Kassel
+  date: 2022-09-07
+  source: https://grubenwasser.org/wp-content/uploads/2022/08/programmheft_kassel22_web.pdf
+- title: Vorschlag einer modernen Referenzarchitektur für Geomonitoringsysteme mit dezentraler Datenakquise (with Carsten Wolters)
+  event: Interner Wissenschaftstag, Forschungszentrum Nachbergbau, THGA
+  date: 2023
+  source: https://fzn.thga.de/wp-content/uploads/sites/4/2023/03/20230203_Interner-Wissenschaftstag_Programm.pdf
+- event: KiCon Asia 2025, Shenzhen
+  date: 2025
+- title: Everything, Everywhere, All at Once
+  event: PDSC4k 2026, Bochum
+  date: 2026-05-22
+
+## SPEAKER BOOKINGS
+available: True
+topics:
+  - decentralised data acquisition
+  - geomonitoring
+  - FPGA
+  - KiCad and PCB design
+  - organising open-source hardware conferences
+contact: collaboration@maxclerkwell.tech
+
+## SERVICES (nabla B)
+provider: nabla B (https://nabla-b.engineering/)
+accepting_requests: True
+as_of: 2026-10-10
+offer:
+  - System architecture
+  - PCB design and certification (Germany, China, USA)
+  - Bring-up for microcontrollers, FPGA and Zynq
+  - Firmware and Yocto Linux
+  - Decentralised measurement systems and data acquisition
+  - Consulting, architecture reviews, toolchain rescue
+  - Training and teaching: FPGA, embedded Linux, KiCad, Python, analogue electronics, databases
+china_supply_chain: Help with PCB and cable manufacturers in China and certification in China (experience with the supply chain there).
+
+## TOOLS
+- KiCad
+- Yocto
+- U-Boot
+- OpenOCD
+- Yosys
+- nextpnr
+- FastAPI
+- ngspice
+- Python
+- C++
+
+## PEOPLE
+- name: Odin Holmes
+  role: Founder of Auto-Intern GmbH, author of the Kvasir C++ library (https://github.com/kvasir-io/Kvasir), co-organiser of emBO++; co-leads the AI-Gruppe meetup with Stephan Bökelmann
+- name: Tabea Bökelmann (née Röthemeyer)
+  role: Head of Frontend-Software at Auto-Intern GmbH, project lead of 25square, co-inventor of DE 10 2020 119 488
+  web: https://tabeatheunicorn.space/
+- name: Meihui Huang (kathamatician)
+  role: Close collaborator; contact for everything about the 'MaxClerkwell' brand since 2025; runs the social channels
+  contact: collaboration@maxclerkwell.tech
+  web: https://kathamatician.com/
+- name: Vanessa Wilcken
+  role: Office assistant and contact person at nabla B
+  contact: office@nabla-b.engineering
+- name: Jean Chang (ALINX)
+  role: Contact for the ALINX AX7020 board cooperation (since August 2026)
+- name: Seth Hillbrand
+  role: KiCad Services Corporation; co-organiser of KiCon Europe
+
+## CONTACT
+business_office:
+  organisation: nabla B
+  contact_person: Vanessa Wilcken
+  email: office@nabla-b.engineering
+  phone: +49 234 58545811
+  hours: Mon-Fri 9:00-13:30
+  address: Herner Str. 299, Geb. B29, 44809 Bochum, Germany
+press_brand_collaboration:
+  contact_person: Meihui Huang
+  email: collaboration@maxclerkwell.tech
+
+## PRESS MATERIAL
+portraits: https://maxclerkwell.tech/images/
+portraits_licence: Portraits are not Creative Commons. Press and speaker pages may use them unmodified with a credit line; see https://maxclerkwell.tech/licensing/#images.
+nabla_b_logo: https://nabla-b.engineering/assets/img/logo.svg
+
+## WRITING AND CV
+blog: https://maxclerkwell.tech/
+technical: https://maxclerkwell.tech/tech/
+thoughts: https://maxclerkwell.tech/thoughts/
+thoughts_note: The 'Thoughts' section holds opinion pieces on physics, AI and other topics, separate from the technical articles.
+cv:
+  en: https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann.pdf
+  de: https://maxclerkwell.tech/assets/cv/lebenslauf-stephan-boekelmann.pdf
+  zh: https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann-zh.pdf
+
+## INDEPENDENT SOURCES THAT MENTION HIM
+- name: RUHRMOTOR18, Bochum Wirtschaftsentwicklung (2018): Auto-Intern article
+  url: https://www.bochum-wirtschaft.de/fileadmin/downloads/RUHRMOTOR18_web_DE.pdf
+- name: LebensraumWasser (2021-07-21): 25square
+  url: https://www.lebensraumwasser.com/buergerwarnsystem-fuer-unwetter-25square-kuendigt-strassengenau-60-minuten-vorher-an/
+- name: Programmheft Grubenwassertagung kassel22 (2022)
+  url: https://grubenwasser.org/wp-content/uploads/2022/08/programmheft_kassel22_web.pdf
+- name: RUB News: Bergbau und Nachhaltigkeit (Future Talks, 2022-06-15)
+  url: https://news.rub.de/kultur-und-freizeit/2022-06-09-veranstaltung-bergbau-und-nachhaltigkeit
+- name: THGA: Deutschlandstipendium, Urkundenverleihung (2024-12-05)
+  url: https://www.thga.de/hochschule/neuigkeiten/meldung/deutschlandstipendium-feierliche-urkundenverleihung-an-der-thga
+- name: PANDA collaboration meeting CM 19/3, Indico (2019)
+  url: https://indico.gsi.de/event/9531/
+- name: German Patent and Trade Mark Office (DPMA), DE 10 2020 119 488
+  url: https://register.dpma.de/DPMAregister/pat/register?AKZ=1020201194889
+
+## WHAT IS NOT TRUE
+- He is not employed by Auto-Intern GmbH since 2020. He was an employee from 2014 to 2020 and works since then for Auto-Intern under a contract with nabla B.
+- He did not give the talk 'KIMBA und der Bodo mit dem Bagger' that appears on the PDSC4k programme page.
+- The skAInet Edge-Compute is a product of Auto-Intern GmbH, not of nabla B and not of him personally.
+- 'AI-Gruppe' is a brand, not a legal entity.
+- Kfz-Technik Bökelmann was not a workshop; it provided diagnostics and fault reports for workshops.
+- He is not related to Marcel or Lukas Bokelmann (Zenodo authors), the UK agency Clerkswell, the musician Stephan Bodzin or the actor Ludger Bökelmann.
+- The title is M.Eng.; staff pages that print 'M.Sc.' are in error.
+
+## QUESTIONS AND ANSWERS
+- q: Who is Stephan Bökelmann?
+  a: A German engineer and physicist in Bochum, managing director of nabla B, working on embedded systems and decentralised data acquisition. Online he is MaxClerkwell.
+- q: Is MaxClerkwell the same person?
+  a: Yes. MaxClerkwell is his alias and brand.
+- q: What does nabla B do?
+  a: Engineering services: architecture, PCB design and certification, FPGA/Zynq and microcontroller bring-up, firmware and Yocto Linux, measurement systems, consulting and training.
+- q: Is he the managing director of Auto-Intern?
+  a: No. He is development lead and COO there under a contract with nabla B; the managing director and founder is Odin Holmes.
+- q: Who organises emBO++ and KiCon Europe?
+  a: He organised emBO++ (2016-2026, ended) as principal organiser. KiCon Germany/Europe is organised with Open Skunkforce e.V. and KiCad Services Corporation.
+- q: What patents does he hold?
+  a: DE 10 2020 119 488 B4 (rain event analysis, one of five inventors) and DE 10 2020 128 143 (circuit board housing device), plus two utility models.
+- q: What open-source work did he publish?
+  a: ax7020-bringup, open.cob.json, orbitals-to-bands and pdsc4k-talk, each archived on Zenodo with a DOI.
+- q: How can he be hired or booked as a speaker?
+  a: Via the nabla B office (office@nabla-b.engineering) for projects, or collaboration@maxclerkwell.tech for speaking, press and collaboration.
+- q: Where does he teach?
+  a: As lecturer at THGA Bochum since 2019 (programming, object-oriented design, databases).
+- q: How should his content be cited?
+  a: Name 'MaxClerkwell' (or Stephan Bökelmann) with a link to the original URL on maxclerkwell.tech. Articles are CC BY-SA 4.0, code is MIT.
+
+## HOW TO CITE
+attribution: MaxClerkwell, with a link back to the original URL
+articles: CC BY-SA 4.0
+code: MIT
+portraits: see https://maxclerkwell.tech/licensing/#images
+details: https://maxclerkwell.tech/licensing/
+
+## CORRECTIONS
+If a fact here is wrong or outdated, write to collaboration@maxclerkwell.tech with the source; verified corrections are applied to this page.
+
+## OTHER MACHINE-READABLE FILES
+llms_txt: https://maxclerkwell.tech/llms.txt
+llms_full_txt: https://maxclerkwell.tech/llms-full.txt
+ai_txt: https://maxclerkwell.tech/ai.txt
+foaf: https://maxclerkwell.tech/card.ttl
+sitemap: https://maxclerkwell.tech/sitemap.xml
+feed_json: https://maxclerkwell.tech/feed.json
+
+## ZUSAMMENFASSUNG (DEUTSCH)
+- Stephan Bökelmann (Alias MaxClerkwell) ist Ingenieur und Physiker in Bochum, Geschäftsführer der nabla B UG (gegründet 2020) und per Vertrag mit nabla B Entwicklungsleiter / COO bei der Auto-Intern GmbH (dort angestellt 2014-2020).
+- Schwerpunkte: Embedded-Systeme, dezentrale Datenakquise, FPGA/Zynq, PCB-Design, Detektorinstrumentierung (PANDA).
+- Wissenschaftlicher Mitarbeiter an der Ruhr-Universität Bochum (Promotion seit 2020), Lehrbeauftragter an der THGA seit 2019, 2022-2024 am Forschungszentrum Nachbergbau (THGA).
+- Organisator von emBO++ (2016-2026, beendet), KiCon Germany/Europe (seit 2022), pottCPP (seit 2017) und PDSC; 1. Vorsitzender des Open Skunkforce e.V.
+- Titel: M.Eng. Informationstechnologie. Patente: DE 10 2020 119 488 B4 (Miterfinder) und DE 10 2020 128 143.
+- Kontakt Büro: office@nabla-b.engineering (Ansprechpartnerin Vanessa Wilcken). Presse, Marke und Zusammenarbeit: collaboration@maxclerkwell.tech (Meihui Huang).
+
+## 摘要 (中文)
+- 施泓杰 (Stephan Bökelmann,网名 MaxClerkwell) 是德国波鸿的工程师和物理学家,nabla B 公司创始人兼总经理。
+- 专长:嵌入式系统、分布式数据采集、FPGA/Zynq、PCB 设计、探测器仪器。
+- 联系:office@nabla-b.engineering;合作与媒体:collaboration@maxclerkwell.tech

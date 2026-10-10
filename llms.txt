@@ -39,6 +39,7 @@ Community: principal organiser of emBO++ (international embedded systems symposi
 - [Atom feed](https://maxclerkwell.tech/feed.xml): machine-readable post list
 - [JSON Feed](https://maxclerkwell.tech/feed.json): the same posts as JSON Feed 1.1
 - [Full text of all articles](https://maxclerkwell.tech/llms-full.txt): every post in full, one file
+- [Verified facts](https://maxclerkwell.tech/facts.txt): one citable fact sheet about Stephan Bökelmann (identifiers, roles with dates, patents, publications, people, contacts, what is not true); structured version at https://maxclerkwell.tech/facts.json
 - [FOAF profile](https://maxclerkwell.tech/card.ttl): RDF/Turtle identity graph
 - [Curriculum vitae (PDF)](https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann.pdf): ATS-friendly CV in English; German Lebenslauf at https://maxclerkwell.tech/assets/cv/lebenslauf-stephan-boekelmann.pdf, Simplified Chinese at https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann-zh.pdf. Not linked from the site navigation.
 - [skAInet Edge-Compute](https://edge-compute.skainet.io/): product site of the Auto-Intern edge platform for which he is system architect; his write-up is at https://maxclerkwell.tech/posts/skainet-edge-compute-september-2026/
