@@ -67,8 +67,8 @@ permalink: /facts.json
       "role": "Development lead / Chief Operating Officer (COO) under a contract between Auto-Intern GmbH and nabla B (since 2020). Before that employee from 2014 to 2020.",
       "career": [
         "Student assistant (Studentische Hilfskraft)",
-        "Research engineer",
-        "VP Research & Development and deputy managing director",
+        "Research engineer / development engineer (2014-2016)",
+        "VP Research & Development and deputy managing director; head of development (2016-2018)",
         "COO and deputy managing director (COO since 2018)"
       ],
       "facts": "Founder and managing director: Odin Holmes. Stephan Bökelmann is system architect of the skAInet Edge-Compute product.",
@@ -101,7 +101,7 @@ permalink: /facts.json
     },
     {
       "name": "open Skunkforce e.V.",
-      "role": "Co-founder and chairman (1. Vorsitzender)",
+      "role": "Co-founder and chairman (1. Vorsitzender) since 2021",
       "ids": {
         "jsonld": "https://maxclerkwell.tech/#skunkforce",
         "wikidata": "https://www.wikidata.org/wiki/Q141688756",
@@ -117,21 +117,23 @@ permalink: /facts.json
     }
   ],
   "education": [
-    "Trained mechanic (apprenticeship)",
-    "Trained electrician for automation technology (apprenticeship)",
-    "Staatlich geprüfter Techniker, Konstruktion und Entwicklung",
-    "B.Eng. Elektro- und Informationstechnik",
-    "M.Eng. Informationstechnologie",
-    "Doctorate (Promotion) at Ruhr-Universität Bochum, since 2020"
+    "2004-2007: State-certified technical assistant, design and manufacturing engineering (Berufskolleg Kemnastraße, Recklinghausen)",
+    "2007-2010: Vocational training as electronics technician for automation technology, IHK (Evonik Industries, Marl)",
+    "2007-2011: State-certified engineering technician, design and development engineering (Max-Born-Berufskolleg, Recklinghausen)",
+    "2011-2016: B.Eng. Electrical Engineering and Information Technology (Technische Fachhochschule Bochum, today THGA)",
+    "2014-2020: Physics studies (B.Sc.), Ruhr-Universität Bochum, with direct admission to the doctoral programme",
+    "2016-2020: M.Eng. Information Technology / Electrical Engineering and Information Technology (THGA Bochum); thesis: design of a linear positioning unit for the PANDA Luminosity Detector",
+    "Since 2020: doctorate (Dr. rer. nat.), experimental hadron physics, Ruhr-Universität Bochum; thesis topic: test system and characterisation of the CLIC_v3_HVGR HV-MAPS pixel detector (submission expected 2026)"
   ],
   "academic_roles": [
     {
       "role": "Research associate (wissenschaftlicher Mitarbeiter), Ruhr-Universität Bochum, Institut für Experimentalphysik I, group Fritsch; PANDA experiment at FAIR (luminosity detector, HV-MAPS sensors)",
-      "since": "2020",
+      "from": "2020",
+      "until": "2025 per CV (doctorate ongoing, submission expected 2026)",
       "source": "independent (RUB EP1 staff page lists him in the group)"
     },
     {
-      "role": "Member of the PANDA Collaboration; chair of the Young Scientist Convent",
+      "role": "Member of the PANDA Collaboration; chair of the Young Scientists (2023-2025), member of the Collaboration Board (2024-2025)",
       "from": "2023 (summer)",
       "until": "2025 (summer)",
       "source": "self-reported"
@@ -143,8 +145,8 @@ permalink: /facts.json
       "source": "independent (FZN science-day programme 2023, RUB News 2022)"
     },
     {
-      "role": "Lecturer (Lehrbeauftragter), THGA Bochum: programming, object-oriented design, databases",
-      "since": "2019",
+      "role": "Lecturer (Lehrbeauftragter), THGA Bochum: Introduction to Programming (since 2019), Object-Oriented Programming (since 2020), Database Management Systems (since 2026); also courses at Ruhr-Universität Bochum and Hochschule Bochum",
+      "since": "2018",
       "source": "independent (THGA staff list)"
     },
     {
@@ -194,7 +196,8 @@ permalink: /facts.json
           "web": "https://kicon.kicad.org/europe2026/"
         }
       ],
-      "partner": "KiCad Services Corporation (Seth Hillbrand)"
+      "partner": "KiCad Services Corporation (Seth Hillbrand)",
+      "also": "Co-organiser of KiCon Asia 2025 in Shenzhen (self-reported)"
     },
     {
       "name": "Practical Data Science Congress (PDSC)",
@@ -211,6 +214,10 @@ permalink: /facts.json
   ],
   "timeline": [
     {
+      "year": "2004-2011",
+      "event": "Technical and vocational training: technical assistant (2004-2007), electronics technician for automation technology at Evonik (2007-2010), state-certified engineering technician (2007-2011)."
+    },
+    {
       "year": "2007",
       "event": "Starts professional work in electronics and physical measurement technology (as electronics technician)."
     },
@@ -219,12 +226,16 @@ permalink: /facts.json
       "event": "Founds Kfz-Technik Bökelmann (mobile electronic vehicle diagnostics for workshops, Münsterland)."
     },
     {
+      "year": "2011-2016",
+      "event": "B.Eng. Electrical Engineering and Information Technology."
+    },
+    {
       "year": "2014",
-      "event": "Kfz-Technik Bökelmann is acquired by Auto-Intern GmbH; he joins Auto-Intern as student assistant, then research engineer."
+      "event": "Kfz-Technik Bökelmann is acquired by Auto-Intern GmbH; he joins Auto-Intern as student assistant, then research/development engineer. Starts physics studies at Ruhr-Universität Bochum (until 2020)."
     },
     {
       "year": "2016",
-      "event": "First emBO++ in a small circle."
+      "event": "First emBO++ in a small circle. Becomes head of development at Auto-Intern (until 2018). Starts the M.Eng. at THGA (until 2020)."
     },
     {
       "year": "2017",
