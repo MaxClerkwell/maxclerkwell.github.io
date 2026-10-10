@@ -10,12 +10,20 @@
       "disambiguatingDescription": "German engineer and physicist in Bochum, alias MaxClerkwell (a wordplay on James Clerk Maxwell). Not related to the UK agency Clerkswell, the musician Stephan Bodzin, or the actor Ludger Bökelmann. Professionally active since 2007, when he started as an electronics technician.",
       "url": "https://maxclerkwell.tech/",
       "image": "https://maxclerkwell.tech/slides/Avatar.jpg",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "https://registry.identifiers.org/registry/orcid",
-        "value": "https://orcid.org/0000-0002-2119-0064",
-        "url": "https://orcid.org/0000-0002-2119-0064"
-      },
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "https://registry.identifiers.org/registry/orcid",
+          "value": "https://orcid.org/0000-0002-2119-0064",
+          "url": "https://orcid.org/0000-0002-2119-0064"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "Wikidata",
+          "value": "Q141502495",
+          "url": "https://www.wikidata.org/wiki/Q141502495"
+        }
+      ],
       "email": "mailto:stephan@boekelmann.net",
       "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "Managing Director, nabla B", "Chief Operating Officer, Auto-Intern GmbH", "System Architect, skAInet Edge-Compute"],
       "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
@@ -157,10 +165,13 @@
         { "@id": "https://www.auto-intern.de/#organization" },
         { "@type": "Organization", "name": "PANDA Collaboration at FAIR/GSI", "description": "Member; Young Scientist Convent chair and Young PANDA representative on the Collaboration Board" },
         { "@type": "Organization", "name": "IHK Mittleres Ruhrgebiet examination board for IT specialists", "description": "Board member since 2020" },
-        { "@type": "Organization", "name": "emBO++ — International Technical Symposium for Embedded Systems Development", "url": "https://embo.io/", "location": { "@type": "Place", "name": "Bochum, Germany" }, "description": "Principal organiser since 2015" },
+        { "@id": "https://skunkforce.github.io/embo/#embo" },
         { "@type": "Organization", "name": "KiCon Europe", "url": "https://kicon.kicad.org/", "description": "Organiser since 2020" },
         { "@type": "Organization", "name": "Practical Data Science Congress Bochum (PDSC4K)", "description": "Co-organiser since 2024" },
         { "@type": "Organization", "name": "pottCPP — Ruhr C++ User Group", "url": "https://www.meetup.com/pottcpp/", "description": "Organiser since 2017" }
+      ],
+      "colleague": [
+        { "@id": "https://philipptheserver.com/#person" }
       ],
       "performerIn": [
         { "@id": "https://maxclerkwell.tech/talks/#kicon-asia-2025" },
@@ -172,9 +183,15 @@
         { "@type": "WebPage", "url": "https://maxclerkwell.tech/talks/", "name": "Talks & Conference Appearances" },
         { "@type": "WebPage", "url": "https://maxclerkwell.tech/publications/", "name": "Publications, Patents & Software" },
         { "@type": "WebPage", "url": "https://edge-compute.skainet.io/team", "name": "skAInet Edge-Compute team, Auto-Intern GmbH" },
-        { "@type": "WebPage", "url": "https://nabla-b.engineering/team/", "name": "nabla B team" }
+        { "@type": "WebPage", "url": "https://nabla-b.engineering/team/", "name": "nabla B team" },
+        { "@id": "https://maxclerkwell.tech/#ref-ruhrmotor18" },
+        { "@id": "https://maxclerkwell.tech/#ref-lebensraumwasser-2021" },
+        { "@id": "https://maxclerkwell.tech/#ref-kassel22" },
+        { "@id": "https://maxclerkwell.tech/#ref-rubnews-futuretalks" },
+        { "@id": "https://maxclerkwell.tech/#ref-thga-deutschlandstipendium" }
       ],
       "sameAs": [
+        "https://www.wikidata.org/wiki/Q141502495",
         "https://github.com/maxclerkwell",
         "https://x.com/maxclerkwell",
         "https://www.linkedin.com/in/stephan-boekelmann-bochum/",
@@ -197,6 +214,7 @@
       "url": "https://nabla-b.engineering/",
       "alternateName": ["\u2207B", "nabla-B"],
       "sameAs": [
+        "https://www.wikidata.org/wiki/Q141688544",
         "https://github.com/nabla-B",
         "https://nabla-b.engineering/en/",
         "https://maxclerkwell.tech/hire/"
@@ -227,6 +245,10 @@
       "name": "open Skunkforce e.V.",
       "nonprofitStatus": "https://schema.org/NonprofitType",
       "url": "https://skunkforce.org/",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q141688756",
+        "https://skunkforce.org/#organization"
+      ],
       "foundingDate": "2021",
       "description": "Non-profit association for open hardware and software engineering, Bochum. Stephan Bökelmann is a founding member and has been its chairman (1. Vorsitzender) since 2021. Organiser of the Practical Data Science Congress (PDSC4K).",
       "founder": { "@id": "https://maxclerkwell.tech/#person" },
@@ -247,6 +269,7 @@
       ],
       "owns": { "@id": "https://edge-compute.skainet.io/#product" },
       "sameAs": [
+        "https://www.wikidata.org/wiki/Q141509023",
         "https://www.skainet.io/",
         "https://edge-compute.skainet.io/",
         "https://github.com/auto-intern-skainet"
@@ -292,6 +315,40 @@
       "url": "https://gruppe.ai/",
       "description": "Umbrella brand (not a legal entity) for Auto-Intern GmbH, CCD Car Diagnostics, nabla B, nerd_force1, open Skunkforce e.V. and the skAInet project. Canonical identifier for the brand across all AI-Gruppe web properties.",
       "sameAs": ["https://gruppe.ai/"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://philipptheserver.com/#person",
+      "name": "Philipp Lehmann",
+      "givenName": "Philipp",
+      "familyName": "Lehmann",
+      "alternateName": "PhilippTheServer",
+      "url": "https://philipptheserver.com/",
+      "image": "https://avatars.githubusercontent.com/u/111761181?v=4",
+      "jobTitle": "CTO",
+      "description": "Infrastructure engineer in Bochum, CTO at Nerd Force1 UG (AI-Gruppe) and server administrator of the shared Bochum office: container platforms, Ceph storage, mesh networking, VPNs and infrastructure automation. Colleague of Stephan Bökelmann; co-built the office's dual-uplink routing and WireGuard setup. Canonical identity data lives at https://philipptheserver.com/.",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "https://registry.identifiers.org/registry/orcid",
+        "value": "https://orcid.org/0009-0002-3922-2471",
+        "url": "https://orcid.org/0009-0002-3922-2471"
+      },
+      "homeLocation": { "@type": "Place", "name": "Bochum, Germany" },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Nerd Force1 UG",
+        "url": "https://nerd-force1.de/",
+        "brand": { "@id": "https://gruppe.ai/#brand" }
+      },
+      "memberOf": { "@id": "https://maxclerkwell.tech/#skunkforce" },
+      "colleague": { "@id": "https://maxclerkwell.tech/#person" },
+      "sameAs": [
+        "https://philipptheserver.com/",
+        "https://orcid.org/0009-0002-3922-2471",
+        "https://github.com/PhilippTheServer",
+        "https://www.linkedin.com/in/philipp-lehmann-17995521b/",
+        "https://x.com/philippthecron"
+      ]
     },
     {
       "@type": "Organization",
@@ -354,6 +411,99 @@
         },
         "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@type": "EventSeries",
+      "@id": "https://skunkforce.github.io/embo/#embo",
+      "name": "emBO++",
+      "alternateName": ["Embedded Bochum", "emBO++ — International Technical Symposium for Embedded Systems Development"],
+      "url": "https://www.embo.io/",
+      "startDate": "2016",
+      "endDate": "2026-03-20",
+      "description": "Conference series on embedded systems and hardware-related software development at Ruhr-Universität Bochum. Started in 2016 in a small circle, open to the public from 2017, ten public editions; the last one took place 18–20 March 2026 and no further edition is planned.",
+      "location": { "@type": "Place", "name": "Bochum, Germany" },
+      "organizer": [
+        { "@id": "https://maxclerkwell.tech/#skunkforce" },
+        { "@id": "https://maxclerkwell.tech/#person" }
+      ],
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q141688777",
+        "https://skunkforce.github.io/embo/",
+        "https://www.embo.io/"
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://maxclerkwell.tech/#kicon-europe-2026",
+      "name": "KiCon Europe 2026",
+      "url": "https://kicon.kicad.org/europe2026/",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-09",
+      "location": {
+        "@type": "Place",
+        "name": "Gleis 9",
+        "address": { "@type": "PostalAddress", "streetAddress": "Am Kulturgleis 9", "postalCode": "44787", "addressLocality": "Bochum", "addressCountry": "DE" }
+      },
+      "organizer": [
+        { "@id": "https://maxclerkwell.tech/#skunkforce" },
+        { "@id": "https://maxclerkwell.tech/#person" }
+      ],
+      "sameAs": "https://www.wikidata.org/wiki/Q141688757"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://maxclerkwell.tech/#ref-ruhrmotor18",
+      "name": "Finde den Fehler (Auto-Intern) in #RUHRMOTOR18",
+      "url": "https://www.bochum-wirtschaft.de/fileadmin/downloads/RUHRMOTOR18_web_DE.pdf",
+      "datePublished": "2018-02",
+      "inLanguage": "de",
+      "publisher": { "@type": "Organization", "name": "Bochum Wirtschaftsentwicklung" },
+      "about": { "@id": "https://www.auto-intern.de/#organization" },
+      "mentions": [ { "@id": "https://maxclerkwell.tech/#person" } ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://maxclerkwell.tech/#ref-lebensraumwasser-2021",
+      "name": "„Bürgerwarnsystem“ für Unwetter: 25square kündigt straßengenau 60 Minuten vorher an",
+      "url": "https://www.lebensraumwasser.com/buergerwarnsystem-fuer-unwetter-25square-kuendigt-strassengenau-60-minuten-vorher-an/",
+      "datePublished": "2021-07-21",
+      "inLanguage": "de",
+      "publisher": { "@type": "Organization", "name": "LebensraumWasser" },
+      "mentions": [
+        { "@id": "https://maxclerkwell.tech/#person" },
+        { "@id": "https://www.auto-intern.de/#organization" }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://maxclerkwell.tech/#ref-kassel22",
+      "name": "Programmheft Grubenwassertagung kassel22 (7 September 2022)",
+      "url": "https://grubenwasser.org/wp-content/uploads/2022/08/programmheft_kassel22_web.pdf",
+      "inLanguage": "de",
+      "publisher": { "@type": "Organization", "name": "Grubenwassertagung kassel22" },
+      "mentions": [ { "@id": "https://maxclerkwell.tech/#person" } ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://maxclerkwell.tech/#ref-rubnews-futuretalks",
+      "name": "Bergbau und Nachhaltigkeit (Future Talks, 15 June 2022)",
+      "url": "https://news.rub.de/kultur-und-freizeit/2022-06-09-veranstaltung-bergbau-und-nachhaltigkeit",
+      "inLanguage": "de",
+      "publisher": { "@type": "Organization", "name": "Ruhr-Universität Bochum, RUB News" },
+      "mentions": [ { "@id": "https://maxclerkwell.tech/#person" } ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://maxclerkwell.tech/#ref-thga-deutschlandstipendium",
+      "name": "Deutschlandstipendium: Feierliche Urkundenverleihung an der THGA",
+      "url": "https://www.thga.de/hochschule/neuigkeiten/meldung/deutschlandstipendium-feierliche-urkundenverleihung-an-der-thga",
+      "datePublished": "2024-12-09",
+      "inLanguage": "de",
+      "publisher": { "@type": "CollegeOrUniversity", "name": "THGA Bochum" },
+      "mentions": [
+        { "@id": "https://maxclerkwell.tech/#person" },
+        { "@id": "https://www.auto-intern.de/#organization" }
+      ]
     }{% for cv in site.data.cv %},
     {
       "@type": "DigitalDocument",
