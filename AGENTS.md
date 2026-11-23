@@ -225,7 +225,7 @@ Notes on the actual field wiring (see `_includes/structured-data-post.html`):
   aliases for these): person `https://maxclerkwell.tech/#person`, nabla B
   `https://nabla-b.engineering/#organization`, Auto-Intern GmbH
   `https://www.auto-intern.de/#organization`, skAInet brand
-  `https://www.skainet.io/#brand`, AI-Gruppe `https://gruppe.ai/#brand`,
+  `https://skainet.io/#brand`, AI-Gruppe `https://gruppe.ai/#brand`,
   Edge-Compute `https://edge-compute.skainet.io/#product`. LinkedIn is
   always written as `https://www.linkedin.com/in/stephan-boekelmann-bochum/`.
 - Links to nabla-b.engineering and edge-compute.skainet.io open an

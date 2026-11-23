@@ -25,7 +25,8 @@
         }
       ],
       "email": "mailto:stephan@boekelmann.net",
-      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "Managing Director, nabla B", "Co-founder, Outerfab", "Chief Operating Officer, Auto-Intern GmbH", "System Architect, skAInet Edge-Compute"],
+      "jobTitle": ["Engineer", "Physicist", "Freelance Consultant", "Lecturer", "Managing Director, nabla B", "Co-founder, Outerfab", "Chief Operating Officer, Auto-Intern GmbH", "System Architect, skAInet Edge-Compute", "Co-founder and CTO, skAInet"],
+      "brand": { "@id": "https://skainet.io/#brand" },
       "mainEntityOfPage": { "@id": "https://maxclerkwell.tech/about/#profile" },
       "subjectOf": [
         { "@id": "https://maxclerkwell.tech/assets/cv/cv-stephan-boekelmann.pdf" },
@@ -264,15 +265,13 @@
       "url": "https://auto-intern.de/",
       "email": "mailto:info@auto-intern.de",
       "foundingDate": "2000",
-      "description": "Automotive diagnostics, industrial monitoring and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand; skAInet is its brand and engineering office for decentralised monitoring. Manufacturer of the skAInet Edge-Compute, an M12-PoE switch, router and Linux compute module for industrial edge data acquisition. Stephan Bökelmann was developer (2014 to 2016) and head of development (2016 to 2018) and has been Chief Operating Officer since 2018; he is system architect of the skAInet Edge-Compute and works on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
+      "description": "Automotive diagnostics, industrial monitoring and embedded engineering company, Bochum, founded and led by Odin Holmes. Part of the AI-Gruppe umbrella brand. Manufacturer of the skAInet Edge-Compute, an M12-PoE switch, router and Linux compute module for industrial edge data acquisition. Stephan Bökelmann was developer (2014 to 2016) and head of development (2016 to 2018) and has been Chief Operating Officer since 2018; he is system architect of the skAInet Edge-Compute and works on measurement hardware such as the OmnAIScope and the M12 industrial Ethernet product line.",
       "brand": [
-        { "@id": "https://www.skainet.io/#brand" },
         { "@id": "https://gruppe.ai/#brand" }
       ],
       "owns": { "@id": "https://edge-compute.skainet.io/#product" },
       "sameAs": [
         "https://www.wikidata.org/wiki/Q141509023",
-        "https://www.skainet.io/",
         "https://edge-compute.skainet.io/",
         "https://github.com/auto-intern-skainet"
       ],
@@ -280,10 +279,11 @@
     },
     {
       "@type": "Brand",
-      "@id": "https://www.skainet.io/#brand",
+      "@id": "https://skainet.io/#brand",
       "name": "skAInet",
-      "url": "https://www.skainet.io/",
-      "description": "Brand and engineering office of Auto-Intern GmbH for decentralised industrial monitoring: PoE measurement devices (PowerSense, temperature and digital I/O modules) and the skAInet Edge-Compute platform."
+      "url": "https://skainet.io/",
+      "description": "Independent brand (not a legal entity) of the startup project founded by Atiyeh Chatrsefid and Stephan Bökelmann. skAInet builds WITNESS, hardware and software for on-premise condition monitoring of industrial assets. The skAInet PoE measurement devices and the skAInet Edge-Compute are manufactured by Auto-Intern GmbH.",
+      "sameAs": ["https://witness.skainet.io/", "https://github.com/skainet-llc"]
     },
     {
       "@type": "Product",
@@ -295,7 +295,7 @@
       "description": "Programmable M12-PoE switch, router and compute module for industrial edge applications: sealed anodized aluminium enclosure, 7 M12 PoE LAN ports plus 1 M12 WAN port, 48 to 72 V DC input, 8-core 64-bit ARM CPU, 8 GB RAM, 32 GB eMMC, Yocto Linux with documented SBOM. Made in Germany by Auto-Intern GmbH.",
       "category": "Industrial edge computing / IIoT gateway",
       "countryOfOrigin": { "@type": "Country", "name": "Germany" },
-      "brand": { "@id": "https://www.skainet.io/#brand" },
+      "brand": { "@id": "https://skainet.io/#brand" },
       "manufacturer": { "@id": "https://www.auto-intern.de/#organization" },
       "offers": {
         "@type": "Offer",

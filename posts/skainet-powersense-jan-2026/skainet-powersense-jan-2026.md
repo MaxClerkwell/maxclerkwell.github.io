@@ -8,7 +8,7 @@ image: /posts/skainet-powersense-jan-2026/assets/photo_1_2026-04-21_12-42-49.jpg
 keywords: "non-contact voltage measurement, PoE sensor, railway monitoring, EMC certification, E-field sensing, skAInet, DB Netz, PowerSense, industrial IoT"
 permalink: /posts/skainet-powersense-jan-2026/
 last_modified_at: 2026-09-01
-about_id: "https://www.skainet.io/#brand"
+about_id: "https://skainet.io/#brand"
 ---
 
 January 2016. A call came in through a mutual contact — [Steffen Scholle](https://eximentor.de/en/home/), at the time an Ex-inspector at DEKRA and today a respected Ex-consultant — connecting us with DB Netz AG. They had a problem: they needed a smarter way to monitor the power supply of their railway switching systems. Three-phase, 16A lines, 1.5mm² cross-section. And they needed it non-intrusively, clip-on, retrofit. No rewiring. No outages. No excuses.
