@@ -17,7 +17,7 @@ sitemap: false
     foaf:familyName "Bökelmann" ;
     foaf:nick "MaxClerkwell" ;
     rdfs:label "Stephan Bökelmann" ;
-    foaf:title "Engineer, physicist, freelance consultant; managing director of nabla B, COO of Auto-Intern GmbH, system architect of the skAInet Edge-Compute, co-founder and CTO of skAInet" ;
+    foaf:title "Engineer, physicist, freelance consultant; managing director of nabla B, consultant to Auto-Intern GmbH, system architect of the skAInet Edge-Compute, co-founder and CTO of skAInet" ;
     foaf:based_near "Bochum, Germany" ;
     foaf:homepage <https://maxclerkwell.tech/> ;
     foaf:workplaceHomepage <https://www.ruhr-uni-bochum.de/> ;

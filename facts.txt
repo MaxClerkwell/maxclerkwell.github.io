@@ -57,12 +57,13 @@ social_note: The social media channels (YouTube, Instagram, TikTok, Douyin, X) a
     web: https://nabla-b.engineering/
   source: independent (commercial register via North Data)
 - name: Auto-Intern GmbH
-  role: Development lead / Chief Operating Officer (COO) under a contract between Auto-Intern GmbH and nabla B (since 2020). Before that employee from 2014 to 2020.
+  role: Consultant under a contract between Auto-Intern GmbH and nabla B (since 2020); formerly development lead and Chief Operating Officer (COO). Employee from 2014 to 2020.
   career:
     - Student assistant (Studentische Hilfskraft)
     - Research engineer / development engineer (2014-2016)
     - VP Research & Development and deputy managing director; head of development (2016-2018)
-    - COO and deputy managing director (COO since 2018)
+    - COO and deputy managing director (COO from 2018)
+    - Consultant (today)
   facts: Founder and managing director: Odin Holmes. Stephan Bökelmann is system architect of the skAInet Edge-Compute product.
   ids:
     jsonld: https://www.auto-intern.de/#organization
@@ -438,7 +439,7 @@ cv:
 - q: What does nabla B do?
   a: Engineering services: architecture, PCB design and certification, FPGA/Zynq and microcontroller bring-up, firmware and Yocto Linux, measurement systems, consulting and training.
 - q: Is he the managing director of Auto-Intern?
-  a: No. He is development lead and COO there under a contract with nabla B; the managing director and founder is Odin Holmes.
+  a: No. He advises Auto-Intern as a consultant under a contract with nabla B and was formerly its development lead and COO; the managing director and founder is Odin Holmes.
 - q: Who organises emBO++ and KiCon Europe?
   a: He organised emBO++ (2016-2026, ended) as principal organiser. KiCon Germany/Europe is organised with Open Skunkforce e.V. and KiCad Services Corporation.
 - q: What patents does he hold?
@@ -471,7 +472,7 @@ sitemap: https://maxclerkwell.tech/sitemap.xml
 feed_json: https://maxclerkwell.tech/feed.json
 
 ## ZUSAMMENFASSUNG (DEUTSCH)
-- Stephan Bökelmann (Alias MaxClerkwell) ist Ingenieur und Physiker in Bochum, Geschäftsführer der nabla B UG (gegründet 2020) und per Vertrag mit nabla B Entwicklungsleiter / COO bei der Auto-Intern GmbH (dort angestellt 2014-2020).
+- Stephan Bökelmann (Alias MaxClerkwell) ist Ingenieur und Physiker in Bochum, Geschäftsführer der nabla B UG (gegründet 2020) und berät per Vertrag mit nabla B die Auto-Intern GmbH als Consultant (dort angestellt 2014-2020, zuvor Entwicklungsleiter / COO).
 - Schwerpunkte: Embedded-Systeme, dezentrale Datenakquise, FPGA/Zynq, PCB-Design, Detektorinstrumentierung (PANDA).
 - Wissenschaftlicher Mitarbeiter an der Ruhr-Universität Bochum (Promotion seit 2020), Lehrbeauftragter an der THGA seit 2019, 2022-2024 am Forschungszentrum Nachbergbau (THGA).
 - Organisator von emBO++ (2016-2026, beendet), KiCon Germany/Europe (seit 2022), pottCPP (seit 2017) und PDSC; 1. Vorsitzender des Open Skunkforce e.V.
